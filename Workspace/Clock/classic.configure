@@ -1,0 +1,60 @@
+#!/bin/sh
+clear
+echo 
+echo ASclock configure:
+echo ------------------
+echo
+echo 'Choose language from:'
+echo
+echo '1) english [DEFAULT]'
+echo '2) german'
+echo '3) portuguese'
+echo '4) dutch'
+echo '5) norwegian'
+echo '6) italian'
+echo '7) swedish'
+echo '8) spanish'
+echo '9) hungarian'
+echo '0) breton'
+echo 'a) french'
+echo 'b) czech'
+echo 'c) russian'
+echo 'd) ukrainian'
+echo 'e) slovene'
+echo 'f) indonesian'
+echo 'g) danish'
+echo 'h) hebrew'
+echo 'i) japanese'
+echo
+printf "Select a language from above :"
+read LANG 
+rm -f weekday.xpm wsclock month.xpm wsclock.o
+case $LANG in
+    i) ANS=japanese;;
+    h) ANS=hebrew;;
+    g) ANS=danish;;
+    f) ANS=indonesian;;
+    e) ANS=slovene;; 
+    d) ANS=ukrainian;;
+    c) ANS=russian;;
+    b) ANS=czech;;
+    a) ANS=french;;
+    0) ANS=breton;;
+    9) ANS=hungarian;;
+    8) ANS=spanish;;
+    7) ANS=swedish;;
+    6) ANS=italian;;
+    5) ANS=norwegian;;
+    4) ANS=dutch;;
+    3) ANS=portuguese;;
+    2) ANS=german;;
+    *) ANS=english;;
+esac
+      ln -s ../languages/$ANS/month.xpm ./default_theme/month.xpm
+      ln -s ../languages/$ANS/weekday.xpm ./default_theme/weekday.xpm
+      echo $ANS has been chosen!
+
+xmkmf
+echo ------------------------------------------------------------ 
+printf "                      type 'make' now !\n"
+echo ------------------------------------------------------------ 

@@ -1,0 +1,6 @@
+Things to be implemented:
+
+  - put all language specific stuff into ascii and assemble it from an
+    alphabet pixmap.
+
+  - analog clock support for the xlib version (this one).

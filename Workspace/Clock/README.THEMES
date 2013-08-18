@@ -1,0 +1,149 @@
+documentation on themes
+-----------------------
+
+
+SPECIAL NOTE FOR THE IMPATIENT: copy your themes to either
+/usr/local/share/wsclock/ or /usr/share/wsclock/
+
+
+a theme consists of 8 xpms and a position file called 'config'.
+
+all tiles within the same xpm must have the same width or height, except the 
+colon which has half the width of the other digits.
+
+the xpm's should have the following names:
+
+  clock.xpm     -  the groundplate in the backhround. If the groundplate has
+		   transparent areas, this pixmap should also have a mask bitmap
+		   as defined by the XPM standard.
+		   Look at one of the examples coming along with this package for
+		   infos on how this exactly looks like.
+		   wsclock will open a window with the size of this pixmap.
+
+  date.xpm	-  contains the numbers for the calendar.
+		   format:   '1234567890:' 
+
+  led.xpm       -  contains the numbers for the time display. A colon needs to be
+		   here after the numbers, which should have at most half the width
+		   of the numbers.
+		   format:	'0123456789:(am)(pm)'
+
+		   the colon needs to have half the width of the digits.
+		   the 'am' and 'pm' part have 1.5 times the size of a digit.
+
+  month.xpm     -  contains the month names. this will go away and will be replaced
+		   by an alphabet, from which the month names will be assembled.
+		   format:	'Jan'
+				'Feb'
+				'Mar'
+				'Apr'
+				'May'
+				'Jun'
+				'Jul'
+				'Aug'
+				'Sep'
+				'Oct'
+				'Nov'
+				'Dec'
+
+  weekday.xpm   -  contains the weekday names. this will go away and will be replaced
+		   by an alphabet, from which the month names will be assembled.
+		   format:  	'Mon'
+				'Tue'
+				'Wed'
+				'Thr'
+				'Fri'
+				'Sat'
+				'Sun'
+
+  hour.xpm      -  contains an hour pointer for analog clocks.
+                   12 o'clock is asumed.
+
+  minute.xpm    -  contains a minute pointer for analog clocks.
+                   12 o'clock is asumed.
+ 
+  second.xpm    -  contains the seconds pointer for analog clocks.
+                   12 o'clock is asumed.
+
+Here comes the tricky part - the config file:
+
+  config	-  this is an ascii file, specifying the positions of the pixmaps.
+		   It can be linked against wsclock for default themes, and therefore must
+		   be a C- compilable file.
+		   If you want to do a theme with time or calendar part only, you
+		   could specify a 0 as position. The pixmap will not be displayed then.
+
+		   variable names that can be defined in 'config':
+
+		booleans::   ( 0==no, 1==yes )
+
+                   led_visible     :  time active          
+		   week_visible    :  weekday pixmap active
+		   cal_visible     :  calendar day active  
+		   month_visible   :  month pixmap active  
+		   analog_visible  :  use analog clock features
+		   hour_visible    :  show the hour pointer
+		   min_visible     :  show the minute pointer
+		   sec_visible     :  show the second pointer
+
+		integers::
+
+		   led_elem_width  :  time digit width
+		   led_elem_height :  time digit height
+		   led_24h_hour_x1 :  x position of hour digit 1 in 24h format 
+		   led_24h_hour_x2 :  x position of hour digit 2 in 24h format
+		   led_24h_colon_x :  x position of colon in 24h format
+		   led_24h_min_x1  :  x postion of minute digit 1 in 24h format
+		   led_24h_min_x2  :  x position of minute digit 2 in 24h format
+		   led_24h_topy    :  y top line of all time digits in 24h format
+
+		   led_12h_hour_x1 :  x position of hour digit 1 in 12h format 
+		   led_12h_hour_x2 :  x position of hour digit 2 in 12h format
+		   led_12h_colon_x :  x position of colon in 12h format
+		   led_12h_min_x1  :  x postion of minute digit 1 in 12h format
+		   led_12h_min_x2  :  x position of minute digit 2 in 12h format
+		   led_ampm_x      :  x position of am/pm led
+		   led_ampm_width  :  width of am/pm led
+		   led_12_topy     :  y top line of all time digits in 12h format
+
+		   week_elem_width :  weekday element width
+		   week_elem_height:  weekday element height
+		   week_x          :  weekday x position
+		   week_y          :  weekday top y position
+
+		   cal_elem_width  :  calendar element width
+		   cal_elem_height :  calendar element height
+		   cal_x1          :  x position of calendar digit 1 
+		   cal_x2          :  x position of calendar digit 2
+		   cal_topy        :  y top line of calendar digits
+		   comment: if there is only one calendar digit,
+			    the position of the digit is (x1+x2)/2
+
+		   month_elem_width:  month element width
+		   month_elem_height: month element height
+		   month_x         :  x position of month element
+		   month_y         :  y top line of month element
+
+		   hour_center_x   :  center x position on clock.xpm
+		   hour_center_y   :  center y position on clock.xpm
+                   hour_rot_x      :  rotation origin x pos on hour.xpm
+                   hour_rot_y      :  rotation origin y pos on hour.xpm
+
+		   min_center_x    :  center x position on clock.xpm
+		   min_center_y    :  center y position on clock.xpm
+                   min_rot_x       :  rotation origin x pos on min.xpm
+                   min_rot_y       :  rotation origin y pos on min.xpm
+
+		   sec_center_x    :  center x position on clock.xpm
+		   sec_center_y    :  center y position on clock.xpm
+                   sec_rot_x       :  rotation origin x pos on sec.xpm
+                   sec_rot_y       :  rotation origin y pos on sec.xpm
+
+See the different themes directories for examples!!!
+
+To make new themes it usually helps to just copy a similar one
+and gradually replace it's elements.
+
+Enjoy.
+
+

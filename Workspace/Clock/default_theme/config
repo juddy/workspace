@@ -1,0 +1,58 @@
+/* jaja, comments und so */
+led_visible = 1;
+led_elem_width = 9;
+led_elem_height = 13;
+led_12h_hour_x1 = 5;
+// you pick the comment style
+led_12h_hour_x2 = 14;  // wherever you want
+led_12h_colon_x = 23;
+led_12h_min_x1  = 27;
+led_12h_min_x2  = 36;
+led_ampm_x      = 45;
+led_ampm_width  = 12;
+led_12h_topy    = 7;
+led_24h_hour_x1 = 10;
+led_24h_hour_x2 = 19;
+led_24h_colon_x = 29;
+led_24h_min_x1  = 34;
+led_24h_min_x2  = 43;
+led_24h_topy    = 7;
+
+week_visible = 1;
+week_elem_width = 20;
+week_elem_height = 6;
+week_x = 20;
+week_y = 25;
+
+cal_visible = 1;
+cal_elem_width = 9;
+cal_elem_height = 13;
+cal_x1 = 23;
+cal_x2 = 31;
+cal_topy = 34;
+
+month_visible = 1;
+month_elem_width = 22;
+month_elem_height = 6;
+month_x = 19;
+month_y = 49;
+
+analog_visible =0;
+hour_visible = 0;
+hour_center_x = 0;
+hour_center_y = 0;
+hour_rot_x = 0;
+hour_rot_y = 0;
+    
+min_visible = 0;
+min_center_x = 0;
+min_center_y = 0;
+min_rot_x = 0;
+min_rot_y = 0;
+  
+sec_visible = 0;
+sec_center_x = 0;
+sec_center_y = 0;
+sec_rot_x = 0;
+sec_rot_y = 0;
+

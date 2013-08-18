@@ -1,0 +1,105 @@
+.TH wsclock 0.1 "Aug 16 2013" wsclock
+.UC
+.SH NAME
+\fBwsclock\fP \- the Workspace clock
+.SH SYNOPSIS
+.B wsclock
+[ -help] [-12 | -24] [-shape] 
+        [-position \fI[+|-]x[+|-]y\fP] 
+        [-exe \fIprogram\fP]
+        [-led \fIcolor\fP]
+        [-noblink] [-iconic]
+.SH DESCRIPTION
+The \fBwsclock\fP is a clock written to emulate the date/time application on 
+the NEXTSTEP(tm) operating system.  \fBwsclock\fP supports multiple languages, 
+military and AM/PM time formats, program execution, and the shape extention 
+to X-Windows.  
+.SH CONFIGURATION OPTIONS
+.IP "-help"
+.RS
+prints the usage message:
+.nf
+        usage:  wsclock [-options ...] 
+        where options include:
+            -12                     12 hour format
+            -24                     24 hour format
+            -exe <program>          program to start on click
+            -led <color>            color of the led
+            -position [+|-]x[+|-]y  position of wsclock
+            -shape                  without groundplate
+            -noblink                don't blink
+            -iconic                 start up as icon
+.fi
+.RE
+.IP "-12 or -24"
+.RS
+sets the desired time format to either twelve hour
+with AM/PM ( -12 ) or military time ( -24 ).  If no
+option is given military time is used.
+.RE
+.IP "-shape"
+.RS
+turn on shaped window support for \fBwsclock\fP.  When this is turned on the
+\fBwsclock\fP windows will only appear to be the led and date pad.  By default 
+shaped windows are turned off and the clock will appear on a 64 pixel by 64
+pixel base.
+.RE
+.IP "-led <color>"
+.RS
+specifies the color of the led. To find out what colors are available, try 
+.I showrgb
+.P (part of X11).
+.RE
+.IP "-position [+|-]x[+|-]y "
+.RS
+specifies the starting position of \fBwsclock\fP. The [+|-] works like the standard X-Windows x/y geometry option.
+.RE
+.IP "-exe <program>"
+.RS
+specifies the application to start when the pointer is activated over \fBwsclock\fP. To invoke applications with parameters, you have to set quotes around the command. See example below...
+.RE
+.IP "-noblink"
+.RS
+specifies if wsclock should blink.
+.RE
+.IP "-iconic"
+.RS
+This gives weird output with Workspace, so don't bother. It's for mwm and other wm's with no hint functionality.
+.RE
+.SH INVOCATION
+\fBwsclock\fP can be called from one of many ways.  The most common invocation
+is the command line:
+.nf
+
+	[user@host] ~% wsclock -12 -exe 'xlock -mode hop' &
+
+.fi
+Another way to call \fBwsclock\fP is from the window manager:
+.nf
+
+	*Wharf - - MaxSwallow "wsclock"	wsclock -shape -12&
+
+.fi
+
+
+This line, when placed in the \fI.steprc\fP file in the users home directory 
+will cause \fBwsclock\fP to use the shape extensions so that it will be a
+button on the \fBWharf (1)\fP button bar under the \fBafterstep (1)\fP 
+window manager.
+.SH BUGS
+we don't have bugs :)
+.SH COPYRIGHTS
+Copyright 1996, Beat Christen <bchriste@iiic.ethz.ch>. No guarantees or 
+warranties or anything are provided or implied in any way whatsoever.
+Use this program at your own risk. Permission to use this program for 
+any purpose is given, as long as the copyright is kept intact.
+.SH AUTHORS
+Beat Christen <bchriste@iiic.ethz.ch> -- application
+.sp
+Dan Weeks <dan@mango.sfasu.edu> -- man page
+
+
+
+
+
+

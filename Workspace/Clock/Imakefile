@@ -1,0 +1,11 @@
+XPMLIB = -L/usr/lib/X11 -lXpm   
+DEPLIBS = $(DEPXLIB) 
+
+LOCAL_LIBRARIES = $(XPMLIB) $(XLIB)  
+
+LINTLIBS = $(LINTXLIB)
+
+SRCS = wsclock.c parser.c symbols.c config.c
+OBJS = wsclock.o parser.o symbols.o config.o
+
+ComplexProgramTarget(wsclock)
