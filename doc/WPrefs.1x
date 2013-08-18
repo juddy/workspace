@@ -1,0 +1,56 @@
+.TH "Workspace" 1x "March 2001" "Debian Project"
+.SH NAME
+WPrefs \- Workspace configuration tool
+.SH SYNOPSIS
+.B WPrefs
+.I "[-options]"
+.SH "DESCRIPTION"
+WPrefs.app is the preferences "editor" for the Workspace window manager. It
+can be used to set most of the preference options of Workspace and define
+it's applications menu. It also can change some settings that do not belong to
+Workspace.
+.PP
+Although WPrefs.app is designed to be easy to use, you should read the
+user guide to be fully aware of all available options and other features
+of Workspace that are not related to configuration.
+.PP
+\fIOnly options that have different values than what is found in the
+system-wide configuration file is saved.\fP
+.SH "OPTIONS"
+.TP
+.B \-display host:display.screen
+specify display to use.
+.TP
+.B \-\-version
+display version number and exit
+.TP
+.B \-\-help
+display help message and exit
+.SH FILES
+.TP
+.B ~/GNUstep/Defaults/Workspace
+general Workspace defaults.
+.TP
+.B /etc/GNUstep/Defaults/Workspace
+system wide Workspace defaults.
+.TP
+.B ~/GNUstep/Defaults/WMRootMenu
+Contains the name of the file to read the root menu from or the
+menu itself, in property list format.
+.TP
+.B ~/GNUstep/Library/Workspace/autostart
+This script is automatically executed when Workspace is started.  WPrefs
+saves the mouse speed configuration is saved as a call for xset here.
+.SH SEE ALSO
+The Workspace User Guide
+.PP
+The Workspace FAQ
+.PP
+.BR workspace (1x)
+.SH AUTHOR
+Workspace was written by Alfredo K. Kojima <kojima@workspace.info>,
+Dan Pascu <dan@workspace.info> with contributions from many people around
+the Internet.
+.PP
+This manual page was written by Marcelo E. Magallon, <mmagallo@debian.org>,
+for the Debian Project and might be used freely by others.

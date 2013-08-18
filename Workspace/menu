@@ -1,0 +1,201 @@
+/*
+ * Root Menu definition for Workspace
+ *
+ * Syntax is:
+ *
+ * <Title> [SHORTCUT <Shortcut>] <Command> <Parameters>
+ *
+ * <Title> is any string to be used as title. Must be enclosed with " if it
+ * 	has spaces
+ * 
+ * SHORTCUT specifies a shortcut for that item. <Shortcut> has the
+ * same syntax of the shortcuts key options in the 
+ * $HOME/GNUstep/Defaults/Workspace file, such as RootMenuKey or MiniaturizeKey.
+ *
+ * You can't specify a shortcut for a MENU or OPEN_MENU entry.
+ * * <Command> one of the valid commands: 
+ *	MENU - starts (sub)menu definition
+ *	END  - end (sub)menu definition
+ *	OPEN_MENU - opens a menu from a file, pipe or directory(ies) contents
+ *		    and eventually precede each with a command.
+ *	WORKSPACE_MENU - adds a submenu for workspace operations. Only one
+ *		    workspace_menu is allowed. 		
+ *	EXEC <program> - executes an external program
+ *	SHEXEC <command> - executes a shell command (like gimp > /dev/null)
+ *	EXIT - exits the window manager
+ *	RESTART [<window manager>] - restarts Workspace or start another
+ *			window manager
+ *	REFRESH - refreshes the desktop
+ *	ARRANGE_ICONS - rearranges the icons on the workspace
+ *	SHUTDOWN - kills all clients (and close the X window session)
+ *	SHOW_ALL - unhides all windows on workspace
+ *	HIDE_OTHERS - hides all windows on the workspace, except the
+ *		focused one (or the last one that received focus)
+ *	SAVE_SESSION - saves the current state of the desktop, which include
+ *		       all running applications, all their hints (geometry,
+ *		       position on screen, workspace they live on, the dock
+ *		       or clip from where they were launched, and
+ *		       if minimized, shaded or hidden. Also saves the current
+ *		       workspace the user is on. All will be restored on every
+ *		       start of windowkspace until another SAVE_SESSION or
+ *		       CLEAR_SESSION is used. If SaveSessionOnExit = Yes; in
+ *		       Workspace domain file, then saving is automatically
+ *		       done on every windowkspace exit, overwriting any
+ *		       SAVE_SESSION or CLEAR_SESSION (see below).
+ *	CLEAR_SESSION - clears any previous saved session. This will not have
+ *		       any effect if SaveSessionOnExit is True.
+ *	INFO - shows the Info Panel
+ *
+ * OPEN_MENU syntax:
+ *   1. File menu handling.
+ *	// opens file.menu which must contain a valid menu file and inserts
+ *	// it in current position
+ *	OPEN_MENU file.menu
+ *   2. Pipe menu handling.
+ *	// opens command and uses its stdout to construct menu.
+ *	// Command's output must be a valid menu description.
+ *	// The space between '|' and command itself is optional.
+ *      // Use '||' instead of '|' if you want the menu to always update
+ *	// when opened. It might be slow.
+ *	OPEN_MENU | command
+ *      OPEN_MENU || command
+ *   3. Directory handling.
+ *	// Opens one or more directories and constructs a menu with all
+ *	// the subdirectories and executable files in them sorted
+ *	// alphabetically.
+ *	OPEN_MENU /some/dir [/some/other/dir ...]
+ *   4. Directory handling with command.
+ *	// Opens one or more directories and constructs menu with all
+ *	// subdirectories and readable files in them sorted alphabetically,
+ *	// preceding each of them with command.
+ *	OPEN_MENU [options] /some/dir [/some/other/dir ...] WITH command -options
+ *		Options:
+ * 			-noext 	strip whatever is after the last dot in the
+ *				file name
+ *
+ * <Parameters> is the program to execute.
+ *
+ * ** Options for command line in EXEC:
+ * %s - substitute with current selection
+ * %a(title[,prompt]) - opens an input box with the specified title and the
+ *			optional prompt	and do substitution with what you typed
+ * %w - substitute with XID for the current focused window
+ * %W - substitute with the number of the current workspace
+ * 
+ * You can override special characters (as % and ") with the \ character:
+ * ex: xterm -T "\"Hello World\""
+ *
+ * You can also use character escapes, like \n
+ *
+ * Each MENU statement must have one mathching END statement at the end.
+ *
+ * Example:
+ *
+ * "Test" MENU
+ *	"XTerm" EXEC xterm
+ *		// creates a submenu with the contents of /usr/openwin/bin
+ *	"XView apps" OPEN_MENU "/usr/openwin/bin"
+ *		// some X11 apps in different directories
+ *	"X11 apps" OPEN_MENU /usr/X11/bin $HOME/bin/X11
+ *		// set some background images
+ *	"Background" OPEN_MENU -noext $HOME/images /usr/share/images WITH wmsetbg -u -t
+ *		// inserts the style.menu in this entry
+ *	"Style" OPEN_MENU style.menu
+ * "Test" END
+ */
+
+#include "wmmacros"
+
+"Applications" MENU
+	"Info" MENU
+		"Info Panel" INFO_PANEL
+		"Legal" LEGAL_PANEL
+	"Info" END
+	"Run..." SHEXEC %a(Run,Type command to run:)
+	"Terminal" EXEC xterm -sb
+	"Web Browser" EXEC www-browser
+	"Workspaces" WORKSPACE_MENU
+	"Applications" MENU
+		"Libre Office" MENU
+			"OpenOffice.org" EXEC ooffice
+			"Writer" EXEC oowriter
+			"Spreadsheet" EXEC oocalc
+			"Draw" EXEC oodraw
+			"Impress" EXEC ooimpress
+		"Libre Office" END 
+
+		"Editors" MENU
+			"Vim" EXEC xterm -e vi
+			"gVim" EXEC gvim
+			"emacs" EXEC xterm -e emacs
+			"Xemacs" EXEC xemacs
+		"Editors" END
+
+		"Multimedia" MENU
+		"Multimedia" END
+	"Applications" END
+
+	"Utils" MENU
+		"Window Properties" SHEXEC xprop | xmessage -center -title 'xprop' -file -
+		"Font Chooser" EXEC xfontsel
+		"Kill X Application" EXEC xkill
+		"Additional Configuration" exec xetosconf
+	"Utils" END
+
+	"Commands" MENU
+		"Hide Others" HIDE_OTHERS
+		"Show All" SHOW_ALL
+		"Arrange Icons" ARRANGE_ICONS
+		"Refresh" REFRESH
+		"Lock Screen" EXEC xscreensaver-command -lock
+	"Commands" END
+
+	"Appearance" MENU
+		"Themes" OPEN_MENU -noext THEMES_DIR $HOME/GNUstep/Library/Workspace/Themes WITH setstyle
+		"Styles" OPEN_MENU -noext STYLES_DIR $HOME/GNUstep/Library/Workspace/Styles WITH setstyle
+		"Icon Sets" OPEN_MENU -noext ICON_SETS_DIR $HOME/GNUstep/Library/Workspace/IconSets WITH seticons
+		"Background" MENU
+			"Crayon Solids" MENU
+				"Black" WS_BACK '(solid, "#000000)'
+				"Blue" WS_BACK '(solid, "#1F75FE)'
+				"Brown" WS_BACK '(solid, "#B4674D)'
+				"Green " WS_BACK '(solid, "#1CAC78)'
+				"Orange " WS_BACK '(solid, "#FF7538)'
+				"Red" WS_BACK '(solid, "#EE204D)'
+				"Violet" WS_BACK '(solid, "#926EAE)'
+				"Yellow" WS_BACK '(solid, "#FCE883)'
+				"Blue Green" WS_BACK '(solid, "#0D98BA)'
+				"Blue Violet" WS_BACK '(solid, "#7366BD)'
+				"Tuxedo Pink" WS_BACK '(solid, "#FFAACC)'
+				"Red Orange" WS_BACK '(solid, "#FF5349)'
+				"Red Violet" WS_BACK '(solid, "#C0448F)'
+				"White" WS_BACK '(solid, "#FFFFFF)'
+				"Yellow Green" WS_BACK '(solid, "#C5E384)'
+				"Yellow Orange" WS_BACK '(solid, "#FFAE42)'
+				"Crayon Solids" END
+			"Gradients" MENU
+				"Slate" WS_BACK '(mvgradient, darkslategray, skyblue)'
+				"Agua" WS_BACK '(vgradient, darkblue, cornflowerblue)'
+    			"Earth Tones" WS_BACK '(vgradient,  navajowhite4, dimgray)'
+    			"Grey Shades" WS_BACK '(vgradient, "#636380", "#131318")'
+			"Gradients" END
+			"Images - Tiled" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t
+			"Images - Scaled" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -s
+		"Background" END
+		"Save Theme" SHEXEC getstyle -t $HOME/GNUstep/Library/Workspace/Themes/"%a(Theme name,Enter file name:)"
+		"Save IconSet" SHEXEC geticonset $HOME/GNUstep/Library/Workspace/IconSets/"%a(IconSet name,Enter file name:)"
+		"Preferences Utility" EXEC /usr/local/GNUstep/Applications/WPrefs.app/WPrefs
+	"Appearance" END
+
+	"Session" MENU
+		"Save Session" SAVE_SESSION
+		"Clear Session" CLEAR_SESSION
+		"Restart Window Maker" RESTART
+		"Supplant with MWM" RESTART mwm
+		"Supplant with awesome" RESTART awesome
+		"Supplant with Xmonad" RESTART xmonad
+		"Supplant with wmII" RESTART wmii
+		"Supplant with dwm" RESTART dwm
+		"Exit"  EXIT
+	"Session" END
+"Applications" END

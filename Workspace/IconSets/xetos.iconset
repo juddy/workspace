@@ -1,0 +1,334 @@
+/* ex: set tabstop=4 expandtab: */
+{
+  evince.evince = {
+    Icon = Bookshelf.png;
+  };
+
+  AcroRead = {
+    Icon = Bookshelf.png;
+  };
+
+iceweasel-bin.Iceweasel-bin = {
+    Icon = Globe.png;
+  };
+
+  "x-www-browser.X-www-browser" = {
+    Icon = Globe.png;
+  };
+
+  dillo.Dillo = {
+    Icon = Globe.png;
+  };
+
+  konqueror.Konqueror = {
+    Icon = filecabinet-.png;
+  };
+
+  inkscape.Inkscape = {
+    Icon = "Draw.png";
+  };
+
+  ark.Ark = {
+    Icon = BlackBox-LookingGlass.png;
+  };
+
+  kompare.Kompare = {
+    Icon = Document-LookingGlass.png;
+  };
+
+  pan.Pan = {
+    Icon = News.png;
+  };
+
+  konsole.Konsole = {
+    Icon = NSMonitor_Shell.png;
+  };
+
+  k3b.K3b = {
+    Icon = "CD-burn.png";
+  };
+
+  image_window.Gimp = {
+    Icon = Art.png;
+  };
+
+  KTerm = {
+    Icon = NSMonitor_Shell.png;
+  };
+
+geeqie.Geeqie = {
+    Icon = Negatives.png;
+	};
+
+  Logo.WMPanel = {
+    Icon = xetos.png;
+  };
+
+  Tile.WMClip = {
+    Icon = Clip-2.0.png;
+  };
+
+
+  Dockit = {
+    Icon = xetos.png; 
+  };
+
+  color_palette.Gimp = {
+    Icon = "workspace-gimp-palette.tif";
+  };
+  tip_of_the_day.Gimp = {
+    Icon = "workspace-gimp2.tif";
+  };
+  xcalc = {
+    Icon = Calculator.app.tiff;
+  };
+  kwrite.Kwrite = {
+    Icon = Document-Text-Generic.png;
+  };
+
+  brushselection.Gimp = {
+    Icon = "workspace-gimp-brushes.tif";
+  };
+
+
+  WPrefs = {
+    Icon = BellsWhistles.png;
+  };
+  XTerm = {
+    Icon = NSMonitor_Shell.png;
+  };
+  Rxvt = {
+    Icon = NSMonitor_Shell.png;
+  };
+  groupLeader.WPrefs = {
+    Icon = BellsWhistles.png;
+  };
+  lyX.XForm = {
+    Icon = Document-Text-Generic.png;
+  };
+  wprefs.WPrefs = {
+    Icon = BellsWhistles.png;
+  };
+  xmixer = {
+    Icon = Speaker.png;
+  };
+  "script-fu.Script-fu" = {
+    Icon = "workspace-gimp-script-fu.tif";
+  };
+  toolbox.Gimp = {
+    Icon = "workspace-gimp2.tif";
+  };
+  gimp.Gimp = {
+    Icon = Art.png;
+  };
+  Emacs = {
+    Icon = "NSMonitor_AppWindow.png";
+  };
+  gaim.Gaim = {
+    Icon = Aim.png;
+  };
+  "*" = {
+    Icon = NSMonitor_AppWindow.png;
+  };
+  Worker.Worker = {
+    Icon = filecabinet-.png;
+  };
+  Xman = {
+    Icon = Bookshelf.xpm;
+  };
+  xplaycd = {
+    Icon = cda-.png;
+  };
+  kate.Kate = {
+    Icon = Document-Text-Generic.png;
+  };
+  oclock.Clock = {
+    Icon = "~/GNUstep/.AppInfo/Workspace/oclock.Clock.xpm";
+  };
+  WSoundServer = {
+    Icon = Speaker.png;
+  };
+  Ghostview = {
+    Icon = Ghost.xpm;
+  };
+  nachoTERM.Eterm = {
+    Icon = NSMonitor_Shell.png;
+  };
+  patternselection.Gimp = {
+    Icon = "workspace-gimp-patterns.tif";
+  };
+  gradient_editor.Gimp = {
+    Icon = "workspace-gimp-gradient.tif";
+  };
+  filebrowser.Endeavour = {
+    Icon = filecabinet-.png;
+  };
+  XConsole = {
+    Icon = CodeVew-itomatOS-px.png;
+  };
+  xchat.Xchat = {
+    Icon = Messenge.png;
+  };
+  "Gecko.Firefox-bin" = {
+    Icon = Globe.png;
+  };
+  Logo.WMDock = {
+    Icon = GNUstep.tiff;
+  };
+  indexed_color_palette.Gimp = {
+    Icon = "workspace-gimp-palette.tif";
+  };
+  Gimp = {
+    Icon = Art.png;
+  };
+  aterm.XTerm = {
+    Icon = NSMonitor_Shell.png;
+  };
+  gvim.Gvim = {
+    Icon = "~/GNUstep/.AppInfo/Workspace/gvim.Gvim.xpm";
+  };
+  ethereal.Ethereal = {
+    Icon = NetLook.png;
+  };
+  tool_options.Gimp = {
+    Icon = "workspace-gimp-tooloption.tif";
+  };
+  nessus.Nessus = {
+    Icon = "HardeningALL-alt.png";
+  };
+  manualBrowser.Xman = {
+    Icon = Book.xpm;
+  };
+  xterm.XTerm = {
+    Icon = NSMonitor_Shell.png;
+  };
+  Fte = {
+    Icon = Clipboard.tif;
+  };
+  endeavour2.Endeavour2 = {
+    Icon = filecabinet-.png;
+  };
+  gentoo.Gentoo = {
+    Icon = filecabinet-.png;
+  };
+  "Mozilla-bin" = {
+    Icon = "Globe.png";
+  };
+  Fig = {
+    Icon = fig-.png;
+  };
+  gimp_startup.Gimp = {
+    Icon = Art.png;
+  };
+  rxvt.XTerm = {
+    Icon = NSMonitor_Shell.png;
+  };
+
+  kicker.Kicker = {
+    Icon = NeXTstationTurboColor_Top_L.png;
+  };
+
+  xeyes.XEyes = {
+    Icon = "~/GNUstep/.AppInfo/Workspace/xeyes.XEyes.xpm";
+  };
+
+  "script-fu.Gimp" = {
+    Icon = Art.png;
+  };
+
+  layers_and_channels.Gimp = {
+    Icon = "workspace-gimp-layers.tif";
+  };
+
+  kcontrol.Kcontrol = {
+    Icon = "~/GNUstep/.AppInfo/Workspace/kcontrol.Kcontrol.xpm";
+  };
+
+  gtkam.Gtkam = {
+    Icon = "~/GNUstep/.AppInfo/Workspace/gtkam.Gtkam.xpm";
+  };
+
+  Logo.WMClip = {
+    Icon = Clip-2.0.png;
+  };
+
+  knode.Knode = {
+    Icon = "~/GNUstep/.AppInfo/Workspace/knode.Knode.xpm";
+  };
+
+  gnumeric.Gnumeric = {
+    Icon = "~/GNUstep/.AppInfo/Workspace/gnumeric.Gnumeric.xpm";
+  };
+
+  scite.Scite = {
+    Icon = Document-Text-Generic.png;
+  };
+
+  WMSoundServer = {
+    Icon = Speaker.png;
+  };
+
+  Display = {
+    Icon = Negative-LookingGlass.png;
+  };
+
+  xv = {
+    Icon = Negative-LookingGlass.png;
+  };
+
+  gqview.Gqview = {
+    Icon = Negative-LookingGlass.png;
+  };
+
+  preferences.Gimp = {
+    Icon = "workspace-gimp-prefs.tif";
+  };
+
+  XMMS_Player.xmms = {
+    Icon = Record.png;
+  };
+
+  xmcd = {
+    Icon = Record.png;
+  };
+
+  "Script-fu" = {
+    Icon = "workspace-gimp-script-fu.tif";
+  };
+
+  Netscape = {
+    Icon = "Globe.png";
+  };
+
+  NXTerm = {
+    Icon = NSMonitor_Shell.png;
+  };
+
+  xjed = {
+    Icon = Document-Text-Generic.png;
+  };
+
+  XPaint = {
+    Icon = Art.png;
+  };
+
+  Xmessage = {
+    Icon = Reference.xpm;
+  };
+
+  Xmag = {
+    Icon = Document-LookingGlass.png;
+  };
+
+  xedit = {
+    Icon = notepad.tiff;
+  };
+
+  workspaceconf.Wmakerconf = {
+    Icon = Config.png;
+  };
+
+  XLess = {
+    Icon = Reference.xpm;
+  };
+}

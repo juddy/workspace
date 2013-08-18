@@ -1,0 +1,146 @@
+.\" Hey, Emacs!  This is an -*- nroff -*- source file.
+.TH Window\ Maker 1x "August 1998"
+.SH MENO
+workspace \- mana¾ér okien pre X11 so vzhµadom NEXTSTEP
+.SH SYNTAX
+.B workspace
+.I "[-voµby]"
+.SH "POPIS"
+Workspace je mana¾ér okien pre X11 so vzhµadom NEXTSTEP. Sna¾í sa
+napodobni» vzhµad NeXT ako je to len mo¾né, ale v prípade potreby tento
+trend nedodr¾uje.
+.SH "VO¥BY"
+.TP
+.B \-\-no\-cpp
+zakáza» preprocessing konfiguraèných súborov
+.TP
+.B \-\-no\-dock
+neotvára» Dok aplikácií
+.TP
+.B \-\-no\-clip
+neotvára» Spinku pracovných plôch
+.TP
+.B \-display host:display.screen
+pou¾i» daný display.
+Na strojoch s viacerými obrazovkami bude Workspace automaticky spravova»
+v¹etky obrazovky. Ak chcete, aby Workspace spravoval len ¹pecifickú
+obrazovku, musíte zada» èíslo obrazovky pomocou argumentu príkazového riadku
+.B \-display.
+Napríklad, ak chcete, aby Workspace spravoval len obrazovku 1, spustite ho
+takto:
+.B workspace -display :0.1
+.TP
+.B \-\-version
+vypí¹e verziu a ukonèí sa
+.TP
+.B \-\-visual\-id
+urèenie èísla obrazového re¾imu. Viï
+.BR xdpyinfo (1x)
+pre zoznam obrazových re¾imov dostupných na va¹om display-i.
+.TP
+.B \-\-help
+vypí¹e krátky pomocný text
+.PP
+.SH SÚBORY
+.TP
+.B ~/GNUstep/Defaults/Workspace
+v¹eobecné nastavenia Workspacea.
+.TP
+.B ~/GNUstep/Defaults/WMState
+informácie o Doku a Spinke. NEeditujte za behu Workspaceu. Bude
+prepísaný.
+.TP
+.B ~/GNUstep/Defaults/WMRootMenu
+Obsahuje meno súboru, z ktorého sa má naèíta» hlavné menu alebo
+menu samotné vo formáte proplist.
+.TP
+.B ~/GNUstep/Defaults/WMWindowAttributes
+Atribúty pre rôzne triedy a in¹tancie aplikácií. Pou¾ite editor nastavení
+(»ahajte pravé tlaèítko na hornej li¹te aplikácie, zvoµte Nastavenia)
+namiesto priameho editovania tohto súboru. Je len málo nastavení, ktoré
+nie sú dostupné z editora nastavení.
+.TP
+.B /usr/share/Workspace/Defaults/
+V¹etky spomenuté súbory sa NAÈÍTAJÚ odtiaµto ak sa nepodarí nájs» ich,
+okrem WMState, ktorý sa odtiaµto SKOPÍRUJE. Nezále¾í na tom, odkiaµ
+sú naèítané, ak je potrebné zapísa» zmenu konfigurácie spä» do týchto
+súborov, zapí¹u sa do u¾ívateµských súborov.
+.TP
+.B ~/GNUstep/Library/Workspace/autostart
+Tento skript sa automaticky vykoná pri ¹tarte Workspacea.
+.TP
+.B ~/GNUstep/Library/Workspace/exitscript
+Tento skript sa automaticky vykoná bezprostredne pred ukonèením Workspacea.
+.B Poznámka:
+Ak potrebujete spusti» z tohto skriptu nieèo, èo vy¾aduje spustený X server,
+nepou¾ívajte na ukonèenie Workspacea príkaz
+.I SHUTDOWN
+z hlavného menu. Inak sa mô¾e sta», ¾e X server sa ukonèí skôr ne¾ sa vykoná
+skript.
+.TP
+.B ~/GNUstep/Library/Workspace/
+Súbor menu, ktorého názov je vo WMRootMenu, sa hµadá tu...
+.TP
+.B /etc/X11/Workspace/
+a tu, v tomto poradí, pokiaµ nie je názov absolútna cesta.
+.TP
+.B ~/GNUstep/Library/Workspace/Pixmaps/
+Tu hµadá Workspace obrázky
+.TP
+.B ~/GNUstep/Library/Workspace/Backgrounds/
+Tu hµadá Workspace pozadia
+.TP
+.B ~/GNUstep/Library/Workspace/Styles/
+Tu hµadá Workspace súbory so ¹týlmi (nie celkom... vyzerá to tak, ale
+aj tak musíte zada» úplnú cestu. Je to len vyhradené miesto, aby boli
+veci pekne usporiadané)
+.TP
+.B ~/GNUstep/Library/Workspace/Themes/
+Tu hµadá Workspace súbory s témami (viï vy¹¹ie)
+.TP
+.B /usr/share/Workspace/Pixmaps/
+Obrázky spoloèné pre celý systém sa nachádzajú tu...
+.TP
+.B /usr/share/Workspace/Pixmaps/
+a tu.
+.TP
+.B /usr/share/Workspace/Styles/
+©týly spoloèné pre celý systém sa nachádzajú tu
+.TP
+.B /usr/share/Workspace/Themes/
+Teraz to skús sám... ;-)
+.SH PREMENNÉ PROSTREDIA	
+.IP GNUSTEP_USER_ROOT
+¹pecifikuje cestu k adresáru Defaults. "Defaults/" je pridané k tejto
+premennej, èím sa urèí umiestnenie databáz. Ak premenná nie je nastavená,
+jej implicitná hodnota je "~/GNUstep"
+.IP GNUSTEP_LOCAL_ROOT
+¹pecifikuje umiestnenie systémového \fBlokálneho\fP GNUstep adresára (toto
+je u¾itoèné v prípade, ¾e umiestnenie adresára spoloèného pre celý systém je
+v skutoènosti spoloèné pre celú sie»). Ak je táto premenná prázdna, pou¾ije
+sa GNUSTEP_SYSTEM_ROOT.
+.IP GNUSTEP_SYSTEM_ROOT
+¹pecifikuje umiestnenie systémového GNUstep adresára. Ak je táto premenná
+prázdna, jej implicitná hodnota je /etc/GNUstep
+.SH POZRI TIE®
+The Workspace User Guide
+.PP
+The Workspace FAQ
+.PP
+.BR X (1x),
+.BR wdwrite (1x),
+.BR wxcopy (1x),
+.BR geticonset (1x),
+.BR seticons (1x),
+.BR workspace (1x),
+.BR wxpaste (1x),
+.BR getstyle (1x),
+.BR setstyle (1x),
+.BR wmsetbg (1x)
+.SH AUTOR
+Autormi Workspacea sú Alfredo K. Kojima <kojima@workspace.info>,
+Dan Pascu <dan@workspace.info> s pomocou mnohých µudí z celého Internetu.
+.PP
+Túto manuálovú stránku napísal Marcelo E. Magallon, <mmagallo@debian.org>.
+
+

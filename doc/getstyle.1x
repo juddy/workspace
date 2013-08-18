@@ -1,0 +1,63 @@
+.\" Hey, Emacs!  This is an -*- nroff -*- source file.
+.TH getstyle 1x "January 1999"
+.SH NAME
+getstyle \- dumps the current Workspace style related configuration or
+creates a theme pack.
+.SH SYNOPSIS
+.B getstyle
+[[\-t|\-\-theme-options] [\-p|\-\-pack] [style file]]
+.SH DESCRIPTION
+.B getstyle
+can either dump the current Workspace style related configuration
+information to a file/stdout or create a self-contained theme pack. A theme
+pack is a directory that contains everything that is needed by a
+redistributable theme, includig the style information and pixmaps used by it.
+
+Note that style information stored in the global configuration of the
+system is not read.
+
+The following options are stored by default: \fIIconBack\fP,
+\fIIconBack\fP, \fITitleJustify\fP, \fIWindowTitleFont\fP,
+\fIMenuTitleFont, MenuTextFont\fP, \fIIconTitleFont\fP,
+\fIDisplayFont\fP, \fIHighlightColor\fP, \fIHighlightTextColor\fP,
+\fIIconTitleColor\fP, \fICClipTitleColor\fP, \fIIconBackColor\fP,
+\fIFTitleColor\fP, \fIPTitleColor\fP, \fIUTitleColor\fP,
+\fIFTitleBack\fP, \fIPTitleBack, UTitleBack\fP, \fIMenuTitleColor\fP,
+\fIMenuTextColor\fP, \fIMenuDisabledColor\fP, \fIMenuTitleBack\fP and
+\fIMenuTextBack\fP.
+
+If either \fB-t\fP or \fB--theme-options\fP is specified, in addition
+to the previous options, \fIWorkspaceBack\fP is \fIalso\fP stored,
+along with any user-definable mouse cursor settings
+(\fINormalCursor\fP, \fIArrowCursor\fP, \fIMoveCursor\fP,
+\fITopLeftResizeCursor\fP, \fITopRightResizeCursor\fP,
+\fIBottomLeftResizeCursor\fP, \fIBottomRightResizeCursor\fP, 
+\fIVerticalResizeCursor\fP, \fIHorizontalResizeCursor\fP, 
+\fIWaitCursor\fP, \fIQuestionCursor\fP, \fITextCursor\fP, 
+\fISelectCursor\fP) that are present.
+
+.SH OPTIONS
+.TP
+.B \-t
+dumps theme related information too, which includes the root background
+texture.  This option is always enabled when the \-p option is used.
+.TP
+.B \-p
+creates a theme pack in the directory named by the theme name appended
+with the .themed suffix.
+
+.SH ENVIRONMENT
+.IP GNUSTEP_USER_ROOT
+specifies the initial path for the Defaults directory. "Defaults/" is
+appended to this variable to determine the actual location of the
+databases. If the varialbe is not set, it defaults to "~/GNUstep"
+.SH FILES
+.IP GNUSTEP_USER_ROOT/Defaults/Workspace
+This is the actual file that gets written.
+.SH SEE ALSO
+.BR setstyle (1x),
+.BR workspace (1x)
+.SH AUTHOR
+This man page was written by Marcelo Magallon <mmagallo@debian.org>.
+.PP
+Workspace was written by Alfredo K. Kojima <kojima@workspace.info>.

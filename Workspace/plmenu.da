@@ -1,0 +1,336 @@
+(
+"Applikationer",
+        (
+        "Info",
+                ("Info Panel...", INFO_PANEL),
+                ("Ophavsret...", LEGAL_PANEL),
+                (
+                "Systemkonsol",
+                EXEC,
+                "xconsole"
+                ),
+                ("Systembelastning", SHEXEC, "xosview || xload"),
+                (
+                "Procesliste",
+                EXEC,
+                "xterm -fg wheat -bg black -fn 6x10 -geometry 80x50 -e top"
+                ),
+                (
+                "Manualer",
+                EXEC,
+                "xman"
+                )
+        ),
+	("Kør...", SHEXEC, "%a(Kør,Indtast kommando der skal udføres:)"),
+        (
+        "XTerm",
+        EXEC,
+        "xterm -sb"
+        ),
+        (
+        "Rxvt",
+        EXEC,
+        "rxvt -bg black -fg white"
+        ),
+        ("Arbejdsborde", WORKSPACE_MENU),
+        (
+        "Applikationer",
+                (
+                "Grafik",
+                        ("Gimp", SHEXEC, "gimp >/dev/null"),
+                        (
+                        "XV",
+                        EXEC,
+                        "xv"
+                        ),
+                        (
+                        "XPaint",
+                        EXEC,
+                        "xpaint"
+                        ),
+                        (
+                        "XFig",
+                        EXEC,
+                        "xfig"
+                        )
+                ),
+                (
+                "X-filhåndtering",
+                EXEC,
+                "xfm"
+                ),
+                (
+                "OffiX Files",
+                EXEC,
+                "files"
+                ),
+                (
+                "LyX",
+                EXEC,
+                "lyx"
+                ),
+                (
+                "Netscape",
+                EXEC,
+                "netscape"
+                ),
+                (
+                "Ghostview",
+                EXEC,
+                "ghostview %a(GhostView,Indtast filnavn)"
+                ),
+                (
+                "Acrobat",
+                EXEC,
+                "/usr/local/Acrobat3/bin/acroread %a(Acrobat,Indtast PDF-filnavn)"
+                ),
+                (
+                "TkDesk",
+                EXEC,
+                "tkdesk"
+                )
+        ),
+        (
+        "Tekstbehandling",
+                (
+                "XFte",
+                EXEC,
+                "xfte"
+                ),
+                ("Emacs", SHEXEC, "xemacs || emacs"),
+                (
+                "XJed",
+                EXEC,
+                "xjed"
+                ),
+                (
+                "NEdit",
+                EXEC,
+                "nedit"
+                ),
+                (
+                "Xedit",
+                EXEC,
+                "xedit"
+                ),
+                (
+                "VI",
+                EXEC,
+                "xterm -e vi"
+                )
+        ),
+        (
+        "Diverse",
+                ("Xmcd", SHEXEC, "xmcd 2> /dev/null"),
+                (
+                "Xplaycd",
+                EXEC,
+                "xplaycd"
+                ),
+                (
+                "Xmixer",
+                EXEC,
+                "xmixer"
+                )
+        ),
+        (
+        "Tilbehør",
+                (
+                "Lommeregner",
+                EXEC,
+                "xcalc"
+                ),
+                ("Vinduesegenskaber", SHEXEC, "xprop | xmessage -center -title 'xprop' -file -"),
+                (
+                "Vælg skrifttype",
+                EXEC,
+                "xfontsel"
+                ),
+                (
+                "Terminalemulator",
+                EXEC,
+                "xminicom"
+                ),
+                (
+                "Forstørrelsesglas",
+                EXEC,
+                "xmag"
+                ),
+                (
+                "Farver",
+                EXEC,
+                "xcmap"
+                ),
+                (
+                "XKill",
+                EXEC,
+                "xkill"
+                ),
+                (
+                "ASClock",
+                EXEC,
+                "asclock -shape"
+                ),
+                (
+                "Udklipsbord",
+                EXEC,
+                "xclipboard"
+                )
+        ),
+        (
+        "Markering",
+                ("Kopiér", SHEXEC, "echo '%s' | wxcopy"),
+                (
+                "Send e-post til",
+                EXEC,
+                "xterm -name mail -T Pine -e pine %s"
+                ),
+                (
+                "Indtast URL",
+                EXEC,
+                "netscape %s"
+                ),
+                ("Søg i manual", EXEC, "MANUAL_SEARCH(%s)")
+        ),
+        (
+        "Arbejdsbord",
+                ("Skjul andre", HIDE_OTHERS),
+                ("Vis alle", SHOW_ALL),
+                ("Arrangér ikoner", ARRANGE_ICONS),
+                ("Genindlæs", REFRESH),
+                (
+                "Lås",
+                EXEC,
+                "xlock -allowroot -usefirst"
+                ),
+                ("Gem session", SAVE_SESSION),
+                ("Slet gemt session", CLEAR_SESSION)
+        ),
+        (
+        "Udseende",
+                (
+                "Temaer",
+                OPEN_MENU,
+                "-noext /usr/local/share/Workspace/Themes  $HOME/GNUstep/Library/Workspace/Themes WITH setstyle"
+                ),
+                (
+                "Stil",
+                OPEN_MENU,
+                "-noext /usr/local/share/Workspace/Styles  $HOME/GNUstep/Library/Workspace/Styles WITH setstyle"
+                ),
+                (
+                "Ikonsæt",
+                OPEN_MENU,
+                "-noext /usr/local/share/Workspace/IconSets  $HOME/GNUstep/Library/Workspace/IconSets WITH seticons"
+                ),
+                (
+                "Baggrund",
+                        (
+                        "Ensfarvet",
+                                (
+                                "Sort",
+                                EXEC,
+                                "wdwrite Workspace WorkspaceBack  '(solid, black)'"
+                                ),
+                                (
+                                "Blå",
+                                EXEC,
+                                "wdwrite Workspace WorkspaceBack  '(solid, \"#505075\")'"
+                                ),
+                                (
+                                "Indigo",
+                                EXEC,
+                                "wdwrite Workspace WorkspaceBack  '(solid, \"#243e6c\")'"
+                                ),
+                                (
+                                "Mørkeblå",
+                                EXEC,
+                                "wdwrite Workspace WorkspaceBack  '(solid, \"#224477\")'"
+                                ),
+                                (
+                                "Lilla",
+                                EXEC,
+                                "wdwrite Workspace WorkspaceBack  '(solid, \"#554466\")'"
+                                ),
+                                (
+                                "Hvede",
+                                EXEC,
+                                "wdwrite Workspace WorkspaceBack  '(solid, \"wheat4\")'"
+                                ),
+                                (
+                                "Mørkegrå",
+                                EXEC,
+                                "wdwrite Workspace WorkspaceBack  '(solid, \"#333340\")'"
+                                ),
+                                (
+                                "Bordeaux",
+                                EXEC,
+                                "wdwrite Workspace WorkspaceBack  '(solid, \"#400020\")'"
+                                )
+                        ),
+                        (
+                        "Nuancer",
+				(
+				"Solopgang",
+				EXEC,
+				"wdwrite Workspace WorkspaceBack  '(mvgradient, deepskyblue4, black, deepskyblue4, tomato4)'"
+				),
+				(
+				"Himmel",
+				EXEC,
+				"wdwrite Workspace WorkspaceBack  '(vgradient, blue4, white)'"
+				),
+    				(
+    				"Blå Skygger",
+    				EXEC,
+    				"wdwrite Workspace WorkspaceBack  '(vgradient, \"#7080a5\", \"#101020\")'"
+    				),
+				(
+				"Indigo Skygger",
+				EXEC,
+				"wdwrite Workspace WorkspaceBack  '(vgradient, \"#746ebc\", \"#242e4c\")'"
+				),
+			    	(
+			    	"Lilla Skygger",
+			    	EXEC,
+			    	"wdwrite Workspace WorkspaceBack  '(vgradient, \"#654c66\", \"#151426\")'"
+			    	),
+    				(
+    				"Hvede Skygger",
+    				EXEC,
+    				"wdwrite Workspace WorkspaceBack  '(vgradient, \"#a09060\", \"#302010\")'"
+    				),
+    				(
+    				"Grå Skygger",
+    				EXEC,
+    				"wdwrite Workspace WorkspaceBack  '(vgradient, \"#636380\", \"#131318\")'"
+    				),
+    				(
+    				"Bordeaux Skygger",
+    				EXEC,
+    				"wdwrite Workspace WorkspaceBack  '(vgradient, \"#600040\", \"#180010\")'"
+    				),
+                                (
+                                "Flag",
+                                EXEC,
+                                "wdwrite Workspace WorkspaceBack  '(mdgradient, green, red, white, green)'"
+                                )
+                        ),
+                        (
+                        "Billeder",
+                        OPEN_MENU,
+                        "-noext /usr/local/share/Workspace/Backgrounds  $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t"
+                        )
+                ),
+                ("Gem Tema", SHEXEC, "getstyle -t $HOME/GNUstep/Library/Workspace/Themes/\"%a(Tema navn,Indtast navn:)"),
+                ("Gem Ikonsæt", SHEXEC, "geticonset $HOME/GNUstep/Library/Workspace/IconSets/\"%a(Ikonsæt navn,Indtast navn:)")
+        ),
+        (
+        "Afslut",
+                ("Genstart", RESTART),
+                ("Start Blackbox", RESTART, blackbox),
+		("Start kwm", RESTART, kwm),
+		("Start IceWM", RESTART, icewm),
+                ("Afslut...", EXIT)
+        )
+)
