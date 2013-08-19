@@ -2,5 +2,5 @@ Name: wrlib
 Description: Image manipulation and conversion library
 Version: 0.95.4
 Libs: -L/usr/local/lib  -lwraster
-Libs.private: -ltiff  -lXpm -lpng -ljpeg -lXext -lXext -lX11  -lm
+Libs.private: -lXpm -ljpeg -lXext -lXext -lX11  -lm
 Cflags: -I/usr/local/include 
