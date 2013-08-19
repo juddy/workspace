@@ -382,7 +382,7 @@ msgstr ""
 "Pas de mini-fenêtres (icônes des fenêtres miniaturisées). Pour KDE/GNOME."
 
 #: ../../WPrefs.app/Expert.c:78
-msgid "Do not set non-Workspace specific parameters (do not use xset)."
+msgid "Do not set non-WindowMaker specific parameters (do not use xset)."
 msgstr ""
 "Ne modifier que les options spécifiques à Workspace (ne pas utiliser "
 "xset)."
@@ -1148,14 +1148,14 @@ msgid ""
 "Enter the path for a file containing a menu\n"
 "or a list of directories with the programs you\n"
 "want to have listed in the menu. Ex:\n"
-"~/GNUstep/Library/Workspace/menu\n"
+"~/GNUstep/Library/WindowMaker/menu\n"
 "or\n"
 "/usr/bin ~/xbin"
 msgstr ""
 "Indiquez l'emplacement d'un fichier décrivant un\n"
 "menu ou une liste de répertoires contenant les\n"
 "programmes que vous voulez voir dans le menu.\n"
-"Exemple : « ~/GNUstep/Library/Workspace/menu »\n"
+"Exemple : « ~/GNUstep/Library/WindowMaker/menu »\n"
 "ou\n"
 "« /usr/X116/bin ~/xbin »"
 
@@ -1335,8 +1335,8 @@ msgstr "Oui, ne plus me demander."
 #. if there is a localized plmenu for the tongue put it's filename here
 #: ../../WPrefs.app/Menu.c:1575 ../../WPrefs.app/Menu.c:1582
 #, c-format
-msgid "%s/Library/Workspace/plmenu"
-msgstr "%s/Library/Workspace/plmenu.fr"
+msgid "%s/Library/WindowMaker/plmenu"
+msgstr "%s/Library/WindowMaker/plmenu.fr"
 
 #: ../../WPrefs.app/Menu.c:1591
 #, c-format
@@ -1943,8 +1943,8 @@ msgid "could not extract version information from Workspace"
 msgstr "extraction du numéro de version de Workspace impossible"
 
 #: ../../WPrefs.app/WPrefs.c:779
-msgid "Make sure workspace is in your search path."
-msgstr "Assurez-vous que l'exécutable « workspace » est dans votre variable PATH."
+msgid "Make sure wmaker is in your search path."
+msgstr "Assurez-vous que l'exécutable « wmaker » est dans votre variable PATH."
 
 #: ../../WPrefs.app/WPrefs.c:782
 msgid ""

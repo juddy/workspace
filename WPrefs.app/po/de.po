@@ -358,7 +358,7 @@ msgid ""
 msgstr "Keine Minifenster (Symbole für minimierte Fenster). Für KDE/GNOME."
 
 #: ../../WPrefs.app/Expert.c:71
-msgid "Do not set non-Workspace specific parameters (do not use xset)."
+msgid "Do not set non-WindowMaker specific parameters (do not use xset)."
 msgstr ""
 "Keine Workspace-spezifischen Parameter setzen (xset nicht benutzen)."
 
@@ -1026,14 +1026,14 @@ msgid ""
 "Enter the path for a file containing a menu\n"
 "or a list of directories with the programs you\n"
 "want to have listed in the menu. Ex:\n"
-"~/GNUstep/Library/Workspace/menu\n"
+"~/GNUstep/Library/WindowMaker/menu\n"
 "or\n"
 "/usr/bin ~/xbin"
 msgstr ""
 "Geben Sie den Pfad einer Datei, die ein Menü\n"
 "enthält, oder eine Liste von Verzeichnissen\n"
 "mit den gewüschten Anwendungen ein. Bespiel:\n"
-"~/GNUstep/Library/Workspace/menu\n"
+"~/GNUstep/Library/WindowMaker/menu\n"
 "oder\n"
 "/usr/bin ~/xbin"
 
@@ -1817,8 +1817,8 @@ msgid "could not extract version information from Workspace"
 msgstr "Workspace-Versionsinformationen konnten nicht festgestellt werden"
 
 #: ../../WPrefs.app/WPrefs.c:682
-msgid "Make sure workspace is in your search path."
-msgstr "Stellen Sie sicher, das \"workspace\" in Ihrem Suchpfad enhalten ist."
+msgid "Make sure wmaker is in your search path."
+msgstr "Stellen Sie sicher, das \"wmaker\" in Ihrem Suchpfad enhalten ist."
 
 #: ../../WPrefs.app/WPrefs.c:686
 msgid ""

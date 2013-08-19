@@ -1,0 +1,22 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    failed-upgrade|abort-upgrade|deconfigure)
+        update-alternatives --remove x-window-manager /usr/bin/workspace
+    ;;
+    remove)
+        update-alternatives --remove x-window-manager /usr/bin/workspace
+    ;;
+    upgrade)
+    ;;
+    *)
+        echo "postrm called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0

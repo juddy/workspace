@@ -1,4 +1,4 @@
-# Catalan messages for Workspace WPrefs.app.
+# Catalan messages for WindowMaker WPrefs.app.
 # Copyright (C) 2002 Ernest Adrogué <eadrogue@gmx.net>.
 # This file is distributed under the terms of the GNU General Public License.
 #
@@ -386,7 +386,7 @@ msgid ""
 msgstr "Deshabilitar les minifinestres (per a l'ús amb KDE o GNOME)."
 
 #: ../../WPrefs.app/Expert.c:78
-msgid "Do not set non-Workspace specific parameters (do not use xset)."
+msgid "Do not set non-WindowMaker specific parameters (do not use xset)."
 msgstr "No usar paràmetres no específics de Workspace (no usar xset)."
 
 #: ../../WPrefs.app/Expert.c:79
@@ -1145,14 +1145,14 @@ msgid ""
 "Enter the path for a file containing a menu\n"
 "or a list of directories with the programs you\n"
 "want to have listed in the menu. Ex:\n"
-"~/GNUstep/Library/Workspace/menu\n"
+"~/GNUstep/Library/WindowMaker/menu\n"
 "or\n"
 "/usr/bin ~/xbin"
 msgstr ""
 "Entreu l'ubicació d'un fitxer que contingui el menú, o\n"
 "una llista de directoris amb els programes que voleu\n"
 "que apareguin al menú. Per exemple:\n"
-"~/GNUstep/Library/Workspace/menu, o\n"
+"~/GNUstep/Library/WindowMaker/menu, o\n"
 "/usr/bin ~/xbin"
 
 #: ../../WPrefs.app/Menu.c:736
@@ -1328,8 +1328,8 @@ msgstr "Sí, no preguntis més."
 #. if there is a localized plmenu for the tongue put it's filename here
 #: ../../WPrefs.app/Menu.c:1573 ../../WPrefs.app/Menu.c:1580
 #, c-format
-msgid "%s/Library/Workspace/plmenu"
-msgstr "%s/Library/Workspace/plmenu"
+msgid "%s/Library/WindowMaker/plmenu"
+msgstr "%s/Library/WindowMaker/plmenu"
 
 #: ../../WPrefs.app/Menu.c:1589
 #, c-format
@@ -1931,8 +1931,8 @@ msgid "could not extract version information from Workspace"
 msgstr "no s'ha pogut obtenir informació sobre la versió de Workspace"
 
 #: ../../WPrefs.app/WPrefs.c:779
-msgid "Make sure workspace is in your search path."
-msgstr "Assegureu-vos que workspace es troba en el camí de recerca."
+msgid "Make sure wmaker is in your search path."
+msgstr "Assegureu-vos que wmaker es troba en el camí de recerca."
 
 #: ../../WPrefs.app/WPrefs.c:782
 msgid ""

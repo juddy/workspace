@@ -1,0 +1,36 @@
+#!/bin/sh
+set -e
+
+# Workspace postinst.
+# 
+# Marcelo Magallon <mmagallo@debian.org>
+# Rodolfo "kix" García <kix@kix.es>
+
+x_wm_link=/etc/alternatives/x-window-manager
+x_wm_man_link=/usr/share/man/man1/x-window-manager.1.gz
+
+case "$1" in
+  configure)
+    update-alternatives --install /usr/bin/x-window-manager \
+        x-window-manager /usr/bin/workspace 50 \
+        --slave /usr/share/man/man1/x-window-manager.1.gz \
+        x-window-manager.1.gz /usr/share/man/man1/workspace.1x.gz
+
+    if [ -x /usr/bin/update-menus -a -x /usr/bin/install-menu ] ; then
+        update-menus
+    fi
+  ;;
+
+  abort-upgrade|abort-deconfigure|abort-remove)
+    # how did we got here? Force a non-zero exit code
+    exit 1
+  ;;
+
+  *)
+    echo "postinst called with unkown argument: \$1" >&2
+  ;;
+esac
+
+#DEBHELPER#
+
+exit 0

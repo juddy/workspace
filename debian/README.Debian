@@ -1,0 +1,254 @@
+Workspace for DEBIAN
+=======================
+
+This is Debian GNU/Linux's prepackaged version of Workspace, yet
+another window manager, written mostly from scratch by Alfredo Kojima
+in an attempt to provide as much of the useful OpenStep functionality
+as possible under X11.  It is the natural step after AfterStep.
+
+There are some changes in the paths, added support for Debian menu
+system, improved user configuration (from the sysadmin point of view).
+ 
+To run Workspace put this at the end of ~/.xsession:
+
+exec /usr/bin/workspace
+
+and remove other exec lines if present.  I have done my best to
+overcome certain glitches and gotchas regarding Workspace
+installation. /usr/bin/workspace is a shell script that tries to
+make sure things are properly set up.  Take a look at it to see what's
+going on.  Please read workspace(1x).
+
+
+Other sources for documentation
+-------------------------------
+
+* The Workspace web site
+  http://www.workspace.org/
+
+  You can find all sorts of information here. It's kept very up to
+  date.
+
+* The Workspace manual written by Alfredo Kojima
+  ftp://ftp.workspace.org/pub/workspace/docs/
+
+  Please note the manual documents version 0.10.x of Workspace, and
+  many features/changes have occured since then.  To find out what has
+  changed, please read file:/usr/share/doc/workspace/NEWS.gz and
+  file:/usr/share/doc/workspace/changelog.gz.  A new version of this manual is
+  being developed.  If you want to contribute to the manual please
+  contact wm-user@workspace.info
+
+* The Workspace mailing list
+  http://www.workspace.org/lists.php
+
+  There's a Workspace mailing list.  There you can ask questions about
+  Workspace and *related* applications (s/n is _way_ low nowadays
+  due to unrelated discussions).
+
+  Please read the archives before asking!
+
+* The Workspace FAQ
+  http://www.dpo.uab.edu/~grapeape/wmfaq.html
+
+  This is NOT file:/usr/share/doc/workspace/FAQ.gz, but another document.
+  It contains information about several aspects of Workspace that are
+  not covered on the FAQ included alongside with this Readme.
+
+* The Workspace Configuration documents
+  ftp://ftp.workspace.info/pub/workspace/docs/Workspace-*-Config.txt.gz
+
+  This documents the files found on ~/GNUstep/Defaults/. It's kept as
+  up to date as possible.
+
+As a sidenote, I can't package these files with workspace because they
+don't have a copyright statement that permits redistribution.
+
+
+IF YOU ARE UPGRADING FROM 0.6.3 or earlier
+------------------------------------------
+
+  * The directory name has changed form gnustep to GNUstep
+  * The format of the style files and Workspace file has
+    changed.
+
+IF YOU ARE UPGRADING FROM 0.14.1 or earlier (but newer than 0.6.3)
+------------------------------------------------------------------
+
+  * The Fiend has been renamed to Clip (in order to avoid hurting
+    certain people's feelings... does that ring a bell or
+    what?!?).  Look up "Fiend" in the dictionary... therefore, every
+    keyword on Defaults/Workspace that says "Fiend" has to be
+    replaced by "Clip".  The installation package tries to fix this
+    globally, i.e, both in the system wide files and the user's files.
+  * The ~/GNUstep/Library/Workspace/Style directory is no longer
+    called that, but "Styles" instead.  Update accordingly.  The wrapper
+    script tries to be smart about this...
+
+IF YOU ARE UPGRADING FROM 0.15.0 or earlier
+-------------------------------------------
+
+  * WindowPlaceOrigin syntax changed. The old was:
+      WindowPlaceOrigin = "64, 64"
+    The new one is:
+      WindowPlaceOrigin = (64, 64)
+    The installation package also fixes this.
+
+IF YOU ARE UPGRADING FROM 0.17.3 or earlier
+-------------------------------------------
+
+  * Please note there's a new Icons directory under ~/GNUstep/Library,
+    and a new key IconPath. Read the section on paths.
+
+IF YOU ARE UPGRADING FROM 0.17.5 or earlier
+-------------------------------------------
+
+  * Pandora's Box has been opened: Beware that some features of recent
+    releases may not be compatible with those of 0.17.5; PLEASE read
+    the NEWS file and the ChangeLog.  If you don't have problems
+    upgrading, consider it a gift from the gods.  PLEASE NOTE: WPrefs
+    is a work in progress.  SAVE YOUR CONFIGURATION. READ THE READMEs.
+  * Please note that WPrefs' Menu Guru REQUIERES a menu in "Property
+    List" format to work properly.  It's very likely that you have an
+    old format menu.  There's a script called wm-oldmenu2new alongside
+    this file that converts your menu to the new format.  It's a hack,
+    it won't be installed anywhere else.
+
+
+Debian specific notes
+---------------------
+
+Debian prepackaged version of Workspace will search
+~/GNUstep/Library/Workspace and /usr/share/Workspace (in that order)
+for its configuration files. It will read defaults from files in
+~/GNUstep/Defaults and /etc/GNUstep/Defaults. The files in the
+Workspace directories have cpp-like format and are preprocessed by
+Workspace. It will read both Workspace directories searching for
+#included files.
+
+Workspace makes a (little) difference between Pixmaps and Icons, and
+there are two configurable options for setting the paths Workspace
+would search Pixmaps and Icons in, namely, PixmapPath and
+IconPath. The compiled in defaults are:
+
+  PixmapPath = (
+    "~/GNUstep/Library/Workspace/Pixmaps",
+    "~/GNUstep/Library/Workspace/Backgrounds",
+    "/usr/local/share/Workspace/Pixmaps",
+    "/usr/local/share/Workspace/Backgrounds",
+    "/usr/share/Workspace/Backgrounds",
+    "/usr/share/Workspace/Pixmaps",
+    "/usr/local/share/pixmaps",
+    "/usr/share/pixmaps",
+  );
+
+  IconPath = (
+    "~/GNUstep/Library/Icons",
+    "/usr/local/share/Workspace/Icons",
+    "/usr/share/Workspace/Icons",
+    "/usr/local/share/icons",
+    "/usr/share/icons",
+  );
+
+Please note that the internal default doesn't include the "Pixmaps"
+paths anymore, but you are free to modify your Workspace file in any
+way you see fit.
+
+Other Workspace packages should put pixmaps in
+/usr/share/Workspace/Pixmaps and icons in
+/usr/share/Workspace/Icons, ONLY.
+
+The structure Workspace tries to use is like this:
+
+GNUstep
+  +.AppInfo
+  +Defaults
+  +Library
+     +Workspace
+        + Backgrounds [*]
+        + IconSets [*]
+        + Pixmaps
+        + Sounds
+        + Styles [*]
+        + Themes [*]
+     +Icons
+
+Please note Icons are not considered Workspace-only resources.
+
+[*] these directories are OPEN_MENU'ed WITH the right
+application. That means you can put the *file* "Great Debian Theme" on
+Themes, it will show up in the menu, and will be opened using
+setstyle, which installs it, i.e., sets that theme as the current
+theme.
+
+If you don't like the arrangement of the Appearance menu, you can put
+a file "appearance.menu" in ~/GNUstep/Library/Workspace, and it will
+override the default one. Look at /etc/GNUstep/Defaults/appearance.menu
+for an example.
+
+Shortcuts
+---------
+
+Thanks to a suggestion, there's support for Shortcuts.  If you want to
+have Shift F1 launch an XTerm, you can:
+
+$ cp /usr/lib/menu/xterm /etc/menu
+$ sensible-editor /etc/menu/xterm
+
+add:
+
+        shortcut=Shift+F1
+
+and run update-menus.
+
+Sound Support
+-------------
+
+This version of Workspace is compiled with sound support. The sound
+server is available as a separate package, but may not be in sync with
+the current release.
+
+Changing the menus (or "WPrefs segfaults when I click the cute menu icon")
+--------------------------------------------------------------------------
+
+First of all, I have this urge to say that it doesn't segfault for
+me.  It gives me a nice warning about being unable to use my current
+menu.
+
+The problem is that workspace now is capable of using a new type of menu,
+namely a PropList menu.  It looks something like this:
+
+(
+  Applications,
+  (Debian, OPEN_MENU, menu.hook),
+  (
+    WorkSpace,
+    (Appearance, OPEN_MENU, appearance.menu),
+    (Workspaces, WORKSPACE_MENU),
+    ("Arrange Icons", ARRANGE_ICONS),
+    ("Hide Others", HIDE_OTHERS),
+    ("Show All Windows", SHOW_ALL),
+    ("Clear Session", CLEAR_SESSION),
+    ("Save Session", EXEC, "")
+  ),
+  (About..., INFO_PANEL),
+  (Exit, SHUTDOWN)
+)
+
+That cute looking menu button (let's call it by its name: the Menu
+Guru) in WPrefs expects to find a menu in this format.  I considered
+changing the menu-method to something that spits out a menu in this
+format (it's quite easy) but there's a little tiny problem: see that
+line that reads "OPEN_MENU" in the example above... well, it happens
+that appearance.menu has to be in the old format.  That means that if
+I make the menu method produce a new style menu, that menu has to be
+the root menu.  And that is not a good idea (the reason is left as an
+exercise to the reader, take into account the people that aren't using
+menu.hook as the root menu in the first place).
+
+Still want to use WPrefs to edit you menu? Cut and paste the example
+above into ~/GNUstep/Defaults/WMRootMenu, start WPrefs, click the Menu
+Guru (the 9th icon, left to right).  Now go read the docs.  That's the
+reason they are there.
+
+Marcelo E. Magallon <mmagallo@debian.org>, Thr, 1 Apr 1999 18:47:30 -0600

@@ -885,10 +885,10 @@ msgstr " --help\t\t\tnäitab seda teadet"
 #, c-format
 msgid ""
 "could not find user GNUstep directory (%s).\n"
-"Make sure you have installed Workspace correctly and run workspace.inst"
+"Make sure you have installed Workspace correctly and run wmaker.inst"
 msgstr ""
 "ei őnnestu leida kasutaja GNUstep kataloogi (%s).\n"
-"Veendu, et Workspace on korrektselt paigaldatud ja käivita workspace.inst"
+"Veendu, et Workspace on korrektselt paigaldatud ja käivita wmaker.inst"
 
 #: ../src/main.c:462
 #, c-format
@@ -898,10 +898,10 @@ msgstr "ei őnnestu leida kasutaja GNUstep kataloogi (%s)"
 #: ../src/main.c:465
 msgid ""
 "There was an error while creating GNUstep directory, please make sure you "
-"have installed Workspace correctly and run workspace.inst"
+"have installed Workspace correctly and run wmaker.inst"
 msgstr ""
 "Viga GNUstep kataloogi loomise käigus. Palun veendu, et Workspace on "
-"korrektselt paigaldatud ja käivita workspace.inst"
+"korrektselt paigaldatud ja käivita wmaker.inst"
 
 #: ../src/main.c:468
 #, c-format
@@ -1094,7 +1094,7 @@ msgstr ""
 "proovi see sulgeda märgiga \"."
 
 #: ../src/proplist.c:434
-msgid "Comments are not allowed inside Workspace owned domain files."
+msgid "Comments are not allowed inside WindowMaker owned domain files."
 msgstr "Workspacei domeenifailides ei ole kommentaarid lubatud."
 
 #: ../src/proplist.c:453

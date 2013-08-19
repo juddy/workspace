@@ -32,10 +32,9 @@ ACLOCAL_AMFLAGS = -I m4
 
 SUBDIRS = wrlib WINGs src util po Workspace wmlib WPrefs.app doc test Clock
 
-EXTRA_DIST = TODO BUGS BUGFORM FAQ FAQ.I18N INSTALL \
-	INSTALL-WMAKER README.definable-cursor \
-	The-perfect-Window-Maker-patch.txt \
-	README COPYING.WTFPL autogen.sh
+EXTRA_DIST = INSTALL \
+	README.definable-cursor \
+	README COPYING.WTFPL autogen.sh setup.sh
 
 if USE_LCOV
 coverage-reset:

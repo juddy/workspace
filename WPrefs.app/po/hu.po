@@ -86,7 +86,7 @@ msgstr "Workspace beállítások"
 
 #: ../../WPrefs.app/WPrefs.c:335
 msgid "Version %s for Workspace %s or newer"
-msgstr "%s-es verzió a %s-s vagy újabb Workspacehez"
+msgstr "%s-es verzió a %s-s vagy újabb WindowMakerhez"
 
 #: ../../WPrefs.app/WPrefs.c:343
 msgid "Starting..."
@@ -153,39 +153,39 @@ msgstr "A Workspace domaint (%s) nem tudom betölteni az alapértelmezett adatb�
 
 #: ../../WPrefs.app/WPrefs.c:655
 msgid "could not extract version information from Workspace"
-msgstr "nem tudom kideríteni a Workspace verziószámát"
+msgstr "nem tudom kideríteni a WindowMaker verziószámát"
 
 #: ../../WPrefs.app/WPrefs.c:656
-msgid "Make sure workspace is in your search path."
-msgstr "Győzödj meg róla, hogy a workspace benne van-e a keresési útvonalban."
+msgid "Make sure wmaker is in your search path."
+msgstr "Győzödj meg róla, hogy a wmaker benne van-e a keresési útvonalban."
 
 #: ../../WPrefs.app/WPrefs.c:659
 msgid "Could not extract version from Workspace. Make sure it is correctly installed and is in your PATH environment variable."
-msgstr "Nem tudom kideríteni a Workspace verziószámát. Győzödj meg róla, hogy jól van-e felinstallálva és benne van-e a keresési útvan (PATH)"
+msgstr "Nem tudom kideríteni a WindowMaker verziószámát. Győzödj meg róla, hogy jól van-e felinstallálva és benne van-e a keresési útvan (PATH)"
 
 #: ../../WPrefs.app/WPrefs.c:669
 msgid "Could not extract version from Workspace. Make sure it is correctly installed and the path where it installed is in the PATH environment variable."
-msgstr "Nem tudom kideríteni a Workspace verziószámát. Győzödj meg róla, hogy jól van-e felinstallálva és a hely, ahova telepítetted, benne van-e a keresési útban (PATH)"
+msgstr "Nem tudom kideríteni a WindowMaker verziószámát. Győzödj meg róla, hogy jól van-e felinstallálva és a hely, ahova telepítetted, benne van-e a keresési útban (PATH)"
 
 #: ../../WPrefs.app/WPrefs.c:676
 msgid ""
 "WPrefs only supports Workspace 0.18.0 or newer.\n"
 "The version installed is %i.%i.%i\n"
 msgstr ""
-"A WPrefs csak 0.18.0 vagy magasabb verziószámú Workspaceeket\n"
+"A WPrefs csak 0.18.0 vagy magasabb verziószámú WindowMakereket\n"
 "támogat. A jelenlegi verzió: %i.%i.%i\n"
 
 #: ../../WPrefs.app/WPrefs.c:683
 msgid "Workspace %i.%i.%i, which is installed in your system, is not fully supported by this version of WPrefs."
-msgstr "A jelenleg telepített Workspacet (%i.%i.%i) nem támogatja teljesen ez a WPrefs verzió."
+msgstr "A jelenleg telepített WindowMakert (%i.%i.%i) nem támogatja teljesen ez a WPrefs verzió."
 
 #: ../../WPrefs.app/WPrefs.c:685
 msgid "Warning"
 msgstr "Figyelmeztetés"
 
 #: ../../WPrefs.app/WPrefs.c:690
-msgid "could not run \"workspace --global_defaults_path\"."
-msgstr "a \"workspace -global_defaults_path\" parancsot nem tudom futtatni."
+msgid "could not run \"wmaker --global_defaults_path\"."
+msgstr "a \"wmaker -global_defaults_path\" parancsot nem tudom futtatni."
 
 #: ../../WPrefs.app/WPrefs.c:712
 msgid "Could not load global Workspace domain (%s)."
@@ -482,7 +482,7 @@ msgid ""
 "Number of colors to reserve for Workspace\n"
 "on displays that support only 8bpp (PseudoColor)."
 msgstr ""
-"A Workspace által fenntartott színek száma azokon\n"
+"A WindowMaker által fenntartott színek száma azokon\n"
 "a megjelenítőkön, amik csak 8 bites színmélységet támogatnak."
 
 
@@ -495,8 +495,8 @@ msgid "More colors for applications"
 msgstr "Több szín az alkalmazások részére"
 
 #: ../../WPrefs.app/Configurations.c:465
-msgid "More colors for Workspace"
-msgstr "Több szín a Workspace részére"
+msgid "More colors for WindowMaker"
+msgstr "Több szín a WindowMaker részére"
 
 #: ../../WPrefs.app/Configurations.c:520
 msgid "Other Configurations"
@@ -509,7 +509,7 @@ msgid ""
 "Workspace in 8bit displays."
 msgstr ""
 "Animáció sebessége, címsor stílusa, más opciók ki/be\n"
-"kapcsolása és a Workspace által fenntartott színek\n"
+"kapcsolása és a WindowMaker által fenntartott színek\n"
 "száma a 8bites megjelenítőknél"
 
 #: ../../WPrefs.app/Expert.c:74
@@ -517,11 +517,11 @@ msgid "Disable miniwindows (icons for miniaturized windows). For use with KDE/GN
 msgstr "Ikonizált ablakok ikonjainak letiltása. KDE/GNOME-hoz."
 
 #: ../../WPrefs.app/Expert.c:75
-msgid "Do not set non-Workspace specific parameters (do not use xset)"
-msgstr "Nem-Workspace tulajdonságok beállításának letiltása"
+msgid "Do not set non-WindowMaker specific parameters (do not use xset)"
+msgstr "Nem-WindowMaker tulajdonságok beállításának letiltása"
 
 #: ../../WPrefs.app/Expert.c:76
-msgid "Automatically save session when exiting Workspace"
+msgid "Automatically save session when exiting WindowMaker"
 msgstr "A session automatikus mentése kilépéskor"
 
 #: ../../WPrefs.app/Expert.c:77
@@ -1023,8 +1023,8 @@ msgid "Show All Windows"
 msgstr "Minden ablak mutatása"
 
 #: ../../WPrefs.app/Menu.c:1179
-msgid "Exit Workspace"
-msgstr "Kilépés a Workspaceből"
+msgid "Exit WindowMaker"
+msgstr "Kilépés a WindowMakerből"
 
 #: ../../WPrefs.app/Menu.c:1180
 msgid "Exit X Session"
@@ -1035,8 +1035,8 @@ msgid "Start Window Manager"
 msgstr "Ablakkezelő indítása"
 
 #: ../../WPrefs.app/Menu.c:1182
-msgid "Restart Workspace"
-msgstr "Workspace újraindítása"
+msgid "Restart WindowMaker"
+msgstr "WindowMaker újraindítása"
 
 #: ../../WPrefs.app/Menu.c:1183
 msgid "Save Session"
@@ -1076,7 +1076,7 @@ msgstr "Kérj segítséget a varázslótól"
 
 #. if there is a localized plmenu for the tongue put it's filename here
 #: ../../WPrefs.app/Menu.c:1365 ../../WPrefs.app/Menu.c:1372
-msgid "%s/Library/Workspace/plmenu"
+msgid "%s/Library/WindowMaker/plmenu"
 msgstr ""
 
 #: ../../WPrefs.app/Menu.c:1381
@@ -1714,16 +1714,16 @@ msgid "Type the path for the menu file:"
 msgstr "Írd be a menü fájl elérési útvonalát:"
 
 #: ../../WPrefs.app/MenuGuru.c:318
-msgid "The menu file must contain a menu in the plain text menu file format. This format is described in the menu files included with Workspace, probably at ~/GNUstep/Library/Workspace/menu"
-msgstr "A menü fájlnak tartalmaznia kell a menü leírását egyszerű, szöveges formában. A pontos formátumot megtalálod a Workspacerel együtt terjesztett menü fájlokban, pl.: ~/GNUstep/Library/Workspace/menu"
+msgid "The menu file must contain a menu in the plain text menu file format. This format is described in the menu files included with WindowMaker, probably at ~/GNUstep/Library/WindowMaker/menu"
+msgstr "A menü fájlnak tartalmaznia kell a menü leírását egyszerű, szöveges formában. A pontos formátumot megtalálod a WindowMakerrel együtt terjesztett menü fájlokban, pl.: ~/GNUstep/Library/WindowMaker/menu"
 
 #: ../../WPrefs.app/MenuGuru.c:328
 msgid "Type the command that will generate the menu definition:"
 msgstr "Írd be a parancsot, amely elkészíti a menü leírását:"
 
 #: ../../WPrefs.app/MenuGuru.c:338
-msgid "The command supplied must generate and output a valid menu definition to stdout. This definition should be in the plain text menu file format, described in the menu files included with Workspace, usually at ~/GNUstep/Library/Workspace/menu"
-msgstr "A megadott parancsnak helyes szintaxisú menü-leírást kell küldenie a kimenetre. Ennek a leírásnak egyszerű, szöveges formátumúnak kell lennie, amiről a Workspacerel terjesztett menü fájlokban találsz bővebb leírást (pl.: ~/GNUstep/Library/Workspace/menu)"
+msgid "The command supplied must generate and output a valid menu definition to stdout. This definition should be in the plain text menu file format, described in the menu files included with WindowMaker, usually at ~/GNUstep/Library/WindowMaker/menu"
+msgstr "A megadott parancsnak helyes szintaxisú menü-leírást kell küldenie a kimenetre. Ennek a leírásnak egyszerű, szöveges formátumúnak kell lennie, amiről a WindowMakerrel terjesztett menü fájlokban találsz bővebb leírást (pl.: ~/GNUstep/Library/WindowMaker/menu)"
 
 #: ../../WPrefs.app/MenuGuru.c:350 ../../WPrefs.app/MenuGuru.c:372 ../../WPrefs.app/MenuGuru.c:394
 msgid "Type the path for the directory. You can type more than one path by separating them with spaces."

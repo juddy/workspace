@@ -1,0 +1,146 @@
+usr/share/Workspace/autostart.sh
+usr/share/Workspace/exitscript.sh
+usr/share/locale/it/LC_MESSAGES/WPrefs.mo
+usr/share/locale/it/LC_MESSAGES/Workspace.mo
+usr/share/locale/da/LC_MESSAGES/Workspace.mo
+usr/share/locale/de/LC_MESSAGES/WPrefs.mo
+usr/share/locale/de/LC_MESSAGES/Workspace.mo
+usr/share/locale/de/LC_MESSAGES/wmgenmenu.mo
+usr/share/locale/de/LC_MESSAGES/WINGs.mo
+usr/share/locale/ro/LC_MESSAGES/Workspace.mo
+usr/share/locale/hy/LC_MESSAGES/Workspace.mo
+usr/share/locale/bg/LC_MESSAGES/WPrefs.mo
+usr/share/locale/bg/LC_MESSAGES/Workspace.mo
+usr/share/locale/bg/LC_MESSAGES/WINGs.mo
+usr/share/locale/nl/LC_MESSAGES/Workspace.mo
+usr/share/locale/ja/LC_MESSAGES/WPrefs.mo
+usr/share/locale/ja/LC_MESSAGES/Workspace.mo
+usr/share/locale/pt/LC_MESSAGES/WPrefs.mo
+usr/share/locale/pt/LC_MESSAGES/Workspace.mo
+usr/share/locale/ru/LC_MESSAGES/WPrefs.mo
+usr/share/locale/ru/LC_MESSAGES/Workspace.mo
+usr/share/locale/no/LC_MESSAGES/Workspace.mo
+usr/share/locale/zh_CN/LC_MESSAGES/WPrefs.mo
+usr/share/locale/zh_CN/LC_MESSAGES/Workspace.mo
+usr/share/locale/be/LC_MESSAGES/Workspace.mo
+usr/share/locale/sk/LC_MESSAGES/WPrefs.mo
+usr/share/locale/sk/LC_MESSAGES/Workspace.mo
+usr/share/locale/sk/LC_MESSAGES/WINGs.mo
+usr/share/locale/ko/LC_MESSAGES/WPrefs.mo
+usr/share/locale/ko/LC_MESSAGES/Workspace.mo
+usr/share/locale/cs/LC_MESSAGES/WPrefs.mo
+usr/share/locale/cs/LC_MESSAGES/Workspace.mo
+usr/share/locale/cs/LC_MESSAGES/WINGs.mo
+usr/share/locale/hr/LC_MESSAGES/WPrefs.mo
+usr/share/locale/hr/LC_MESSAGES/Workspace.mo
+usr/share/locale/gl/LC_MESSAGES/Workspace.mo
+usr/share/locale/hu/LC_MESSAGES/WPrefs.mo
+usr/share/locale/hu/LC_MESSAGES/Workspace.mo
+usr/share/locale/fr/LC_MESSAGES/WPrefs.mo
+usr/share/locale/fr/LC_MESSAGES/Workspace.mo
+usr/share/locale/fr/LC_MESSAGES/wmgenmenu.mo
+usr/share/locale/fr/LC_MESSAGES/WINGs.mo
+usr/share/locale/sv/LC_MESSAGES/Workspace.mo
+usr/share/locale/el/LC_MESSAGES/Workspace.mo
+usr/share/locale/fi/LC_MESSAGES/WPrefs.mo
+usr/share/locale/fi/LC_MESSAGES/Workspace.mo
+usr/share/locale/zh_TW/LC_MESSAGES/WPrefs.mo
+usr/share/locale/zh_TW/LC_MESSAGES/Workspace.mo
+usr/share/locale/tr/LC_MESSAGES/Workspace.mo
+usr/share/locale/es/LC_MESSAGES/WPrefs.mo
+usr/share/locale/es/LC_MESSAGES/Workspace.mo
+usr/share/locale/es/LC_MESSAGES/wmgenmenu.mo
+usr/share/locale/ca/LC_MESSAGES/WPrefs.mo
+usr/share/locale/ca/LC_MESSAGES/Workspace.mo
+usr/share/locale/ca/LC_MESSAGES/WINGs.mo
+usr/share/locale/pl/LC_MESSAGES/Workspace.mo
+usr/share/locale/et/LC_MESSAGES/WPrefs.mo
+usr/share/locale/et/LC_MESSAGES/Workspace.mo
+usr/share/locale/ms/LC_MESSAGES/Workspace.mo
+usr/share/locale/bs/LC_MESSAGES/Workspace.mo
+usr/share/Workspace/menu.pt
+usr/share/Workspace/plmenu.ko
+usr/share/Workspace/menu.sk
+usr/share/Workspace/plmenu.de
+usr/share/Workspace/plmenu.bg
+usr/share/Workspace/plmenu.pl
+usr/share/Workspace/menu.ru
+usr/share/Workspace/Icons/*.png
+usr/share/Workspace/Icons/*.tiff
+usr/share/Workspace/Icons/*.xpm
+usr/share/Workspace/Icons/README
+usr/share/Workspace/plmenu
+usr/share/Workspace/menu.es
+usr/share/Workspace/wmmacros
+usr/share/Workspace/menu.hu
+usr/share/Workspace/menu.he
+usr/share/Workspace/menu.sl
+usr/share/Workspace/menu
+usr/share/Workspace/Backgrounds/BlueImage.jpeg
+usr/share/Workspace/menu.nl
+usr/share/Workspace/plmenu.ja
+usr/share/Workspace/Styles/*.style
+usr/share/Workspace/menu.ro
+usr/share/Workspace/menu.bg
+usr/share/Workspace/menu.se
+usr/share/Workspace/background.menu
+usr/share/Workspace/menu.ca
+usr/share/Workspace/menu.hr
+usr/share/Workspace/menu.fr
+usr/share/Workspace/menu.cz
+usr/share/Workspace/menu.da
+usr/share/Workspace/menu.ko
+usr/share/Workspace/plmenu.sk
+usr/share/Workspace/plmenu.fi
+usr/share/Workspace/plmenu.it
+usr/share/Workspace/menu.ja
+usr/share/Workspace/menu.fi
+usr/share/Workspace/Themes/*.style
+usr/share/Workspace/plmenu.da
+usr/share/Workspace/plmenu.ro
+usr/share/Workspace/README.themes
+usr/share/Workspace/menu.de
+usr/share/Workspace/plmenu.es
+usr/share/Workspace/README
+usr/share/Workspace/plmenu.fr
+usr/share/Workspace/menu.no
+usr/share/Workspace/menu.it
+usr/share/Workspace/plmenu.hr
+usr/share/Workspace/IconSets/Default.iconset
+usr/share/Workspace/menu.pl
+usr/share/Workspace/menu.el
+usr/share/Workspace/menu.zh_TW
+usr/share/Workspace/plmenu.zh_CN
+usr/share/Workspace/plmenu.zh_TW
+usr/share/Workspace/menu.gl
+usr/share/Workspace/menu.tr
+usr/share/Workspace/menu.zh_CN
+usr/share/Workspace/Pixmaps/*.xpm
+usr/share/Workspace/Pixmaps/*.png
+usr/share/WINGs/defaultIcon.xpm
+usr/share/WINGs/defaultIcon.tiff
+usr/share/WINGs/Images.xpm
+usr/share/WINGs/Images.tiff
+usr/share/lib/GNUstep/System/Applications/WPrefs.app/WPrefs.xpm
+usr/share/lib/GNUstep/System/Applications/WPrefs.app/WPrefs.tiff
+usr/share/lib/GNUstep/System/Applications/WPrefs.app/tiff/*.tiff
+# Scripts
+debian/debianfiles/workspace			usr/bin
+debian/debianfiles/upgrade-workspace-defaults usr/sbin
+# Theme
+debian/debianfiles/Theme/Debian			usr/share/Workspace/Themes
+debian/debianfiles/Theme/debian.tiff		usr/share/Workspace/Backgrounds
+# Configuration
+etc/Workspace/WMGLOBAL			etc/GNUstep/Defaults
+etc/Workspace/WMState				etc/GNUstep/Defaults
+debian/debianfiles/conf/WMWindowAttributes	etc/GNUstep/Defaults
+debian/debianfiles/conf/WMRootMenu		etc/GNUstep/Defaults
+debian/debianfiles/conf/Workspace		etc/GNUstep/Defaults
+debian/debianfiles/workspace-common.desktop	usr/share/xsessions
+# Menu
+debian/debianfiles/menu/wmappearance		etc/menu-methods
+# READMES, from the temporal path (see README section in debian/rules)
+README.po					usr/share/doc/workspace
+README.definable-cursor				usr/share/doc/workspace
+README.WPrefs					usr/share/doc/workspace
+README.WPrefs.po				usr/share/doc/workspace

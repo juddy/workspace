@@ -57,8 +57,8 @@ static _WPrefs WPrefs;
 /* system wide defaults dictionary. Read-only */
 static WMPropList *GlobalDB = NULL;
 /* user defaults dictionary */
-static WMPropList *WorkspaceDB = NULL;
-static char *WorkspaceDBPath = NULL;
+static WMPropList *WindowMakerDB = NULL;
+static char *WindowMakerDBPath = NULL;
 
 static Bool TIFFOK = False;
 
@@ -94,13 +94,13 @@ static void save(WMWidget * w, void *data)
 	/*    puts("compressing data"); */
 	/* compare the user dictionary with the global and remove redundant data */
 	keyList = WMGetPLDictionaryKeys(GlobalDB);
-	/*    puts(WMGetPropListDescription(WorkspaceDB, False)); */
+	/*    puts(WMGetPropListDescription(WindowMakerDB, False)); */
 	for (i = 0; i < WMGetPropListItemCount(keyList); i++) {
 		key = WMGetFromPLArray(keyList, i);
 
 		/* We don't have this value anyway, so no problem.
 		 * Probably  a new option */
-		p1 = WMGetFromPLDictionary(WorkspaceDB, key);
+		p1 = WMGetFromPLDictionary(WindowMakerDB, key);
 		if (!p1)
 			continue;
 		/* The global doesn't have it, so no problem either. */
@@ -109,13 +109,13 @@ static void save(WMWidget * w, void *data)
 			continue;
 		/* If both values are the same, don't save. */
 		if (WMIsPropListEqualTo(p1, p2))
-			WMRemoveFromPLDictionary(WorkspaceDB, key);
+			WMRemoveFromPLDictionary(WindowMakerDB, key);
 	}
-	/*    puts(WMGetPropListDescription(WorkspaceDB, False)); */
+	/*    puts(WMGetPropListDescription(WindowMakerDB, False)); */
 	WMReleasePropList(keyList);
 	/*    puts("storing data"); */
 
-	WMWritePropListToFile(WorkspaceDB, WorkspaceDBPath);
+	WMWritePropListToFile(WindowMakerDB, WindowMakerDBPath);
 
 	memset(&ev, 0, sizeof(XEvent));
 
@@ -671,8 +671,8 @@ static void loadConfigurations(WMScreen * scr, WMWindow * mainw)
 	char mbuf[1024];
 	int v1, v2, v3;
 
-	path = wdefaultspathfordomain("Workspace");
-	WorkspaceDBPath = path;
+	path = wdefaultspathfordomain("WindowMaker");
+	WindowMakerDBPath = path;
 
 	db = WMReadPropListFromFile(path);
 	if (db) {
@@ -689,7 +689,7 @@ static void loadConfigurations(WMScreen * scr, WMWindow * mainw)
 
 	path = getenv("WMAKER_BIN_NAME");
 	if (!path)
-		path = "workspace";
+		path = "wmaker";
 	{
 		char *command;
 
@@ -699,7 +699,7 @@ static void loadConfigurations(WMScreen * scr, WMWindow * mainw)
 	}
 	if (!file || !fgets(buffer, 1023, file)) {
 		werror(_("could not extract version information from Workspace"));
-		wfatal(_("Make sure workspace is in your search path."));
+		wfatal(_("Make sure wmaker is in your search path."));
 
 		WMRunAlertPanel(scr, mainw, _("Error"),
 				_
@@ -711,7 +711,7 @@ static void loadConfigurations(WMScreen * scr, WMWindow * mainw)
 		pclose(file);
 
 	if (sscanf(buffer, "Workspace %i.%i.%i", &v1, &v2, &v3) != 3
-	    && sscanf(buffer, "Workspace %i.%i.%i", &v1, &v2, &v3) != 3) {
+	    && sscanf(buffer, "WindowMaker %i.%i.%i", &v1, &v2, &v3) != 3) {
 		WMRunAlertPanel(scr, mainw, _("Error"),
 				_("Could not extract version from Workspace. "
 				  "Make sure it is correctly installed and the path "
@@ -749,7 +749,7 @@ static void loadConfigurations(WMScreen * scr, WMWindow * mainw)
 		ptr = strchr(buffer, '\n');
 		if (ptr)
 			*ptr = 0;
-		strcat(buffer, "/Workspace");
+		strcat(buffer, "/WindowMaker");
 	}
 
 	if (file)
@@ -778,7 +778,7 @@ static void loadConfigurations(WMScreen * scr, WMWindow * mainw)
 
 	GlobalDB = gdb;
 
-	WorkspaceDB = db;
+	WindowMakerDB = db;
 }
 
 WMPropList *GetObjectForKey(const char *defaultName)
@@ -786,7 +786,7 @@ WMPropList *GetObjectForKey(const char *defaultName)
 	WMPropList *object = NULL;
 	WMPropList *key = WMCreatePLString(defaultName);
 
-	object = WMGetFromPLDictionary(WorkspaceDB, key);
+	object = WMGetFromPLDictionary(WindowMakerDB, key);
 	if (!object)
 		object = WMGetFromPLDictionary(GlobalDB, key);
 
@@ -799,7 +799,7 @@ void SetObjectForKey(WMPropList * object, const char *defaultName)
 {
 	WMPropList *key = WMCreatePLString(defaultName);
 
-	WMPutInPLDictionary(WorkspaceDB, key, object);
+	WMPutInPLDictionary(WindowMakerDB, key, object);
 	WMReleasePropList(key);
 }
 
@@ -807,7 +807,7 @@ void RemoveObjectForKey(const char *defaultName)
 {
 	WMPropList *key = WMCreatePLString(defaultName);
 
-	WMRemoveFromPLDictionary(WorkspaceDB, key);
+	WMRemoveFromPLDictionary(WindowMakerDB, key);
 
 	WMReleasePropList(key);
 }

@@ -652,7 +652,7 @@ static void storeCommandInScript(const char *cmd, const char *line)
 	FILE *f;
 	char buffer[128];
 
-	path = wstrconcat(wusergnusteppath(), "/Library/Workspace/autostart");
+	path = wstrconcat(wusergnusteppath(), "/Library/WindowMaker/autostart");
 
 	f = fopen(path, "rb");
 	if (!f) {
@@ -670,7 +670,7 @@ static void storeCommandInScript(const char *cmd, const char *line)
 		char *tmppath;
 		FILE *fo;
 
-		tmppath = wstrconcat(wusergnusteppath(), "/Library/Workspace/autostart.tmp");
+		tmppath = wstrconcat(wusergnusteppath(), "/Library/WindowMaker/autostart.tmp");
 		fo = fopen(tmppath, "wb");
 		if (!fo) {
 			werror(_("could not create temporary file %s"), tmppath);

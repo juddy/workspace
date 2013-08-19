@@ -2,9 +2,9 @@
 #             Jun Nishii <nishii@postman.riken.go.jp>
 #             MANOME Tomonori <manome@itlb.te.noda.sut.ac.jp>
 #             Takeo Hashimoto <hashimototakeo@mac.com>
-# collaborated with members in workspace-jp ML and Project Vine
+# collaborated with members in wmaker-jp ML and Project Vine
 #
-# Last Update: for Workspace 0.95.2
+# Last Update: for WindowMaker 0.95.2
 #
 msgid ""
 msgstr ""
@@ -351,8 +351,8 @@ msgid ""
 msgstr "ミニウィンドウ(最小化時のアイコン表示)の無効化. KDE/GNOME 向け."
 
 #: ../../WPrefs.app/Expert.c:88
-msgid "Do not set non-Workspace specific parameters (do not use xset)."
-msgstr "Workspace以外のパラメータを与えない (xsetを使わない)"
+msgid "Do not set non-WindowMaker specific parameters (do not use xset)."
+msgstr "WindowMaker以外のパラメータを与えない (xsetを使わない)"
 
 #: ../../WPrefs.app/Expert.c:89
 msgid "Automatically save session when exiting Workspace."
@@ -1032,14 +1032,14 @@ msgid ""
 "Enter the path for a file containing a menu\n"
 "or a list of directories with the programs you\n"
 "want to have listed in the menu. Ex:\n"
-"~/GNUstep/Library/Workspace/menu\n"
+"~/GNUstep/Library/WindowMaker/menu\n"
 "or\n"
 "/usr/X11R6/bin ~/xbin"
 msgstr ""
 "メニューを含むファイルへのパス, ないしは \n"
 "メニューに表示してほしいプログラムのある \n"
 "ディレクトリ. 例:\n"
-"~/GNUstep/Library/Workspace/menu\n"
+"~/GNUstep/Library/WindowMaker/menu\n"
 "とか, \n"
 "/usr/bin ~/xbin"
 
@@ -1830,8 +1830,8 @@ msgid "could not extract version information from Workspace"
 msgstr "Workspace からバージョン情報を取得できません"
 
 #: ../../WPrefs.app/WPrefs.c:678
-msgid "Make sure workspace is in your search path."
-msgstr "workspace がサーチパスに含まれているか確認して下さい"
+msgid "Make sure wmaker is in your search path."
+msgstr "wmaker がサーチパスに含まれているか確認して下さい"
 
 #: ../../WPrefs.app/WPrefs.c:682
 msgid ""

@@ -1,6 +1,6 @@
 /* TexturePanel.h- texture editting panel
  *
- *  WPrefs - Workspace Preferences Program
+ *  WPrefs - WindowMaker Preferences Program
  *
  *  Copyright (c) 1998-2003 Alfredo K. Kojima
  *

@@ -179,8 +179,8 @@ msgid "could not extract version information from Workspace"
 msgstr "Workspacein versiotietojen selvitys epäonnistui"
 
 #: ../../WPrefs.app/WPrefs.c:777
-msgid "Make sure workspace is in your search path."
-msgstr "Varmista, että workspace on hakupolussasi."
+msgid "Make sure wmaker is in your search path."
+msgstr "Varmista, että wmaker on hakupolussasi."
 
 #: ../../WPrefs.app/WPrefs.c:780
 msgid ""
@@ -591,7 +591,7 @@ msgstr ""
 "varten."
 
 #: ../../WPrefs.app/Expert.c:76
-msgid "Do not set non-Workspace specific parameters (do not use xset)."
+msgid "Do not set non-WindowMaker specific parameters (do not use xset)."
 msgstr "Älä aseta Workspacein ulkopuolisia parametreja (älä käytä xset:iä)"
 
 #: ../../WPrefs.app/Expert.c:77
@@ -1226,14 +1226,14 @@ msgid ""
 "Enter the path for a file containing a menu\n"
 "or a list of directories with the programs you\n"
 "want to have listed in the menu. Ex:\n"
-"~/GNUstep/Library/Workspace/menu\n"
+"~/GNUstep/Library/WindowMaker/menu\n"
 "or\n"
 "/usr/bin ~/xbin"
 msgstr ""
 "Syötä valikon sisältävän tiedoston polku\n"
 "tai ne hakemistot, jotka sisältävät ohjelmat,\n"
 "jotka haluat mukaan valikkoon. Esim.\n"
-"~/GNUstep/Library/Workspace/menu\n"
+"~/GNUstep/Library/WindowMaker/menu\n"
 "tai\n"
 "/usr/bin ~/xbin"
 
@@ -1410,8 +1410,8 @@ msgstr "Kyllä, älä kysy enää."
 #. if there is a localized plmenu for the tongue put it's filename here
 #: ../../WPrefs.app/Menu.c:1514 ../../WPrefs.app/Menu.c:1521
 #, c-format
-msgid "%s/Library/Workspace/plmenu"
-msgstr "%s/Library/Workspace/plmenu.fi"
+msgid "%s/Library/WindowMaker/plmenu"
+msgstr "%s/Library/WindowMaker/plmenu.fi"
 
 #: ../../WPrefs.app/Menu.c:1530
 #, c-format
@@ -2293,12 +2293,12 @@ msgstr ""
 
 #~ msgid ""
 #~ "The menu file must contain a menu in the plain text menu file format. This "
-#~ "format is described in the menu files included with Workspace, probably at "
-#~ "~/GNUstep/Library/Workspace/menu"
+#~ "format is described in the menu files included with WindowMaker, probably at "
+#~ "~/GNUstep/Library/WindowMaker/menu"
 #~ msgstr ""
 #~ "Valikkotiedoston pitää sisältää valikko pelkkä teksti -muodossa. Tämä muoto "
 #~ "kuvaillaan Workspacein sisältämissä valikkotiedostoissa, luultavasti "
-#~ "paikassa ~/GNUstep/Library/Workspace/menu"
+#~ "paikassa ~/GNUstep/Library/WindowMaker/menu"
 
 #~ msgid "Type the command that will generate the menu definition:"
 #~ msgstr "Kirjoita komento, joka luo valikkomääritelmän:"
@@ -2306,13 +2306,13 @@ msgstr ""
 #~ msgid ""
 #~ "The command supplied must generate and output a valid menu definition to "
 #~ "stdout. This definition should be in the plain text menu file format, "
-#~ "described in the menu files included with Workspace, usually at "
-#~ "~/GNUstep/Library/Workspace/menu"
+#~ "described in the menu files included with WindowMaker, usually at "
+#~ "~/GNUstep/Library/WindowMaker/menu"
 #~ msgstr ""
 #~ "Tämän komennon pitää muodostaa valikkomääritelmä ja tulostaa se "
 #~ "vakiotulostusvirtaan. Valikon pitää olla \"pelkkä teksti\" -tiedostomuodossa "
 #~ "(kuvailtu Workspacein mukana tulevissa valikkotiedostoissa, yleensä "
-#~ "~/GNUstep/Library/Workspace/menu)."
+#~ "~/GNUstep/Library/WindowMaker/menu)."
 
 #~ msgid ""
 #~ "Type the path for the directory. You can type more than one path by "

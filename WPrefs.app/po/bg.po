@@ -3,7 +3,7 @@
 # Anton Zinoviev <zinoviev@debian.org>, 2000,2003
 msgid ""
 msgstr ""
-"Project-Id-Version: WPrefs for Workspace 0.80.2\n"
+"Project-Id-Version: WPrefs for WindowMaker 0.80.2\n"
 "POT-Creation-Date: 2003-02-08 21:44+0200\n"
 "PO-Revision-Date: 2001-04-18 23:22+03:00\n"
 "Last-Translator: Anton Zinoviev <zinoviev@debian.org>\n"
@@ -473,7 +473,7 @@ msgstr "Без минипрозорчета (минимизирани прозо
 
 # ../../WPrefs.app/Expert.c:76
 #: ../../WPrefs.app/Expert.c:76
-msgid "Do not set non-Workspace specific parameters (do not use xset)."
+msgid "Do not set non-WindowMaker specific parameters (do not use xset)."
 msgstr "Без неспецифични за Уиндоу Мейкър параметри (да не се ползва xset)."
 
 # ../../WPrefs.app/Expert.c:77
@@ -1303,14 +1303,14 @@ msgid ""
 "Enter the path for a file containing a menu\n"
 "or a list of directories with the programs you\n"
 "want to have listed in the menu. Ex:\n"
-"~/GNUstep/Library/Workspace/menu\n"
+"~/GNUstep/Library/WindowMaker/menu\n"
 "or\n"
 "/usr/bin ~/xbin"
 msgstr ""
 "Въведете пътя на файл, съдържащ меню или\n"
 "списък от директории с програмите, които\n"
 "желаете да бъдат включени в менюто. Напр.:\n"
-"~/GNUstep/Library/Workspace/menu\n"
+"~/GNUstep/Library/WindowMaker/menu\n"
 "или /usr/bin ~/xbin"
 
 # ../../WPrefs.app/Menu.c:1186
@@ -1495,8 +1495,8 @@ msgstr "Да, не ме питай пак!"
 #. if there is a localized plmenu for the tongue put it's filename here
 #: ../../WPrefs.app/Menu.c:1575 ../../WPrefs.app/Menu.c:1582
 #, c-format
-msgid "%s/Library/Workspace/plmenu"
-msgstr "%s/Library/Workspace/plmenu.bg"
+msgid "%s/Library/WindowMaker/plmenu"
+msgstr "%s/Library/WindowMaker/plmenu.bg"
 
 # ../../WPrefs.app/Menu.c:1398
 #: ../../WPrefs.app/Menu.c:1591
@@ -2219,8 +2219,8 @@ msgstr "не може да се извлече информация за вер�
 
 # ../../WPrefs.app/WPrefs.c:760
 #: ../../WPrefs.app/WPrefs.c:778
-msgid "Make sure workspace is in your search path."
-msgstr "Убедете се, че workspace се намира в пътеката за търсене ($PATH)."
+msgid "Make sure wmaker is in your search path."
+msgstr "Убедете се, че wmaker се намира в пътеката за търсене ($PATH)."
 
 # ../../WPrefs.app/WPrefs.c:763
 #: ../../WPrefs.app/WPrefs.c:781
@@ -2794,12 +2794,12 @@ msgstr "приложението не може да бъде инициализ�
 # ../../WPrefs.app/MenuGuru.c:318
 #~ msgid ""
 #~ "The menu file must contain a menu in the plain text menu file format. "
-#~ "This format is described in the menu files included with Workspace, "
-#~ "probably at ~/GNUstep/Library/Workspace/menu"
+#~ "This format is described in the menu files included with WindowMaker, "
+#~ "probably at ~/GNUstep/Library/WindowMaker/menu"
 #~ msgstr ""
 #~ "Файлът с меню трябва да бъде в прост текстов формат. Този формат е описан "
 #~ "във файловете менюта, съпровождащи Уиндоу Мейкър, вероятно в ~/GNUstep/"
-#~ "Library/Workspace/menu"
+#~ "Library/WindowMaker/menu"
 
 # ../../WPrefs.app/MenuGuru.c:328
 #~ msgid "Type the command that will generate the menu definition:"
@@ -2809,13 +2809,13 @@ msgstr "приложението не може да бъде инициализ�
 #~ msgid ""
 #~ "The command supplied must generate and output a valid menu definition to "
 #~ "stdout. This definition should be in the plain text menu file format, "
-#~ "described in the menu files included with Workspace, usually at ~/"
-#~ "GNUstep/Library/Workspace/menu"
+#~ "described in the menu files included with WindowMaker, usually at ~/"
+#~ "GNUstep/Library/WindowMaker/menu"
 #~ msgstr ""
 #~ "Зададената команда трябва да генерира и изведе валидна дефиниция на меню "
 #~ "на стандартния си изход. Тази дефиниция трябва да бъде в простия текстов "
 #~ "формат, описан във файловете менюта, съпровождащи Уиндоу Мейкър, "
-#~ "обикновено в ~/GNUstep/Library/Workspace/menu"
+#~ "обикновено в ~/GNUstep/Library/WindowMaker/menu"
 
 # ../../WPrefs.app/MenuGuru.c:350 ../../WPrefs.app/MenuGuru.c:372
 # ../../WPrefs.app/MenuGuru.c:394

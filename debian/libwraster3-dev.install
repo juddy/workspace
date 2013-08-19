@@ -1,0 +1,4 @@
+usr/include/wraster.h
+usr/lib/libwraster.so
+usr/lib/libwraster.a
+usr/bin/get-wraster-flags

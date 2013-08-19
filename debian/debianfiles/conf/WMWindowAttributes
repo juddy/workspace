@@ -1,0 +1,57 @@
+{
+  Logo.WMDock = {Icon = GNUstep.tiff;};
+  Logo.WMPanel = {Icon = GNUstep.tiff;};
+  Tile.WMClip = {Icon = clip.tiff;};
+  WPrefs = {Icon = "/usr/share/lib/GNUstep/System/Applications/WPrefs.app/WPrefs.tiff";};
+  WMDrawer = { Icon = Drawer.png; };
+  Dockit = {Icon = GNUstep.tiff;};
+  WMSoundServer = {Icon = Sound.tiff;};
+  "*" = {Icon = defaultAppIcon.tiff;};
+  Rxvt = {Icon = GNUterm.tiff;};
+  KTerm = {Icon = GNUterm.tiff;};
+  NXTerm = {Icon = GNUterm.tiff;};
+  XTerm = {Icon = GNUterm.tiff;};
+  Netscape = {Icon = "workspace-netscape.tif";};
+  "Mozilla-bin" = {Icon = "workspace-nav.tif";};
+  emacs = {Icon = "workspace-emacs.tif";};
+  Gimp = {AlwaysUserIcon = Yes;Icon = "workspace-gimp2.tif";};
+  toolbox.Gimp = {NoAppIcon = Yes;Icon = "workspace-gimp2.tif";};
+  gimp_startup.Gimp = {
+    Icon = "workspace-gimp2.tif";
+    AlwaysUserIcon = Yes;
+    NoTitlebar = Yes;
+    NoResizebar = Yes;
+    NotClosable = Yes;
+    NotMiniaturizable = Yes;
+  };
+  tip_of_the_day.Gimp = {
+    Icon = "workspace-gimp2.tif";
+    AlwaysUserIcon = Yes;
+    NoResizebar = Yes;
+    NoCloseButton = Yes;
+    NoMiniaturizeButton = Yes;
+    KeepOnTop = Yes;
+  };
+  image_window.Gimp = {Icon = "workspace-gimp-work.tif";AlwaysUserIcon = Yes;};
+  brushselection.Gimp = {Icon = "workspace-gimp-brushes.tif";AlwaysUserIcon = Yes;};
+  patternselection.Gimp = {Icon = "workspace-gimp-patterns.tif";AlwaysUserIcon = Yes;};
+  color_palette.Gimp = {
+    Icon = "workspace-gimp-palette.tif";
+    AlwaysUserIcon = Yes;
+    NoResizebar = Yes;
+  };
+  gradient_editor.Gimp = {Icon = "workspace-gimp-gradient.tif";AlwaysUserIcon = Yes;};
+  tool_options.Gimp = {Icon = "workspace-gimp-tooloption.tif";AlwaysUserIcon = Yes;};
+  layers_and_channels.Gimp = {Icon = "workspace-gimp-layers.tif";AlwaysUserIcon = Yes;};
+  indexed_color_palette.Gimp = {
+    Icon = "workspace-gimp-palette.tif";
+    AlwaysUserIcon = Yes;
+    NoResizebar = Yes;
+  };
+  "Script-fu" = {Icon = "workspace-gimp-script-fu.tif";};
+  "script-fu.Script-fu" = {Icon = "workspace-gimp-script-fu.tif";};
+  preferences.Gimp = {Icon = "workspace-gimp-prefs.tif";AlwaysUserIcon = Yes;};
+  panel = {NoAppIcon = Yes;};
+  gmc = {NoAppIcon = Yes;Omnipresent = Yes;SkipWindowList = Yes;};
+  Logo.WMClip = {Icon = clip.tiff;};
+}

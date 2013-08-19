@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Window maker
+Comment=This session logs you into Workspace
+Exec=/usr/bin/workspace
+# no icon yet, only the top three are currently used
+Icon=
+Type=Application

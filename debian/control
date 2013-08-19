@@ -1,0 +1,126 @@
+Source: workspace
+Section: x11
+Priority: optional
+Maintainer: Rodolfo García Peñas (kix) <kix@kix.es>
+Standards-Version: 3.9.3
+DM-Upload-Allowed: yes
+Build-Depends: debhelper (>= 8.1.3~), automake (>= 1:1.11), gettext,
+ libfontconfig1-dev, libjpeg-dev, libpng-dev, libsm-dev, libtiff4-dev,
+ libtool, libgif-dev, libx11-dev, libxext-dev, libxft-dev, libxinerama-dev,
+ libxkbfile-dev, libxpm-dev, libxt-dev, libxrender-dev, sharutils, libxmu-dev,
+ libxrandr-dev, dctrl-tools, autotools-dev
+Homepage: http://workspace.org/
+
+Package: workspace
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, workspace-common (>= 0.95.0+20111028-3)
+Provides: x-window-manager
+Suggests: workspace-data, menu, x11-apps, xosview, x-terminal-emulator, desktop-base
+Description: NeXTSTEP-like window manager for X
+ Written by Alfredo Kojima almost from scratch, resembles the NeXTStep look
+ very closely, and it is now an official GNU project. Workspace is not
+ overloaded with features, and it is easier to configure than most other window
+ managers. Its final goal is to produce a window manager that doesn't require
+ editing of configuration files. Workspace is fast and doesn't require tons
+ of memory to run.
+
+Package: workspace-common
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: workspace
+Replaces: workspace (<< 0.95.0+20111028-3)
+Breaks: workspace (<< 0.95.0+20111028-3)
+Description: Workspace - Architecture independent files
+ Written by Alfredo Kojima almost from scratch, resembles the NeXTStep look
+ very closely, and it is now an official GNU project. Workspace is not
+ overloaded with features, and it is easier to configure than most other window
+ managers. Its final goal is to produce a window manager that doesn't require
+ editing of configuration files. Workspace is fast and doesn't require tons
+ of memory to run.
+ .
+ This package contains the architecture independent files.
+
+Package: libwraster3-dev
+Architecture: any
+Section: libdevel
+Depends: libwraster3 (= ${binary:Version}), libc6-dev, libx11-dev,
+ libxext-dev, libxpm-dev, libjpeg-dev, libpng-dev, libgif-dev,
+ libtiff4-dev, ${misc:Depends}
+Provides: libwraster-dev
+Description: Static libraries and headers of Workspace rasterizer
+ This library is used to manipulate images and convert them to
+ a format that can be displayed through the X window system.
+ Read the wraster.h header for an idea of what is available
+ .
+ Contains libwraster and header files, for manipulating and
+ rasterizing images.
+
+Package: libwraster3
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Shared libraries of Workspace rasterizer
+ This library is used to manipulate images and convert them to
+ a format that can be displayed through the X window system.
+ Read the wraster.h header for an idea of what is available
+
+
+Package: libwings-dev
+Architecture: any
+Section: libdevel
+Depends: libc6-dev, libx11-dev, libxext-dev, libwraster3-dev, libxft-dev,
+ libfontconfig1-dev, libwutil2 (= ${binary:Version}),
+ libwings2 (= ${binary:Version}), ${misc:Depends}
+Description: Workspace's own widget set
+ WINGs Is Not GNUstep (WINGs) is a small widget set with the NeXTSTEP
+ look and feel. Its API is inspired in OpenSTEP and its
+ implementation borrows some ideas from Tk. It has a reasonable set of
+ widgets, sufficient for building small applications like a CDPlayer
+ or hacking something like rxvt. It is used for basic widgets in
+ the Workspace window manager.
+
+Package: libwutil2
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Workspace's own widget set - utility library
+ WINGs Is Not GNUstep (WINGs) is a small widget set with the NeXTSTEP
+ look and feel. Its API is inspired in OpenSTEP and its
+ implementation borrows some ideas from Tk. It has a reasonable set of
+ widgets, sufficient for building small applications like a CDPlayer
+ or hacking something like rxvt. It is used for basic widgets in
+ the Workspace window manager.
+ .
+ This package contains the libWUtils runtime library.
+
+Package: libwings2
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Workspace's own widget set - runtime library
+ WINGs Is Not GNUstep (WINGs) is a small widget set with the NeXTSTEP
+ look and feel. Its API is inspired in OpenSTEP and its
+ implementation borrows some ideas from Tk. It has a reasonable set of
+ widgets, sufficient for building small applications like a CDPlayer
+ or hacking something like rxvt. It is used for basic widgets in
+ the Workspace window manager.
+ .
+ This package contains the libWINGs runtime library.
+
+Package: workspace-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: libwraster3 (= ${binary:Version}) | libwings2 (= ${binary:Version}) |
+ libwutil2 (= ${binary:Version}) | workspace (= ${binary:Version}),
+ ${misc:Depends}
+Description: Debugging symbols for Workspace packages
+ Written by Alfredo Kojima almost from scratch, resembles the NeXTStep look
+ very closely, and it is now an official GNU project. Workspace is not
+ overloaded with features, and it is easier to configure than most other window
+ managers. Its final goal is to produce a window manager that doesn't require
+ editing of configuration files. Workspace is fast and doesn't require tons
+ of memory to run.
+ .
+ This package contains debugging symbols for Workspace and its core
+ libraries (libWINGs, libWutils, libwraster).

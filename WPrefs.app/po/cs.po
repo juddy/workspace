@@ -1,9 +1,9 @@
-# Message catalog for Workspace WPrefs.app
+# Message catalog for WindowMaker WPrefs.app
 # Copyright (C) 1998 Free Software Foundation, Inc.
 # David Sauer <xsauer@fel.cvut.cz>, 1998.
 # Lukas Tinkl <caybro@seznam.cz>, 1999.
 # Jiří Hnídek <jiri.hnidek@vslib.cz>, 2001.
-# WPrefs for Workspace 0.70.0
+# WPrefs for WindowMaker 0.70.0
 # Čt pro  3 20:38:36 CET 1998 David Sauer
 # Pá dub 23 09:14:20 CEST 1999 David Šauer
 # St čec 14 10:30:00 CEST 1999 Lukáš Tinkl
@@ -11,7 +11,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: WPrefs for Workspace 0.70.0\n"
+"Project-Id-Version: WPrefs for WindowMaker 0.70.0\n"
 "POT-Creation-Date: 2001-10-14 20:30+0200\n"
 "PO-Revision-Date: 2001-10-14 21:07+0000\n"
 "Last-Translator: Jiří Hnídek <jiri.hnidek@vslib.cz>\n"
@@ -375,8 +375,8 @@ msgstr ""
 "Zakázat miniokna (ikony pro miniaturizovaná okna). Použitelné pro KDE/GNOME."
 
 #: ../Expert.c:76
-msgid "Do not set non-Workspace specific parameters (do not use xset)."
-msgstr "Nenastavovat parametry mimo Workspace (nepoužívat xset)"
+msgid "Do not set non-WindowMaker specific parameters (do not use xset)."
+msgstr "Nenastavovat parametry mimo WindowMaker (nepoužívat xset)"
 
 #: ../Expert.c:77
 msgid "Automatically save session when exiting Workspace."
@@ -1023,14 +1023,14 @@ msgid ""
 "Enter the path for a file containing a menu\n"
 "or a list of directories with the programs you\n"
 "want to have listed in the menu. Ex:\n"
-"~/GNUstep/Library/Workspace/menu\n"
+"~/GNUstep/Library/WindowMaker/menu\n"
 "or\n"
 "/usr/bin ~/xbin"
 msgstr ""
 "Vlož cestu pro soubor obsahující menu\n"
 "nebo seznam adresářů s programy, které\n"
 "chete zobrazit v menu. Př:\n"
-"~/GNUstep/Library/Workspace/menu\n"
+"~/GNUstep/Library/WindowMaker/menu\n"
 "nebo\n"
 "/usr/bin ~/xbin"
 
@@ -1201,7 +1201,7 @@ msgstr "Ano, neptejte se víc."
 
 #: ../Menu.c:1514 ../Menu.c:1521
 #, c-format
-msgid "%s/Library/Workspace/plmenu"
+msgid "%s/Library/WindowMaker/plmenu"
 msgstr ""
 
 #: ../Menu.c:1530
@@ -1795,7 +1795,7 @@ msgid "could not extract version information from Workspace"
 msgstr "od Workspaceu nelze získat číslo verze"
 
 #: ../WPrefs.c:778
-msgid "Make sure workspace is in your search path."
+msgid "Make sure wmaker is in your search path."
 msgstr "Zajistěte, aby byl Workspace v prohledávané cestě."
 
 #: ../WPrefs.c:781

@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Workspace 0.80.2\n"
+"Project-Id-Version: WindowMaker 0.80.2\n"
 "POT-Creation-Date: 1998-08-24 14:36:41-0300\n"
 "PO-Revision-Date: 1998-08-24 14:36:41-0300\n"
 "Last-Translator: Toni Bilić tbilic@oliver.efos.hr \n"
@@ -74,20 +74,20 @@ msgid "More colors for applications"
 msgstr "Još boja za aplikacije"
 
 #: ../../WPrefs/Configurations.c:397
-msgid "More colors for Workspace"
-msgstr "Još boja za Workspace"
+msgid "More colors for WindowMaker"
+msgstr "Još boja za WindowMaker"
 
 #: ../../WPrefs/Configurations.c:450
 msgid "Other Configurations"
 msgstr "Ostale konfiguracije"
 
 #: ../../WPrefs/Expert.c:70
-msgid "Do not set non-Workspace specific parameters (do not use xset)"
-msgstr "Ne postavljaj ne-Workspace parametre (ne koristi xset)"
+msgid "Do not set non-WindowMaker specific parameters (do not use xset)"
+msgstr "Ne postavljaj ne-WindowMaker parametre (ne koristi xset)"
 
 #: ../../WPrefs/Expert.c:71
-msgid "Automatically save session when exiting Workspace"
-msgstr "Automatski snimi sessoin pri izlazu iz Workspacea"
+msgid "Automatically save session when exiting WindowMaker"
+msgstr "Automatski snimi sessoin pri izlazu iz WindowMakera"
 
 #: ../../WPrefs/Expert.c:72
 msgid "Use SaveUnder in window frames, icons, menus and other objects"
@@ -469,7 +469,7 @@ msgid "Show All Windows"
 msgstr "Pokaži sve prozore"
 
 #: ../../WPrefs/Menu.c:1091
-msgid "Exit Workspace"
+msgid "Exit WindowMaker"
 msgstr "Izaći iz Workspace-a"
 
 #: ../../WPrefs/Menu.c:1092
@@ -481,7 +481,7 @@ msgid "Start window manager"
 msgstr "Pokrenuti window manager"
 
 #: ../../WPrefs/Menu.c:1094
-msgid "Restart Workspace"
+msgid "Restart WindowMaker"
 msgstr "Restartati Workspace"
 
 #: ../../WPrefs/Menu.c:1095
@@ -598,16 +598,16 @@ msgid "Type the path for the menu file:"
 msgstr "Upiši stazu za izbornik datoteku:"
 
 #: ../../WPrefs/MenuGuru.c:318
-msgid "The menu file must contain a menu in the plain text menu file format. This format is described in the menu files included with Workspace, probably at ~/GNUstep/Library/Workspace/menu"
-msgstr "Menu datoteka mora sadržavati izbornik u čistom tekst formatu. Ovaj format je opisan u menu datotekama u distribuciji, vjerojatno u ~/GNUstep/Library/Workspace/menu"
+msgid "The menu file must contain a menu in the plain text menu file format. This format is described in the menu files included with WindowMaker, probably at ~/GNUstep/Library/WindowMaker/menu"
+msgstr "Menu datoteka mora sadržavati izbornik u čistom tekst formatu. Ovaj format je opisan u menu datotekama u distribuciji, vjerojatno u ~/GNUstep/Library/WindowMaker/menu"
 
 #: ../../WPrefs/MenuGuru.c:328
 msgid "Type the command that will generate the menu definition:"
 msgstr "Upiši naredbu koja će generirati definiciju izbornika:"
 
 #: ../../WPrefs/MenuGuru.c:338
-msgid "The command supplied must generate and output a valid menu definition to stdout. This definition should be in the plain text menu file format, described in the menu files included with Workspace, usually at ~/GNUstep/Library/Workspace/menu"
-msgstr "Navedana naredba mora stvoriti i ispisati važeću definiciju izbornika na stdout. Ova definicija mora biti u formatu opisanom u ~/GNUstep/Library/Workspace/menu"
+msgid "The command supplied must generate and output a valid menu definition to stdout. This definition should be in the plain text menu file format, described in the menu files included with WindowMaker, usually at ~/GNUstep/Library/WindowMaker/menu"
+msgstr "Navedana naredba mora stvoriti i ispisati važeću definiciju izbornika na stdout. Ova definicija mora biti u formatu opisanom u ~/GNUstep/Library/WindowMaker/menu"
 
 #: ../../WPrefs/MenuGuru.c:350 ../../WPrefs/MenuGuru.c:372 ../../WPrefs/MenuGuru.c:394
 msgid "Type the path for the directory. You can type more than one path by separating them with spaces."
@@ -1059,8 +1059,8 @@ msgid "Workspace %i.%i.%i, which is installed in your system, is not fully suppo
 msgstr "Workspace %i.%i.%i, koji je instaliran, nije potpuno podržan ovom verzijom WPrefs-a."
 
 #: ../../WPrefs/WPrefs.c:590
-msgid "could not run \"workspace -global_defaults_path\"."
-msgstr "ne mogu pokrenuti \"workspace -global_defaults_path\"."
+msgid "could not run \"wmaker -global_defaults_path\"."
+msgstr "ne mogu pokrenuti \"wmaker -global_defaults_path\"."
 
 #: ../../WPrefs/WPrefs.c:605
 msgid "Could not load global Workspace domain (%s)."
@@ -1185,17 +1185,17 @@ msgstr "ne mogu otvoriti display %s"
 #: ../../WPrefs/main.c:121
 msgid "could not initialize application"
 msgstr "ne mogu inicijalizirati aplikaciju"
-# msgid "could not extract version information from Workspace"
-# msgstr "ne mogu izvuči informaciju o verziji Workspace-a"
+# msgid "could not extract version information from WindowMaker"
+# msgstr "ne mogu izvuči informaciju o verziji WindowMaker-a"
 # 
-# msgid "Could not load Workspace domain (%s) from defaults database."
-# msgstr "Ne mogu učitati Workspace domenu (%s) iz početne baze."
+# msgid "Could not load WindowMaker domain (%s) from defaults database."
+# msgstr "Ne mogu učitati WindowMaker domenu (%s) iz početne baze."
 # 
-# msgid "Version %s for Workspace %s"
-# msgstr "Verzija %s za Workspace %s"
+# msgid "Version %s for WindowMaker %s"
+# msgstr "Verzija %s za WindowMaker %s"
 # 
-# msgid "Could not extract version from Workspace. Make sure it is correctly installed."
-# msgstr "Ne mogu izvuči verziju Workspacea. Provjerite da je ispravno instaliran."
+# msgid "Could not extract version from WindowMaker. Make sure it is correctly installed."
+# msgstr "Ne mogu izvuči verziju WindowMakera. Provjerite da je ispravno instaliran."
 # 
 # msgid ""
 # "Programming/Design: Alfredo K. Kojima\n"
@@ -1204,42 +1204,42 @@ msgstr "ne mogu inicijalizirati aplikaciju"
 # "Programiranje/Dizajn: Alfredo K. Kojima\n"
 # "Artwork: Marco van Hylckama Vlieg"
 # 
-# msgid "Workspace domain (%s) is corrupted!"
-# msgstr "Workspace domena (%s) je oštećena!"
+# msgid "WindowMaker domain (%s) is corrupted!"
+# msgstr "WindowMaker domena (%s) je oštećena!"
 # 
 # msgid "Raise window when switching focus with keyboard."
 # msgstr "Podići prozor pri mjenjanju fokusa tastaturom."
 # 
-# msgid "Workspace %i.%i.%i, which is installed in your system, is not fully supported by this version of WPrefs."
-# msgstr "Workspace %i.%i.%i, koji je instaliran na vašem sistemu, nije potpuno podržan ovom verzijom WPrefs-a."
+# msgid "WindowMaker %i.%i.%i, which is installed in your system, is not fully supported by this version of WPrefs."
+# msgstr "WindowMaker %i.%i.%i, koji je instaliran na vašem sistemu, nije potpuno podržan ovom verzijom WPrefs-a."
 # 
-# msgid "Workspace Preferences"
-# msgstr "Postavke Workspace-a"
+# msgid "WindowMaker Preferences"
+# msgstr "Postavke WindowMaker-a"
 # 
-# msgid "Make sure Workspace is in your search path."
-# msgstr "Provjerite da je Workspace u vašoj search stazi."
+# msgid "Make sure WindowMaker is in your search path."
+# msgstr "Provjerite da je WindowMaker u vašoj search stazi."
 # 
 # msgid "...do not resize over dock"
 # msgstr "ne pokrivati dock"
 # 
 # msgid ""
-# "WPrefs only supports Workspace 0.18.0 or newer.\n"
+# "WPrefs only supports WindowMaker 0.18.0 or newer.\n"
 # "The version installed is %i.%i.%i\n"
 # msgstr ""
-# "WPrefs podržava samo Workspace 0.18.0 ili noviji.\n"
+# "WPrefs podržava samo WindowMaker 0.18.0 ili noviji.\n"
 # "Instalirana je verzija %i.%i.%i\n"
 # 
-# msgid "Could not load global Workspace domain (%s)."
-# msgstr "Ne mogu učitati globlanu Workspace domenu (%s)."
+# msgid "Could not load global WindowMaker domain (%s)."
+# msgstr "Ne mogu učitati globlanu WindowMaker domenu (%s)."
 # 
-# msgid "Loading Workspace configuration files..."
-# msgstr "Učitavam Workspace konfiguracijske datoteke..."
+# msgid "Loading WindowMaker configuration files..."
+# msgstr "Učitavam WindowMaker konfiguracijske datoteke..."
 # 
 # msgid "Aplications Menu Definition"
 # msgstr "Definiranje izbornika Aplikacije"
 # 
-# msgid "The command supplied must generate and output a valid menu definition to stdout. This definition should be in the plain text menu file format, described in the menu files included with Workspace, probably at ~/GNUstep/Library/Workspace/menu"
-# msgstr "Ponuđena naredba mora generirati i ispisati važeću definicuju izbornika na stdout. Ova bi definicja trebala biti u čistom tekst menu formatu koji je opisan u menu datotekama iz distribucije, vjerojatno u ~/GNUstep/Library/Workspace/menu"
+# msgid "The command supplied must generate and output a valid menu definition to stdout. This definition should be in the plain text menu file format, described in the menu files included with WindowMaker, probably at ~/GNUstep/Library/WindowMaker/menu"
+# msgstr "Ponuđena naredba mora generirati i ispisati važeću definicuju izbornika na stdout. Ova bi definicja trebala biti u čistom tekst menu formatu koji je opisan u menu datotekama iz distribucije, vjerojatno u ~/GNUstep/Library/WindowMaker/menu"
 # 
 # msgid ""
 # "bad speed value for option %s.\n"
@@ -1254,8 +1254,8 @@ msgstr "ne mogu inicijalizirati aplikaciju"
 # msgid "Omnipresent miniwindows"
 # msgstr "SvugdjePrisutni mini prozori"
 # 
-# msgid "Error extracting version from Workspace. Make sure it is correctly installed."
-# msgstr "Greška pri izvlačenju verzije Workspacea. Provjerite da je ispravno instaliran."
+# msgid "Error extracting version from WindowMaker. Make sure it is correctly installed."
+# msgstr "Greška pri izvlačenju verzije WindowMakera. Provjerite da je ispravno instaliran."
 # 
 # msgid "Auto-arrange icons"
 # msgstr "Auto-pospremanje ikona"

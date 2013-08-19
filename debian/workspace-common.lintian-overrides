@@ -1,0 +1,3 @@
+# The Workspace Appereance menu don't needs the menu.h
+# because the Workspace menu is not Debian standard
+workspace-common: menu-method-should-include-menu-h

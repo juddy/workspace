@@ -100,11 +100,11 @@ int main(int argc, char **argv)
 	WMInitializeApplication("WPrefs", &argc, argv);
 
 	WMSetResourcePath(RESOURCE_PATH);
-	path = WMPathForResourceOfType("ClockPrefs.png", NULL);
+	path = WMPathForResourceOfType("WPrefs.tiff", NULL);
 	if (!path) {
 		/* maybe it is run directly from the source directory */
 		WMSetResourcePath(".");
-		path = WMPathForResourceOfType("ClockPrefs.png", NULL);
+		path = WMPathForResourceOfType("WPrefs.tiff", NULL);
 		if (!path) {
 			WMSetResourcePath("..");
 		}

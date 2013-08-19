@@ -190,7 +190,7 @@
 	"Session" MENU
 		"Save Session" SAVE_SESSION
 		"Clear Session" CLEAR_SESSION
-		"Restart Window Maker" RESTART
+		"Restart Workspace" RESTART
 		"Supplant with MWM" RESTART mwm
 		"Supplant with awesome" RESTART awesome
 		"Supplant with Xmonad" RESTART xmonad

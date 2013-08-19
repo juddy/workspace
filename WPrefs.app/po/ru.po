@@ -388,7 +388,7 @@ msgstr ""
 "KDE/GNOME."
 
 #: ../../WPrefs.app/Expert.c:76
-msgid "Do not set non-Workspace specific parameters (do not use xset)."
+msgid "Do not set non-WindowMaker specific parameters (do not use xset)."
 msgstr ""
 "Не устанавливать параметры, не относящиеся непосредственно к\n"
 "Workspace'у (не использовать xset)."
@@ -1113,14 +1113,14 @@ msgid ""
 "Enter the path for a file containing a menu\n"
 "or a list of directories with the programs you\n"
 "want to have listed in the menu. Ex:\n"
-"~/GNUstep/Library/Workspace/menu\n"
+"~/GNUstep/Library/WindowMaker/menu\n"
 "or\n"
 "/usr/bin ~/xbin"
 msgstr ""
 "Введите путь к файлу, содержащему меню,\n"
 "или список с программами, которые вы хотите\n"
 "видеть перечисленными в меню,  Например:\n"
-"    ~/GNUstep/Library/Workspace/menu\n"
+"    ~/GNUstep/Library/WindowMaker/menu\n"
 "или\n"
 "    /usr/bin ~/xbin"
 
@@ -1304,8 +1304,8 @@ msgstr "Да, и больше об этом не спрашивать."
 #. if there is a localized plmenu for the tongue put it's filename here
 #: ../../WPrefs.app/Menu.c:1575 ../../WPrefs.app/Menu.c:1582
 #, c-format
-msgid "%s/Library/Workspace/plmenu"
-msgstr "%s/Library/Workspace/plmenu.ru"
+msgid "%s/Library/WindowMaker/plmenu"
+msgstr "%s/Library/WindowMaker/plmenu.ru"
 
 #: ../../WPrefs.app/Menu.c:1591
 #, c-format
@@ -2112,8 +2112,8 @@ msgid "could not extract version information from Workspace"
 msgstr "не могу получить номер версии Workspace"
 
 #: ../../WPrefs.app/WPrefs.c:778
-msgid "Make sure workspace is in your search path."
-msgstr "Убедитесь что путь к workspace определен."
+msgid "Make sure wmaker is in your search path."
+msgstr "Убедитесь что путь к wmaker определен."
 
 #: ../../WPrefs.app/WPrefs.c:781
 msgid ""

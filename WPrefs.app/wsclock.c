@@ -1,4 +1,4 @@
-/* wsclock.c: a dockable clock applet for Window Maker
+/* wsclock.c: a dockable clock applet for Workspace
  * created 1999-Apr-09 jmk
  * autodate: 2000-Mar-08 02:31
  * 
