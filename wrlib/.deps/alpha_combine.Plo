@@ -1,40 +1,47 @@
 alpha_combine.lo: alpha_combine.c wraster.h /usr/include/X11/Xlib.h \
-  /usr/include/sys/types.h /usr/include/features.h \
-  /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
-  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
-  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
-  /usr/include/time.h \
-  /usr/lib64/gcc/x86_64-suse-linux/4.3/include/stddef.h \
-  /usr/include/bits/pthreadtypes.h /usr/include/X11/X.h \
-  /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h \
-  /usr/include/X11/Xutil.h /usr/include/X11/keysym.h \
-  /usr/include/X11/keysymdef.h
+ /usr/include/i386-linux-gnu/sys/types.h /usr/include/features.h \
+ /usr/include/stdc-predef.h /usr/include/i386-linux-gnu/bits/predefs.h \
+ /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs-32.h \
+ /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/i386-linux-gnu/bits/typesizes.h /usr/include/time.h \
+ /usr/lib/gcc/i486-linux-gnu/4.7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/X11/X.h \
+ /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h \
+ /usr/include/X11/Xutil.h /usr/include/X11/keysym.h \
+ /usr/include/X11/keysymdef.h
 
 wraster.h:
 
 /usr/include/X11/Xlib.h:
 
-/usr/include/sys/types.h:
+/usr/include/i386-linux-gnu/sys/types.h:
 
 /usr/include/features.h:
 
-/usr/include/sys/cdefs.h:
+/usr/include/stdc-predef.h:
 
-/usr/include/bits/wordsize.h:
+/usr/include/i386-linux-gnu/bits/predefs.h:
 
-/usr/include/gnu/stubs.h:
+/usr/include/i386-linux-gnu/sys/cdefs.h:
 
-/usr/include/gnu/stubs-64.h:
+/usr/include/i386-linux-gnu/bits/wordsize.h:
 
-/usr/include/bits/types.h:
+/usr/include/i386-linux-gnu/gnu/stubs.h:
 
-/usr/include/bits/typesizes.h:
+/usr/include/i386-linux-gnu/gnu/stubs-32.h:
+
+/usr/include/i386-linux-gnu/bits/types.h:
+
+/usr/include/i386-linux-gnu/bits/typesizes.h:
 
 /usr/include/time.h:
 
-/usr/lib64/gcc/x86_64-suse-linux/4.3/include/stddef.h:
+/usr/lib/gcc/i486-linux-gnu/4.7/include/stddef.h:
 
-/usr/include/bits/pthreadtypes.h:
+/usr/include/i386-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/X11/X.h:
 
