@@ -1,0 +1,5 @@
+gif.lo: gif.c ../config.h ../config-paths.h
+
+../config.h:
+
+../config-paths.h:
