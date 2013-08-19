@@ -2,7 +2,7 @@
 
 This is 'Workspace' a fork of Window Maker.
 
-NeXTSTEP is dead, and the 90's are over, and Window Maker has good bones.
+NeXTSTEP is dead, the 90's are over, and in Real Estate jargon, Window Maker has good bones:
 
 - Multiple workspaces
 - Heavily keyboard-operable (window sizing, desktop/app switching, command execution, etc.)
@@ -11,7 +11,13 @@ NeXTSTEP is dead, and the 90's are over, and Window Maker has good bones.
 - WINGs, wmlib, wrlib, libc - No shenanigans with GNOMEs, no Krap.
 - It can just create windows (without borders and titlebars, sunken and unclickable if you wish) or give you a rich 'Desktop'.
 
-Workspace is an attempt to step away from the adherence to the NeXTisms of yester-decade and embrace some other areas of UI/UX on UNIX (or Cygwin, though I've not tried yet).
+Workspace is an attempt to step away from the adherence to the NeXTisms of yester-decade and embrace some other areas of UI/UX:
+
+- Subversion of the Desktop paradigm
+- Lean, with a focus on Terminal and VIM
+- Tiled window management
+- Mouselessness
+- Generic and configurable
 
 
 ## Workspace Keys
@@ -102,4 +108,5 @@ Workspace can be started from .xinitc or by setting your default windowmanager t
 - Default Theme/Style enhancements
 - Better integration with xmux, xtab (tmux, tabbed)
 - Remove legacy UNIX cruft. SCO, anyone?
+- Enhance smart maximization code to bring about 'tiling', share with wmaker.
 
