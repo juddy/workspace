@@ -1,0 +1,58 @@
+# INSTALL:  how to install wsclock
+# created 1999-Apr-10 jmk
+# autodate: 1999-Apr-10 03:07
+
+____________________________
+|O|  Installing wsclock  |X|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The procedure for installing wsclock is relatively simple; it depends
+on imake, which ships with most systems which include the X Window
+System.
+
+  (1) Run the `configure' script to configure the language support that
+      is built into wsclock.  For example:
+      
+          ./configure --lang english
+
+      For a list of the available languages, use:
+      
+          ./configure --help
+
+      The configure script also creates a Makefile out of the Imakefile
+      using xmkmf.
+
+  (2) Compile:
+  
+          make
+
+      You may specify the C compiler to use and additional command-line
+      options for the C compiler using the `CC' and `CDEBUGFLAGS'
+      variables, respectively.  For example:
+      
+          make CC=egcs CDEBUGFLAGS='-O6 -mpentium'
+
+
+  (3) Test wsclock:
+  
+          ./wsclock
+
+      (If it appears to work as expected, *don't dock it*.  Wait until
+      after you've installed it).
+
+  (4) Install:
+  
+          su
+          make install
+	  make install.man
+
+      Optionally, install all the month and weekday pixmaps for use
+      with the `-monthxpm' and `-weekdayxpm' options:
+      
+          make install.share
+
+  (5) You're done.  See the README me file accompanying this one for
+      instructions on installing wsclock into Workspace's dock.
+
+-- 
+Jim Knoble <jmknoble@pobox.com>
