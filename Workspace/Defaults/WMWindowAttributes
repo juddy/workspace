@@ -1,0 +1,107 @@
+{
+  y2controlcenter.Y2controlcenter = {
+    Icon = Settings.png;
+  };
+  wsclock.WSClock = {
+    Icon = ClockPrefs.png;
+  };
+  firefox.Firefox = {
+    Icon = "~/GNUstep/Library/Workspace/CachedPixmaps/firefox.Firefox.xpm";
+  };
+  wmclock.WMClock = {
+    Icon = ClockPrefs.png;
+  };
+  Drawer5.WMDrawer = {
+    Icon = Art.png;
+  };
+  "gimp-2.6.Gimp-2.6" = {
+    Icon = "~/GNUstep/Library/Workspace/CachedPixmaps/gimp-2.6.Gimp-2.6.xpm";
+  };
+  xclipboard.XClipboard = {
+    AlwaysUserIcon = No;
+    EmulateAppIcon = Yes;
+  };
+  xterm.XTerm = {
+    StartMaximized = Yes;
+    AlwaysUserIcon = No;
+    Icon = xterm.png;
+    FullMaximize = Yes;
+  };
+  Drawer0.WMDrawer = {
+    Icon = Terminal.png;
+  };
+  evince.Evince = {
+    Icon = DocumentView.png;
+  };
+  xfontsel.XFontSel = {
+    FocusAcrossWorkspace = Yes;
+    AlwaysUserIcon = No;
+    Icon = Fonts.png;
+    EmulateAppIcon = Yes;
+  };
+  screenshot.Screenshot = {
+    Icon = "~/GNUstep/Library/Workspace/CachedPixmaps/screenshot.Screenshot.xpm";
+  };
+  groupLeader.WPrefs = {
+    Icon = Settings.png;
+  };
+  Drawer4.WMDrawer = {
+    Icon = CodeView.png;
+  };
+  "VCLSalFrame.LibreOffice 3.6" = {
+    Icon = "/home/wkennedy/GNUstep/Library/Workspace/CachedPixmaps/VCLSalFrame.LibreOffice 3.6.xpm";
+  };
+  BasiliskII.BasiliskII = {
+    AlwaysUserIcon = Yes;
+    Icon = Mac.png;
+    NoResizebar = Yes;
+    FullMaximize = Yes;
+    StartWorkspace = "Workspace 3";
+  };
+  Pidgin.Pidgin = {
+    Icon = Messenge.png;
+  };
+  Drawer3.WMDrawer = {
+    Icon = Globe.png;
+  };
+  "VCLSalFrame.libreoffice-calc" = {
+    Icon = "/home/wkennedy/GNUstep/Library/Workspace/CachedPixmaps/VCLSalFrame.libreoffice-calc.xpm";
+  };
+  gvim.Gvim = {
+    NoTitlebar = Yes;
+    AlwaysUserIcon = No;
+    Icon = "~/GNUstep/Library/Workspace/CachedPixmaps/gvim.Gvim.xpm";
+    FullMaximize = Yes;
+  };
+  Logo.WMClip = {
+    Icon = Clip.png;
+  };
+  gimp.Gimp = {
+    AlwaysUserIcon = Yes;
+    Icon = Art.png;
+  };
+  "Qt-subapplication.VirtualBox" = {
+    Icon = Fonts.png;
+  };
+  Drawer2.WMDrawer = {
+    Icon = "FileCab-Look.png";
+  };
+  Drawer1.WMDrawer = {
+    Icon = Audio.png;
+  };
+  designer.Designer = {
+    Icon = "/home/wkennedy/GNUstep/Library/Workspace/CachedPixmaps/designer.Designer.xpm";
+  };
+  "VCLSalFrame.DocumentWindow.LibreOffice 3.6" = {
+    Icon = "/home/wkennedy/GNUstep/Library/Workspace/CachedPixmaps/VCLSalFrame.DocumentWindow.LibreOffice 3.6.xpm";
+  };
+  nautilus.Nautilus = {
+    Icon = "~/GNUstep/Library/Workspace/CachedPixmaps/nautilus.Nautilus.xpm";
+  };
+  Drawer6.WMDrawer = {
+    Icon = DefaultIcon.png;
+  };
+  Logo.WMDock = {
+    Icon = Xetos.png;
+  };
+}
