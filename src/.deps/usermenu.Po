@@ -1,0 +1,7 @@
+usermenu.o: usermenu.c wconfig.h ../config.h ../config-paths.h
+
+wconfig.h:
+
+../config.h:
+
+../config-paths.h:

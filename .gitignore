@@ -34,51 +34,51 @@ m4/
 src/workspace
 test/wtest
 
-util/convertfonts
-util/geticonset
-util/getstyle
-util/seticons
-util/setstyle
-util/wdread
-util/wdwrite
-util/wmagnify
-util/workspace.inst
-util/wmgenmenu
-util/wmmenugen
-util/wmsetbg
-util/wmsetup
-util/wxcopy
-util/wxpaste
+#util/convertfonts
+#util/geticonset
+#util/getstyle
+#util/seticons
+#util/setstyle
+#util/wdread
+#util/wdwrite
+#util/wmagnify
+#util/workspace.inst
+#util/wmgenmenu
+#util/wmmenugen
+#util/wmsetbg
+#util/wmsetup
+#util/wxcopy
+#util/wxpaste
 
-wrlib/get-wraster-flags
-wrlib/tests/testdraw
-wrlib/tests/testgrad
-wrlib/tests/testrot
-wrlib/tests/view
+#wrlib/get-wraster-flags
+#wrlib/tests/testdraw
+#wrlib/tests/testgrad
+#wrlib/tests/testrot
+#wrlib/tests/view
 
-WINGs/Examples/colorpick
-WINGs/Examples/connect
-WINGs/Examples/fontl
-WINGs/Examples/puzzle
-WINGs/Examples/server
-WINGs/Extras/test
-WINGs/Tests/testmywidget
-WINGs/Tests/wmfile
-WINGs/Tests/wmquery
-WINGs/Tests/wtest
-WINGs/get-wings-flags
-WINGs/get-wutil-flags
+#WINGs/Examples/colorpick
+#WINGs/Examples/connect
+#WINGs/Examples/fontl
+#WINGs/Examples/puzzle
+#WINGs/Examples/server
+#WINGs/Extras/test
+#WINGs/Tests/testmywidget
+#WINGs/Tests/wmfile
+#WINGs/Tests/wmquery
+#WINGs/Tests/wtest
+#WINGs/get-wings-flags
+#WINGs/get-wutil-flags
 
-WPrefs.app/WPrefs
+#WPrefs.app/WPrefs
 
 # These files are generated from make rules
 wrlib/wrlib.pc
 WINGs/WINGs.pc
 
-Workspace/Defaults/WMRootMenu
+#Workspace/Defaults/WMRootMenu
 #Workspace/Defaults/WMState
-Workspace/Defaults/WMWindowAttributes
-Workspace/Defaults/Workspace
+#Workspace/Defaults/WMWindowAttributes
+#Workspace/Defaults/Workspace
 #Workspace/IconSets/Default.iconset
 
 # Some text editors generate backup files

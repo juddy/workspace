@@ -1,0 +1,7 @@
+xdnd.o: xdnd.c wconfig.h ../config.h ../config-paths.h
+
+wconfig.h:
+
+../config.h:
+
+../config-paths.h:

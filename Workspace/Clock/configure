@@ -1,0 +1,47 @@
+#!/bin/sh
+clear
+echo Welcome to the new world of wsclock!
+echo
+echo you can build one of the following themes into wsclock as a default theme,
+echo "without specifying it with -t <theme-name>"
+echo
+cd themes
+for i in *
+do
+  echo $i
+done
+
+printf "choose a theme from above: "
+read line
+
+for i in *
+do
+  if test $i = $line
+  then cd ..
+    echo
+    echo you selected \'$line\'
+    echo
+    echo proceed by saying 'make' and then 'make install' if appropriate
+    echo
+    rm -rf default_theme
+    if ! test $line = classic
+    then ln -s themes/$line default_theme
+         make clean
+         exit 0
+    else
+	 mkdir default_theme
+	 ln -s ../themes/classic/config     default_theme/config
+	 ln -s ../themes/classic/date.xpm   default_theme/date.xpm
+	 ln -s ../themes/classic/clock.xpm  default_theme/clock.xpm
+	 ln -s ../themes/classic/led.xpm    default_theme/led.xpm
+	 ln -s ../themes/classic/hour.xpm   default_theme/hour.xpm
+	 ln -s ../themes/classic/minute.xpm default_theme/minute.xpm
+	 ln -s ../themes/classic/second.xpm default_theme/second.xpm
+	 exec ./classic.configure
+    fi
+  fi
+done
+
+echo try again. The theme $line does not exist..
+exit -1
+

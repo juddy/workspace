@@ -1,0 +1,9 @@
+1. Check in the Imakefile if all LIBS are ok for your system.
+2. `configure`
+3. `make` (Send me the output if this fails)
+4. copy wsclock to /usr/X11/bin/
+5. copy everything in the themes directory to either
+   /usr/local/share/wsclock/ or /usr/share/wsclock/
+
+   For testing, you can start them from the themes directory or
+   give an absolute path.
