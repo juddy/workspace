@@ -2,17 +2,17 @@
 			          WPrefs.app
 				  ==========
 
- 		  The WindowMaker Prerefences Application
+ 		  The Workspace Prerefences Application
 		
 
-    WPrefs.app is the preferences "editor" for the WindowMaker window 
-manager. It can be used to set most of the preference options of WindowMaker
+    WPrefs.app is the preferences "editor" for the Workspace window 
+manager. It can be used to set most of the preference options of Workspace
 and define it's applications menu. It also can change some settings 
-that do not belong to WindowMaker. 
+that do not belong to Workspace. 
 
     Although WPrefs.app is designed to be easy to use, you should read the
 user guide to be fully aware of all available options and other features
-of WindowMaker that are not related to configuration.
+of Workspace that are not related to configuration.
 
     To run WPrefs, do not put it in your search path. Instead, run it
 with the full path, like /usr/local/GNUstep/Applications/WPrefs.app/WPrefs
@@ -21,7 +21,7 @@ icon and use it.
 
     If you change configuration often, you might want to leave WPrefs
 always running, leaving it hidden while not in use. You can also make it
-be automatically started with WindowMaker and toggle the Start Hidden
+be automatically started with Workspace and toggle the Start Hidden
 option in the attributes panel for the WPrefs window. Of course, it will
 use some memory, but by leaving it hidden it'll probably be swapped out and
 stay there until you unhide it.
@@ -43,7 +43,7 @@ Notes
 -----
 
 The mouse speed configuration is saved as a call for xset in 
-~/G/D/L/W/autostart. WindowMaker calls this file when it is started.
+~/G/D/L/W/autostart. Workspace calls this file when it is started.
 
 If you don't want or can't use the menu definition section, do not
 open it's section (or if you do open it, do not Save), or WPrefs will
@@ -61,7 +61,7 @@ overwritten if you recreate it.
 Build
 -----
 
-WPrefs will be built automatically and installed with the rest of WindowMaker.
+WPrefs will be built automatically and installed with the rest of Workspace.
 
 
 
@@ -72,7 +72,7 @@ By default, WPrefs.app will be installed in the GNUstep applications directory,
 which is /usr/local/GNUstep/Applications. If you want to install it somewhere 
 else, like in /some_weird_path/Applications, set the GNUSTEP_LOCAL_ROOT
 environment variable to some_weird_path before running configure for
-WindowMaker. You can also configure Workspace supplying the --with-gnustepdir
+Workspace. You can also configure Workspace supplying the --with-gnustepdir
 option to configure, like ./configure --with-gnustepdir=/usr/GNUstep/Applications
 If you change your mind after installing, you can move the .app directory 
 to one of the following GNUstep/Applications directories:
@@ -105,7 +105,7 @@ Icon and image artwork:
     Marco van Hylckama Vlieg <marco@workspace.info>
     See details in README in tiff/ directory
 
-WindowMaker
+Workspace
 -----------
 
     If for some weird reason you end up with this preferences program and 
@@ -117,5 +117,5 @@ Contact
 -------
 
 Send comments and bug reports to kojima@workspace.info 
-Use the WindowMaker BUGFORM to report bugs.
+Use the Workspace BUGFORM to report bugs.
 

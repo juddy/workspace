@@ -87,7 +87,7 @@ void CreateImages(WMScreen *scr, RContext *rc, RImage *xis, const char *file,
 
 WMWindow *GetWindow(Panel *panel);
 
-/* manipulate the dictionary for the WindowMaker domain */
+/* manipulate the dictionary for the Workspace domain */
 
 WMPropList *GetObjectForKey(const char *defaultName);
 

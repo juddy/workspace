@@ -72,7 +72,7 @@ msgstr "impossível inicializar aplicação"
 
 #: ../../WPrefs.app/WPrefs.c:259
 msgid "Workspace Preferences"
-msgstr "Preferências do WindowMaker"
+msgstr "Preferências do Workspace"
 
 #: ../../WPrefs.app/WPrefs.c:283
 msgid "Revert Page"
@@ -96,12 +96,12 @@ msgstr "Ajuda em balões"
 
 #: ../../WPrefs.app/WPrefs.c:333
 msgid "Workspace Preferences Utility"
-msgstr "Preferências do WindowMaker"
+msgstr "Preferências do Workspace"
 
 #: ../../WPrefs.app/WPrefs.c:340
 #, c-format
 msgid "Version %s for Workspace %s or newer"
-msgstr "Versão %s para WindowMaker %s ou superior"
+msgstr "Versão %s para Workspace %s ou superior"
 
 #: ../../WPrefs.app/WPrefs.c:348
 msgid "Starting..."
@@ -141,7 +141,7 @@ msgstr "arquivo de imagem %s não pôde ser carregado:%s"
 
 #: ../../WPrefs.app/WPrefs.c:676
 msgid "Loading Workspace configuration files..."
-msgstr "Carregando arquivos de configuração do WindowMaker..."
+msgstr "Carregando arquivos de configuração do Workspace..."
 
 #: ../../WPrefs.app/WPrefs.c:680
 msgid "Initializing configuration panels..."
@@ -158,7 +158,7 @@ msgstr ""
 #: ../../WPrefs.app/WPrefs.c:742 ../../WPrefs.app/WPrefs.c:812
 #, c-format
 msgid "Workspace domain (%s) is corrupted!"
-msgstr "Domínio WindowMaker (%s) corrompido!"
+msgstr "Domínio Workspace (%s) corrompido!"
 
 #: ../../WPrefs.app/Font.c:330 ../../WPrefs.app/Menu.c:1401
 #: ../../WPrefs.app/MouseSettings.c:152 ../../WPrefs.app/MouseSettings.c:172
@@ -186,22 +186,22 @@ msgstr "OK"
 #: ../../WPrefs.app/WPrefs.c:746
 #, c-format
 msgid "Could not load Workspace domain (%s) from defaults database."
-msgstr "Domínio WindowMaker (%s) não pôde ser carregado do BD de defaults."
+msgstr "Domínio Workspace (%s) não pôde ser carregado do BD de defaults."
 
 #: ../../WPrefs.app/WPrefs.c:759
 msgid "could not extract version information from Workspace"
-msgstr "erro extraindo versão do WindowMaker"
+msgstr "erro extraindo versão do Workspace"
 
 #: ../../WPrefs.app/WPrefs.c:760
 msgid "Make sure wmaker is in your search path."
-msgstr "Certifique-se que o WindowMaker está no seu PATH."
+msgstr "Certifique-se que o Workspace está no seu PATH."
 
 #: ../../WPrefs.app/WPrefs.c:763
 msgid ""
 "Could not extract version from Workspace. Make sure it is correctly "
 "installed and is in your PATH environment variable."
 msgstr ""
-"Erro extraindo versão do WindowMaker. Certifique-se que ele está instalado "
+"Erro extraindo versão do Workspace. Certifique-se que ele está instalado "
 "corretamente e está em seu PATH."
 
 #: ../../WPrefs.app/WPrefs.c:773
@@ -210,7 +210,7 @@ msgid ""
 "installed and the path where it installed is in the PATH environment "
 "variable."
 msgstr ""
-"Erro extraindo versão do WindowMaker. Certifique-se que ele está instalado "
+"Erro extraindo versão do Workspace. Certifique-se que ele está instalado "
 "corretamente e está em seu PATH."
 
 #: ../../WPrefs.app/WPrefs.c:780
@@ -219,7 +219,7 @@ msgid ""
 "WPrefs only supports Workspace 0.18.0 or newer.\n"
 "The version installed is %i.%i.%i\n"
 msgstr ""
-"WPrefs só suporta WindowMaker 0.18.0 or mais recente.\n"
+"WPrefs só suporta Workspace 0.18.0 or mais recente.\n"
 "A versão instalada é %i.%i.%i\n"
 
 #: ../../WPrefs.app/WPrefs.c:787
@@ -228,7 +228,7 @@ msgid ""
 "Workspace %i.%i.%i, which is installed in your system, is not fully "
 "supported by this version of WPrefs."
 msgstr ""
-"O WindowMaker %i.%i.%i, que está instalado em seu sistema, não é totalmente "
+"O Workspace %i.%i.%i, que está instalado em seu sistema, não é totalmente "
 "suportado por esta versão do WPrefs."
 
 #: ../../WPrefs.app/WPrefs.c:789
@@ -242,7 +242,7 @@ msgstr "não foi possível executar \"wmaker --global_defaults_path\"."
 #: ../../WPrefs.app/WPrefs.c:816
 #, c-format
 msgid "Could not load global Workspace domain (%s)."
-msgstr "Domínio WindowMaker global (%s) não pôde ser carregado."
+msgstr "Domínio Workspace global (%s) não pôde ser carregado."
 
 #: ../../WPrefs.app/WPrefs.c:1065
 #, c-format
@@ -558,8 +558,8 @@ msgid "More colors for applications"
 msgstr "Mais cores para applicações"
 
 #: ../../WPrefs.app/Configurations.c:466
-msgid "More colors for WindowMaker"
-msgstr "Mais cores para o WindowMaker"
+msgid "More colors for Workspace"
+msgstr "Mais cores para o Workspace"
 
 #: ../../WPrefs.app/Configurations.c:521
 msgid "Other Configurations"
@@ -573,7 +573,7 @@ msgid ""
 msgstr ""
 "Velocidade das animações, estilos de barras de título,\n"
 "várias opções e número de cores para reservar\n"
-"para o WindowMaker em displays 8 bits."
+"para o Workspace em displays 8 bits."
 
 #: ../../WPrefs.app/Expert.c:75
 msgid ""
@@ -581,13 +581,13 @@ msgid ""
 msgstr "Desabilita minijanelas (ícones para janelas minimizadas)."
 
 #: ../../WPrefs.app/Expert.c:76
-msgid "Do not set non-WindowMaker specific parameters (do not use xset)"
+msgid "Do not set non-Workspace specific parameters (do not use xset)"
 msgstr ""
-"Não configurar parâmetros não pertencentes ao WindowMaker (não usar xset)"
+"Não configurar parâmetros não pertencentes ao Workspace (não usar xset)"
 
 #: ../../WPrefs.app/Expert.c:77
-msgid "Automatically save session when exiting WindowMaker"
-msgstr "Salvar sessão automaticamente ao sair do WindowMaker"
+msgid "Automatically save session when exiting Workspace"
+msgstr "Salvar sessão automaticamente ao sair do Workspace"
 
 #: ../../WPrefs.app/Expert.c:78
 msgid "Use SaveUnder in window frames, icons, menus and other objects"
@@ -1159,8 +1159,8 @@ msgid "Show All Windows"
 msgstr "Mostrar Todas as Janelas"
 
 #: ../../WPrefs.app/Menu.c:1196
-msgid "Exit WindowMaker"
-msgstr "Sair do WindowMaker"
+msgid "Exit Workspace"
+msgstr "Sair do Workspace"
 
 #: ../../WPrefs.app/Menu.c:1197
 msgid "Exit X Session"
@@ -1171,8 +1171,8 @@ msgid "Start Window Manager"
 msgstr "Iniciar gerente de janelas"
 
 #: ../../WPrefs.app/Menu.c:1199
-msgid "Restart WindowMaker"
-msgstr "Reiniciar WindowMaker"
+msgid "Restart Workspace"
+msgstr "Reiniciar Workspace"
 
 #: ../../WPrefs.app/Menu.c:1200
 msgid "Save Session"
@@ -1213,8 +1213,8 @@ msgstr "Pedir ajuda ao Guru"
 #. if there is a localized plmenu for the tongue put it's filename here
 #: ../../WPrefs.app/Menu.c:1382 ../../WPrefs.app/Menu.c:1389
 #, c-format
-msgid "%s/Library/WindowMaker/plmenu"
-msgstr "%s/Library/WindowMaker/plmenu.pt"
+msgid "%s/Library/Workspace/plmenu"
+msgstr "%s/Library/Workspace/plmenu.pt"
 
 #: ../../WPrefs.app/Menu.c:1398
 #, c-format
@@ -1881,12 +1881,12 @@ msgstr "Digite o caminho para o arquivo de menu:"
 #: ../../WPrefs.app/MenuGuru.c:318
 msgid ""
 "The menu file must contain a menu in the plain text menu file format. This "
-"format is described in the menu files included with WindowMaker, probably at "
-"~/GNUstep/Library/WindowMaker/menu"
+"format is described in the menu files included with Workspace, probably at "
+"~/GNUstep/Library/Workspace/menu"
 msgstr ""
 "O arquivo de menu deve conter um menu em formato texto puro. Esse formato é "
-"descrito no menu incluído no WindowMaker, provavelmente em "
-"~/GNUstep/Library/WindowMaker/menu."
+"descrito no menu incluído no Workspace, provavelmente em "
+"~/GNUstep/Library/Workspace/menu."
 
 #: ../../WPrefs.app/MenuGuru.c:328
 msgid "Type the command that will generate the menu definition:"
@@ -1896,12 +1896,12 @@ msgstr "Digite o comando que irá gerar a definição do menu:"
 msgid ""
 "The command supplied must generate and output a valid menu definition to "
 "stdout. This definition should be in the plain text menu file format, "
-"described in the menu files included with WindowMaker, usually at "
-"~/GNUstep/Library/WindowMaker/menu"
+"described in the menu files included with Workspace, usually at "
+"~/GNUstep/Library/Workspace/menu"
 msgstr ""
 "O comando deverá gerar uma definição de menu válida e mandá-lo para o "
 "stdout. Esta definição deve estar no formato descrito em "
-"~/GNUstep/Library/WindowMaker/menu"
+"~/GNUstep/Library/Workspace/menu"
 
 #: ../../WPrefs.app/MenuGuru.c:350 ../../WPrefs.app/MenuGuru.c:372
 #: ../../WPrefs.app/MenuGuru.c:394

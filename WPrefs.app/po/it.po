@@ -570,7 +570,7 @@ msgid ""
 "Workspace"
 msgstr ""
 "Più colori per\n"
-"WindowMaker"
+"Workspace"
 
 #: ../../WPrefs.app/Configurations.c:521
 msgid "Other Configurations"
@@ -594,7 +594,7 @@ msgstr ""
 "KDE."
 
 #: ../../WPrefs.app/Expert.c:76
-msgid "Do not set non-WindowMaker specific parameters (do not use xset)."
+msgid "Do not set non-Workspace specific parameters (do not use xset)."
 msgstr "Non cambiare parametri esterni a Workspace (non usare xset)."
 
 #: ../../WPrefs.app/Expert.c:77
@@ -1258,14 +1258,14 @@ msgid ""
 "Enter the path for a file containing a menu\n"
 "or a list of directories with the programs you\n"
 "want to have listed in the menu. Ex:\n"
-"~/GNUstep/Library/WindowMaker/menu\n"
+"~/GNUstep/Library/Workspace/menu\n"
 "or\n"
 "/usr/bin ~/xbin"
 msgstr ""
 "Scrivere il percorso di un file contenente un\n"
 "menù o una lista di directory con i programmi\n"
 "che si vogliono nel menù. Ad esempio:\n"
-"~/GNUstep/Library/WindowMaker/menu.it\n"
+"~/GNUstep/Library/Workspace/menu.it\n"
 "oppure\n"
 "/usr/bin ~/xbin"
 
@@ -1438,8 +1438,8 @@ msgstr "Sì, non chiederlo più."
 #. if there is a localized plmenu for the tongue put it's filename here
 #: ../../WPrefs.app/Menu.c:1514 ../../WPrefs.app/Menu.c:1521
 #, c-format
-msgid "%s/Library/WindowMaker/plmenu"
-msgstr "%s/Library/WindowMaker/plmenu.it"
+msgid "%s/Library/Workspace/plmenu"
+msgstr "%s/Library/Workspace/plmenu.it"
 
 #: ../../WPrefs.app/Menu.c:1530
 #, c-format

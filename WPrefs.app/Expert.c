@@ -41,7 +41,7 @@ static const struct {
 	{ N_("Disable miniwindows (icons for minimized windows). For use with KDE/GNOME."),
 	  /* default: */ False, OPTION_WMAKER, "DisableMiniwindows" },
 
-	{ N_("Do not set non-WindowMaker specific parameters (do not use xset)."),
+	{ N_("Do not set non-Workspace specific parameters (do not use xset)."),
 	  /* default: */ False, OPTION_USERDEF, "NoXSetStuff" },
 
 	{ N_("Automatically save session when exiting Workspace."),

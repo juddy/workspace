@@ -59,7 +59,7 @@ msgstr "不能初始化应用程序"
 
 #: ../../WPrefs.app/WPrefs.c:254
 msgid "Workspace Preferences"
-msgstr "WindowMaker 设置"
+msgstr "Workspace 设置"
 
 #: ../../WPrefs.app/WPrefs.c:278
 msgid "Revert Page"
@@ -83,12 +83,12 @@ msgstr "浮动帮助"
 
 #: ../../WPrefs.app/WPrefs.c:328
 msgid "Workspace Preferences Utility"
-msgstr "WindowMaker 设置程序"
+msgstr "Workspace 设置程序"
 
 #: ../../WPrefs.app/WPrefs.c:335
 #, c-format
 msgid "Version %s for Workspace %s or newer"
-msgstr "版本 %s, 用于 WindowMaker %s 或更新的版本"
+msgstr "版本 %s, 用于 Workspace %s 或更新的版本"
 
 #: ../../WPrefs.app/WPrefs.c:343
 msgid "Starting..."
@@ -539,8 +539,8 @@ msgid "More colors for applications"
 msgstr "把更多颜色保留给应用程序"
 
 #: ../../WPrefs.app/Configurations.c:465
-msgid "More colors for WindowMaker"
-msgstr "WindowMaker 使用更多颜色"
+msgid "More colors for Workspace"
+msgstr "Workspace 使用更多颜色"
 
 #: ../../WPrefs.app/Configurations.c:520
 msgid "Other Configurations"
@@ -561,12 +561,12 @@ msgid ""
 msgstr "取消微型窗口(最小化窗口的图标)以便和 KDE 或 GNOME 一起使用."
 
 #: ../../WPrefs.app/Expert.c:75
-msgid "Do not set non-WindowMaker specific parameters (do not use xset)"
-msgstr "不设置非 WindowMaker 使用的参数(不使用xset)"
+msgid "Do not set non-Workspace specific parameters (do not use xset)"
+msgstr "不设置非 Workspace 使用的参数(不使用xset)"
 
 #: ../../WPrefs.app/Expert.c:76
-msgid "Automatically save session when exiting WindowMaker"
-msgstr "退出 WindowMaker 时自动保存会话"
+msgid "Automatically save session when exiting Workspace"
+msgstr "退出 Workspace 时自动保存会话"
 
 #: ../../WPrefs.app/Expert.c:77
 msgid "Use SaveUnder in window frames, icons, menus and other objects"
@@ -1081,8 +1081,8 @@ msgid "Show All Windows"
 msgstr "显示所有窗口"
 
 #: ../../WPrefs.app/Menu.c:1179
-msgid "Exit WindowMaker"
-msgstr "退出 WindowMaker"
+msgid "Exit Workspace"
+msgstr "退出 Workspace"
 
 #: ../../WPrefs.app/Menu.c:1180
 msgid "Exit X Session"
@@ -1093,8 +1093,8 @@ msgid "Start Window Manager"
 msgstr "启动窗口管理器"
 
 #: ../../WPrefs.app/Menu.c:1182
-msgid "Restart WindowMaker"
-msgstr "重新启动 WindowMaker"
+msgid "Restart Workspace"
+msgstr "重新启动 Workspace"
 
 #: ../../WPrefs.app/Menu.c:1183
 msgid "Save Session"
@@ -1135,8 +1135,8 @@ msgstr "向专家求助"
 #. if there is a localized plmenu for the tongue put it's filename here
 #: ../../WPrefs.app/Menu.c:1365 ../../WPrefs.app/Menu.c:1372
 #, c-format
-msgid "%s/Library/WindowMaker/plmenu"
-msgstr "%s/Library/WindowMaker/plmenu"
+msgid "%s/Library/Workspace/plmenu"
+msgstr "%s/Library/Workspace/plmenu"
 
 #: ../../WPrefs.app/Menu.c:1381
 #, c-format
@@ -1777,11 +1777,11 @@ msgstr "输入菜单文件存放的路径:"
 #: ../../WPrefs.app/MenuGuru.c:318
 msgid ""
 "The menu file must contain a menu in the plain text menu file format. This "
-"format is described in the menu files included with WindowMaker, probably at "
-"~/GNUstep/Library/WindowMaker/menu"
+"format is described in the menu files included with Workspace, probably at "
+"~/GNUstep/Library/Workspace/menu"
 msgstr ""
-"菜单文件必须含有普通文本菜单文件格式的菜单.这种格式在 WindowMaker 包含的"
-"菜单文中有描述. 这个菜单可能在 ~/GNUstep/Library/WindowMaker/menu 里"
+"菜单文件必须含有普通文本菜单文件格式的菜单.这种格式在 Workspace 包含的"
+"菜单文中有描述. 这个菜单可能在 ~/GNUstep/Library/Workspace/menu 里"
 
 #: ../../WPrefs.app/MenuGuru.c:328
 msgid "Type the command that will generate the menu definition:"
@@ -1791,12 +1791,12 @@ msgstr "输入会产生菜单定义的命令:"
 msgid ""
 "The command supplied must generate and output a valid menu definition to "
 "stdout. This definition should be in the plain text menu file format, "
-"described in the menu files included with WindowMaker, usually at "
-"~/GNUstep/Library/WindowMaker/menu"
+"described in the menu files included with Workspace, usually at "
+"~/GNUstep/Library/Workspace/menu"
 msgstr ""
 "提供的命令必须产生且输出有效的菜单定义至标准输出. 这定义应该是普通文本菜单"
-"文件格式.文件格式在WindowMaker包含的菜单文件中有描述,这个文件通常在 "
-"~/GNUstep/Library/WindowMaker/menu 里"
+"文件格式.文件格式在Workspace包含的菜单文件中有描述,这个文件通常在 "
+"~/GNUstep/Library/Workspace/menu 里"
 
 #: ../../WPrefs.app/MenuGuru.c:350 ../../WPrefs.app/MenuGuru.c:372
 #: ../../WPrefs.app/MenuGuru.c:394

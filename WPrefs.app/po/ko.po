@@ -546,7 +546,7 @@ msgid "More colors for applications"
 msgstr "애플리케이션에 더 많은 컬러 부여"
 
 #: ../../WPrefs.app/Configurations.c:465
-msgid "More colors for WindowMaker"
+msgid "More colors for Workspace"
 msgstr "윈도우 메이커에 더 많은 컬러 부여"
 
 #: ../../WPrefs.app/Configurations.c:520
@@ -569,11 +569,11 @@ msgid ""
 msgstr "최소화창(최소화된 창의 아이콘) 사용 않음. KDE/GNOME 사용시."
 
 #: ../../WPrefs.app/Expert.c:76
-msgid "Do not set non-WindowMaker specific parameters (do not use xset)"
+msgid "Do not set non-Workspace specific parameters (do not use xset)"
 msgstr "윈도우 메이커의 기능이 아닌 것은 설정하지 않음 (xset을 사용하지 않음)"
 
 #: ../../WPrefs.app/Expert.c:77
-msgid "Automatically save session when exiting WindowMaker"
+msgid "Automatically save session when exiting Workspace"
 msgstr "윈도우 메이커 종료시 세션 자동 저장"
 
 #: ../../WPrefs.app/Expert.c:78
@@ -1092,7 +1092,7 @@ msgid "Show All Windows"
 msgstr "모든 창 보이기"
 
 #: ../../WPrefs.app/Menu.c:1179
-msgid "Exit WindowMaker"
+msgid "Exit Workspace"
 msgstr "윈도우 메이커 종료"
 
 #: ../../WPrefs.app/Menu.c:1180
@@ -1104,7 +1104,7 @@ msgid "Start Window Manager"
 msgstr "창 관리자 시작"
 
 #: ../../WPrefs.app/Menu.c:1182
-msgid "Restart WindowMaker"
+msgid "Restart Workspace"
 msgstr "윈도우 메이커 재시작"
 
 #: ../../WPrefs.app/Menu.c:1183
@@ -1146,8 +1146,8 @@ msgstr "Guru에게 도움 요청"
 #. if there is a localized plmenu for the tongue put it's filename here
 #: ../../WPrefs.app/Menu.c:1365 ../../WPrefs.app/Menu.c:1372
 #, c-format
-msgid "%s/Library/WindowMaker/plmenu"
-msgstr "%s/Library/WindowMaker/plmenu.ko"
+msgid "%s/Library/Workspace/plmenu"
+msgstr "%s/Library/Workspace/plmenu.ko"
 
 #: ../../WPrefs.app/Menu.c:1381
 #, c-format
@@ -1794,12 +1794,12 @@ msgstr "메뉴 파일의 경로를 적으세요:"
 #: ../../WPrefs.app/MenuGuru.c:318
 msgid ""
 "The menu file must contain a menu in the plain text menu file format. This "
-"format is described in the menu files included with WindowMaker, probably at "
-"~/GNUstep/Library/WindowMaker/menu"
+"format is described in the menu files included with Workspace, probably at "
+"~/GNUstep/Library/Workspace/menu"
 msgstr ""
 "메뉴 파일의 내용은 보통 텍스트로 된 메뉴 파일 형식의 메뉴입니다. 이 형식은 "
-"WindowMaker에 포함된 메뉴 파일을 보면 되며, 보통 "
-"~/GNUstep/Library/WindowMaker/menu.ko입니다."
+"Workspace에 포함된 메뉴 파일을 보면 되며, 보통 "
+"~/GNUstep/Library/Workspace/menu.ko입니다."
 
 #: ../../WPrefs.app/MenuGuru.c:328
 msgid "Type the command that will generate the menu definition:"
@@ -1809,12 +1809,12 @@ msgstr "메뉴 정의를 만들어낼 명령을 입력하세요:"
 msgid ""
 "The command supplied must generate and output a valid menu definition to "
 "stdout. This definition should be in the plain text menu file format, "
-"described in the menu files included with WindowMaker, usually at "
-"~/GNUstep/Library/WindowMaker/menu"
+"described in the menu files included with Workspace, usually at "
+"~/GNUstep/Library/Workspace/menu"
 msgstr ""
 "이 명령은 유효한 메뉴 정의를 만들어서 표준 출력으로 내보내야 합니다. 이 "
-"정의는 보통 텍스트로 된 메뉴 파일 형식이어야 하며, WindowMaker에 포함된 메뉴 "
-"파일에 설명되어 있습니다. 보통 ~/GNUstep/Library/WindowMaker/menu.ko 입니다"
+"정의는 보통 텍스트로 된 메뉴 파일 형식이어야 하며, Workspace에 포함된 메뉴 "
+"파일에 설명되어 있습니다. 보통 ~/GNUstep/Library/Workspace/menu.ko 입니다"
 
 #: ../../WPrefs.app/MenuGuru.c:350 ../../WPrefs.app/MenuGuru.c:372
 #: ../../WPrefs.app/MenuGuru.c:394

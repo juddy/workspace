@@ -1094,7 +1094,7 @@ msgstr ""
 "proovi see sulgeda märgiga \"."
 
 #: ../src/proplist.c:434
-msgid "Comments are not allowed inside WindowMaker owned domain files."
+msgid "Comments are not allowed inside Workspace owned domain files."
 msgstr "Workspacei domeenifailides ei ole kommentaarid lubatud."
 
 #: ../src/proplist.c:453

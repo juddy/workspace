@@ -385,8 +385,8 @@ msgstr ""
 "Zakázať miniokná (ikony pre minimalizované okná). Pre použitie s KDE/GNOME."
 
 #: ../../WPrefs.app/Expert.c:76
-msgid "Do not set non-WindowMaker specific parameters (do not use xset)."
-msgstr "Nenastavovať parametre, ktoré nie sú špecifické pre WindowMaker."
+msgid "Do not set non-Workspace specific parameters (do not use xset)."
+msgstr "Nenastavovať parametre, ktoré nie sú špecifické pre Workspace."
 
 #: ../../WPrefs.app/Expert.c:77
 msgid "Automatically save session when exiting Workspace."
@@ -1044,14 +1044,14 @@ msgid ""
 "Enter the path for a file containing a menu\n"
 "or a list of directories with the programs you\n"
 "want to have listed in the menu. Ex:\n"
-"~/GNUstep/Library/WindowMaker/menu\n"
+"~/GNUstep/Library/Workspace/menu\n"
 "or\n"
 "/usr/bin ~/xbin"
 msgstr ""
 "Zadajte cestu k súboru, ktorý obsahuje menu\n"
 "alebo zoznam adresárov s programami, ktoré chcete\n"
 "mať zaradené do menu. Napr.\n"
-"~/GNUstep/Library/WindowMaker/menu\n"
+"~/GNUstep/Library/Workspace/menu\n"
 "alebo\n"
 "/usr/bin ~/xbin"
 
@@ -1224,8 +1224,8 @@ msgstr "Áno, viac sa nepýtať"
 #. if there is a localized plmenu for the tongue put it's filename here
 #: ../../WPrefs.app/Menu.c:1515 ../../WPrefs.app/Menu.c:1522
 #, c-format
-msgid "%s/Library/WindowMaker/plmenu"
-msgstr "%s/Library/WindowMaker/plmenu.sk"
+msgid "%s/Library/Workspace/plmenu"
+msgstr "%s/Library/Workspace/plmenu.sk"
 
 #: ../../WPrefs.app/Menu.c:1531
 #, c-format
