@@ -112,27 +112,16 @@
 		"Legal" LEGAL_PANEL
 	"Info" END
 	"Run..." SHEXEC %a(Run,Type command to run:)
-	"Terminal" EXEC xterm -sb
+	"Terminal" EXEC urxvt -sb
 	"Web Browser" EXEC www-browser
 	"Workspaces" WORKSPACE_MENU
 	"Applications" MENU
-		"Libre Office" MENU
-			"OpenOffice.org" EXEC ooffice
-			"Writer" EXEC oowriter
-			"Spreadsheet" EXEC oocalc
-			"Draw" EXEC oodraw
-			"Impress" EXEC ooimpress
-		"Libre Office" END 
-
 		"Editors" MENU
 			"Vim" EXEC xterm -e vi
-			"gVim" EXEC gvim
+			"Gvim" EXEC gvim
 			"emacs" EXEC xterm -e emacs
 			"Xemacs" EXEC xemacs
 		"Editors" END
-
-		"Multimedia" MENU
-		"Multimedia" END
 	"Applications" END
 
 	"Utils" MENU
