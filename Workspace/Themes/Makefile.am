@@ -1,6 +1,6 @@
 defsdatadir = $(pkgdatadir)/Themes
 
-defsdata_DATA = Default.style OpenStep.style
+defsdata_DATA = Default.style
 
 EXTRA_DIST = $(defsdata_DATA)
 
