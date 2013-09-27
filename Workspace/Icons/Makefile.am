@@ -55,6 +55,7 @@ Ftp.png\
 Globe.png\
 GNUstep.png\
 Image-Default.png\
+Idea.png\
 Keycap.png\
 LightBang.png\
 LightIdea.png\
