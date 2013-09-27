@@ -114,7 +114,7 @@
   MenuTextBack = (mvgradient, "#45445a", "#494949");
   PTitleColor = "#d6e3ff";
   IconBack = (spixmap, Tile.png, "#b5b6b5");
-  DisplayFont = "Trebuchet MS,sans serif:pixelsize=12";
+  DisplayFont = "Sans,sans serif:pixelsize=12";
   MenuTitleBack = (mvgradient, "#45445a", "#494949");
   FTitleBack = (mvgradient, "#45445a", "#494949");
   TitleJustify = left;

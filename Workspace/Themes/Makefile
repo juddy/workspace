@@ -301,7 +301,7 @@ top_srcdir = ../..
 wprefs_bindir = ${exec_prefix}/bin
 wprefs_datadir = ${datarootdir}/WPrefs
 defsdatadir = $(pkgdatadir)/Themes
-defsdata_DATA = Default.style OpenStep.style
+defsdata_DATA = Default.style
 EXTRA_DIST = $(defsdata_DATA)
 all: all-am
 

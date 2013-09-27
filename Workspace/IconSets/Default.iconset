@@ -1,0 +1,17 @@
+{
+  Logo.WMDock = {Icon = Xetos.png;};
+  Logo.WMPanel = {Icon = Info.png;};
+  Logo.WMClip = {Icon = Clip.png;};
+  Dockit = {Icon = GNUstep.png;};
+  DockApp = {NoAppIcon = NO;};
+  panel.Panel = {NoAppIcon = YES;};
+  gmc.Gmc = {NoAppIcon = YES;};
+  XTerm = {Icon = xterm.png;};
+  URxvt = {Icon = urxvt.png;};
+   NoAppIcon = Yes; 
+  xcalc = {AlwaysUserIcon = Yes;Icon = "Calc.png";};
+  AcroRead = {AlwaysUserIcon = Yes;Icon = pdf.png;};
+  Gimp = {AlwaysUserIcon = Yes;Icon = Art.png;};
+  "." = {NoAppIcon = Yes;};
+  "*" = {Icon = defaultAppIcon.png;SharedAppIcon = Yes;};
+}

@@ -65,6 +65,10 @@
 /* Define to 1 if you have the <stdlib.h> header file. */
 #define HAVE_STDLIB_H 1
 
+/* Defined if header "stdnoreturn.h" exists, it defines ISO C11 attribute
+   'noreturn' and it works */
+#define HAVE_STDNORETURN 1
+
 /* Define to 1 if you have the `strcasecmp' function. */
 #define HAVE_STRCASECMP 1
 
@@ -135,6 +139,9 @@
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "Workspace"
 
+/* Define to the home page for this package. */
+#define PACKAGE_URL "http://workspace.subul.us/"
+
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "0.95.4"
 
@@ -166,7 +173,7 @@
 #define USE_PNG 1
 
 /* define if TIFF libraries are available (set by configure) */
-#define USE_TIFF 1
+/* #undef USE_TIFF */
 
 /* define if XPM libraries are available (set by configure) */
 #define USE_XPM 1
@@ -197,6 +204,10 @@
 #ifndef __cplusplus
 /* #undef inline */
 #endif
+
+/* Defines the attribute to tell the compiler that a function never returns,
+   if the ISO C11 attribute does not work */
+/* #undef noreturn */
 
 /* Define to `int' if <sys/types.h> does not define. */
 /* #undef pid_t */

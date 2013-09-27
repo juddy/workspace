@@ -1,32 +1,44 @@
 Docks.o: Docks.c WPrefs.h /usr/include/stdlib.h /usr/include/features.h \
-  /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
-  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
-  /usr/lib64/gcc/x86_64-suse-linux/4.3/include/stddef.h \
-  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
-  /usr/include/sys/types.h /usr/include/bits/types.h \
-  /usr/include/bits/typesizes.h /usr/include/time.h \
-  /usr/include/bits/pthreadtypes.h /usr/include/stdio.h \
-  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
-  /usr/lib64/gcc/x86_64-suse-linux/4.3/include/stdarg.h \
-  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
-  /usr/include/bits/stdio.h /usr/include/string.h \
-  /usr/include/bits/string.h /usr/include/bits/string2.h \
-  /usr/include/endian.h /usr/include/bits/endian.h /usr/include/strings.h \
-  /usr/include/signal.h /usr/include/bits/sigset.h \
-  /usr/include/bits/signum.h /usr/include/bits/siginfo.h \
-  /usr/include/bits/sigaction.h /usr/include/bits/sigstack.h \
-  /usr/include/sys/ucontext.h /usr/include/bits/sigcontext.h \
-  /usr/include/bits/sigthread.h /usr/include/X11/Xlib.h \
-  /usr/include/X11/X.h /usr/include/X11/Xfuncproto.h \
-  /usr/include/X11/Xosdefs.h ../wrlib/wraster.h /usr/include/X11/Xutil.h \
-  /usr/include/X11/keysym.h /usr/include/X11/keysymdef.h \
-  ../WINGs/WINGs/WINGs.h ../WINGs/WINGs/WUtil.h \
-  /usr/lib64/gcc/x86_64-suse-linux/4.3/include-fixed/limits.h \
-  /usr/lib64/gcc/x86_64-suse-linux/4.3/include-fixed/syslimits.h \
-  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
-  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
-  ../src/wconfig.h ../config.h ../config-paths.h
+ /usr/include/stdc-predef.h /usr/include/i386-linux-gnu/bits/predefs.h \
+ /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs-32.h \
+ /usr/lib/gcc/i486-linux-gnu/4.7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/waitflags.h \
+ /usr/include/i386-linux-gnu/bits/waitstatus.h \
+ /usr/include/i386-linux-gnu/sys/types.h \
+ /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/i386-linux-gnu/bits/typesizes.h /usr/include/time.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h \
+ /usr/include/i386-linux-gnu/bits/stdlib-float.h /usr/include/stdio.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/i486-linux-gnu/4.7/include/stdarg.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/i386-linux-gnu/bits/sys_errlist.h \
+ /usr/include/i386-linux-gnu/bits/stdio.h /usr/include/string.h \
+ /usr/include/i386-linux-gnu/bits/string.h \
+ /usr/include/i386-linux-gnu/bits/string2.h /usr/include/endian.h \
+ /usr/include/i386-linux-gnu/bits/endian.h /usr/include/strings.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/sigset.h \
+ /usr/include/i386-linux-gnu/bits/signum.h \
+ /usr/include/i386-linux-gnu/bits/siginfo.h \
+ /usr/include/i386-linux-gnu/bits/sigaction.h \
+ /usr/include/i386-linux-gnu/bits/sigstack.h \
+ /usr/include/i386-linux-gnu/sys/ucontext.h \
+ /usr/include/i386-linux-gnu/bits/sigcontext.h \
+ /usr/include/i386-linux-gnu/bits/sigthread.h /usr/include/X11/Xlib.h \
+ /usr/include/X11/X.h /usr/include/X11/Xfuncproto.h \
+ /usr/include/X11/Xosdefs.h ../wrlib/wraster.h /usr/include/X11/Xutil.h \
+ /usr/include/X11/keysym.h /usr/include/X11/keysymdef.h \
+ ../WINGs/WINGs/WINGs.h ../WINGs/WINGs/WUtil.h \
+ /usr/lib/gcc/i486-linux-gnu/4.7/include-fixed/limits.h \
+ /usr/lib/gcc/i486-linux-gnu/4.7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /usr/include/i386-linux-gnu/bits/xopen_lim.h ../src/wconfig.h \
+ ../config.h ../config-paths.h
 
 WPrefs.h:
 
@@ -34,29 +46,35 @@ WPrefs.h:
 
 /usr/include/features.h:
 
-/usr/include/sys/cdefs.h:
+/usr/include/stdc-predef.h:
 
-/usr/include/bits/wordsize.h:
+/usr/include/i386-linux-gnu/bits/predefs.h:
 
-/usr/include/gnu/stubs.h:
+/usr/include/i386-linux-gnu/sys/cdefs.h:
 
-/usr/include/gnu/stubs-64.h:
+/usr/include/i386-linux-gnu/bits/wordsize.h:
 
-/usr/lib64/gcc/x86_64-suse-linux/4.3/include/stddef.h:
+/usr/include/i386-linux-gnu/gnu/stubs.h:
 
-/usr/include/bits/waitflags.h:
+/usr/include/i386-linux-gnu/gnu/stubs-32.h:
 
-/usr/include/bits/waitstatus.h:
+/usr/lib/gcc/i486-linux-gnu/4.7/include/stddef.h:
 
-/usr/include/sys/types.h:
+/usr/include/i386-linux-gnu/bits/waitflags.h:
 
-/usr/include/bits/types.h:
+/usr/include/i386-linux-gnu/bits/waitstatus.h:
 
-/usr/include/bits/typesizes.h:
+/usr/include/i386-linux-gnu/sys/types.h:
+
+/usr/include/i386-linux-gnu/bits/types.h:
+
+/usr/include/i386-linux-gnu/bits/typesizes.h:
 
 /usr/include/time.h:
 
-/usr/include/bits/pthreadtypes.h:
+/usr/include/i386-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/i386-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/stdio.h:
 
@@ -66,43 +84,43 @@ WPrefs.h:
 
 /usr/include/wchar.h:
 
-/usr/lib64/gcc/x86_64-suse-linux/4.3/include/stdarg.h:
+/usr/lib/gcc/i486-linux-gnu/4.7/include/stdarg.h:
 
-/usr/include/bits/stdio_lim.h:
+/usr/include/i386-linux-gnu/bits/stdio_lim.h:
 
-/usr/include/bits/sys_errlist.h:
+/usr/include/i386-linux-gnu/bits/sys_errlist.h:
 
-/usr/include/bits/stdio.h:
+/usr/include/i386-linux-gnu/bits/stdio.h:
 
 /usr/include/string.h:
 
-/usr/include/bits/string.h:
+/usr/include/i386-linux-gnu/bits/string.h:
 
-/usr/include/bits/string2.h:
+/usr/include/i386-linux-gnu/bits/string2.h:
 
 /usr/include/endian.h:
 
-/usr/include/bits/endian.h:
+/usr/include/i386-linux-gnu/bits/endian.h:
 
 /usr/include/strings.h:
 
 /usr/include/signal.h:
 
-/usr/include/bits/sigset.h:
+/usr/include/i386-linux-gnu/bits/sigset.h:
 
-/usr/include/bits/signum.h:
+/usr/include/i386-linux-gnu/bits/signum.h:
 
-/usr/include/bits/siginfo.h:
+/usr/include/i386-linux-gnu/bits/siginfo.h:
 
-/usr/include/bits/sigaction.h:
+/usr/include/i386-linux-gnu/bits/sigaction.h:
 
-/usr/include/bits/sigstack.h:
+/usr/include/i386-linux-gnu/bits/sigstack.h:
 
-/usr/include/sys/ucontext.h:
+/usr/include/i386-linux-gnu/sys/ucontext.h:
 
-/usr/include/bits/sigcontext.h:
+/usr/include/i386-linux-gnu/bits/sigcontext.h:
 
-/usr/include/bits/sigthread.h:
+/usr/include/i386-linux-gnu/bits/sigthread.h:
 
 /usr/include/X11/Xlib.h:
 
@@ -124,21 +142,21 @@ WPrefs.h:
 
 ../WINGs/WINGs/WUtil.h:
 
-/usr/lib64/gcc/x86_64-suse-linux/4.3/include-fixed/limits.h:
+/usr/lib/gcc/i486-linux-gnu/4.7/include-fixed/limits.h:
 
-/usr/lib64/gcc/x86_64-suse-linux/4.3/include-fixed/syslimits.h:
+/usr/lib/gcc/i486-linux-gnu/4.7/include-fixed/syslimits.h:
 
 /usr/include/limits.h:
 
-/usr/include/bits/posix1_lim.h:
+/usr/include/i386-linux-gnu/bits/posix1_lim.h:
 
-/usr/include/bits/local_lim.h:
+/usr/include/i386-linux-gnu/bits/local_lim.h:
 
 /usr/include/linux/limits.h:
 
-/usr/include/bits/posix2_lim.h:
+/usr/include/i386-linux-gnu/bits/posix2_lim.h:
 
-/usr/include/bits/xopen_lim.h:
+/usr/include/i386-linux-gnu/bits/xopen_lim.h:
 
 ../src/wconfig.h:
 

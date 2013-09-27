@@ -2,7 +2,7 @@
 
 WCFLAGS="-I/usr/local/include "
 WLFLAGS="-L/usr/local/lib "
-WLIBS="-lwraster -lXpm -ljpeg -lXext -lXext -lX11  -lm"
+WLIBS="-lwraster -lXpm -lpng -ljpeg -lXext -lXext -lX11  -lm"
 
 usage="Usage: get-wraster-flags [--cflags] [--ldflags] [--libs]"
 

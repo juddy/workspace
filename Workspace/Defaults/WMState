@@ -1,0 +1,355 @@
+{
+  Dock = {
+    Applications = (
+      {
+        Forced = No;
+        Name = Logo.WMDock;
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,0";
+        Lock = Yes;
+        Command = "";
+      },
+      {
+        Forced = No;
+        Name = wmclock.WMClock;
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,1";
+        Lock = Yes;
+        PasteCommand = "./wmclock -exe WPrefs -12 %s";
+        Command = "./wmclock -exe WPrefs -12";
+      }
+    );
+
+    AutoRaiseLower = No;
+    Lowered = No;
+    Position = "0,0";
+
+  };
+
+  Clip = {
+    Forced = No;
+    Name = Logo.WMClip;
+    BuggyApplication = No;
+    AutoLaunch = No;
+    Lock = No;
+    Position = "572,275";
+    Command = "-";
+  };
+
+  Applications = (
+    {
+      Dock = CodeDrawer;
+      Name = gvim.Gvim;
+      Shaded = No;
+      Miniaturized = No;
+      Command = gvim;
+      Geometry = "600x500+68+4";
+      Hidden = No;
+      Workspace = "1";
+      ShortcutMask = 0;
+    },
+    {
+      Dock = AppDrawer;
+      Name = xterm.XTerm;
+      Shaded = No;
+      Miniaturized = No;
+      Command = xterm;
+      Geometry = "500x400+68+4";
+      Hidden = No;
+      Workspace = "1";
+      ShortcutMask = 0;
+    },
+    {
+      Dock = AppDrawer;
+      Name = xterm.XTerm;
+      Shaded = No;
+      Miniaturized = No;
+      Command = xterm;
+      Geometry = "500x400+68+4";
+      Hidden = No;
+      Workspace = "1";
+      ShortcutMask = 0;
+    },
+    {
+      Dock = CodeDrawer;
+      Name = gvim.Gvim;
+      Shaded = No;
+      Miniaturized = No;
+      Command = gvim;
+      Geometry = "1000x800+68+4";
+      Hidden = No;
+      Workspace = "1";
+      ShortcutMask = 0;
+    },
+    {
+      Dock = WebDrawer;
+      Name = firefox.Firefox;
+      Shaded = No;
+      Miniaturized = No;
+      Command = firefox;
+      Geometry = "1000x800+68+4";
+      Hidden = No;
+      Workspace = 2;
+      ShortcutMask = 0;
+    },
+    {
+      Dock = ArtDrawer;
+      Name = gimp.Gimp;
+      Shaded = No;
+      Miniaturized = No;
+      Command = gimp;
+      Geometry = "200x300+1359+305";
+      Hidden = No;
+      Workspace = "Workspace 4";
+      ShortcutMask = 0;
+    },
+  );
+  Drawers = (
+    {
+      Dock = {
+        AutoCollapse = Yes;
+        Applications = (
+          {
+            Forced = No;
+            Name = xterm.XTerm;
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "2,0";
+            Lock = No;
+            PasteCommand = "xterm %s";
+            Command = xterm;
+            Omnipresent = No;
+          },
+          {
+            Forced = No;
+            Name = xterm.XTerm;
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "1,0";
+            Lock = No;
+            PasteCommand = "xterm %s";
+            Command = xterm;
+            Omnipresent = No;
+          }
+        );
+        Collapsed = Yes;
+        AutoAttractIcons = No;
+      };
+      Name = AppDrawer;
+      Position = "0,256";
+    },
+    {
+      Dock = {
+        AutoCollapse = Yes;
+        Applications = ();
+        Collapsed = Yes;
+        AutoAttractIcons = No;
+      };
+      Name = AudioDrawer;
+      Position = "0,192";
+    },
+    {
+      Dock = {
+        AutoCollapse = Yes;
+        Applications = (
+          {
+            Forced = No;
+            Name = groupLeader.WPrefs;
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "3,0";
+            Lock = No;
+            PasteCommand = "WPrefs %s";
+            Command = WPrefs;
+            Omnipresent = No;
+          },
+          {
+            Forced = No;
+            Name = "Qt-subapplication.VirtualBox";
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "1,0";
+            Lock = No;
+            PasteCommand = "/usr/lib/virtualbox/VirtualBox %s";
+            Command = "/usr/lib/virtualbox/VirtualBox";
+            Omnipresent = No;
+          },
+          {
+            Forced = No;
+            Name = evince.Evince;
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "2,0";
+            Lock = No;
+            PasteCommand = "evince %s";
+            Command = evince;
+            Omnipresent = No;
+          }
+        );
+        Collapsed = Yes;
+        AutoAttractIcons = No;
+      };
+      Name = TermDrawer;
+      Position = "0,128";
+    },
+    {
+      Dock = {
+        AutoCollapse = Yes;
+        Applications = (
+          {
+            Forced = No;
+            Name = firefox.Firefox;
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "1,0";
+            Lock = No;
+            PasteCommand = "firefox %s";
+            Command = firefox;
+            Omnipresent = No;
+          },
+          {
+            Forced = No;
+            Name = Pidgin.Pidgin;
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "2,0";
+            Lock = No;
+            PasteCommand = "Pidgin %s";
+            Command = Pidgin;
+            Omnipresent = No;
+          }
+        );
+        Collapsed = Yes;
+        AutoAttractIcons = No;
+      };
+      Name = WebDrawer;
+      Position = "0,320";
+    },
+    {
+      Dock = {
+        AutoCollapse = Yes;
+        Applications = (
+          {
+            Forced = No;
+            Name = gvim.Gvim;
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "1,0";
+            Lock = No;
+            PasteCommand = "gvim %s";
+            Command = gvim;
+            Omnipresent = No;
+          }
+        );
+        Collapsed = Yes;
+        AutoAttractIcons = No;
+      };
+      Name = CodeDrawer;
+      Position = "0,384";
+    },
+    {
+      Dock = {
+        AutoCollapse = Yes;
+        Applications = (
+          {
+            Forced = No;
+            Name = gimp.Gimp;
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "1,0";
+            Lock = No;
+            PasteCommand = "gimp %s";
+            Command = gimp;
+            Omnipresent = No;
+          }
+        );
+        Collapsed = Yes;
+        AutoAttractIcons = No;
+      };
+      Name = ArtDrawer;
+      Position = "0,448";
+    },
+    {
+      Dock = {
+        AutoCollapse = Yes;
+        Applications = (
+          {
+            Forced = No;
+            Name = BasiliskII.BasiliskII;
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "2,0";
+            Lock = Yes;
+            PasteCommand = "xclipboard %s";
+            Command = xclipboard;
+            Omnipresent = No;
+          },
+          {
+            Forced = No;
+            Name = "Qt-subapplication.VirtualBox";
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "1,0";
+            Lock = Yes;
+            PasteCommand = "xfontsel &";
+            Command = xfontsel;
+            Omnipresent = No;
+          }
+        );
+        Collapsed = Yes;
+        AutoAttractIcons = No;
+      };
+      Name = AppDrawer;
+      Position = "0,512";
+    }
+  );
+  Workspaces = (
+    {
+      Clip = {
+        AutoRaiseLower = No;
+        Applications = ();
+        AutoCollapse = No;
+        Collapsed = No;
+        AutoAttractIcons = No;
+        Lowered = Yes;
+      };
+      Name = "1";
+    },
+    {
+      Clip = {
+        AutoRaiseLower = No;
+        Applications = ();
+        AutoCollapse = No;
+        Collapsed = No;
+        AutoAttractIcons = No;
+        Lowered = Yes;
+      };
+      Name = "2";
+    },
+    {
+      Clip = {
+        AutoRaiseLower = No;
+        Applications = ();
+        AutoCollapse = No;
+        Collapsed = No;
+        AutoAttractIcons = No;
+        Lowered = Yes;
+      };
+      Name = "3";
+    },
+    {
+      Clip = {
+        AutoRaiseLower = No;
+        Applications = ();
+        AutoCollapse = No;
+        Collapsed = No;
+        AutoAttractIcons = No;
+        Lowered = Yes;
+      };
+      Name = "4";
+    }
+  );
+  Workspace = "1";
+}

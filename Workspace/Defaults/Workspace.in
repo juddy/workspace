@@ -1,52 +1,40 @@
 {
   SmoothWorkspaceBack = NO;
   PopupSwitchMenu = NO;
-  MenuStyle = normal;
-  DisableMiniwindows = NO;
+  DisableMiniwindows = YES;
   OpenTransientOnOwnerWorkspace = NO;
   EdgeResistance = 30;
-  WorkspaceBorderSize = 0;
-  WorkspaceBorder = None;
+  WorkspaceBorderSize = 4;
+  WorkspaceBorder = Top;
   IconificationStyle = Zoom;
   IconPath = (
     "~/GNUstep/Library/Icons",
-    "#pkgdatadir#/Icons",
-    "#pkgdatadir#/Pixmaps",
-    "/usr/include/X11/pixmaps",
-    "~/GNUstep/Library/Workspace/Pixmaps",
-    "~/GNUstep/Library/Workspace/CachedPixmaps",
     "/usr/share/icons",
-    "/usr/local/share/pixmaps",
-    "/usr/share/pixmaps"
   );
   PixmapPath = (
     "~/GNUstep/Library/Workspace/Pixmaps",
     "~/GNUstep/Library/Workspace/Backgrounds",
-    "~/GNUstep/Library/Workspace/CachedPixmaps",
-    "#pkgdatadir#/Pixmaps",
-    "#pkgdatadir#/Backgrounds",
-    "/usr/include/X11/pixmaps",
-    "/usr/local/share/pixmaps",
+    "/usr/local/share/wallpapers",
     "/usr/share/pixmaps"
   );
-  WindowTitleBalloons = YES;
+  WindowTitleBalloons = NO;
   IconSize = 64;
   FocusMode = manual;
   DisableWSMouseActions = NO;
   MouseLeftButtonAction = SelectWindows;
   MouseMiddleButtonAction = OpenWindowListMenu;
   MouseRightButtonAction = OpenApplicationsMenu;
-  MouseWheelAction = None;
+  MouseWheelAction = SwitchWorkspaces;
   ColormapSize = 4;
   DisableDithering = NO;
   ModifierKey = Mod1;
   NewStyle = "new";
   DisableDock = NO;
-  DisableClip = NO;
+  DisableClip = YES;
   DisableDrawers = NO;
-  Superfluous = YES;
+  Superfluous = NO;
   StickyIcons = NO;
-  SaveSessionOnExit = NO;
+  SaveSessionOnExit = YES;
   ColormapMode = auto;
   RaiseDelay = 0;
   AutoFocus = YES;
@@ -55,10 +43,10 @@
   UseSaveUnders = NO;
   DisableSound = NO;
   DisableAnimations = NO;
-  DontLinkWorkspaces = YES;
-  AutoArrangeIcons = NO;
-  AdvanceToNewWorkspace = NO;
-  CycleWorkspaces = NO;
+  DontLinkWorkspaces = NO;
+  AutoArrangeIcons = YES;
+  AdvanceToNewWorkspace = YES;
+  CycleWorkspaces = YES;
   ResizeDisplay = center;
   MoveDisplay = floating;
   OpaqueMove = YES;
@@ -73,15 +61,15 @@
   NoWindowOverIcons = NO;
   IgnoreFocusClick = NO;
   CloseKey = None;
-  MaximizeKey = None;
-  VMaximizeKey = None;
+  MaximizeKey = "Mod1+Shift+M";
+  VMaximizeKey = "Control+Shift+M";
   RaiseLowerKey = None;
   DontConfirmKill = NO;
   ShadeKey = None;
   NextWorkspaceKey = "Mod1+Control+Right";
   PrevWorkspaceKey = "Mod1+Control+Left";
-  RootMenuKey = F12;
-  WindowListKey = F11;
+  RootMenuKey = "Mod1+Escape";
+  WindowListKey = "Mod1+Control+Escape";
   WindowMenuKey = "Control+Escape";
   RaiseKey = "Mod1+Up";
   LowerKey = "Mod1+Down";
@@ -105,35 +93,38 @@
   ConstrainWindowSize = NO;
   DockRaiseLowerKey = None;
   ClipRaiseLowerKey = None;
-  TitleJustify = center;
-  WindowTitleFont = "Sans:bold:pixelsize=12";
-  MenuTitleFont = "Sans:bold:pixelsize=12";
-  MenuTextFont = "Sans:pixelsize=12";
-  IconTitleFont = "Sans:pixelsize=9";
-  ClipTitleFont = "Sans:bold:pixelsize=10";
-  DisplayFont = "Sans:pixelsize=12";
-  LargeDisplayFont = "Sans:pixelsize=24";
-  HighlightColor = white;
   HighlightTextColor = black;
-  ClipTitleColor = black;
-  CClipTitleColor = "rgb:61/61/61";
-  FTitleColor = white;
-  PTitleColor = white;
-  UTitleColor = black;
-  MenuTitleColor = white;
-  MenuTextColor = black;
-  MenuDisabledColor = gray50;
-  WorkspaceBack = (solid, "rgb:50/50/75");
-  MenuTextColor = black;
-  FTitleBack = (solid, black);
-  UTitleBack = (solid, "rgb:aa/aa/aa");
-  ResizebarBack = (solid, "rgb:aa/aa/aa");
-  PTitleBack = (solid, gray40);
-  MenuTitleBack = (solid, black);
-  MenuTextBack = (solid, "rgb:aa/aa/aa");
-  IconBack = (dgradient, "rgb:a6/a6/b6", "rgb:51/55/61");
   ClipAutocollapseDelay = 1000;
   ClipAutolowerDelay = 1000;
   ClipAutoexpandDelay = 600;
   ClipAutoraiseDelay = 600;
+  LargeDisplayFont = "Sans:slant=0:weight=80:width=100:pixelsize=72";
+  HighlightColor = "#45445a";
+  FTitleColor = "#a5b2ce";
+  MenuTextFont = "Sans:slant=0:weight=80:width=100:pixelsize=12";
+  WorkspaceBack = (tvgradient, black.xpm, 128, "#0d0a40", "#031a2e");
+  UTitleBack = (tvgradient, unfocused_window.tif, 38, "#9d9d9d", "#000000");
+  IconTitleFont = "Sans:slant=0:weight=80:width=100:pixelsize=10";
+  PTitleBack = (mvgradient, "#b3b6b6", "#011b3d");
+  WindowTitleFont = "Sans:slant=0:weight=80:width=100:pixelsize=12";
+  UTitleColor = "#848684";
+  ClipTitleFont = "Sans:slant=0:weight=80:width=100:pixelsize=10";
+  MenuDisabledColor = "#949294";
+  MenuStyle = normal;
+  MenuTextBack = (mvgradient, "#45445a", "#494949");
+  PTitleColor = "#d6e3ff";
+  IconBack = (spixmap, Tile.png, "#b5b6b5");
+  DisplayFont = "Sans,sans serif:pixelsize=12";
+  MenuTitleBack = (mvgradient, "#45445a", "#494949");
+  FTitleBack = (mvgradient, "#45445a", "#494949");
+  TitleJustify = left;
+  CClipTitleColor = "#0e1e42";
+  ResizebarBack = (mvgradient, "#45445a", "#494949");
+  MenuTextColor = "#f7fff7";
+  ClipTitleColor = "#778fbd";
+  IconTitleBack = "#061b25";
+  HighlightTextColor = "#000000";
+  IconTitleColor = "#ffd906";
+  MenuTitleFont = "Sans:pixelsize=12";
+  MenuTitleColor = "#a5b2ce";
 }

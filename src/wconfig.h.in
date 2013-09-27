@@ -46,7 +46,7 @@
  * Undefine BALLOON_TEXT if you don't want balloons for showing extra
  * information, like window titles that are not fully visible.
  */
-#define BALLOON_TEXT
+#undef BALLOON_TEXT
 
 /*
  * If balloons should be shaped or be simple rectangles.
@@ -107,15 +107,15 @@
  * AfterStep, instead of the default Openstep look.
  * NEXTSTEP 3.3 also does not have these shadows.
  */
-#undef SHADOW_RESIZEBAR
+#define SHADOW_RESIZEBAR
 
-#define NORMAL_ICON_KABOOM
+#undef NORMAL_ICON_KABOOM
 
 /*
  * #define if you want the window creation animation when superfluous
  * is enabled.
  */
-#undef WINDOW_BIRTH_ZOOM
+#define WINDOW_BIRTH_ZOOM
 
 /*
  * Some of the following options can be configured in the preference files,
@@ -155,7 +155,7 @@
 
 /* icon path */
 #define DEF_ICON_PATHS \
-    "(\"~/pixmaps\",\"~/GNUstep/Library/Icons\",\"/usr/include/X11/pixmaps/\",\""PIXMAPDIR"\")"
+    "(\"~/.workspace-icons\",\"~/GNUstep/Library/Icons\")"
 
 /* window title to use for untitled windows */
 #define DEF_WINDOW_TITLE "Untitled"
@@ -164,13 +164,13 @@
 #define DEF_FRAME_COLOR   "white"
 
 /* default fonts */
-#define DEF_TITLE_FONT          "\"Trebuchet MS,sans serif:bold:pixelsize=12\""
-#define DEF_MENU_TITLE_FONT     "\"Trebuchet MS,sans serif:bold:pixelsize=12\""
-#define DEF_MENU_ENTRY_FONT     "\"Trebuchet MS,sans serif:pixelsize=12\""
-#define DEF_ICON_TITLE_FONT     "\"Arial,sans serif:pixelsize=9\""
-#define DEF_CLIP_TITLE_FONT     "\"Verdana:bold:pixelsize=10\""
-#define DEF_INFO_TEXT_FONT      "\"Trebuchet MS,sans serif:pixelsize=12\""
-#define DEF_WORKSPACE_NAME_FONT "\"Trebuchet MS,sans serif:pixelsize=24\""
+#define DEF_TITLE_FONT          "\"Sans,sans serif:bold:pixelsize=10\""
+#define DEF_MENU_TITLE_FONT     "\"Sans,sans serif:bold:pixelsize=10\""
+#define DEF_MENU_ENTRY_FONT     "\"Sans,sans serif:bold:pixelsize=10\""
+#define DEF_ICON_TITLE_FONT     "\"Sans,sans serif:pixelsize=9\""
+#define DEF_CLIP_TITLE_FONT     "\"Sans:bold:pixelsize=10\""
+#define DEF_INFO_TEXT_FONT      "\"Sans,sans serif:bold:pixelsize=10\""
+#define DEF_WORKSPACE_NAME_FONT "\"Sans,sans serif:bold:pixelsize=72\""
 
 /* line width of the move/resize frame */
 #define DEF_FRAME_THICKNESS              1
@@ -202,8 +202,8 @@
  */
 #define MAX_ANIMATION_TIME	         1
 /* Zoom animation */
-#define MINIATURIZE_ANIMATION_FRAMES_Z   7
-#define MINIATURIZE_ANIMATION_STEPS_Z    16
+#define MINIATURIZE_ANIMATION_FRAMES_Z   10
+#define MINIATURIZE_ANIMATION_STEPS_Z    20
 #define MINIATURIZE_ANIMATION_DELAY_Z    10000
 /* Twist animation */
 #define MINIATURIZE_ANIMATION_FRAMES_T   12
@@ -275,14 +275,14 @@
 #define SHADE_DELAY_US		10
 
 /* workspace name on switch display */
-#define WORKSPACE_NAME_FADE_DELAY 30
-#define WORKSPACE_NAME_DELAY     400
+#define WORKSPACE_NAME_FADE_DELAY 20
+#define WORKSPACE_NAME_DELAY     200
 
 /* Delay when cycling colors of selected icons. */
 #define COLOR_CYCLE_DELAY        200
 
 /* size of the pieces in the undocked icon explosion */
-#define ICON_KABOOM_PIECE_SIZE  32
+#define ICON_KABOOM_PIECE_SIZE  1
 
 /*
  * Position increment for smart placement: >= 1
@@ -302,11 +302,11 @@
 #define DOCK_DETTACH_THRESHOLD	3
 
 /* Max. number of icons the dock and clip can have */
-#define DOCK_MAX_ICONS		20
+#define DOCK_MAX_ICONS		42
 
 /* blink interval when invoking a menu item */
 #define MENU_BLINK_DELAY	60000
-#define MENU_BLINK_COUNT	1
+#define MENU_BLINK_COUNT	3
 #define CURSOR_BLINK_RATE	300
 
 /* how many pixels to move before dragging windows and other objects */
@@ -338,11 +338,11 @@
 /* number of window shortcuts */
 #define MAX_WINDOW_SHORTCUTS      10
 #define WM_PI                     3.14159265358979323846
-#define MIN_TITLEFONT_HEIGHT(h)   ((h)>14 ? (h) : 14)
-#define TITLEBAR_HEIGHT           16  /* window's titlebar height */
-#define RESIZEBAR_HEIGHT          6   /* height of the resizebar */
+#define MIN_TITLEFONT_HEIGHT(h)   ((h)>12 ? (h) : 12)
+#define TITLEBAR_HEIGHT           14  /* window's titlebar height */
+#define RESIZEBAR_HEIGHT          4   /* height of the resizebar */
 #define RESIZEBAR_MIN_WIDTH       20  /* min width of handles-corner_width */
-#define RESIZEBAR_CORNER_WIDTH    28  /* width of the corner of resizebars */
+#define RESIZEBAR_CORNER_WIDTH    40  /* width of the corner of resizebars */
 #define MENU_INDICATOR_SPACE      12
 #define MIN_WINDOW_SIZE	          5   /* minimum size for windows */
 #define ICON_WIDTH                64  /* size of the icon window */

@@ -3,7 +3,6 @@ defsdatadir = $(pkgdatadir)/Icons
 
 
 defsdata_DATA = \
-
 Art.png\
 Audio.png\
 AudioPrefs.png\
@@ -19,7 +18,6 @@ ClockPrefs.png\
 CodeView.png\
 ConfigX.png\
 DateTime.png\
-DebianBlock.png\
 defaultAppIcon.png\
 DefaultIcon.png\
 Directory-B33f.png\
@@ -78,14 +76,11 @@ News.png\
 Note.png\
 Prefs.png\
 Record.png\
-RedHatBlock.png\
 ScreenSaver.png\
 Screenshot.png\
 Script-Search.png\
 Settings.png\
 Shell.png\
-SlackwareBlock.png\
-SUSEBlock.png\
 Terminal.png\
 Urxvt.png\
 Users.png\
