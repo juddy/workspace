@@ -14,7 +14,7 @@
   MenuStyle = normal;
   MenuTextBack = (mvgradient, "#45445a", "#494949");
   PTitleColor = "#d6e3ff";
-  IconBack = (spixmap, Tile.png, "#b5b6b5");
+  IconBack = ("#646464");
   DisplayFont = "Sans,sans serif:pixelsize=10";
   MenuTitleBack = (mvgradient, "#45445a", "#494949");
   FTitleBack = (mvgradient, "#45445a", "#494949");
