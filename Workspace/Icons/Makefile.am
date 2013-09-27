@@ -61,7 +61,6 @@ LightIdea.png\
 Light.png\
 LockScreen.png\
 Log.png\
-Mac.png\
 Mail.png\
 Messenge.png\
 Movies.png\
@@ -80,11 +79,11 @@ ScreenSaver.png\
 Screenshot.png\
 Script-Search.png\
 Settings.png\
-Shell.png\
 Terminal.png\
 Urxvt.png\
 Users.png\
 WinDesktop.png\
+Workspace.png\
 xetos-dock-tile.png\
 Xetos.png\
 Xterm.png\
