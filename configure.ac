@@ -11,11 +11,11 @@ dnl
 dnl
 
 
-AC_INIT(Workspace, 0.95.4, , Workspace, http://workspace.subul.us/)
+AC_INIT(Workspace, 0.0.4, , Workspace, http://worpskace.juddy.org/)
 AC_CONFIG_SRCDIR(src/Workspace.h)
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_HEADERS(config.h)
-AM_INIT_AUTOMAKE([1.10 ])
+AM_INIT_AUTOMAKE([1.11 silent-rules])
 
 AH_BOTTOM([#include "config-paths.h"])
 
@@ -562,6 +562,12 @@ if test "$xinerama" = yes; then
 		xine=1
 	fi
 
+	if test "$sunxine" = yes; then
+	    xine=1
+	    AC_DEFINE(SOLARIS_XINERAMA, 1, 
+		[define if you want support for the XINERAMA extension and are in Solaris (set by configure)])
+	fi
+
 	if test "$xine" = 1; then
 	    AC_DEFINE(XINERAMA, 1, 
 		[define if you want support for the XINERAMA extension (set by configure)])
@@ -804,7 +810,7 @@ dnl
 dnl stdlib.h is checked here, because of conflict in jpeglib.h
 AC_CHECK_HEADERS(stdlib.h)
 
-# AC_PREFIX_PROGRAM(workspace)
+# AC_PREFIX_PROGRAM(wmaker)
 
 dnl Support for PIXMAPDIR option
 dnl ============================
@@ -887,7 +893,6 @@ dnl parsed by m4
 AC_SUBST(lib_search_path)
 AC_SUBST(inc_search_path)
 
-m4_pattern_allow(AS_SET_STATUS)
 dnl
 dnl Spit out the configuration
 dnl ==========================
