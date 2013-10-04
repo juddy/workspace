@@ -202,8 +202,8 @@
  */
 #define MAX_ANIMATION_TIME	         1
 /* Zoom animation */
-#define MINIATURIZE_ANIMATION_FRAMES_Z   60
-#define MINIATURIZE_ANIMATION_STEPS_Z    60
+#define MINIATURIZE_ANIMATION_FRAMES_Z   12
+#define MINIATURIZE_ANIMATION_STEPS_Z    16
 #define MINIATURIZE_ANIMATION_DELAY_Z    10000
 /* Twist animation */
 #define MINIATURIZE_ANIMATION_FRAMES_T   12
@@ -306,7 +306,7 @@
 
 /* blink interval when invoking a menu item */
 #define MENU_BLINK_DELAY	20000
-#define MENU_BLINK_COUNT	3
+#define MENU_BLINK_COUNT	1
 #define CURSOR_BLINK_RATE	500
 
 /* how many pixels to move before dragging windows and other objects */
