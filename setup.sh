@@ -1,8 +1,4 @@
 #!/bin/bash
-
-#!/bin/bash
-echo"Workspace ☜(ﾟヮﾟ☜)"
-
 aclocal
 
 autoheader 

@@ -30,7 +30,7 @@ config-paths.h: Makefile
 
 ACLOCAL_AMFLAGS = -I m4
 
-SUBDIRS = wrlib WINGs src util po Workspace wmlib WPrefs.app doc test Clock
+SUBDIRS = wrlib WINGs src util po Workspace wmlib WPrefs.app doc test 
 
 EXTRA_DIST = INSTALL \
 	README.definable-cursor \

@@ -11,7 +11,7 @@ dnl
 dnl
 
 
-AC_INIT(Workspace, 0.0.4, , Workspace, http://worpskace.juddy.org/)
+AC_INIT(Workspace, 0.0.6, , Workspace, http://worpskace.juddy.org/)
 AC_CONFIG_SRCDIR(src/Workspace.h)
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_HEADERS(config.h)

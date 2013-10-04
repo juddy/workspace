@@ -64,6 +64,10 @@
 /* Define to 1 if you have the <stdlib.h> header file. */
 #undef HAVE_STDLIB_H
 
+/* Defined if header "stdnoreturn.h" exists, it defines ISO C11 attribute
+   'noreturn' and it works */
+#undef HAVE_STDNORETURN
+
 /* Define to 1 if you have the `strcasecmp' function. */
 #undef HAVE_STRCASECMP
 
@@ -134,6 +138,9 @@
 /* Define to the one symbol short name of this package. */
 #undef PACKAGE_TARNAME
 
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
 /* Define to the version of this package. */
 #undef PACKAGE_VERSION
 
@@ -196,6 +203,10 @@
 #ifndef __cplusplus
 #undef inline
 #endif
+
+/* Defines the attribute to tell the compiler that a function never returns,
+   if the ISO C11 attribute does not work */
+#undef noreturn
 
 /* Define to `int' if <sys/types.h> does not define. */
 #undef pid_t

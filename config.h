@@ -134,22 +134,26 @@
 #define PACKAGE_NAME "Workspace"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Workspace 0.95.4"
+#define PACKAGE_STRING "Workspace 0.0.6"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "Workspace"
 
 /* Define to the home page for this package. */
-#define PACKAGE_URL "http://workspace.subul.us/"
+#define PACKAGE_URL "http://worpskace.juddy.org/"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "0.95.4"
+#define PACKAGE_VERSION "0.0.6"
 
 /* Define as the return type of signal handlers (`int' or `void'). */
 #define RETSIGTYPE void
 
 /* define if you want support for shaped windows (set by configure) */
 #define SHAPE 1
+
+/* define if you want support for the XINERAMA extension and are in Solaris
+   (set by configure) */
+/* #undef SOLARIS_XINERAMA */
 
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1
@@ -164,7 +168,7 @@
 /* #undef USE_BOEHM_GC */
 
 /* define if GIF libraries are available (set by configure) */
-/* #undef USE_GIF */
+#define USE_GIF 1
 
 /* define if JPEG libraries are available (set by configure) */
 #define USE_JPEG 1
@@ -173,13 +177,13 @@
 #define USE_PNG 1
 
 /* define if TIFF libraries are available (set by configure) */
-/* #undef USE_TIFF */
+#define USE_TIFF 1
 
 /* define if XPM libraries are available (set by configure) */
 #define USE_XPM 1
 
 /* Version number of package */
-#define VERSION "0.95.4"
+#define VERSION "0.0.6"
 
 /* define if you want support for the XINERAMA extension (set by configure) */
 /* #undef XINERAMA */

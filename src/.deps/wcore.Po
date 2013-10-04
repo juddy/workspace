@@ -1,35 +1,40 @@
-wcore.o: wcore.c wconfig.h ../config.h ../config-paths.h \
- /usr/include/X11/Xlib.h /usr/include/i386-linux-gnu/sys/types.h \
- /usr/include/features.h /usr/include/stdc-predef.h \
- /usr/include/i386-linux-gnu/bits/predefs.h \
- /usr/include/i386-linux-gnu/sys/cdefs.h \
- /usr/include/i386-linux-gnu/bits/wordsize.h \
- /usr/include/i386-linux-gnu/gnu/stubs.h \
- /usr/include/i386-linux-gnu/gnu/stubs-32.h \
- /usr/include/i386-linux-gnu/bits/types.h \
- /usr/include/i386-linux-gnu/bits/typesizes.h /usr/include/time.h \
- /usr/lib/gcc/i486-linux-gnu/4.7/include/stddef.h \
- /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/X11/X.h \
+wcore.o: wcore.c /usr/include/stdc-predef.h \
+ /usr/include/x86_64-linux-gnu/bits/predefs.h wconfig.h ../config.h \
+ ../config-paths.h /usr/include/X11/Xlib.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/time.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/X11/X.h \
  /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h \
  /usr/include/X11/Xutil.h /usr/include/X11/keysym.h \
  /usr/include/X11/keysymdef.h /usr/include/stdlib.h \
- /usr/include/i386-linux-gnu/bits/waitflags.h \
- /usr/include/i386-linux-gnu/bits/waitstatus.h \
- /usr/include/i386-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
- /usr/include/i386-linux-gnu/bits/string.h \
- /usr/include/i386-linux-gnu/bits/string2.h /usr/include/endian.h \
- /usr/include/i386-linux-gnu/bits/endian.h Workspace.h \
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
+ /usr/include/x86_64-linux-gnu/bits/string.h \
+ /usr/include/x86_64-linux-gnu/bits/string2.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h Workspace.h \
  /usr/include/assert.h \
- /usr/lib/gcc/i486-linux-gnu/4.7/include-fixed/limits.h \
- /usr/lib/gcc/i486-linux-gnu/4.7/include-fixed/syslimits.h \
- /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
- /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/i386-linux-gnu/bits/posix2_lim.h \
- /usr/include/i386-linux-gnu/bits/xopen_lim.h \
- /usr/include/i386-linux-gnu/bits/stdio_lim.h ../WINGs/WINGs/WINGs.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h ../WINGs/WINGs/WINGs.h \
  ../wrlib/wraster.h /usr/include/X11/extensions/XShm.h \
  /usr/include/X11/extensions/shm.h ../WINGs/WINGs/WUtil.h wcore.h \
  screen.h
+
+/usr/include/stdc-predef.h:
+
+/usr/include/x86_64-linux-gnu/bits/predefs.h:
 
 wconfig.h:
 
@@ -39,31 +44,27 @@ wconfig.h:
 
 /usr/include/X11/Xlib.h:
 
-/usr/include/i386-linux-gnu/sys/types.h:
+/usr/include/x86_64-linux-gnu/sys/types.h:
 
 /usr/include/features.h:
 
-/usr/include/stdc-predef.h:
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
-/usr/include/i386-linux-gnu/bits/predefs.h:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/include/i386-linux-gnu/sys/cdefs.h:
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-/usr/include/i386-linux-gnu/bits/wordsize.h:
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/include/i386-linux-gnu/gnu/stubs.h:
+/usr/include/x86_64-linux-gnu/bits/types.h:
 
-/usr/include/i386-linux-gnu/gnu/stubs-32.h:
-
-/usr/include/i386-linux-gnu/bits/types.h:
-
-/usr/include/i386-linux-gnu/bits/typesizes.h:
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /usr/include/time.h:
 
-/usr/lib/gcc/i486-linux-gnu/4.7/include/stddef.h:
+/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h:
 
-/usr/include/i386-linux-gnu/bits/pthreadtypes.h:
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/X11/X.h:
 
@@ -79,43 +80,43 @@ wconfig.h:
 
 /usr/include/stdlib.h:
 
-/usr/include/i386-linux-gnu/bits/waitflags.h:
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/usr/include/i386-linux-gnu/bits/waitstatus.h:
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
-/usr/include/i386-linux-gnu/bits/stdlib-float.h:
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/string.h:
 
-/usr/include/i386-linux-gnu/bits/string.h:
+/usr/include/x86_64-linux-gnu/bits/string.h:
 
-/usr/include/i386-linux-gnu/bits/string2.h:
+/usr/include/x86_64-linux-gnu/bits/string2.h:
 
 /usr/include/endian.h:
 
-/usr/include/i386-linux-gnu/bits/endian.h:
+/usr/include/x86_64-linux-gnu/bits/endian.h:
 
 Workspace.h:
 
 /usr/include/assert.h:
 
-/usr/lib/gcc/i486-linux-gnu/4.7/include-fixed/limits.h:
+/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h:
 
-/usr/lib/gcc/i486-linux-gnu/4.7/include-fixed/syslimits.h:
+/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h:
 
 /usr/include/limits.h:
 
-/usr/include/i386-linux-gnu/bits/posix1_lim.h:
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
-/usr/include/i386-linux-gnu/bits/local_lim.h:
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
 /usr/include/linux/limits.h:
 
-/usr/include/i386-linux-gnu/bits/posix2_lim.h:
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
-/usr/include/i386-linux-gnu/bits/xopen_lim.h:
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
-/usr/include/i386-linux-gnu/bits/stdio_lim.h:
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 ../WINGs/WINGs/WINGs.h:
 

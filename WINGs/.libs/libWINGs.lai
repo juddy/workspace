@@ -17,7 +17,7 @@ old_library='libWINGs.a'
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' /usr/local/lib/libWUtil.la /usr/local/lib/libwraster.la -L/usr/local/lib -lXpm -lpng -ljpeg -lXmu -lXext -lX11 -lXft -lfontconfig -lm'
+dependency_libs=' /usr/local/lib/libWUtil.la /usr/local/lib/libwraster.la -L/usr/local/lib /usr/lib/x86_64-linux-gnu/libtiff.la -lXpm -lpng -ljpeg /usr/lib/libungif.la -lXmu -lXext -lX11 -lXft -lfontconfig -lm'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''

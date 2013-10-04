@@ -1,4 +1,10 @@
-usermenu.o: usermenu.c wconfig.h ../config.h ../config-paths.h
+usermenu.o: usermenu.c /usr/include/stdc-predef.h \
+ /usr/include/x86_64-linux-gnu/bits/predefs.h wconfig.h ../config.h \
+ ../config-paths.h
+
+/usr/include/stdc-predef.h:
+
+/usr/include/x86_64-linux-gnu/bits/predefs.h:
 
 wconfig.h:
 
