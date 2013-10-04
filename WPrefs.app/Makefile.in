@@ -400,11 +400,11 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 wprefs_bindir = @wprefs_bindir@
 wprefs_datadir = @wprefs_datadir@
-SUBDIRS = xpm tiff po
+SUBDIRS = xpm po
 AUTOMAKE_OPTIONS = 
 wpexecbindir = @wprefs_bindir@
 wpdatadir = @wprefs_datadir@
-wpdata_DATA = WPrefs.tiff WPrefs.xpm
+wpdata_DATA = WPrefs.WPrefs.xpm
 EXTRA_DIST = $(wpdata_DATA)
 WPrefs_SOURCES = \
 	main.c \

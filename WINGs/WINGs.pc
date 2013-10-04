@@ -1,6 +1,6 @@
 Name: WINGs
 Description: Small widget set with the NeXTStep(TM) look and feel
-Version: 0.0.6
+Version: 0.0.7
 Requires: wrlib
 Libs: -L/usr/local/lib  -lWINGs
 Libs.private: -lXft   -lXext -lXext -lX11  -lm 
