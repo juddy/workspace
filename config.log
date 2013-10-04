@@ -33,6 +33,7 @@ PATH: /bin
 PATH: /usr/local/games
 PATH: /usr/games
 PATH: /usr/sbin/
+PATH: /usr/sbin/
 
 
 ## ----------- ##
@@ -428,7 +429,7 @@ configure:13279: $? = 0
 configure:13279: result: yes
 configure:13285: checking for _doprnt
 configure:13285: gcc -o conftest -g -O2 -Wall -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-deprecated -Wno-deprecated-declarations  -D_XOPEN_SOURCE=600  conftest.c  >&5
-/tmp/cc9RrrRD.o: In function `main':
+/tmp/cclkdJWY.o: In function `main':
 /home/xeto/Code/workspace/conftest.c:58: undefined reference to `_doprnt'
 collect2: error: ld returned 1 exit status
 configure:13285: $? = 1
@@ -539,7 +540,7 @@ configure:13300: $? = 0
 configure:13300: result: yes
 configure:13324: checking for library containing strlcat
 configure:13356: gcc -o conftest -g -O2 -Wall -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-deprecated -Wno-deprecated-declarations  -D_XOPEN_SOURCE=600  conftest.c  >&5
-/tmp/ccFsWkHk.o: In function `main':
+/tmp/ccqYiYqF.o: In function `main':
 /home/xeto/Code/workspace/conftest.c:44: undefined reference to `strlcat'
 collect2: error: ld returned 1 exit status
 configure:13356: $? = 1
@@ -647,7 +648,7 @@ configure: failed program was:
 configure:13373: result: no
 configure:13383: checking for library containing strlcpy
 configure:13415: gcc -o conftest -g -O2 -Wall -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-deprecated -Wno-deprecated-declarations  -D_XOPEN_SOURCE=600  conftest.c  >&5
-/tmp/ccydOOFr.o: In function `main':
+/tmp/ccYPIq2J.o: In function `main':
 /home/xeto/Code/workspace/conftest.c:44: undefined reference to `strlcpy'
 collect2: error: ld returned 1 exit status
 configure:13415: $? = 1
@@ -1239,7 +1240,7 @@ configure:14827: $? = 0
 configure:14836: result: yes
 configure:14873: checking for _Xsetlocale in -lX11
 configure:14898: gcc -o conftest -g -O2 -Wall -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-deprecated -Wno-deprecated-declarations  -D_XOPEN_SOURCE=600  conftest.c -lX11  -lX11   >&5
-/tmp/ccuCOhd2.o: In function `main':
+/tmp/cc6kwvMd.o: In function `main':
 /home/xeto/Code/workspace/conftest.c:60: undefined reference to `_Xsetlocale'
 collect2: error: ld returned 1 exit status
 configure:14898: $? = 1
@@ -1335,7 +1336,7 @@ configure:15139: gcc -o conftest -g -O2 -Wall -Wextra -Wno-sign-compare -Wno-unu
 conftest.c:75:6: warning: conflicting types for built-in function 'atan' [enabled by default]
  char atan ();
       ^
-/tmp/cclvPcqp.o: In function `main':
+/tmp/ccLWcQJz.o: In function `main':
 /home/xeto/Code/workspace/conftest.c:86: undefined reference to `atan'
 collect2: error: ld returned 1 exit status
 configure:15139: $? = 1

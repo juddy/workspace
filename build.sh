@@ -1,4 +1,4 @@
-#!/bin/bsah
+#!/bin/bash
 #
 # Workspace build script
 #

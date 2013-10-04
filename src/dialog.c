@@ -1098,7 +1098,7 @@ typedef struct {
 } InfoPanel;
 
 #define COPYRIGHT_TEXT  \
-    "Copyright \xc2\xa9 1997-2006 Alfredo K. Kojima, Dan Pascu"
+    "Copyright \xc2\xa9 1997-2006 Alfredo K. Kojima, Dan Pascu\n"\
     "Copyright \xc2\xa9 2013 William Kennedy"
 
 static InfoPanel *thePanel = NULL;
@@ -1147,7 +1147,7 @@ void wShowInfoPanel(WScreen * scr)
 	panel->scr = scr;
 
 	panel->win = WMCreateWindow(scr->wmscreen, "info");
-	WMResizeWidget(panel->win, 500, 400);
+	WMResizeWidget(panel->win, 390, 430);
 
 	logo = WMCreateApplicationIconBlendedPixmap(scr->wmscreen, (RColor *) NULL);
 	if (!logo) {
@@ -1167,7 +1167,7 @@ void wShowInfoPanel(WScreen * scr)
 	WMResizeWidget(panel->name1L, 240, 30 + 2);
 	WMMoveWidget(panel->name1L, 100, 30 - 2 - sepHeight);
 
-	name = "Sans" ":bold:pixelsize=32:antialias=true";
+	name = "Lucida Sans,Comic Sans MS,URW Gothic L,Trebuchet MS" ":italic:pixelsize=28:antialias=true";
 	font = WMCreateFont(scr->wmscreen, name);
 	strbuf = "Workspace";
 	if (font) {
