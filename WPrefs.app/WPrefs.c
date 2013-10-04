@@ -719,10 +719,10 @@ static void loadConfigurations(WMScreen * scr, WMWindow * mainw)
 				  "variable."), _("OK"), NULL, NULL);
 		exit(1);
 	}
-	if (v1 == 0 && (v2 < 18 || v3 < 0)) {
-		sprintf(mbuf, _("WPrefs only supports Workspace 0.18.0 or newer.\n"
+	if (v1 == 0 && (v2 < 4 || v3 < 0)) {
+		sprintf(mbuf, _("WPrefs only supports Workspace 0.4.0 or newer.\n"
 				"The version installed is %i.%i.%i\n"), v1, v2, v3);
-		WMRunAlertPanel(scr, mainw, _("Error"), mbuf, _("OK"), NULL, NULL);
+		WMRunAlertPanel(scr, mainw, _("Warning"), mbuf, _("OK"), NULL, NULL);
 		exit(1);
 
 	}

@@ -53,7 +53,7 @@
  * The X server must support the shape extensions and it's support
  * must be enabled (default).
  */
-#define SHAPED_BALLOON
+#undef SHAPED_BALLOON
 
 /*
  * Turn on a hack to make mouse and keyboard actions work even if
@@ -155,21 +155,21 @@
 
 /* icon path */
 #define DEF_ICON_PATHS \
-    "(\"~/.workspace-icons\",\"~/GNUstep/Library/Icons\")"
+    "(\"~/.workspace-icons\",\"~/GNUstep/Library/Workspace/Icons\")"
 
 /* window title to use for untitled windows */
-#define DEF_WINDOW_TITLE "Untitled"
+#define DEF_WINDOW_TITLE ""
 
 /* default style */
-#define DEF_FRAME_COLOR   "white"
+#define DEF_FRAME_COLOR   "gray"
 
 /* default fonts */
-#define DEF_TITLE_FONT          "\"Sans,sans serif:bold:pixelsize=10\""
-#define DEF_MENU_TITLE_FONT     "\"Sans,sans serif:bold:pixelsize=10\""
-#define DEF_MENU_ENTRY_FONT     "\"Sans,sans serif:bold:pixelsize=10\""
-#define DEF_ICON_TITLE_FONT     "\"Sans,sans serif:pixelsize=9\""
-#define DEF_CLIP_TITLE_FONT     "\"Sans:bold:pixelsize=10\""
-#define DEF_INFO_TEXT_FONT      "\"Sans,sans serif:bold:pixelsize=10\""
+#define DEF_TITLE_FONT          "\"Sans,sans serif:bold:pixelsize=12\""
+#define DEF_MENU_TITLE_FONT     "\"Sans,sans serif:bold:pixelsize=12\""
+#define DEF_MENU_ENTRY_FONT     "\"Sans,sans serif:bold:pixelsize=12\""
+#define DEF_ICON_TITLE_FONT     "\"Sans,sans serif:pixelsize=8\""
+#define DEF_CLIP_TITLE_FONT     "\"Sans:bold:pixelsize=8\""
+#define DEF_INFO_TEXT_FONT      "\"Sans,sans serif:bold:pixelsize=12\""
 #define DEF_WORKSPACE_NAME_FONT "\"Sans,sans serif:bold:pixelsize=72\""
 
 /* line width of the move/resize frame */
@@ -202,8 +202,8 @@
  */
 #define MAX_ANIMATION_TIME	         1
 /* Zoom animation */
-#define MINIATURIZE_ANIMATION_FRAMES_Z   10
-#define MINIATURIZE_ANIMATION_STEPS_Z    20
+#define MINIATURIZE_ANIMATION_FRAMES_Z   60
+#define MINIATURIZE_ANIMATION_STEPS_Z    60
 #define MINIATURIZE_ANIMATION_DELAY_Z    10000
 /* Twist animation */
 #define MINIATURIZE_ANIMATION_FRAMES_T   12
@@ -259,7 +259,7 @@
 #define MENU_SCROLL_DELAY_US	8
 
 /* shade animation */
-#define SHADE_STEPS_UF		5
+#define SHADE_STEPS_UF		10
 #define SHADE_DELAY_UF		0
 
 #define SHADE_STEPS_F		10
@@ -282,7 +282,7 @@
 #define COLOR_CYCLE_DELAY        200
 
 /* size of the pieces in the undocked icon explosion */
-#define ICON_KABOOM_PIECE_SIZE  1
+#define ICON_KABOOM_PIECE_SIZE  5
 
 /*
  * Position increment for smart placement: >= 1
@@ -294,20 +294,20 @@
 #define DOCK_EXTRA_SPACE	0
 
 /* Vicinity in which an icon can be attached to the clip */
-#define CLIP_ATTACH_VICINITY	1
-#define CLIP_BUTTON_SIZE        23
+#define CLIP_ATTACH_VICINITY	20
+#define CLIP_BUTTON_SIZE        10
 
 /* The amount of space (in multiples of the icon size)
  * a docked icon must be dragged out to detach it */
-#define DOCK_DETTACH_THRESHOLD	3
+#define DOCK_DETTACH_THRESHOLD	2
 
 /* Max. number of icons the dock and clip can have */
-#define DOCK_MAX_ICONS		42
+#define DOCK_MAX_ICONS		99
 
 /* blink interval when invoking a menu item */
-#define MENU_BLINK_DELAY	60000
+#define MENU_BLINK_DELAY	20000
 #define MENU_BLINK_COUNT	3
-#define CURSOR_BLINK_RATE	300
+#define CURSOR_BLINK_RATE	500
 
 /* how many pixels to move before dragging windows and other objects */
 #define MOVE_THRESHOLD	        5
@@ -315,7 +315,7 @@
 
 #define MAX_WORKSPACENAME_WIDTH	64
 /* max width of window title in window list */
-#define MAX_WINDOWLIST_WIDTH	400
+#define MAX_WINDOWLIST_WIDTH	600
 
 #ifndef HAVE_INOTIFY
 /* Check defaults database for changes every this many milliseconds */
@@ -340,14 +340,14 @@
 #define WM_PI                     3.14159265358979323846
 #define MIN_TITLEFONT_HEIGHT(h)   ((h)>12 ? (h) : 12)
 #define TITLEBAR_HEIGHT           14  /* window's titlebar height */
-#define RESIZEBAR_HEIGHT          4   /* height of the resizebar */
+#define RESIZEBAR_HEIGHT          3   /* height of the resizebar */
 #define RESIZEBAR_MIN_WIDTH       20  /* min width of handles-corner_width */
-#define RESIZEBAR_CORNER_WIDTH    40  /* width of the corner of resizebars */
+#define RESIZEBAR_CORNER_WIDTH    60  /* width of the corner of resizebars */
 #define MENU_INDICATOR_SPACE      12
 #define MIN_WINDOW_SIZE	          5   /* minimum size for windows */
 #define ICON_WIDTH                64  /* size of the icon window */
 #define ICON_HEIGHT               64
-#define ICON_BORDER_WIDTH         2
+#define ICON_BORDER_WIDTH         0
 #define MAX_ICON_WIDTH	          60  /* size of the icon pixmap */
 #define MAX_ICON_HEIGHT           48
 #define MAX_WORKSPACES            8
