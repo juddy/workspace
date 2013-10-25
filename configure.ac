@@ -11,7 +11,7 @@ dnl
 dnl
 
 
-AC_INIT(Workspace, 0.0.7, , Workspace, http://worpskace.juddy.org/)
+AC_INIT(Workspace, 0.0.8, , Workspace, http://worpskace.juddy.org/)
 AC_CONFIG_SRCDIR(src/Workspace.h)
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_HEADERS(config.h)
@@ -749,7 +749,7 @@ AS_HELP_STRING([--disable-tiff], [disable use of TIFF images through libtiff]),
 #
 #
 # By default use xpm icons if tiff is not found.
-ICONEXT="xpm"
+ICONEXT="png"
 #
 
 if test "$tif" = yes; then
@@ -810,7 +810,7 @@ dnl
 dnl stdlib.h is checked here, because of conflict in jpeglib.h
 AC_CHECK_HEADERS(stdlib.h)
 
-# AC_PREFIX_PROGRAM(wmaker)
+# AC_PREFIX_PROGRAM(workspace)
 
 dnl Support for PIXMAPDIR option
 dnl ============================
@@ -876,9 +876,8 @@ AC_OUTPUT(Makefile po/Makefile util/Makefile util/po/Makefile test/Makefile \
 	Workspace/Defaults/Makefile Workspace/IconSets/Makefile \
 	Workspace/Icons/Makefile Workspace/Pixmaps/Makefile \
 	Workspace/Styles/Makefile Workspace/Themes/Makefile \
-	WPrefs.app/Makefile WPrefs.app/tiff/Makefile WPrefs.app/xpm/Makefile \
+	WPrefs.app/Makefile WPrefs.app/xpm/Makefile \
 	WPrefs.app/po/Makefile )
-
 
 dnl Output some helpful data for compiling wraster and WINGs/WUtil apps
 dnl ===================================================================

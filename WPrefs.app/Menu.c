@@ -1449,7 +1449,7 @@ static void buildMenuFromPL(_Panel * panel, WMPropList * pl)
 static WMPropList *getDefaultMenu(_Panel * panel)
 {
 	WMPropList *menu;
-	static const char menuPath[] = WMAKER_RESOURCE_PATH "/plmenu";
+	static const char menuPath[] = WORKSPACE_RESOURCE_PATH "/plmenu";
 
 	menu = WMReadPropListFromFile(menuPath);
 	if (!menu) {

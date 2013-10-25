@@ -1,4 +1,4 @@
-SUBDIRS = xpm tiff po
+SUBDIRS = xpm po
 
 AUTOMAKE_OPTIONS =
 
@@ -8,7 +8,7 @@ wpexecbin_PROGRAMS = WPrefs
 
 wpdatadir = @wprefs_datadir@
 
-wpdata_DATA = WPrefs.tiff WPrefs.xpm
+wpdata_DATA = WPrefs.xpm
 
 EXTRA_DIST = $(wpdata_DATA)
 
@@ -42,7 +42,7 @@ WPrefs_SOURCES = \
 
 AM_CFLAGS =
 
-AM_CPPFLAGS = -DLOCALEDIR=\"$(NLSDIR)\" -DRESOURCE_PATH=\"$(wpdatadir)\" -DWMAKER_RESOURCE_PATH=\"$(pkgdatadir)\" \
+AM_CPPFLAGS = -DLOCALEDIR=\"$(NLSDIR)\" -DRESOURCE_PATH=\"$(wpdatadir)\" -DWORKSPACE_RESOURCE_PATH=\"$(pkgdatadir)\" \
 	 -I$(top_srcdir)/wrlib -I$(top_srcdir)/WINGs @HEADER_SEARCH_PATH@ 
 
 WPrefs_DEPENDENCIES = $(top_builddir)/WINGs/libWINGs.la

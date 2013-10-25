@@ -42,8 +42,11 @@ startup.o: startup.c /usr/include/stdc-predef.h \
  /usr/include/X11/keysymdef.h /usr/include/X11/cursorfont.h \
  /usr/include/X11/Xproto.h /usr/include/X11/Xmd.h \
  /usr/include/X11/Xprotostr.h /usr/include/X11/extensions/shape.h \
- /usr/include/X11/extensions/shapeconst.h Workspace.h \
- /usr/include/assert.h \
+ /usr/include/X11/extensions/shapeconst.h \
+ /usr/include/X11/extensions/Xrandr.h /usr/include/X11/extensions/randr.h \
+ /usr/include/X11/extensions/Xrender.h \
+ /usr/include/X11/extensions/render.h /usr/include/X11/Xdefs.h \
+ Workspace.h /usr/include/assert.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -194,6 +197,16 @@ wconfig.h:
 /usr/include/X11/extensions/shape.h:
 
 /usr/include/X11/extensions/shapeconst.h:
+
+/usr/include/X11/extensions/Xrandr.h:
+
+/usr/include/X11/extensions/randr.h:
+
+/usr/include/X11/extensions/Xrender.h:
+
+/usr/include/X11/extensions/render.h:
+
+/usr/include/X11/Xdefs.h:
 
 Workspace.h:
 

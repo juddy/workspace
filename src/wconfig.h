@@ -82,7 +82,7 @@
 #undef CONFIGURE_WINDOW_WHILE_MOVING
 
 /* disable/enable workspace indicator in the dock */
-#undef WS_INDICATOR
+#define WS_INDICATOR
 
 /*
  * define HIDDENDOT if you want a dot to be shown in the application icon
@@ -107,9 +107,9 @@
  * AfterStep, instead of the default Openstep look.
  * NEXTSTEP 3.3 also does not have these shadows.
  */
-#define SHADOW_RESIZEBAR
+#undef SHADOW_RESIZEBAR
 
-#undef NORMAL_ICON_KABOOM
+#define NORMAL_ICON_KABOOM
 
 /*
  * #define if you want the window creation animation when superfluous
@@ -133,11 +133,7 @@
 #define DEF_EXIT_SCRIPT "exitscript"
 #define DEFAULTS_DIR    "Defaults"
 
-#ifdef USE_TIFF
-#define DEF_BUTTON_IMAGES PKGDATADIR"/buttons.tiff"
-#else
 #define DEF_BUTTON_IMAGES PKGDATADIR"/buttons.xpm"
-#endif
 
 /* the file of the system wide submenu to be forced into the main menu */
 #define GLOBAL_PREAMBLE_MENU_FILE "GlobalMenu.pre"
@@ -158,7 +154,7 @@
     "(\"~/.workspace-icons\",\"~/GNUstep/Library/Workspace/Icons\")"
 
 /* window title to use for untitled windows */
-#define DEF_WINDOW_TITLE ""
+#define DEF_WINDOW_TITLE " "
 
 /* default style */
 #define DEF_FRAME_COLOR   "gray"
@@ -202,17 +198,17 @@
  */
 #define MAX_ANIMATION_TIME	         1
 /* Zoom animation */
-#define MINIATURIZE_ANIMATION_FRAMES_Z   12
-#define MINIATURIZE_ANIMATION_STEPS_Z    16
+#define MINIATURIZE_ANIMATION_FRAMES_Z   8
+#define MINIATURIZE_ANIMATION_STEPS_Z    8
 #define MINIATURIZE_ANIMATION_DELAY_Z    10000
 /* Twist animation */
-#define MINIATURIZE_ANIMATION_FRAMES_T   12
-#define MINIATURIZE_ANIMATION_STEPS_T    16
+#define MINIATURIZE_ANIMATION_FRAMES_T   8
+#define MINIATURIZE_ANIMATION_STEPS_T    8
 #define MINIATURIZE_ANIMATION_DELAY_T    20000
 #define MINIATURIZE_ANIMATION_TWIST_T    0.5
 /* Flip animation */
-#define MINIATURIZE_ANIMATION_FRAMES_F   12
-#define MINIATURIZE_ANIMATION_STEPS_F    16
+#define MINIATURIZE_ANIMATION_FRAMES_F   8
+#define MINIATURIZE_ANIMATION_STEPS_F    8
 #define MINIATURIZE_ANIMATION_DELAY_F    20000
 #define MINIATURIZE_ANIMATION_TWIST_F    0.5
 
@@ -275,7 +271,7 @@
 #define SHADE_DELAY_US		10
 
 /* workspace name on switch display */
-#define WORKSPACE_NAME_FADE_DELAY 20
+#define WORKSPACE_NAME_FADE_DELAY 10
 #define WORKSPACE_NAME_DELAY     200
 
 /* Delay when cycling colors of selected icons. */

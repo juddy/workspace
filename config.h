@@ -115,7 +115,7 @@
 #define HAVE_XINTERNATOMS 1
 
 /* define if you want support for XRandR (set by configure) */
-/* #undef HAVE_XRANDR */
+#define HAVE_XRANDR 1
 
 /* Internationalization (I18N) support (set by configure) */
 /* #undef I18N */
@@ -134,7 +134,7 @@
 #define PACKAGE_NAME "Workspace"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Workspace 0.0.7"
+#define PACKAGE_STRING "Workspace 0.0.8"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "Workspace"
@@ -143,7 +143,7 @@
 #define PACKAGE_URL "http://worpskace.juddy.org/"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "0.0.7"
+#define PACKAGE_VERSION "0.0.8"
 
 /* Define as the return type of signal handlers (`int' or `void'). */
 #define RETSIGTYPE void
@@ -183,10 +183,10 @@
 #define USE_XPM 1
 
 /* Version number of package */
-#define VERSION "0.0.7"
+#define VERSION "0.0.8"
 
 /* define if you want support for the XINERAMA extension (set by configure) */
-/* #undef XINERAMA */
+#define XINERAMA 1
 
 /* whether XKB language MODELOCK should be enabled */
 /* #undef XKB_MODELOCK */

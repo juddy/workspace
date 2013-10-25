@@ -22,7 +22,7 @@ GLOBALDEFDIR="/usr/local/etc/Workspace"
 
 USERDIR="$HOME"
 
-VERSION="0.0.7"
+VERSION="0.0.8"
 
 BINDIR="/usr/local/bin"
 

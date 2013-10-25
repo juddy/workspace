@@ -342,9 +342,9 @@ LIBOBJS =
 LIBRARY_SEARCH_PATH = -L${libdir} 
 LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
-LIBXINERAMA = 
+LIBXINERAMA = -lXinerama
 LIBXMU = -lXmu
-LIBXRANDR = 
+LIBXRANDR = -lXrandr
 LIPO = 
 LN_S = ln -s
 LTLIBOBJS = 
@@ -362,10 +362,10 @@ OTOOL64 =
 PACKAGE = Workspace
 PACKAGE_BUGREPORT = 
 PACKAGE_NAME = Workspace
-PACKAGE_STRING = Workspace 0.0.7
+PACKAGE_STRING = Workspace 0.0.8
 PACKAGE_TARNAME = Workspace
 PACKAGE_URL = http://worpskace.juddy.org/
-PACKAGE_VERSION = 0.0.7
+PACKAGE_VERSION = 0.0.8
 PATH_SEPARATOR = :
 PKGCONFIG = pkg-config
 RANLIB = ranlib
@@ -374,7 +374,7 @@ SET_MAKE =
 SHELL = /bin/bash
 STRIP = strip
 UTILMOFILES = 
-VERSION = 0.0.7
+VERSION = 0.0.8
 WINGSMOFILES = 
 WINGS_VERSION = 2:1:0
 WPMOFILES = 
@@ -386,7 +386,7 @@ XFTFLAGS = -I/usr/include/freetype2
 XFTLIBS = -lXft  
 XGETTEXT = 
 XLFLAGS = 
-XLIBS = -lXext -lXext -lX11 
+XLIBS = -lXext -lX11 
 XMKMF = 
 X_CFLAGS = 
 X_EXTRA_LIBS = 
@@ -465,13 +465,13 @@ AM_CPPFLAGS = -DLOCALEDIR=\"$(NLSDIR)\" \
 liblist = -L${libdir}  
 wdwrite_LDADD = $(top_builddir)/WINGs/libWUtil.la $(liblist)
 wdread_LDADD = $(top_builddir)/WINGs/libWUtil.la $(liblist)
-wxcopy_LDADD =  -lXext -lXext -lX11  
-wxpaste_LDADD =  -lXext -lXext -lX11 
+wxcopy_LDADD =  -lXext -lX11  
+wxpaste_LDADD =  -lXext -lX11 
 getstyle_LDADD = $(top_builddir)/WINGs/libWUtil.la $(liblist)
 getstyle_SOURCES = getstyle.c fontconv.c common.h
 setstyle_LDADD = \
 	$(top_builddir)/WINGs/libWUtil.la \
-	 -lXext -lXext -lX11  $(liblist)
+	 -lXext -lX11  $(liblist)
 
 setstyle_SOURCES = setstyle.c fontconv.c common.h
 convertfonts_LDADD = $(top_builddir)/WINGs/libWUtil.la $(liblist)
@@ -482,13 +482,13 @@ wmagnify_LDADD = \
 	$(top_builddir)/WINGs/libWINGs.la \
 	$(top_builddir)/WINGs/libWUtil.la \
 	$(top_builddir)/wrlib/libwraster.la \
-	 -lXext -lXext -lX11  
+	 -lXext -lX11  
 
 wmsetbg_LDADD = \
 	$(top_builddir)/WINGs/libWINGs.la \
 	$(top_builddir)/WINGs/libWUtil.la \
 	$(top_builddir)/wrlib/libwraster.la \
-	  -lXext -lXext -lX11  
+	 -lXinerama -lXext -lX11  
 
 wmgenmenu_LDADD = \
 	$(top_builddir)/WINGs/libWUtil.la \

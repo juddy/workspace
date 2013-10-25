@@ -150,6 +150,10 @@
 /* define if you want support for shaped windows (set by configure) */
 #undef SHAPE
 
+/* define if you want support for the XINERAMA extension and are in Solaris
+   (set by configure) */
+#undef SOLARIS_XINERAMA
+
 /* Define to 1 if you have the ANSI C header files. */
 #undef STDC_HEADERS
 

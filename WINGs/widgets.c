@@ -126,20 +126,20 @@ static char *BUTTON_ARROW2[] = {
 	"    #.            "
 };
 
-#define BUTTON_ARROW2_WIDTH	18
+#define BUTTON_ARROW2_WIDTH	10
 #define BUTTON_ARROW2_HEIGHT	10
 
 static char *SCROLLER_DIMPLE[] = {
-	".%###.",
-	"%#%%%%",
-	"#%%...",
-	"#%..  ",
-	"#%.   ",
-	".%.  ."
+	"#%.#%.#%.#%.",
+	"#%.#%.#%.#%.",
+	"#%.#%.#%.#%.",
+	"#%.#%.#%.#%.",
+	"#%.#%.#%.#%.",
+	"#%.#%.#%.#%.",
 };
 
-#define SCROLLER_DIMPLE_WIDTH   6
-#define SCROLLER_DIMPLE_HEIGHT  6
+#define SCROLLER_DIMPLE_WIDTH   8
+#define SCROLLER_DIMPLE_HEIGHT  8
 
 static char *SCROLLER_ARROW_UP[] = {
 	"....%....",
@@ -362,10 +362,10 @@ static WMPixmap *makePixmap(W_Screen * sPtr, char **data, int width, int height,
 	return WMCreatePixmapFromXPixmaps(sPtr, pixmap, mask, width, height, sPtr->depth);
 }
 
-#define T_WINGS_IMAGES_FILE  RESOURCE_PATH"/Images.tiff"
+#define T_FLOWW_IMAGES_FILE  RESOURCE_PATH"/Images.tiff"
 #define T_DEFAULT_OBJECT_ICON_FILE RESOURCE_PATH"/defaultIcon.tiff"
 
-#define X_WINGS_IMAGES_FILE  RESOURCE_PATH"/Images.xpm"
+#define X_FLOWW_IMAGES_FILE  RESOURCE_PATH"/Images.xpm"
 #define X_DEFAULT_OBJECT_ICON_FILE RESOURCE_PATH"/defaultIcon.xpm"
 
 static Bool loadPixmaps(WMScreen * scr)
@@ -382,9 +382,9 @@ static Bool loadPixmaps(WMScreen * scr)
 	white.green = 0xff;
 	white.blue = 0xff;
 
-	image = RLoadImage(scr->rcontext, T_WINGS_IMAGES_FILE, 0);
+	image = RLoadImage(scr->rcontext, T_FLOWW_IMAGES_FILE, 0);
 	if (!image)
-		image = RLoadImage(scr->rcontext, X_WINGS_IMAGES_FILE, 0);
+		image = RLoadImage(scr->rcontext, X_FLOWW_IMAGES_FILE, 0);
 	if (!image) {
 		wwarning(_("WINGs: could not load widget images file: %s"), RMessageForError(RErrorCode));
 		return False;
@@ -543,7 +543,7 @@ WMScreen *WMCreateScreenWithRContext(Display * display, int screen, RContext * c
 		"XdndActionLink",
 		"XdndActionAsk",
 		"XdndActionPrivate",
-		"_WINGS_DND_MOUSE_OFFSET",
+		"_FLOWW_DND_MOUSE_OFFSET",
 		"WM_STATE",
 		"UTF8_STRING",
 		"_NET_WM_NAME",

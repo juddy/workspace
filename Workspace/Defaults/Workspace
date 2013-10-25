@@ -1,120 +1,132 @@
 {
-  FTitleColor = "#93a1a1";
+  FTitleColor = "#a5b2ce";
+  DontLinkWorkspaces = NO;
   LTCMaximizeKey = None;
-  MenuDisabledColor = "#0b5568";
+  MenuDisabledColor = "#949294";
   CycleIgnoreMinimized = NO;
   LastWorkspaceKey = None;
-  MoveToWorkspace9Key = None;
-  FTitleBack = (solid, "#002b36");
-  MoveToPrevWorkspaceLayerKey = None;
-  ClipTitleFont = "msam10:slant=0:weight=80:width=100:pixelsize=6";
-  IconTitleFont = "Droid Sans:slant=0:weight=200:width=100:pixelsize=10";
-  MoveToWorkspace7Key = None;
-  LargeDisplayFont = "Droid Sans:slant=0:weight=200:width=100:pixelsize=72";
-  RBCMaximizeKey = None;
-  DisableClip = YES;
-  MoveDisplay = corner;
-  WindowShortcut10Key = None;
-  MoveToWorkspace2Key = None;
-  MenuTitleColor = "#ffffff";
-  WindowShortcut3Key = None;
-  MenuTitleFont = "Droid Sans:slant=0:weight=200:width=100:pixelsize=14";
-  SmoothWorkspaceBack = YES;
-  WindowRelaunchKey = None;
-  WindowShortcut4Key = None;
-  IconPosition = brh;
-  ShadeSpeed = ultrafast;
-  NoWindowOverDock = NO;
-  WorkspaceBack = (
-    tpixmap,
-    "/home/xeto/GNUstep/Library/Workspace/Backgrounds/Textile-Teal.png",
-    gray20
+  IconTitleBack = "#061b25";
+  PixmapPath = (
+    "/home/wkennedy/GNUstep/Library/Workspace/Pixmaps",
+    "/home/wkennedy/GNUstep/Library/Workspace/Backgrounds",
+    "/home/wkennedy/GNUstep/Library/Workspace/CachedPixmaps",
+    "/usr/local/share/Workspace/Pixmaps",
+    "/usr/local/share/Workspace/Backgrounds",
+    "/usr/include/X11/pixmaps",
+    "/usr/local/share/pixmaps",
+    "/usr/share/pixmaps"
   );
+  MoveToWorkspace9Key = None;
+  FTitleBack = (mvgradient, "#45445a", "#494949");
+  MoveToPrevWorkspaceLayerKey = None;
+  ClipTitleFont = "Charcoal:slant=0:weight=80:width=100:pixelsize=10";
+  IconTitleFont = "Charcoal:slant=0:weight=80:width=100:pixelsize=10";
+  MoveToWorkspace7Key = None;
+  LargeDisplayFont = "Helvetica:pixelsize=11";
+  RBCMaximizeKey = None;
+  IconificationStyle = none;
+  WindowShortcut10Key = None;
+  IconTitleColor = "#ffd906";
+  MoveToWorkspace2Key = None;
+  MenuTitleColor = "#a5b2ce";
+  WindowShortcut3Key = None;
+  MenuTitleFont = "Charcoal:pixelsize=12";
+  WindowRelaunchKey = None;
+  SmoothWorkspaceBack = YES;
+  WindowShortcut4Key = None;
+  ShadeSpeed = ultrafast;
+  NoWindowOverDock = YES;
+  WorkspaceBack = (solid, "#333340");
+  HighlightTextColor = "#494949";
   LBCMaximizeKey = None;
-  HighlightTextColor = "#073642";
-  MenuScrollSpeed = ultrafast;
   WindowShortcut9Key = None;
   HelpBalloons = NO;
   MoveResizeKey = None;
+  AutoArrangeIcons = YES;
+  ClipTitleColor = "#778fbd";
   AppIconBalloons = NO;
   WorkspaceBorder = AllDirections;
-  WindowTitleFont = "Droid Sans:slant=0:weight=200:width=100:pixelsize=14";
+  WindowTitleFont = "Charcoal:bold:slant=0:width=100:pixelsize=12";
   MoveToWorkspace8Key = None;
   LHMaximizeKey = None;
   MoveToPrevWorkspaceKey = None;
+  ResizebarBack = (mvgradient, "#45445a", "#494949");
   MoveToWorkspace6Key = None;
-  ResizebarBack = (solid, "#6c71c4");
   MoveToWorkspace10Key = None;
+  DisplayFont = "Trebuchet MS,sans serif:pixelsize=12";
   BHMaximizeKey = None;
   WorkspaceBorderSize = 4;
-  OpenTransientOnOwnerWorkspace = YES;
   CycleActiveHeadOnly = NO;
+  OpenTransientOnOwnerWorkspace = YES;
+  MenuTitleExtendSpace = 0;
   MoveToWorkspace1Key = None;
-  ShowClipTitle = NO;
+  ShowClipTitle = YES;
   WindowShortcut1Key = None;
   RHMaximizeKey = None;
   THMaximizeKey = None;
-  Superfluous = NO;
-  WindowShortcut2Key = None;
   MoveToNextWorkspaceLayerKey = None;
+  WindowShortcut2Key = None;
   DoNotMakeAppIconsBounce = NO;
   MiniwindowTitleBalloons = NO;
   MaximusKey = None;
   WindowShortcut7Key = None;
   OpaqueResize = YES;
-  MenuTextBack = (solid, "#002b36");
-  RaiseAppIconsWhenBouncing = YES;
-  ResizeIncrement = 14;
+  MenuTextBack = (mvgradient, "#45445a", "#494949");
+  RaiseAppIconsWhenBouncing = NO;
+  ResizeIncrement = 3;
   CycleWorkspaces = YES;
   WindowShortcut8Key = None;
   OpaqueMoveResizeKeyboard = YES;
   MoveToLastWorkspaceKey = None;
   TitleJustify = left;
   GroupNextKey = None;
-  MenuTextColor = "#739aa1";
+  MenuTextColor = "#f7fff7";
   SingleClickLaunch = YES;
   Attraction = NO;
-  IconBack = (solid, "#93a1a1");
+  IconBack = (spixmap, Tile.png, "#b5b6b5");
   AntialiasedText = YES;
   DisableBlinking = NO;
   MoveToWorkspace5Key = None;
-  WorkspaceNameDisplayPosition = bottomright;
-  MenuTextFont = "Droid Sans:slant=0:weight=80:width=100:pixelsize=14";
+  WindowTitleExtendSpace = 0;
+  NormalCursor = (builtin, left_ptr);
+  NewStyle = new;
+  WorkspaceNameDisplayPosition = center;
+  MenuTextFont = "Charcoal:slant=0:weight=80:width=100:pixelsize=12";
   ScreenSwitchKey = None;
-  MenuTitleBack = (solid, "#002b36");
-  DisableMiniwindows = YES;
+  MenuTitleBack = (mvgradient, "#45445a", "#494949");
   MoveToNextWorkspaceKey = None;
   MouseWheelAction = SwitchWorkspaces;
   HMaximizeKey = None;
-  HighlightColor = "#657b83";
+  HighlightColor = "#45445a";
   GroupPrevKey = None;
-  MoveToWorkspace3Key = None;
   MinimizeAllKey = None;
+  MoveToWorkspace3Key = None;
+  CClipTitleColor = "#0e1e42";
   IconSlideSpeed = ultrafast;
   WindowShortcut5Key = None;
-  MenuStyle = flat;
+  MenuStyle = normal;
   HideOthersKey = None;
   IconPath = (
-    "~/GNUstep/Library/Icons",
+    "/home/wkennedy/GNUstep/Library/Icons",
+    "/usr/local/share/Workspace/Icons",
+    "/usr/local/share/Workspace/Pixmaps",
     "/usr/include/X11/pixmaps",
-    "~/GNUstep/Library/Workspace/Pixmaps",
-    "~/GNUstep/Library/Workspace/CachedPixmaps",
+    "/home/wkennedy/GNUstep/Library/Workspace/Pixmaps",
+    "/home/wkennedy/GNUstep/Library/Workspace/CachedPixmaps",
     "/usr/share/icons",
     "/usr/local/share/pixmaps",
     "/usr/share/pixmaps"
   );
-  ModifierKey = Mod4;
+  PTitleBack = (mvgradient, "#b3b6b6", "#011b3d");
   WindowShortcut6Key = None;
-  PTitleBack = (solid, "#002b36");
-  SaveSessionOnExit = YES;
-  BounceAppIconsWhenUrgent = YES;
+  MenuTextExtendSpace = 0;
+  UTitleColor = "#848684";
   ViKeyMenus = YES;
-  UTitleColor = "#204853";
+  BounceAppIconsWhenUrgent = YES;
+  UTitleBack = (tvgradient, unfocused_window.tif, 38, "#9d9d9d", "#000000");
   CirculateRaise = NO;
   HighlightActiveApp = YES;
-  UTitleBack = (solid, "#073642");
-  PTitleColor = "#586e75";
-  ResizeDisplay = line;
+  PTitleColor = "#d6e3ff";
   StickyIcons = YES;
   MoveToWorkspace4Key = None;
   RTCMaximizeKey = None;

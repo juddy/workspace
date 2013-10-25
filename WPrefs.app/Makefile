@@ -289,9 +289,9 @@ LIBOBJS =
 LIBRARY_SEARCH_PATH = -L${libdir} 
 LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
-LIBXINERAMA = 
+LIBXINERAMA = -lXinerama
 LIBXMU = -lXmu
-LIBXRANDR = 
+LIBXRANDR = -lXrandr
 LIPO = 
 LN_S = ln -s
 LTLIBOBJS = 
@@ -309,10 +309,10 @@ OTOOL64 =
 PACKAGE = Workspace
 PACKAGE_BUGREPORT = 
 PACKAGE_NAME = Workspace
-PACKAGE_STRING = Workspace 0.0.7
+PACKAGE_STRING = Workspace 0.0.8
 PACKAGE_TARNAME = Workspace
 PACKAGE_URL = http://worpskace.juddy.org/
-PACKAGE_VERSION = 0.0.7
+PACKAGE_VERSION = 0.0.8
 PATH_SEPARATOR = :
 PKGCONFIG = pkg-config
 RANLIB = ranlib
@@ -321,7 +321,7 @@ SET_MAKE =
 SHELL = /bin/bash
 STRIP = strip
 UTILMOFILES = 
-VERSION = 0.0.7
+VERSION = 0.0.8
 WINGSMOFILES = 
 WINGS_VERSION = 2:1:0
 WPMOFILES = 
@@ -333,7 +333,7 @@ XFTFLAGS = -I/usr/include/freetype2
 XFTLIBS = -lXft  
 XGETTEXT = 
 XLFLAGS = 
-XLIBS = -lXext -lXext -lX11 
+XLIBS = -lXext -lX11 
 XMKMF = 
 X_CFLAGS = 
 X_EXTRA_LIBS = 
@@ -400,11 +400,11 @@ top_builddir = ..
 top_srcdir = ..
 wprefs_bindir = ${exec_prefix}/bin
 wprefs_datadir = ${datarootdir}/WPrefs
-SUBDIRS = xpm tiff po
+SUBDIRS = xpm po
 AUTOMAKE_OPTIONS = 
 wpexecbindir = ${exec_prefix}/bin
 wpdatadir = ${datarootdir}/WPrefs
-wpdata_DATA = WPrefs.tiff WPrefs.xpm
+wpdata_DATA = WPrefs.xpm
 EXTRA_DIST = $(wpdata_DATA)
 WPrefs_SOURCES = \
 	main.c \
@@ -435,7 +435,7 @@ WPrefs_SOURCES = \
 	xmodifier.c
 
 AM_CFLAGS = 
-AM_CPPFLAGS = -DLOCALEDIR=\"$(NLSDIR)\" -DRESOURCE_PATH=\"$(wpdatadir)\" -DWMAKER_RESOURCE_PATH=\"$(pkgdatadir)\" \
+AM_CPPFLAGS = -DLOCALEDIR=\"$(NLSDIR)\" -DRESOURCE_PATH=\"$(wpdatadir)\" -DWORKSPACE_RESOURCE_PATH=\"$(pkgdatadir)\" \
 	 -I$(top_srcdir)/wrlib -I$(top_srcdir)/WINGs -I${includedir}  
 
 WPrefs_DEPENDENCIES = $(top_builddir)/WINGs/libWINGs.la
@@ -443,7 +443,7 @@ WPrefs_LDADD = \
 	$(top_builddir)/WINGs/libWINGs.la\
 	$(top_builddir)/WINGs/libWUtil.la\
 	$(top_builddir)/wrlib/libwraster.la \
-	 -lXext -lXext -lX11  \
+	 -lXext -lX11  \
 	-lfontconfig   \
 	
 

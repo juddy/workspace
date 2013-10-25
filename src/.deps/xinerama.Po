@@ -26,7 +26,7 @@ xinerama.o: xinerama.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h ../WINGs/WINGs/WINGs.h \
  ../WINGs/WINGs/WUtil.h wcore.h menu.h application.h icon.h framewin.h \
- pixmap.h placement.h
+ pixmap.h placement.h /usr/include/X11/extensions/Xinerama.h
 
 /usr/include/stdc-predef.h:
 
@@ -137,3 +137,5 @@ framewin.h:
 pixmap.h:
 
 placement.h:
+
+/usr/include/X11/extensions/Xinerama.h:

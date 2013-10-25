@@ -30,7 +30,7 @@ static const struct {
 	int def_state;  /* True/False: the default value, if not defined in current config */
 
 	enum {
-		OPTION_WMAKER,
+		OPTION_WORKSPACE,
 		OPTION_USERDEF
 	} class;
 
@@ -39,41 +39,41 @@ static const struct {
 } expert_options[] = {
 
 	{ N_("Disable miniwindows (icons for minimized windows). For use with KDE/GNOME."),
-	  /* default: */ False, OPTION_WMAKER, "DisableMiniwindows" },
+	  /* default: */ False, OPTION_WORKSPACE, "DisableMiniwindows" },
 
 	{ N_("Do not set non-Workspace specific parameters (do not use xset)."),
 	  /* default: */ False, OPTION_USERDEF, "NoXSetStuff" },
 
 	{ N_("Automatically save session when exiting Workspace."),
-	  /* default: */ False, OPTION_WMAKER, "SaveSessionOnExit" },
+	  /* default: */ False, OPTION_WORKSPACE, "SaveSessionOnExit" },
 
 	{ N_("Use SaveUnder in window frames, icons, menus and other objects."),
-	  /* default: */ False, OPTION_WMAKER, "UseSaveUnders" },
+	  /* default: */ False, OPTION_WORKSPACE, "UseSaveUnders" },
 
 	{ N_("Disable confirmation panel for the Kill command."),
-	  /* default: */ False, OPTION_WMAKER, "DontConfirmKill" },
+	  /* default: */ False, OPTION_WORKSPACE, "DontConfirmKill" },
 
 	{ N_("Disable selection animation for selected icons."),
-	  /* default: */ False, OPTION_WMAKER, "DisableBlinking" },
+	  /* default: */ False, OPTION_WORKSPACE, "DisableBlinking" },
 
 	{ N_("Smooth font edges (needs restart)."),
-	  /* default: */ True, OPTION_WMAKER, "AntialiasedText" },
+	  /* default: */ True, OPTION_WORKSPACE, "AntialiasedText" },
 
 	{ N_("Cycle windows only on the active head."),
-	  /* default: */ False, OPTION_WMAKER, "CycleActiveHeadOnly" },
+	  /* default: */ False, OPTION_WORKSPACE, "CycleActiveHeadOnly" },
 
 	{ N_("Ignore minimized windows when cycling."),
-	  /* default: */ False, OPTION_WMAKER, "CycleIgnoreMinimized" },
+	  /* default: */ False, OPTION_WORKSPACE, "CycleIgnoreMinimized" },
 
 	{ N_("Show workspace title on Clip."),
-	  /* default: */ True, OPTION_WMAKER, "ShowClipTitle" },
+	  /* default: */ True, OPTION_WORKSPACE, "ShowClipTitle" },
 
 	{ N_("Highlight the icon of the application when it has the focus."),
-	  /* default: */ True, OPTION_WMAKER, "HighlightActiveApp" },
+	  /* default: */ True, OPTION_WORKSPACE, "HighlightActiveApp" },
 
 #ifdef XKB_MODELOCK
 	{ N_("Enable keyboard language switch button in window titlebars."),
-	  /* default: */ False, OPTION_WMAKER, "KbdModeLock" }
+	  /* default: */ False, OPTION_WORKSPACE, "KbdModeLock" }
 #endif /* XKB_MODELOCK */
 
 };
@@ -127,7 +127,7 @@ static void createPanel(Panel * p)
 		WMSetButtonText(panel->swi[i], _(expert_options[i].label));
 
 		switch (expert_options[i].class) {
-		case OPTION_WMAKER:
+		case OPTION_WORKSPACE:
 			if (GetStringForKey(expert_options[i].op_name))
 				state = GetBoolForKey(expert_options[i].op_name);
 			else
@@ -154,7 +154,7 @@ static void storeDefaults(_Panel * panel)
 
 	for (i = 0; i < sizeof(expert_options) / sizeof(expert_options[0]); i++) {
 		switch (expert_options[i].class) {
-		case OPTION_WMAKER:
+		case OPTION_WORKSPACE:
 			SetBoolForKey(WMGetButtonSelected(panel->swi[i]), expert_options[i].op_name);
 			break;
 

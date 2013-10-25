@@ -36,8 +36,8 @@ wmsetbg.o: wmsetbg.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h /usr/include/ctype.h \
- ../config.h ../config-paths.h ../src/wconfig.h ../config.h \
- ../WINGs/WINGs/WINGs.h ../wrlib/wraster.h \
+ ../config.h ../config-paths.h /usr/include/X11/extensions/Xinerama.h \
+ ../src/wconfig.h ../config.h ../WINGs/WINGs/WINGs.h ../wrlib/wraster.h \
  /usr/include/X11/extensions/XShm.h /usr/include/X11/extensions/shm.h \
  ../WINGs/WINGs/WUtil.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h \
@@ -161,6 +161,8 @@ wmsetbg.o: wmsetbg.c /usr/include/stdc-predef.h \
 ../config.h:
 
 ../config-paths.h:
+
+/usr/include/X11/extensions/Xinerama.h:
 
 ../src/wconfig.h:
 

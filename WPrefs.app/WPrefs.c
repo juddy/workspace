@@ -23,10 +23,10 @@
 #include <assert.h>
 
 
-#define ICON_TITLE_FONT "sans serif:pixelsize=9"
-#define ICON_TITLE_VFONT "sans serif:pixelsize=9:weight=100"
+#define ICON_TITLE_FONT "Droid Sans:pixelsize=12"
+#define ICON_TITLE_VFONT "Droid Sans:pixelsize=12:weight=100"
 
-#define MAX_SECTIONS 16
+#define MAX_SECTIONS 18
 
 typedef struct _WPrefs {
 	WMWindow *win;
@@ -120,7 +120,7 @@ static void save(WMWidget * w, void *data)
 	memset(&ev, 0, sizeof(XEvent));
 
 	ev.xclient.type = ClientMessage;
-	ev.xclient.message_type = XInternAtom(WMScreenDisplay(WMWidgetScreen(w)), "_WINDOWMAKER_COMMAND", False);
+	ev.xclient.message_type = XInternAtom(WMScreenDisplay(WMWidgetScreen(w)), "_WINDOWORKSPACE_COMMAND", False);
 	ev.xclient.window = DefaultRootWindow(WMScreenDisplay(WMWidgetScreen(w)));
 	ev.xclient.format = 8;
 	strncpy(ev.xclient.data.b, "Reconfigure", sizeof(ev.xclient.data.b));
@@ -185,7 +185,7 @@ static void createMainWindow(WMScreen * scr)
 	char buffer[128];
 
 	WPrefs.win = WMCreateWindow(scr, "wprefs");
-	WMResizeWidget(WPrefs.win, 520, 390);
+	WMResizeWidget(WPrefs.win, 620, 490);
 	WMSetWindowTitle(WPrefs.win, _("Workspace Preferences"));
 	WMSetWindowCloseAction(WPrefs.win, quit, NULL);
 	WMSetWindowMaxSize(WPrefs.win, 520, 390);
@@ -249,7 +249,7 @@ static void createMainWindow(WMScreen * scr)
 	WMMoveWidget(WPrefs.banner, FRAME_LEFT, FRAME_TOP);
 	WMSetFrameRelief(WPrefs.banner, WRFlat);
 
-	font = WMCreateFont(scr, "Lucida Sans,URW Gothic L,Times New Roman,serif"
+	font = WMCreateFont(scr, "Sans,URW Gothic L,Times New Roman,serif"
 			    ":bold:pixelsize=26:antialias=true");
 	WPrefs.nameL = WMCreateLabel(WPrefs.banner);
 	WMSetLabelTextAlignment(WPrefs.nameL, WACenter);
@@ -345,13 +345,9 @@ char *LocateImage(const char *name)
 	char *path;
 	char *tmp = wmalloc(strlen(name) + 8);
 
-	if (TIFFOK) {
-		sprintf(tmp, "%s.tiff", name);
-		path = WMPathForResourceOfType(tmp, "tiff");
-	} else {
 		sprintf(tmp, "%s.xpm", name);
 		path = WMPathForResourceOfType(tmp, "xpm");
-	}
+
 	wfree(tmp);
 	if (!path) {
 		wwarning(_("could not locate image file %s"), name);
@@ -586,15 +582,13 @@ void Initialize(WMScreen * scr)
 	list = RSupportedFileFormats();
 	for (i = 0; list[i] != NULL; i++) {
 		if (strcmp(list[i], "TIFF") == 0) {
-			TIFFOK = True;
+			TIFFOK = False;
 			break;
 		}
 	}
 
-	if (TIFFOK)
-		path = WMPathForResourceOfType("WPrefs.tiff", NULL);
-	else
 		path = WMPathForResourceOfType("WPrefs.xpm", NULL);
+
 	if (path) {
 		RImage *tmp;
 
@@ -687,9 +681,9 @@ static void loadConfigurations(WMScreen * scr, WMWindow * mainw)
 		WMRunAlertPanel(scr, mainw, _("Error"), mbuf, _("OK"), NULL, NULL);
 	}
 
-	path = getenv("WMAKER_BIN_NAME");
+	path = getenv("WORKSPACE_BIN_NAME");
 	if (!path)
-		path = "wmaker";
+		path = "workspace";
 	{
 		char *command;
 
@@ -699,7 +693,7 @@ static void loadConfigurations(WMScreen * scr, WMWindow * mainw)
 	}
 	if (!file || !fgets(buffer, 1023, file)) {
 		werror(_("could not extract version information from Workspace"));
-		wfatal(_("Make sure wmaker is in your search path."));
+		wfatal(_("Make sure workspace is in your search path."));
 
 		WMRunAlertPanel(scr, mainw, _("Error"),
 				_
