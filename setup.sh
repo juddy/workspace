@@ -1,11 +1,16 @@
 #!/bin/bash
-aclocal
 
-autoheader 
+yautomake=$(which automake) ; if [ $? - ne 0 ] then echo "install automake" ; exit 1 ; fi
 
-libtoolize --force --automake
+yaclocal=$(which aclocal) ; if [ $? - ne 0 ] then echo "install aclocal" ; exit 1 ; fi
 
-automake -a --gnu --include-deps
+yautoheader=$(which autoheader) ; if [ $? - ne 0 ] then echo "install automake" ; exit 1 ; fi
+
+ylibtoolize=$(which libtoolize)  ; if [ $? - ne 0 ] then echo "install libtool" ; exit 1 ; fi
+
+ylibtoolize --force --automake
+
+yautomake -a --gnu --include-deps
 
 ./configure && make
 
