@@ -7,7 +7,7 @@ NeXTSTEP is dead, the 90's are over, and in Real Estate jargon, Window Maker has
 - Multiple workspaces
 - Heavily keyboard-operable (window sizing, desktop/app switching, command execution, etc.)
 - Apart from some of the rigidities of the Dock/Clip, it's pretty easy to make Window Maker bend to your whims.
-- Lightweight memory footprint
+- Small memory footprint
 - WINGs, wmlib, wrlib, libc - No shenanigans with GNOMEs, no Krap.
 - It can just create windows (without borders and titlebars, sunken and unclickable if you wish) or give you a rich 'Desktop'.
 
