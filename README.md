@@ -14,7 +14,7 @@ NeXTSTEP is dead, the 90's are over, and in Real Estate jargon, Window Maker has
 Workspace is an attempt to step away from the adherence to the NeXTisms of yester-decade and embrace some other areas of UI/UX:
 
 - Subversion of the Desktop paradigm
-- Lean, with a focus on Terminal and VIM
+- Lean, with a focus on Terminal and Vim
 - Tiled window management
 - Mouselessness
 - Generic and configurable
