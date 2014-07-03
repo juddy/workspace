@@ -6,7 +6,7 @@ NeXTSTEP is dead, the 90's are over, and in Real Estate jargon, Window Maker has
 
 - Multiple workspaces
 - Heavily keyboard-operable (window sizing, desktop/app switching, command execution, etc.)
-- Apart from some of the rigities of the Dock/Clip, it's pretty easy to make Window Maker bend to your whims.
+- Apart from some of the rigidities of the Dock/Clip, it's pretty easy to make Window Maker bend to your whims.
 - Lightweight memory footprint
 - WINGs, wmlib, wrlib, libc - No shenanigans with GNOMEs, no Krap.
 - It can just create windows (without borders and titlebars, sunken and unclickable if you wish) or give you a rich 'Desktop'.
@@ -109,4 +109,3 @@ Workspace can be started from .xinitc or by setting your default windowmanager t
 - Better integration with xmux, xtab (tmux, tabbed)
 - Remove legacy UNIX cruft. SCO, anyone?
 - Enhance smart maximization code to bring about 'tiling', share with wmaker.
-
