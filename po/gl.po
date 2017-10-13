@@ -724,10 +724,10 @@ msgstr "  --help\t\t\tamosar esta mensaxe"
 #: ../src/main.c:452
 #, c-format
 msgid ""
-"could not find user GNUstep directory (%s).\n"
+"could not find user .workspace directory (%s).\n"
 "Make sure you have installed Workspace correctly and run workspace.inst"
 msgstr ""
-"non foi posible atopa-lo directorio de usuario de GNUstep (%s).\n"
+"non foi posible atopa-lo directorio de usuario de .workspace (%s).\n"
 "Asegúrese de que instalou Workspace correctamente e execute workspace.inst"
 
 #: ../src/main.c:473 ../src/main.c:478

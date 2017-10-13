@@ -1882,11 +1882,11 @@ msgstr "Digite o caminho para o arquivo de menu:"
 msgid ""
 "The menu file must contain a menu in the plain text menu file format. This "
 "format is described in the menu files included with Workspace, probably at "
-"~/GNUstep/Library/Workspace/menu"
+"~/.workspace/Library/Workspace/menu"
 msgstr ""
 "O arquivo de menu deve conter um menu em formato texto puro. Esse formato é "
 "descrito no menu incluído no Workspace, provavelmente em "
-"~/GNUstep/Library/Workspace/menu."
+"~/.workspace/Library/Workspace/menu."
 
 #: ../../WPrefs.app/MenuGuru.c:328
 msgid "Type the command that will generate the menu definition:"
@@ -1897,11 +1897,11 @@ msgid ""
 "The command supplied must generate and output a valid menu definition to "
 "stdout. This definition should be in the plain text menu file format, "
 "described in the menu files included with Workspace, usually at "
-"~/GNUstep/Library/Workspace/menu"
+"~/.workspace/Library/Workspace/menu"
 msgstr ""
 "O comando deverá gerar uma definição de menu válida e mandá-lo para o "
 "stdout. Esta definição deve estar no formato descrito em "
-"~/GNUstep/Library/Workspace/menu"
+"~/.workspace/Library/Workspace/menu"
 
 #: ../../WPrefs.app/MenuGuru.c:350 ../../WPrefs.app/MenuGuru.c:372
 #: ../../WPrefs.app/MenuGuru.c:394

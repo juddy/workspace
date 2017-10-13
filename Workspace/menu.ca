@@ -12,7 +12,7 @@
  *
  * TECLA especifica una combinació de tecles per aquest objecte. <Tecla> té
  * la mateixa sintaxis que les combinacions de tecles especificades al
- * fitxer $HOME/GNUstep/Defaults/Workspace , com a RootMenuKey o bé
+ * fitxer $HOME/.workspace/Defaults/Workspace , com a RootMenuKey o bé
  * MiniaturizeKey.
  *
  * No es pot especificar una combinació de tecles per a un MENU o un
@@ -175,9 +175,9 @@
         "Escriptori" END
 
         "Aparença" MENU
-                "Temes" OPEN_MENU THEMES_DIR $HOME/GNUstep/Library/Workspace/Themes WITH setstyle
-                "Estils" OPEN_MENU STYLES_DIR $HOME/GNUstep/Library/Workspace/Styles WITH setstyle
-                "Jocs d'Icones" OPEN_MENU ICON_SETS_DIR $HOME/GNUstep/Library/Workspace/IconSets WITH seticons
+                "Temes" OPEN_MENU THEMES_DIR $HOME/.workspace/Library/Workspace/Themes WITH setstyle
+                "Estils" OPEN_MENU STYLES_DIR $HOME/.workspace/Library/Workspace/Styles WITH setstyle
+                "Jocs d'Icones" OPEN_MENU ICON_SETS_DIR $HOME/.workspace/Library/Workspace/IconSets WITH seticons
                 "Fons de pantalla" MENU
                         "Sòlid" MENU
                                 "Negre" WS_BACK '(solid, black)'
@@ -199,10 +199,10 @@
                                 "Degradat Gris" WS_BACK '(vgradient,"#636380", "#131318")'
                                 "Degradat Lila" WS_BACK '(vgradient,"#600040", "#180010")'
                         "Degradat" END
-                        "Imatges" OPEN_MENU BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t
+                        "Imatges" OPEN_MENU BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t
                 "Fons de pantalla" END
-                "Guardar Tema" SHEXEC getstyle -t $HOME/GNUstep/Library/Workspace/Themes/"%a(Theme name)"
-                "Guardar Joc d'Icones" SHEXEC geticonset $HOME/GNUstep/Library/Workspace/IconSets/"%a(IconSet name)"
+                "Guardar Tema" SHEXEC getstyle -t $HOME/.workspace/Library/Workspace/Themes/"%a(Theme name)"
+                "Guardar Joc d'Icones" SHEXEC geticonset $HOME/.workspace/Library/Workspace/IconSets/"%a(IconSet name)"
         "Aparença" END
 
         "Sortir"        MENU

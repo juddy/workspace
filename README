@@ -45,9 +45,9 @@ to emulate the look and feel of part of the NEXTSTEP(tm) GUI. It's supposed to
 be relatively fast and small, feature rich, easy to configure and easy to use,
 with a simple and elegant appearance borrowed from NEXTSTEP(tm).
 
-Workspace was designed keeping integration with GNUstep in mind and is the
+Workspace was designed keeping integration with .workspace in mind and is the
 "official" window manager for it. It is also part of the GNU project
-(www.gnu.org) Read more about GNUstep further on this file.
+(www.gnu.org) Read more about .workspace further on this file.
 
 Hints (information given by applications to integrate well with the window
 manager) for Motif(tm) and NETWM are also supported (NETWM is used by KDE and
@@ -153,10 +153,10 @@ your irc client to irc.freenode.net. irc.workspace.org will direct you to the
 correct IRC network.
 
 
-GNUstep
+.workspace
 =======
 
-GNUstep is a complete object-oriented development system, based on the OpenStep
+.workspace is a complete object-oriented development system, based on the OpenStep
 specification released by NeXT(tm) (now Apple(tm)) and Sun(tm). It will provide
 everything one needs to produce cross-platform, object-oriented, graphical (and
 non-graphical) applications; providing among other things, base system
@@ -166,14 +166,14 @@ databases, distributed objects and a graphical development environment, with
 tools like interface modeller, a project management system (project center) and
 other tools.
 
-The GNUstep development system will be used to create a user environment, with
+The .workspace development system will be used to create a user environment, with
 everything needed for a complete graphical user interface, such as a file
 viewer, text editors and other applications. Note that the user environment (or
-"desktop environment") is only a small part of the whole GNUstep project and
+"desktop environment") is only a small part of the whole .workspace project and
 therefore it does not "compete" with other projects like KDE or GNOME, simply
 because they are completely different things.
 
-For more information on the GNUstep project, visit: http://www.gnustep.org
+For more information on the .workspace project, visit: http://www.gnustep.org
 
 
 Running multiple instances of Workspace
@@ -212,7 +212,7 @@ while keeping a nice appearance and good functionality, follow the items bellow:
 - to reduce memory usage, disable the icon cache, by setting the RIMAGE_CACHE
   environment variable to 0. If you want to increase performance at the cost of
   memory usage, set it's value to a value like the number of different icons you
-  use. Also, disable anti-aliased text support in ~/GNUstep/Defaults/WMGLOBAL.
+  use. Also, disable anti-aliased text support in ~/.workspace/Defaults/WMGLOBAL.
 
 
 Keyboard Mouse Control

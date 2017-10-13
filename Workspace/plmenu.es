@@ -66,9 +66,9 @@
   ("Borrar sesion", CLEAR_SESSION)
   ),
  ("Apariencia",
-  ("Temas", OPEN_MENU, "-noext /usr/local/share/Workspace/Themes $HOME/GNUstep/Library/Workspace/Themes WITH setstyle"),
-  ("Estilos", OPEN_MENU, "-noext /usr/local/share/Workspace/Styles $HOME/GNUstep/Library/Workspace/Styles WITH setstyle"),
-  ("Grupos de iconos", OPEN_MENU, "-noext /usr/local/share/Workspace/IconSets $HOME/GNUstep/Library/Workspace/IconSets WITH seticons"),
+  ("Temas", OPEN_MENU, "-noext /usr/local/share/Workspace/Themes $HOME/.workspace/Library/Workspace/Themes WITH setstyle"),
+  ("Estilos", OPEN_MENU, "-noext /usr/local/share/Workspace/Styles $HOME/.workspace/Library/Workspace/Styles WITH setstyle"),
+  ("Grupos de iconos", OPEN_MENU, "-noext /usr/local/share/Workspace/IconSets $HOME/.workspace/Library/Workspace/IconSets WITH seticons"),
   ("Papel Tapiz",
    ("Solido",
     ("Negro", EXEC, "wdwrite Workspace WorkspaceBack '(solid, black)'"),
@@ -90,11 +90,11 @@
     ("Sombras grises",   EXEC, "wdwrite Workspace WorkspaceBack '(vgradient, \"#636380\", \"#131318\")'"),
     ("Sombras vino",   EXEC, "wdwrite Workspace WorkspaceBack '(vgradient, \"#600040\", \"#180010\")'")
     ),
-   ("Imagenes", OPEN_MENU, "-noext /usr/local/share/Workspace/Backgrounds $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t")
+   ("Imagenes", OPEN_MENU, "-noext /usr/local/share/Workspace/Backgrounds $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t")
    ),   
-  ("Guardar tema", SHEXEC, "getstyle -t $HOME/GNUstep/Library/Workspace/Themes/\"%a(Theme name)\""),
-  ("Guardar iconos", SHEXEC, "geticonset $HOME/GNUstep/Library/Workspace/IconSets/\"%a(IconSet name)\""),
-  ("Preferencias", EXEC, "/usr/local/GNUstep/Applications/WPrefs.app/WPrefs")
+  ("Guardar tema", SHEXEC, "getstyle -t $HOME/.workspace/Library/Workspace/Themes/\"%a(Theme name)\""),
+  ("Guardar iconos", SHEXEC, "geticonset $HOME/.workspace/Library/Workspace/IconSets/\"%a(IconSet name)\""),
+  ("Preferencias", EXEC, "/usr/local/.workspace/Applications/WPrefs.app/WPrefs")
   ), 
  ("Salir",
   ("Reiniciar", RESTART),

@@ -10,7 +10,7 @@
  *
  * SHORTCUT spécifie un raccourci pour une entrée dans le menu. <Raccourci>
  * a la même syntaxe que les options pour les raccourcis clavier dans le
- * fichier $HOME/GNUstep/Defaults/Workspace, comme par example RootMenuKey ou
+ * fichier $HOME/.workspace/Defaults/Workspace, comme par example RootMenuKey ou
  * encore MiniaturizeKey.
  *
  * Il n'est pas possible de spécifier un raccourci pour une entrée MENU
@@ -220,9 +220,9 @@
 	"Bureaux" END
 
 	"Apparence" MENU
-		"Thèmes" OPEN_MENU -noext THEMES_DIR $HOME/GNUstep/Library/Workspace/Themes WITH setstyle
-		"Styles" OPEN_MENU -noext STYLES_DIR $HOME/GNUstep/Library/Workspace/Styles WITH setstyle
-		"Jeu d'icônes" OPEN_MENU -noext ICON_SETS_DIR $HOME/GNUstep/Library/Workspace/IconSets WITH seticons
+		"Thèmes" OPEN_MENU -noext THEMES_DIR $HOME/.workspace/Library/Workspace/Themes WITH setstyle
+		"Styles" OPEN_MENU -noext STYLES_DIR $HOME/.workspace/Library/Workspace/Styles WITH setstyle
+		"Jeu d'icônes" OPEN_MENU -noext ICON_SETS_DIR $HOME/.workspace/Library/Workspace/IconSets WITH seticons
 		"Fond d'écran" MENU
 			"Unifié" MENU
 				"Noir" WS_BACK '(solid, black)'
@@ -244,10 +244,10 @@
 				"Dégradés de Gris" WS_BACK '(vgradient, "#636380", "#131318")'
 				"Dégradés de Bordeau" WS_BACK '(vgradient, "#600040", "#180010")'
 			"Degradé" END
-			"Images" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t
+			"Images" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t
 		"Fond d'écran" END
-		"Sauver le thème" SHEXEC getstyle -t $HOME/GNUstep/Library/Workspace/Themes/"%a(Nom du thème,Entrez un nom de fichier:)"
-		"Sauver le jeu d'icônes" SHEXEC geticonset $HOME/GNUstep/Library/Workspace/IconSets/"%a(Nom du jeu d'icônes,Entrez un nom de fichier:)"
+		"Sauver le thème" SHEXEC getstyle -t $HOME/.workspace/Library/Workspace/Themes/"%a(Nom du thème,Entrez un nom de fichier:)"
+		"Sauver le jeu d'icônes" SHEXEC geticonset $HOME/.workspace/Library/Workspace/IconSets/"%a(Nom du jeu d'icônes,Entrez un nom de fichier:)"
 	"Apparence" END
 
 	"Quitter" MENU

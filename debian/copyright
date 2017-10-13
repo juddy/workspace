@@ -92,10 +92,10 @@ License: attribution
  They may be distributed freely and/or modified as long as the original
  Author is mentioned!
 
-Files: Workspace/Icons/GNUstepGlow.tiff Workspace/Icons/GNUstepGlow.xpm
+Files: Workspace/Icons/.workspaceGlow.tiff Workspace/Icons/.workspaceGlow.xpm
        Workspace/Icons/Magnify.tiff Workspace/Icons/Magnify.xpm
        Workspace/Icons/Terminal.tiff Workspace/Icons/Terminal.xpm
-       Workspace/Icons/TerminalGNUstep.tiff Workspace/Icons/TerminalGNUstep.xpm
+       Workspace/Icons/Terminal.workspace.tiff Workspace/Icons/Terminal.workspace.xpm
        Workspace/Icons/TerminalLinux.tiff Workspace/Icons/TerminalLinux.xpm
        Workspace/Icons/Ear.png Workspace/Icons/Ftp.png Workspace/Icons/ICQ.png
        Workspace/Icons/Jabber.png Workspace/Icons/Mozilla.png

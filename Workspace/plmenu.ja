@@ -66,9 +66,9 @@
   ("セッションをクリア", CLEAR_SESSION)
   ),
  ("外観",
-  ("テーマ", OPEN_MENU, "-noext #wmdatadir#/Themes $HOME/GNUstep/Library/Workspace/Themes WITH setstyle"),
-  ("スタイル", OPEN_MENU, "-noext #wmdatadir#/Styles $HOME/GNUstep/Library/Workspace/Styles WITH setstyle"),
-  ("アイコンセット", OPEN_MENU, "-noext #wmdatadir#/IconSets $HOME/GNUstep/Library/Workspace/IconSets WITH seticons"),
+  ("テーマ", OPEN_MENU, "-noext #wmdatadir#/Themes $HOME/.workspace/Library/Workspace/Themes WITH setstyle"),
+  ("スタイル", OPEN_MENU, "-noext #wmdatadir#/Styles $HOME/.workspace/Library/Workspace/Styles WITH setstyle"),
+  ("アイコンセット", OPEN_MENU, "-noext #wmdatadir#/IconSets $HOME/.workspace/Library/Workspace/IconSets WITH seticons"),
   ("背景",
    ("ソリッド",
     ("Black", EXEC, "wdwrite Workspace WorkspaceBack '(solid, black)'"),
@@ -90,11 +90,11 @@
     ("Grey Shades",   EXEC, "wdwrite Workspace WorkspaceBack '(vgradient, \"#636380\", \"#131318\")'"),
     ("Wine Shades",   EXEC, "wdwrite Workspace WorkspaceBack '(vgradient, \"#600040\", \"#180010\")'")
     ),
-   ("イメージ", OPEN_MENU, "-noext #wmdatadir#/Backgrounds $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t")
+   ("イメージ", OPEN_MENU, "-noext #wmdatadir#/Backgrounds $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t")
    ),   
-  ("設定をテーマとしてセーブ", SHEXEC, "getstyle -t $HOME/GNUstep/Library/Workspace/Themes/\"%a(Theme name)\""),
-  ("現在のアイコンセットをセーブ", SHEXEC, "geticonset $HOME/GNUstep/Library/Workspace/IconSets/\"%a(IconSet name)\""),
-  ("設定ユーティリティ", EXEC, "/usr/local/GNUstep/Applications/WPrefs.app/WPrefs")
+  ("設定をテーマとしてセーブ", SHEXEC, "getstyle -t $HOME/.workspace/Library/Workspace/Themes/\"%a(Theme name)\""),
+  ("現在のアイコンセットをセーブ", SHEXEC, "geticonset $HOME/.workspace/Library/Workspace/IconSets/\"%a(IconSet name)\""),
+  ("設定ユーティリティ", EXEC, "/usr/local/.workspace/Applications/WPrefs.app/WPrefs")
   ), 
  ("終了",
   ("再起動", RESTART),

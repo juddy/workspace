@@ -65,7 +65,7 @@ typedef struct {
 #ifndef _DEFINED_GNUSTEP_WINDOW_INFO
 #define	_DEFINED_GNUSTEP_WINDOW_INFO
 /*
- * Window levels are taken from GNUstep (gui/AppKit/NSWindow.h)
+ * Window levels are taken from .workspace (gui/AppKit/NSWindow.h)
  * NSDesktopWindowLevel intended to be the level at which things
  * on the desktop sit ... so you should be able
  * to put a desktop background just below it.
@@ -74,7 +74,7 @@ typedef struct {
  * range INT_MIN+1 to INT_MAX
  */
 enum {
-    WMDesktopWindowLevel = -1000, /* GNUstep addition     */
+    WMDesktopWindowLevel = -1000, /* .workspace addition     */
     WMNormalWindowLevel = 0,
     WMFloatingWindowLevel = 3,
     WMSubmenuWindowLevel = 3,

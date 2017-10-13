@@ -12,7 +12,7 @@ ylibtoolize --force --automake
 
 yautomake -a --gnu --include-deps
 
-./configure && make
+./configure --enable-xinerama --enable-xrandr && make
 
 if [ $? -ne 0 ]
 then

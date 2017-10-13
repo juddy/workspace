@@ -305,12 +305,12 @@ typedef struct {
 	Pixmap miniaturize_mask;	/* miniaturize pixmap mask */
 	Pixmap close_mask;	/* close pixmap mask */
 	int extra_flags;
-} GNUstepWMAttributes;
+} .workspaceWMAttributes;
 
 #define GSWindowStyleAttr       (1<<0)
 #define GSWindowLevelAttr       (1<<1)
 
-static void writeGNUstepWMAttr(WMScreen * scr, Window window, GNUstepWMAttributes * attr)
+static void write.workspaceWMAttr(WMScreen * scr, Window window, .workspaceWMAttributes * attr)
 {
 	unsigned long data[9];
 
@@ -332,14 +332,14 @@ static void writeGNUstepWMAttr(WMScreen * scr, Window window, GNUstepWMAttribute
 static void realizeObserver(void *self, WMNotification * not)
 {
 	WEditMenu *menu = (WEditMenu *) self;
-	GNUstepWMAttributes attribs;
+	.workspaceWMAttributes attribs;
 
-	memset(&attribs, 0, sizeof(GNUstepWMAttributes));
+	memset(&attribs, 0, sizeof(.workspaceWMAttributes));
 	attribs.flags = GSWindowStyleAttr | GSWindowLevelAttr;
 	attribs.window_style = WMBorderlessWindowMask;
 	attribs.window_level = WMSubmenuWindowLevel;
 
-	writeGNUstepWMAttr(WMWidgetScreen(menu), menu->view->window, &attribs);
+	write.workspaceWMAttr(WMWidgetScreen(menu), menu->view->window, &attribs);
 }
 
 static void itemSelectObserver(void *self, WMNotification * notif)

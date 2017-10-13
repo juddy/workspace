@@ -60,13 +60,13 @@ copy() {
 	file="$(basename "$source")"
 	rm -f "$target"
 	if [ "$file" = "Workspace" ]; then
-		sed -e "s|~/GNUstep|$GSDIR|g" "$source" > "$target"
+		sed -e "s|~/.workspace|$GSDIR|g" "$source" > "$target"
 	else
 		if test "x$GNUSTEP_USER_ROOT" = "x"; then
 			sed -e "s:#wmdatadir#:$GLOBALDIR:g" \
 					"$source" > "$target"
 		else
-			sed -e "s|\$HOME/GNUstep|$GSDIR|g" \
+			sed -e "s|\$HOME/.workspace|$GSDIR|g" \
 				-e "s:#wmdatadir#:$GLOBALDIR:g" \
 					"$source" > "$target"
 		fi
@@ -103,7 +103,7 @@ fi
 
 if test "x$GNUSTEP_USER_ROOT" = "x"; then
 	cd "$USERDIR"
-	GSDIR="$USERDIR/GNUstep"
+	GSDIR="$USERDIR/.workspace"
 	if [ ! -d "$GSDIR" ]; then
 		echo "Creating $GSDIR user directory"
 		make_dir "$GSDIR"

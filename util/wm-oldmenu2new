@@ -15,8 +15,8 @@
 # Copyright waived; no warranty provided.
 #
 
-GLW=GNUstep/Library/Workspace
-GD=GNUstep/Defaults
+GLW=.workspace/Library/Workspace
+GD=.workspace/Defaults
 WLW=$HOME/$GLW
 WD=$HOME/$GD
 

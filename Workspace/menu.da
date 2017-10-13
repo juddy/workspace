@@ -170,9 +170,9 @@
         "Arbejdsbord" END
 
         "Udseende" MENU
-                "Temaer" OPEN_MENU -noext THEMES_DIR $HOME/GNUstep/Library/Workspace/Themes WITH setstyle
-                "Stil" OPEN_MENU -noext STYLES_DIR $HOME/GNUstep/Library/Workspace/Styles WITH setstyle
-                "Ikonsæt" OPEN_MENU -noext ICON_SETS_DIR $HOME/GNUstep/Library/Workspace/IconSets WITH seticons
+                "Temaer" OPEN_MENU -noext THEMES_DIR $HOME/.workspace/Library/Workspace/Themes WITH setstyle
+                "Stil" OPEN_MENU -noext STYLES_DIR $HOME/.workspace/Library/Workspace/Styles WITH setstyle
+                "Ikonsæt" OPEN_MENU -noext ICON_SETS_DIR $HOME/.workspace/Library/Workspace/IconSets WITH seticons
                 "Baggrund" MENU
                         "Ensfarvet" MENU
                                 "Sort" WS_BACK '(solid, black)'
@@ -195,10 +195,10 @@
     				"Bordeaux Skygger" WS_BACK '(vgradient, "#600040", "#180010")'
                                 "Flag" WS_BACK '(mdgradient, green, red, white, green)'
                         "Nuancer" END
-                        "Billeder" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t
+                        "Billeder" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t
                 "Baggrund" END
-                "Gem Tema" SHEXEC getstyle -t $HOME/GNUstep/Library/Workspace/Themes/"%a(Tema navn,Indtast navn:)"
-                "Gem Ikonsæt" SHEXEC geticonset $HOME/GNUstep/Library/Workspace/IconSets/"%a(Ikonsæt navn,Indtast navn:)"
+                "Gem Tema" SHEXEC getstyle -t $HOME/.workspace/Library/Workspace/Themes/"%a(Tema navn,Indtast navn:)"
+                "Gem Ikonsæt" SHEXEC geticonset $HOME/.workspace/Library/Workspace/IconSets/"%a(Ikonsæt navn,Indtast navn:)"
         "Udseende" END
 
         "Afslut" MENU

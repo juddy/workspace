@@ -541,20 +541,20 @@ msgstr "啟動另一套視窗管理員"
 
 #: ../src/dialog.c:1964
 msgid ""
-"Workspace is part of the GNUstep project.\n"
-"The GNUstep project aims to create a free\n"
+"Workspace is part of the .workspace project.\n"
+"The .workspace project aims to create a free\n"
 "implementation of the OpenStep(tm) specification\n"
 "which is a object-oriented framework for\n"
 "creating advanced graphical, multi-platform\n"
 "applications. Additionally, a development and\n"
 "user desktop environment will be created on top\n"
 "of the framework. For more information about\n"
-"GNUstep, please visit: www.gnustep.org"
+".workspace, please visit: www.gnustep.org"
 msgstr ""
 
 #: ../src/dialog.c:1987
-msgid "About GNUstep"
-msgstr "有關 GNUstep"
+msgid "About .workspace"
+msgstr "有關 .workspace"
 
 #: ../src/dock.c:193
 #, c-format
@@ -911,23 +911,23 @@ msgstr " --help\t\t\t顯示本說明訊息"
 #: ../src/main.c:473
 #, c-format
 msgid ""
-"could not find user GNUstep directory (%s).\n"
+"could not find user .workspace directory (%s).\n"
 "Make sure you have installed Workspace correctly and run workspace.inst"
 msgstr ""
-"無法找到使用者 GNUstep 目錄 (%s)。\n"
+"無法找到使用者 .workspace 目錄 (%s)。\n"
 "確定你已經安裝 Workspace 正確且執行 workspace.inst"
 
 #: ../src/main.c:478
 #, c-format
-msgid "could not find user GNUstep directory (%s)."
-msgstr "無法找到使用者 GNUstep 目錄 (%s)。"
+msgid "could not find user .workspace directory (%s)."
+msgstr "無法找到使用者 .workspace 目錄 (%s)。"
 
 #: ../src/main.c:481
 msgid ""
-"There was an error while creating GNUstep directory, please make sure you "
+"There was an error while creating .workspace directory, please make sure you "
 "have installed Workspace correctly and run workspace.inst"
 msgstr ""
-"建立 GNUstep 目錄時發生錯誤，請確定你已正確地安裝"
+"建立 .workspace 目錄時發生錯誤，請確定你已正確地安裝"
 "Workspace 且執行 workspace.inst"
 
 #: ../src/main.c:484

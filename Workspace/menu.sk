@@ -20,7 +20,7 @@
  *	medzery, musí byť uzavretý v úvodzovkách.
  * 
  * SHORTCUT udáva klávesovú skratku pre danú položku. <Klávesová skratka> má
- *	rovnakú syntax ako v súbore $HOME/GNUstep/Defaults/Workspace, napr. 
+ *	rovnakú syntax ako v súbore $HOME/.workspace/Defaults/Workspace, napr. 
  *	RootMenuKey alebo MiniaturizeKey.
  *
  * Nemôžete zadať klávesovú skratku pre položky typu MENU a OPEN_MENU.
@@ -188,9 +188,9 @@
 	"Pracovná plocha" END
 
 	"Vzhľad" MENU
-		"Témy" OPEN_MENU -noext THEMES_DIR $HOME/GNUstep/Library/Workspace/Themes WITH setstyle
-		"Štýly" OPEN_MENU -noext STYLES_DIR $HOME/GNUstep/Library/Workspace/Styles WITH setstyle
-		"Sady ikon" OPEN_MENU -noext ICON_SETS_DIR $HOME/GNUstep/Library/Workspace/IconSets WITH seticons
+		"Témy" OPEN_MENU -noext THEMES_DIR $HOME/.workspace/Library/Workspace/Themes WITH setstyle
+		"Štýly" OPEN_MENU -noext STYLES_DIR $HOME/.workspace/Library/Workspace/Styles WITH setstyle
+		"Sady ikon" OPEN_MENU -noext ICON_SETS_DIR $HOME/.workspace/Library/Workspace/IconSets WITH seticons
 		"Pozadie" MENU
 			"Jedna farba" MENU
                         	"Čierna" WS_BACK '(solid, black)'
@@ -212,11 +212,11 @@
     				"Odtiene sivej" WS_BACK '(vgradient, "#636380", "#131318")'
     				"Odtiene vínovej" WS_BACK '(vgradient, "#600040", "#180010")'
 			"Prechod farieb" END
-			"Obrázky" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t
+			"Obrázky" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t
 		"Pozadie" END
-		"Uložiť tému" SHEXEC getstyle -t $HOME/GNUstep/Library/Workspace/Themes/"%a(Meno témy,Zadajte názov súboru:)"
-		"Uložiť sadu ikon" SHEXEC geticonset $HOME/GNUstep/Library/Workspace/IconSets/"%a(Meno sady ikon,Zadajte názov súboru:)"
-		"Konfiguračný nástroj" EXEC /usr/local/GNUstep/Applications/WPrefs.app/WPrefs
+		"Uložiť tému" SHEXEC getstyle -t $HOME/.workspace/Library/Workspace/Themes/"%a(Meno témy,Zadajte názov súboru:)"
+		"Uložiť sadu ikon" SHEXEC geticonset $HOME/.workspace/Library/Workspace/IconSets/"%a(Meno sady ikon,Zadajte názov súboru:)"
+		"Konfiguračný nástroj" EXEC /usr/local/.workspace/Applications/WPrefs.app/WPrefs
 	"Vzhľad" END
 
 	"Koniec" MENU

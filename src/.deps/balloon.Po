@@ -1,10 +1,7 @@
-balloon.o: balloon.c /usr/include/stdc-predef.h \
- /usr/include/x86_64-linux-gnu/bits/predefs.h wconfig.h ../config.h \
+balloon.o: balloon.c /usr/include/stdc-predef.h wconfig.h ../config.h \
  ../config-paths.h
 
 /usr/include/stdc-predef.h:
-
-/usr/include/x86_64-linux-gnu/bits/predefs.h:
 
 wconfig.h:
 

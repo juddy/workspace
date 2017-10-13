@@ -13,7 +13,7 @@ Defining Your Own Cursors
 -------------------------
 
 A cursor specification takes one of the following forms in the
-~/GNUstep/Defaults/Workspace file:
+~/.workspace/Defaults/Workspace file:
 
     (none)
     (builtin, <cursor-name>)

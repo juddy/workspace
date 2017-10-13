@@ -32,7 +32,7 @@
 #include <wraster.h>
 
 #include "Workspace.h"
-#include "GNUstep.h"
+#include ".workspace.h"
 #include "texture.h"
 #include "resources.h"
 #include "screen.h"

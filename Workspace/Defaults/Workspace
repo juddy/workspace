@@ -7,9 +7,9 @@
   LastWorkspaceKey = None;
   IconTitleBack = "#061b25";
   PixmapPath = (
-    "/home/wkennedy/GNUstep/Library/Workspace/Pixmaps",
-    "/home/wkennedy/GNUstep/Library/Workspace/Backgrounds",
-    "/home/wkennedy/GNUstep/Library/Workspace/CachedPixmaps",
+    "/home/wkennedy/.workspace/Library/Workspace/Pixmaps",
+    "/home/wkennedy/.workspace/Library/Workspace/Backgrounds",
+    "/home/wkennedy/.workspace/Library/Workspace/CachedPixmaps",
     "/usr/local/share/Workspace/Pixmaps",
     "/usr/local/share/Workspace/Backgrounds",
     "/usr/include/X11/pixmaps",
@@ -107,12 +107,12 @@
   MenuStyle = normal;
   HideOthersKey = None;
   IconPath = (
-    "/home/wkennedy/GNUstep/Library/Icons",
+    "/home/wkennedy/.workspace/Library/Icons",
     "/usr/local/share/Workspace/Icons",
     "/usr/local/share/Workspace/Pixmaps",
     "/usr/include/X11/pixmaps",
-    "/home/wkennedy/GNUstep/Library/Workspace/Pixmaps",
-    "/home/wkennedy/GNUstep/Library/Workspace/CachedPixmaps",
+    "/home/wkennedy/.workspace/Library/Workspace/Pixmaps",
+    "/home/wkennedy/.workspace/Library/Workspace/CachedPixmaps",
     "/usr/share/icons",
     "/usr/local/share/pixmaps",
     "/usr/share/pixmaps"

@@ -427,10 +427,10 @@ msgstr "kullanıcı dizini belirlenemedi"
 
 #: ../src/main.c:226
 msgid ""
-"could not find user GNUstep directory.\n"
+"could not find user .workspace directory.\n"
 "Make sure you have installed Workspace correctly and run workspace.inst"
 msgstr ""
-"kullanıcı GNUstep dizini bulunamadı.\n"
+"kullanıcı .workspace dizini bulunamadı.\n"
 "Workspace'in doğru kurulduğundan emin olun ve workspace.inst komutunu çalıştırın"
 
 #: ../src/main.c:246

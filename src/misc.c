@@ -41,7 +41,7 @@
 #include "window.h"
 #include "misc.h"
 #include "Workspace.h"
-#include "GNUstep.h"
+#include ".workspace.h"
 #include "screen.h"
 #include "wcore.h"
 #include "window.h"

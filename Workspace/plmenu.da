@@ -211,17 +211,17 @@
                 (
                 "Temaer",
                 OPEN_MENU,
-                "-noext /usr/local/share/Workspace/Themes  $HOME/GNUstep/Library/Workspace/Themes WITH setstyle"
+                "-noext /usr/local/share/Workspace/Themes  $HOME/.workspace/Library/Workspace/Themes WITH setstyle"
                 ),
                 (
                 "Stil",
                 OPEN_MENU,
-                "-noext /usr/local/share/Workspace/Styles  $HOME/GNUstep/Library/Workspace/Styles WITH setstyle"
+                "-noext /usr/local/share/Workspace/Styles  $HOME/.workspace/Library/Workspace/Styles WITH setstyle"
                 ),
                 (
                 "Ikonsæt",
                 OPEN_MENU,
-                "-noext /usr/local/share/Workspace/IconSets  $HOME/GNUstep/Library/Workspace/IconSets WITH seticons"
+                "-noext /usr/local/share/Workspace/IconSets  $HOME/.workspace/Library/Workspace/IconSets WITH seticons"
                 ),
                 (
                 "Baggrund",
@@ -319,11 +319,11 @@
                         (
                         "Billeder",
                         OPEN_MENU,
-                        "-noext /usr/local/share/Workspace/Backgrounds  $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t"
+                        "-noext /usr/local/share/Workspace/Backgrounds  $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t"
                         )
                 ),
-                ("Gem Tema", SHEXEC, "getstyle -t $HOME/GNUstep/Library/Workspace/Themes/\"%a(Tema navn,Indtast navn:)"),
-                ("Gem Ikonsæt", SHEXEC, "geticonset $HOME/GNUstep/Library/Workspace/IconSets/\"%a(Ikonsæt navn,Indtast navn:)")
+                ("Gem Tema", SHEXEC, "getstyle -t $HOME/.workspace/Library/Workspace/Themes/\"%a(Tema navn,Indtast navn:)"),
+                ("Gem Ikonsæt", SHEXEC, "geticonset $HOME/.workspace/Library/Workspace/IconSets/\"%a(Ikonsæt navn,Indtast navn:)")
         ),
         (
         "Afslut",

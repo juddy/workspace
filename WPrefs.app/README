@@ -15,7 +15,7 @@ user guide to be fully aware of all available options and other features
 of Workspace that are not related to configuration.
 
     To run WPrefs, do not put it in your search path. Instead, run it
-with the full path, like /usr/local/GNUstep/Applications/WPrefs.app/WPrefs
+with the full path, like /usr/local/.workspace/Applications/WPrefs.app/WPrefs
 Then, dock it's application icon. The dock will automatically detect it's
 icon and use it.
 
@@ -29,7 +29,7 @@ stay there until you unhide it.
     WPrefs is still under development. Some of the configuration options are 
 not yet configurable from WPrefs, notably the appearance related options.
 It might contain bugs that can corrupt your configuration files, so backup
-the contents of the ~/GNUstep/Defaults directory before using it.
+the contents of the ~/.workspace/Defaults directory before using it.
 
 
 
@@ -68,24 +68,24 @@ WPrefs will be built automatically and installed with the rest of Workspace.
 Customized Installation
 -----------------------
 
-By default, WPrefs.app will be installed in the GNUstep applications directory, 
-which is /usr/local/GNUstep/Applications. If you want to install it somewhere 
+By default, WPrefs.app will be installed in the .workspace applications directory, 
+which is /usr/local/.workspace/Applications. If you want to install it somewhere 
 else, like in /some_weird_path/Applications, set the GNUSTEP_LOCAL_ROOT
 environment variable to some_weird_path before running configure for
 Workspace. You can also configure Workspace supplying the --with-gnustepdir
-option to configure, like ./configure --with-gnustepdir=/usr/GNUstep/Applications
+option to configure, like ./configure --with-gnustepdir=/usr/.workspace/Applications
 If you change your mind after installing, you can move the .app directory 
-to one of the following GNUstep/Applications directories:
+to one of the following .workspace/Applications directories:
 
-/usr/GNUstep/Applications
-
-OR
-
-/usr/local/GNUstep/Applications
+/usr/.workspace/Applications
 
 OR
 
-~/GNUstep/Applications
+/usr/local/.workspace/Applications
+
+OR
+
+~/.workspace/Applications
 
 
 

@@ -657,10 +657,10 @@ msgstr " --help\t\t\t显示这个信息"
 #: ../src/main.c:286
 #, c-format
 msgid ""
-"could not find user GNUstep directory (%s).\n"
+"could not find user .workspace directory (%s).\n"
 "Make sure you have installed Workspace correctly and run workspace.inst"
 msgstr ""
-"不能找到用户的 GNUstep 目录 (%s).\n"
+"不能找到用户的 .workspace 目录 (%s).\n"
 "请确定你正确安装了 Workspace 并运行了 workspace.inst"
 
 #: ../src/main.c:307 ../src/main.c:312

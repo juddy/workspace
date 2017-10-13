@@ -1,258 +1,50 @@
-(
-  Workspace,
-  (
-    Applications,
-    (
-      Terminals,
-      (
-        xterm,
-        EXEC,
-        "xterm -bg black -fg white +sb +sm -fn 10x20 -sl 4000 -cr yellow"
-      ),
-      (Urxvt, EXEC, urxvt)
-    ),
-    (
-      Internet,
-      ("Mozilla Firefox", EXEC, firefox),
-      (
-        W3M,
-        EXEC,
-        "xterm -bg black -fg white +sb +sm -fn 10x20 -sl 4000 -cr yellow -e w3m"
-      )
-    ),
-    (Mathematics, (XCalc, EXEC, xcalc)),
-    ("File Managers", (Nautilus, EXEC, "nautilus --no-desktop")),
-    (
-      Graphics,
-      (GIMP, EXEC, gimp),
-      (XBitmap, EXEC, bitmap),
-      (Geeqie, EXEC, geeqie),
-      ("ImageMagick Display", EXEC, display)
-    ),
-    (
-      Editors,
-      (gVIM, EXEC, gvim),
-      (
-        vi,
-        EXEC,
-        "xterm -bg black -fg white +sb +sm -fn 10x20 -sl 4000 -cr yellow -e vi"
-      ),
-      (
-        VIM,
-        EXEC,
-        "xterm -bg black -fg white +sb +sm -fn 10x20 -sl 4000 -cr yellow -e vim"
-      ),
-      (XEdit, EXEC, xedit)
-    ),
-    (
-      Development,
-      (gitk, EXEC, gitk),
-      (designer, EXEC, designer),
-      (
-        tclsh,
-        EXEC,
-        "xterm -bg black -fg white +sb +sm -fn 10x20 -sl 4000 -cr yellow -e tclsh"
-      ),
-      (
-        xev,
-        EXEC,
-        "xterm -bg black -fg white +sb +sm -fn 10x20 -sl 4000 -cr yellow -e xev"
-      )
-    ),
-    (Workspace, (Magnify, EXEC, wmagnify)),
-    (
-      Office,
-      ("OpenOffice.org Writer", EXEC, oowriter),
-      ("OpenOffice.org Calc", EXEC, oocalc),
-      ("OpenOffice.org Draw", EXEC, oodraw),
-      ("OpenOffice.org Impress", EXEC, ooimpress),
-      ("OpenOffice.org Math", EXEC, oomath),
-      (OpenOffice.org, EXEC, ooffice),
-      (StarOffice, EXEC, soffice),
-      ("LibreOffice Writer", EXEC, lowriter),
-      ("LibreOffice Calc", EXEC, localc),
-      ("LibreOffice Draw", EXEC, lodraw),
-      ("LibreOffice Impress", EXEC, loimpress),
-      ("LibreOffice Math", EXEC, lomath),
-      ("LibreOffice Base", EXEC, lobase),
-      ("LibreOffice Web", EXEC, loweb),
-      (LibreOffice, EXEC, libreoffice)
-    ),
-    (
-      Sound,
-      (
-        "ALSA mixer",
-        EXEC,
-        "xterm -bg black -fg white +sb +sm -fn 10x20 -sl 4000 -cr yellow -e alsamixer"
-      )
-    ),
-    (Viewers, (Evince, EXEC, evince)),
-    (
-      Utilities,
-      ("Wine Configurator", EXEC, winecfg),
-      ("Java Control Panel", EXEC, ControlPanel),
-      (oclock, EXEC, oclock),
-      (xclock, EXEC, xclock)
-    ),
-    (
-      System,
-      (
-        top,
-        EXEC,
-        "xterm -bg black -fg white +sb +sm -fn 10x20 -sl 4000 -cr yellow -e top"
-      )
-    ),
-    ("Chat and Talk", (Pidgin, EXEC, pidgin)),
-    (
-      "P2P Network",
-      (
-        sftp,
-        EXEC,
-        "xterm -bg black -fg white +sb +sm -fn 10x20 -sl 4000 -cr yellow -e sftp"
-      )
-    )
-  ),
-  (Run..., EXEC, "%A(Run, Type command:)"),
-  (
-    Appearance,
-    (
-      Themes,
-      OPEN_MENU,
-      "-noext /usr/local/share/Workspace/Themes $HOME/GNUstep/Library/Workspace/Themes WITH setstyle"
-    ),
-    (
-      Styles,
-      OPEN_MENU,
-      "-noext /usr/local/share/Workspace/Styles $HOME/GNUstep/Library/Workspace/Styles WITH setstyle"
-    ),
-    (
-      "Icon Sets",
-      OPEN_MENU,
-      "-noext /usr/local/share/Workspace/IconSets $HOME/GNUstep/Library/Workspace/IconSets WITH seticons"
-    ),
-    (
-      Background,
-      (
-        Solid,
-        (
-          Black,
-          EXEC,
-          "wdwrite Workspace WorkspaceBack '(solid, \"black\")'"
-        ),
-        (
-          Blue,
-          EXEC,
-          "wdwrite Workspace WorkspaceBack '(solid, \"#505075\")'"
-        ),
-        (
-          Indigo,
-          EXEC,
-          "wdwrite Workspace WorkspaceBack '(solid, \"#243e6c\")'"
-        ),
-        (
-          Bluemarine,
-          EXEC,
-          "wdwrite Workspace WorkspaceBack '(solid, \"#243e6c\")'"
-        ),
-        (
-          Purple,
-          EXEC,
-          "wdwrite Workspace WorkspaceBack '(solid, \"#554466\")'"
-        ),
-        (
-          Wheat,
-          EXEC,
-          "wdwrite Workspace WorkspaceBack '(solid, \"wheat4\")'"
-        ),
-        (
-          "Dark Gray",
-          EXEC,
-          "wdwrite Workspace WorkspaceBack '(solid, \"#333340\")'"
-        ),
-        (
-          Wine,
-          EXEC,
-          "wdwrite Workspace WorkspaceBack '(solid, \"#400020\")'"
-        )
-      ),
-      (
-        Gradient,
-        (
-          Sunset,
-          EXEC,
-          "wdwrite Workspace WorkspaceBack '(mvgradient, deepskyblue4, black, deepskyblue4, tomato4)'"
-        ),
-        (
-          Sky,
-          EXEC,
-          "wdwrite Workspace WorkspaceBack '(vgradient, \"blue4\", \"white\"'"
-        ),
-        (
-          "Blue Shades",
-          EXEC,
-          "wdwrite Workspace WorkspaceBack '(vgradient, \"#7080a5\", \"#101020\"'"
-        ),
-        (
-          "Indigo Shades",
-          EXEC,
-          "wdwrite Workspace WorkspaceBack '(vgradient, \"#746ebc\", \"#242e4c\"'"
-        ),
-        (
-          "Purple Shades",
-          EXEC,
-          "wdwrite Workspace WorkspaceBack '(vgradient, \"#654c66\", \"#151426\"'"
-        ),
-        (
-          "Wheat Shades",
-          EXEC,
-          "wdwrite Workspace WorkspaceBack '(vgradient, \"#a09060\", \"#302010\"'"
-        ),
-        (
-          "Grey Shades",
-          EXEC,
-          "wdwrite Workspace WorkspaceBack '(vgradient, \"#636380\", \"#131318\"'"
-        ),
-        (
-          "Wine Shades",
-          EXEC,
-          "wdwrite Workspace WorkspaceBack '(vgradient, \"#600040\", \"#180010\"'"
-        )
-      ),
-      (
-        Images,
-        OPEN_MENU,
-        "-noext $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t"
-      )
-    ),
-    (
-      "Save Theme",
-      EXEC,
-      "getstyle -p \"%a(Theme name, Name to save theme as)\""
-    ),
-    (
-      "Save IconSet",
-      SHEXEC,
-      "geticonset $HOME/GNUstep/Library/Workspace/IconSets/\"%a(IconSet name,Name to save icon set as)\""
-    )
-  ),
-  (Workspaces, WORKSPACE_MENU),
-  (
-    Workspace,
-    ("Hide Others", HIDE_OTHERS),
-    ("Show All", SHOW_ALL),
-    ("Arrange Icons", ARRANGE_ICONS),
-    (Refresh, REFRESH),
-    ("Save Session", SAVE_SESSION),
-    ("Clear Session", CLEAR_SESSION)
-  ),
-  ("Configure Workspace", EXEC, WPrefs),
+("Applications",
+ ("Info",
   ("Info Panel", INFO_PANEL),
-  ("Restart Workspace", RESTART),
-  (
-    "Other Window Managers",
-    ("Start IceWM", RESTART, icewm),
-    ("Start twm", RESTART, twm),
-    ("Start Motif Window Manager", RESTART, mwm)
-  ),
-  ("Exit Workspace", EXIT)
+  ("Legal", LEGAL_PANEL),
+ ),
+ ("Run...", SHEXEC, "%a(Run,Type command to run:)"),
+ ("xterm", EXEC, "xterm -sb"),
+ ("urxvt", EXEC, "urxvt"),
+ ("Browser", EXEC, "www-browser"),
+ ("Workspaces", WORKSPACE_MENU),
+ ("Utils",
+  ("Calculator", EXEC, "xcalc"),
+  ("Window Properties", SHEXEC, "xprop | xmessage -center -title 'xprop' -file -"),
+  ("Font Chooser", EXEC, "xfontsel"),
+  ("X Clipboard", EXEC, "xclipboard"),
+  ("Magnify", EXEC, "wmagnify"),
+  ("Colormap", EXEC, "xcmap"),
+  ("Kill X Application", EXEC, "xkill")
+ ),
+ ("Commands",
+  ("Hide Others", HIDE_OTHERS),
+  ("Show All", SHOW_ALL),
+  ("Arrange Icons", ARRANGE_ICONS),
+  ("Refresh", REFRESH),
+  ("Lock", EXEC, "xlock -allowroot -usefirst")
+ ),
+ ("Appearance",
+  ("Themes", OPEN_MENU, "-noext #wmdatadir#/Themes $HOME/.workspace/Library/Workspace/Themes WITH setstyle"),
+  ("Styles", OPEN_MENU, "-noext #wmdatadir#/Styles $HOME/.workspace/Library/Workspace/Styles WITH setstyle"),
+  ("Icon Sets", OPEN_MENU, "-noext #wmdatadir#/IconSets $HOME/.workspace/Library/Workspace/IconSets WITH seticons"),
+  ("Background",
+   ("Solid",
+
+   ),
+   ("Images", OPEN_MENU, "-noext #wmdatadir#/Backgrounds $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t")
+   ),
+   ("Save Theme (~/.workspace/Library/Workspace/Themes)", SHEXEC, "getstyle -t $HOME/.workspace/Library/Workspace/Themes/\"%a(Theme name)\""),
+   ("Save IconSet", SHEXEC, "geticonset $HOME/.workspace/Library/Workspace/IconSets/\"%a(IconSet name)\""),
+   ("Preferences Utility", EXEC, "$(which WPrefs)")
+   ),
+   ("Session",
+    ("Save Session", SAVE_SESSION),
+    ("Clear Session", CLEAR_SESSION),
+	("Restart Workspace", RESTART),
+	("Start xmonad", RESTART, xmonad),
+	("Start wmii", RESTART, wmii),
+	("Start mwm", RESTART, mwm),
+	("Exit", EXIT)
+   )
 )

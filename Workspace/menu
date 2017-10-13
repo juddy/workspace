@@ -10,7 +10,7 @@
  * 
  * SHORTCUT specifies a shortcut for that item. <Shortcut> has the
  * same syntax of the shortcuts key options in the 
- * $HOME/GNUstep/Defaults/Workspace file, such as RootMenuKey or MiniaturizeKey.
+ * $HOME/.workspace/Defaults/Workspace file, such as RootMenuKey or MiniaturizeKey.
  *
  * You can't specify a shortcut for a MENU or OPEN_MENU entry.
  * * <Command> one of the valid commands: 
@@ -140,9 +140,9 @@
 	"Commands" END
 
 	"Appearance" MENU
-		"Themes" OPEN_MENU -noext THEMES_DIR $HOME/GNUstep/Library/Workspace/Themes WITH setstyle
-		"Styles" OPEN_MENU -noext STYLES_DIR $HOME/GNUstep/Library/Workspace/Styles WITH setstyle
-		"Icon Sets" OPEN_MENU -noext ICON_SETS_DIR $HOME/GNUstep/Library/Workspace/IconSets WITH seticons
+		"Themes" OPEN_MENU -noext THEMES_DIR $HOME/.workspace/Library/Workspace/Themes WITH setstyle
+		"Styles" OPEN_MENU -noext STYLES_DIR $HOME/.workspace/Library/Workspace/Styles WITH setstyle
+		"Icon Sets" OPEN_MENU -noext ICON_SETS_DIR $HOME/.workspace/Library/Workspace/IconSets WITH seticons
 		"Background" MENU
 			"Crayon Solids" MENU
 				"Black" WS_BACK '(solid, "#000000)'
@@ -168,12 +168,12 @@
     			"Earth Tones" WS_BACK '(vgradient,  navajowhite4, dimgray)'
     			"Grey Shades" WS_BACK '(vgradient, "#636380", "#131318")'
 			"Gradients" END
-			"Images - Tiled" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t
-			"Images - Scaled" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -s
+			"Images - Tiled" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t
+			"Images - Scaled" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -s
 		"Background" END
-		"Save Theme" SHEXEC getstyle -t $HOME/GNUstep/Library/Workspace/Themes/"%a(Theme name,Enter file name:)"
-		"Save IconSet" SHEXEC geticonset $HOME/GNUstep/Library/Workspace/IconSets/"%a(IconSet name,Enter file name:)"
-		"Preferences Utility" EXEC /usr/local/GNUstep/Applications/WPrefs.app/WPrefs
+		"Save Theme" SHEXEC getstyle -t $HOME/.workspace/Library/Workspace/Themes/"%a(Theme name,Enter file name:)"
+		"Save IconSet" SHEXEC geticonset $HOME/.workspace/Library/Workspace/IconSets/"%a(IconSet name,Enter file name:)"
+		"Preferences Utility" EXEC /usr/local/.workspace/Applications/WPrefs.app/WPrefs
 	"Appearance" END
 
 	"Session" MENU

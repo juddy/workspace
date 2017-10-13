@@ -141,7 +141,7 @@ Brian Alexander Martin <brian@goober.wireless.ucsc.edu>
 PIPE_MENU
 
 Andrea Mistrali <andre@ulmo.aleph.it>
-3D version of GNUstep icon.
+3D version of .workspace icon.
 
 Jeff Meininger <jeffm@boxybutgood.com>
 Fix for unassociated alpha tiff
@@ -220,7 +220,7 @@ dgradient fix
 "]d" <id@workspace.info>
 Window list menu miniaturized/hidden hints, XDE support, XKB lock 
 language status, WINGs enhancements, bug fixes, window commands menu
-enhancement, window move/resize by keyboard. GNUstepGlow.tiff icon,
+enhancement, window move/resize by keyboard. .workspaceGlow.tiff icon,
 WINGs color panel, Appearance section icon(s)
 
 

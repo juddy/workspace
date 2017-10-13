@@ -28,7 +28,7 @@
 
 #include "Workspace.h"
 #include "window.h"
-#include "GNUstep.h"
+#include ".workspace.h"
 #include "properties.h"
 
 /* atoms */
@@ -136,7 +136,7 @@ unsigned char *PropGetCheckProperty(Window window, Atom hint, Atom type, int for
 	return data;
 }
 
-int PropGetGNUstepWMAttr(Window window, GNUstepWMAttributes ** attr)
+int PropGet.workspaceWMAttr(Window window, .workspaceWMAttributes ** attr)
 {
 	unsigned long *data;
 
@@ -146,7 +146,7 @@ int PropGetGNUstepWMAttr(Window window, GNUstepWMAttributes ** attr)
 	if (!data)
 		return False;
 
-	*attr = malloc(sizeof(GNUstepWMAttributes));
+	*attr = malloc(sizeof(.workspaceWMAttributes));
 	if (!*attr) {
 		XFree(data);
 		return False;

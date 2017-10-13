@@ -121,9 +121,9 @@ usr/share/WINGs/defaultIcon.xpm
 usr/share/WINGs/defaultIcon.tiff
 usr/share/WINGs/Images.xpm
 usr/share/WINGs/Images.tiff
-usr/share/lib/GNUstep/System/Applications/WPrefs.app/WPrefs.xpm
-usr/share/lib/GNUstep/System/Applications/WPrefs.app/WPrefs.tiff
-usr/share/lib/GNUstep/System/Applications/WPrefs.app/tiff/*.tiff
+usr/share/lib/.workspace/System/Applications/WPrefs.app/WPrefs.xpm
+usr/share/lib/.workspace/System/Applications/WPrefs.app/WPrefs.tiff
+usr/share/lib/.workspace/System/Applications/WPrefs.app/tiff/*.tiff
 # Scripts
 debian/debianfiles/workspace			usr/bin
 debian/debianfiles/upgrade-workspace-defaults usr/sbin
@@ -131,11 +131,11 @@ debian/debianfiles/upgrade-workspace-defaults usr/sbin
 debian/debianfiles/Theme/Debian			usr/share/Workspace/Themes
 debian/debianfiles/Theme/debian.tiff		usr/share/Workspace/Backgrounds
 # Configuration
-etc/Workspace/WMGLOBAL			etc/GNUstep/Defaults
-etc/Workspace/WMState				etc/GNUstep/Defaults
-debian/debianfiles/conf/WMWindowAttributes	etc/GNUstep/Defaults
-debian/debianfiles/conf/WMRootMenu		etc/GNUstep/Defaults
-debian/debianfiles/conf/Workspace		etc/GNUstep/Defaults
+etc/Workspace/WMGLOBAL			etc/.workspace/Defaults
+etc/Workspace/WMState				etc/.workspace/Defaults
+debian/debianfiles/conf/WMWindowAttributes	etc/.workspace/Defaults
+debian/debianfiles/conf/WMRootMenu		etc/.workspace/Defaults
+debian/debianfiles/conf/Workspace		etc/.workspace/Defaults
 debian/debianfiles/workspace-common.desktop	usr/share/xsessions
 # Menu
 debian/debianfiles/menu/wmappearance		etc/menu-methods

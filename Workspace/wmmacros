@@ -22,7 +22,7 @@
 /*
  * SETSTYLE FILE - loads a style file 
  */
-#define SETSTYLE EXEC cd $HOME/GNUstep/Library/Workspace/Styles; setstyle 
+#define SETSTYLE EXEC cd $HOME/.workspace/Library/Workspace/Styles; setstyle 
 
 
 /*

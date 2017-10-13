@@ -7,7 +7,7 @@ bin_PROGRAMS = workspace
 EXTRA_DIST = 
 
 workspace_SOURCES = 	\
-	GNUstep.h \
+	.workspace.h \
 	Workspace.h \
 	actions.c \
 	actions.h \

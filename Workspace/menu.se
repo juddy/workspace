@@ -172,9 +172,9 @@
 	"Arbetsbord" END
 
 	"Utseende" MENU
-		"Teman" OPEN_MENU -noext THEMES_DIR $HOME/GNUstep/Library/Workspace/Themes WITH setstyle
-		"Stilar" OPEN_MENU -noext STYLES_DIR $HOME/GNUstep/Library/Workspace/Styles WITH setstyle
-		"Ikonuppsättningar" OPEN_MENU -noext ICON_SETS_DIR $HOME/GNUstep/Library/Workspace/IconSets WITH seticons
+		"Teman" OPEN_MENU -noext THEMES_DIR $HOME/.workspace/Library/Workspace/Themes WITH setstyle
+		"Stilar" OPEN_MENU -noext STYLES_DIR $HOME/.workspace/Library/Workspace/Styles WITH setstyle
+		"Ikonuppsättningar" OPEN_MENU -noext ICON_SETS_DIR $HOME/.workspace/Library/Workspace/IconSets WITH seticons
 		"Bakgrund" MENU
 			"Enfärgat" MENU
                         	"Svart" WS_BACK '(solid, black)'
@@ -190,10 +190,10 @@
 				"Flagga" WS_BACK '(mdgradient, green, red, white, green)'
 				"Himmel" WS_BACK '(vgradient, blue4, white)'
 			"Toningar" END
-			"Bilder" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t
+			"Bilder" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t
 		"Bakgrund" END
-		"Spara tema" SHEXEC getstyle -t $HOME/GNUstep/Library/Workspace/Themes/"%a(Theme name)"
-		"Spara ikonuppsättning" SHEXEC geticonset $HOME/GNUstep/Library/Workspace/IconSets/"%a(IconSet name)"
+		"Spara tema" SHEXEC getstyle -t $HOME/.workspace/Library/Workspace/Themes/"%a(Theme name)"
+		"Spara ikonuppsättning" SHEXEC geticonset $HOME/.workspace/Library/Workspace/IconSets/"%a(IconSet name)"
 	"Utseende" END
 
 	"Avsluta"	MENU

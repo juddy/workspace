@@ -33,7 +33,7 @@ If I18N support does not work for you, check these:
 		ftp://ftp.linux.or.jp/pub/RPM/glibc
 
 	- the fonts you're using support your locale. if your font
-	  setting on $HOME/GNUstep/Defaults/Workspace is like..
+	  setting on $HOME/.workspace/Defaults/Workspace is like..
 
 	  WindowTitleFont = "Trebuchet MS:bold:pixelsize=12";
 	  MenuTitleFont   = "Trebuchet MS:bold:pixelsize=12";

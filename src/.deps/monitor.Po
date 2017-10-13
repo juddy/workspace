@@ -1,5 +1,4 @@
-monitor.o: monitor.c /usr/include/stdc-predef.h \
- /usr/include/x86_64-linux-gnu/bits/predefs.h wconfig.h ../config.h \
+monitor.o: monitor.c /usr/include/stdc-predef.h wconfig.h ../config.h \
  ../config-paths.h /usr/include/unistd.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -9,12 +8,13 @@ monitor.o: monitor.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/time.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/x86_64-linux-gnu/bits/time.h /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/sigset.h \
@@ -31,8 +31,8 @@ monitor.o: monitor.c /usr/include/stdc-predef.h \
  /usr/include/X11/keysym.h /usr/include/X11/keysymdef.h \
  /usr/include/X11/Xproto.h /usr/include/X11/Xmd.h \
  /usr/include/X11/Xprotostr.h Workspace.h /usr/include/assert.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
  /usr/include/linux/limits.h \
@@ -41,12 +41,10 @@ monitor.o: monitor.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h ../WINGs/WINGs/WINGs.h \
  ../wrlib/wraster.h /usr/include/X11/extensions/XShm.h \
  /usr/include/X11/extensions/shm.h ../WINGs/WINGs/WUtil.h screen.h \
- window.h GNUstep.h texture.h wcore.h menu.h application.h dialog.h \
- main.h /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdnoreturn.h
+ window.h .workspace.h texture.h wcore.h menu.h application.h dialog.h \
+ main.h /usr/lib/gcc/x86_64-linux-gnu/6/include/stdnoreturn.h
 
 /usr/include/stdc-predef.h:
-
-/usr/include/x86_64-linux-gnu/bits/predefs.h:
 
 wconfig.h:
 
@@ -74,7 +72,7 @@ wconfig.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
@@ -91,6 +89,8 @@ wconfig.h:
 /usr/include/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
@@ -140,9 +140,9 @@ Workspace.h:
 
 /usr/include/assert.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed/limits.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed/syslimits.h:
 
 /usr/include/limits.h:
 
@@ -172,7 +172,7 @@ screen.h:
 
 window.h:
 
-GNUstep.h:
+.workspace.h:
 
 texture.h:
 
@@ -186,4 +186,4 @@ dialog.h:
 
 main.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdnoreturn.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include/stdnoreturn.h:

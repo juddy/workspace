@@ -1,4 +1,4 @@
-/* GNUstep.h-- stuff for compatibility with GNUstep applications
+/* .workspace.h-- stuff for compatibility with .workspace applications
  *
  *  Workspace window manager
  *
@@ -40,7 +40,7 @@ enum {
 #ifndef _DEFINED_GNUSTEP_WINDOW_INFO
 #define	_DEFINED_GNUSTEP_WINDOW_INFO
 /*
- * Window levels are taken from GNUstep (gui/AppKit/NSWindow.h)
+ * Window levels are taken from .workspace (gui/AppKit/NSWindow.h)
  * NSDesktopWindowLevel intended to be the level at which things
  * on the desktop sit ... so you should be able
  * to put a desktop background just below it.
@@ -49,7 +49,7 @@ enum {
  * range INT_MIN+1 to INT_MAX
  */
 enum {
-    WMDesktopWindowLevel = -1000, /* GNUstep addition     */
+    WMDesktopWindowLevel = -1000, /* .workspace addition     */
     WMNormalWindowLevel = 0,
     WMFloatingWindowLevel = 3,
     WMSubmenuWindowLevel = 3,
@@ -89,7 +89,7 @@ typedef struct {
     Pixmap miniaturize_mask;	       /* miniaturize pixmap mask */
     Pixmap close_mask;		       /* close pixmap mask */
     CARD32 extra_flags;
-} GNUstepWMAttributes;
+} .workspaceWMAttributes;
 
 #define GSWindowStyleAttr 	(1<<0)
 #define GSWindowLevelAttr 	(1<<1)

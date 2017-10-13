@@ -42,7 +42,7 @@
 
 	"Informacion ..." MENU
 		"Copyright..." SHEXEC xmessage -center -font variable -title \
-	'Workspace 'WM_VERSION -file ~/GNUstep/Library/Workspace/Copyright
+	'Workspace 'WM_VERSION -file ~/.workspace/Library/Workspace/Copyright
 		"Carga del sistema" SHEXEC xosview || xload
 		"Lista de tarifas (top)" EXEC rxvt -ls -fg white -bg black -fn vga -e top
 		"Manual" EXEC xman

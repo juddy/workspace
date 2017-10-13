@@ -8,7 +8,7 @@
  * <Title> é qualquer texto a ser usado como título. Deve estar entre aspas "
  * 
  * SHORTCUT especifica uma tecla de atalho para o item. <tecla de atalho> 
- * tem a mesma sintaxe das teclas de atalho em $HOME/GNUstep/Defaults/Workspace
+ * tem a mesma sintaxe das teclas de atalho em $HOME/.workspace/Defaults/Workspace
  *
  * Não é possível especificar teclas de atalho para MENU ou OPEN_MENU
  * 
@@ -38,7 +38,7 @@
  *		de trabalho atual. Todas as informações serão restauradas
  *		até que se use o comando SAVE_SESSION de novo ou CLEAR_SESSION.
  *		Se SaveSessionOnExit = Yes; estiver definido no domínio 
- *		Workspace ($HOME/GNUstep/Defaults/Workspace), então o 
+ *		Workspace ($HOME/.workspace/Defaults/Workspace), então o 
  *		salvamento da sessão é feito automaticamente quando o 
  *		Workspace finalizar, apagando quaisquer SAVE_SESSION ou
  *		CLEAR_SESSION usados anteriormente.
@@ -172,9 +172,9 @@
 	"Área de Trabalho" END
 
 	"Aparência" MENU
-		"Temas" OPEN_MENU -noext THEMES_DIR $HOME/GNUstep/Library/Workspace/Themes WITH setstyle
-		"Estilos" OPEN_MENU -noext STYLES_DIR $HOME/GNUstep/Library/Workspace/Styles WITH setstyle
-		"Conjunto de Ícones" OPEN_MENU -noext ICON_SETS_DIR $HOME/GNUstep/Library/Workspace/IconSets WITH seticons
+		"Temas" OPEN_MENU -noext THEMES_DIR $HOME/.workspace/Library/Workspace/Themes WITH setstyle
+		"Estilos" OPEN_MENU -noext STYLES_DIR $HOME/.workspace/Library/Workspace/Styles WITH setstyle
+		"Conjunto de Ícones" OPEN_MENU -noext ICON_SETS_DIR $HOME/.workspace/Library/Workspace/IconSets WITH seticons
 		"Papéis de Parede" MENU
 			"Sólido" MENU
                         	"Preto" WS_BACK '(solid, black)'
@@ -190,10 +190,10 @@
 				"Bandeira" WS_BACK '(mdgradient, green, green, yellow)'
 				"Céu" WS_BACK '(vgradient, blue4, white)'
 			"Degradé" END
-			"Imagens" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t
+			"Imagens" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t
 		"Papéis de Parede" END
-		"Salvar Tema" SHEXEC getstyle -t $HOME/GNUstep/Library/Workspace/Themes/"%a(Nome do Tema)"
-		"Salvar Configuração de Ícones" SHEXEC geticonset $HOME/GNUstep/Library/Workspace/IconSets/"%a(Nome do Conjunto de Ícones)"
+		"Salvar Tema" SHEXEC getstyle -t $HOME/.workspace/Library/Workspace/Themes/"%a(Nome do Tema)"
+		"Salvar Configuração de Ícones" SHEXEC geticonset $HOME/.workspace/Library/Workspace/IconSets/"%a(Nome do Conjunto de Ícones)"
 	"Appearance" END
 
 	"Sair"	MENU

@@ -25,17 +25,17 @@
   ("Lock", EXEC, "xlock -allowroot -usefirst")
  ),
  ("Appearance",
-  ("Themes", OPEN_MENU, "-noext #wmdatadir#/Themes $HOME/GNUstep/Library/Workspace/Themes WITH setstyle"),
-  ("Styles", OPEN_MENU, "-noext #wmdatadir#/Styles $HOME/GNUstep/Library/Workspace/Styles WITH setstyle"),
-  ("Icon Sets", OPEN_MENU, "-noext #wmdatadir#/IconSets $HOME/GNUstep/Library/Workspace/IconSets WITH seticons"),
+  ("Themes", OPEN_MENU, "-noext #wmdatadir#/Themes $HOME/.workspace/Library/Workspace/Themes WITH setstyle"),
+  ("Styles", OPEN_MENU, "-noext #wmdatadir#/Styles $HOME/.workspace/Library/Workspace/Styles WITH setstyle"),
+  ("Icon Sets", OPEN_MENU, "-noext #wmdatadir#/IconSets $HOME/.workspace/Library/Workspace/IconSets WITH seticons"),
   ("Background",
    ("Solid",
 
    ),
-   ("Images", OPEN_MENU, "-noext #wmdatadir#/Backgrounds $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t")
+   ("Images", OPEN_MENU, "-noext #wmdatadir#/Backgrounds $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t")
    ),
-   ("Save Theme (~/GNUstep/Library/Workspace/Themes)", SHEXEC, "getstyle -t $HOME/GNUstep/Library/Workspace/Themes/\"%a(Theme name)\""),
-   ("Save IconSet", SHEXEC, "geticonset $HOME/GNUstep/Library/Workspace/IconSets/\"%a(IconSet name)\""),
+   ("Save Theme (~/.workspace/Library/Workspace/Themes)", SHEXEC, "getstyle -t $HOME/.workspace/Library/Workspace/Themes/\"%a(Theme name)\""),
+   ("Save IconSet", SHEXEC, "geticonset $HOME/.workspace/Library/Workspace/IconSets/\"%a(IconSet name)\""),
    ("Preferences Utility", EXEC, "$(which WPrefs)")
    ),
    ("Session",

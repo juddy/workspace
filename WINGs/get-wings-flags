@@ -2,7 +2,7 @@
 
 WCFLAGS="-I/usr/local/include "
 WLFLAGS="-L/usr/local/lib "
-WLIBS="-lWINGs -lWUtil -lwraster -ltiff  -lXpm -lpng -ljpeg -lungif -lXft   -lXext -lX11  -lm "
+WLIBS="-lWINGs -lWUtil -lwraster -lpng -ljpeg -lXft -lXext -lXext -lX11  -lm "
 
 usage="Usage: get-wings-flags [--cflags] [--ldflags] [--libs]"
 

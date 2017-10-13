@@ -1,5 +1,4 @@
-event.o: event.c /usr/include/stdc-predef.h \
- /usr/include/x86_64-linux-gnu/bits/predefs.h wconfig.h ../config.h \
+event.o: event.c /usr/include/stdc-predef.h wconfig.h ../config.h \
  ../config-paths.h /usr/include/x86_64-linux-gnu/sys/select.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -11,12 +10,12 @@ event.o: event.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/sigset.h /usr/include/time.h \
  /usr/include/x86_64-linux-gnu/bits/time.h \
  /usr/include/x86_64-linux-gnu/sys/inotify.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdint.h /usr/include/stdint.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/inotify.h /usr/include/stdio.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h /usr/include/libio.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include/stddef.h /usr/include/libio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h /usr/include/stdlib.h \
@@ -24,24 +23,21 @@ event.o: event.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
  /usr/include/string.h /usr/include/x86_64-linux-gnu/bits/string.h \
- /usr/include/x86_64-linux-gnu/bits/string2.h /usr/include/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h /usr/include/strings.h \
+ /usr/include/x86_64-linux-gnu/bits/string2.h /usr/include/strings.h \
  /usr/include/X11/Xlib.h /usr/include/X11/X.h \
  /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h \
  /usr/include/X11/Xutil.h /usr/include/X11/keysym.h \
  /usr/include/X11/keysymdef.h /usr/include/X11/extensions/shape.h \
- /usr/include/X11/extensions/shapeconst.h \
- /usr/include/X11/extensions/Xrandr.h /usr/include/X11/extensions/randr.h \
- /usr/include/X11/extensions/Xrender.h \
- /usr/include/X11/extensions/render.h /usr/include/X11/Xdefs.h \
- Workspace.h /usr/include/assert.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h \
+ /usr/include/X11/extensions/shapeconst.h Workspace.h \
+ /usr/include/assert.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
  /usr/include/linux/limits.h \
@@ -49,17 +45,15 @@ event.o: event.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h ../WINGs/WINGs/WINGs.h \
  ../wrlib/wraster.h /usr/include/X11/extensions/XShm.h \
  /usr/include/X11/extensions/shm.h ../WINGs/WINGs/WUtil.h window.h \
- GNUstep.h /usr/include/X11/Xproto.h /usr/include/X11/Xmd.h \
+ .workspace.h /usr/include/X11/Xproto.h /usr/include/X11/Xmd.h \
  /usr/include/X11/Xprotostr.h texture.h screen.h wcore.h menu.h \
  application.h actions.h client.h main.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdnoreturn.h cycling.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include/stdnoreturn.h cycling.h \
  keybind.h stacking.h defaults.h workspace.h dock.h appicon.h icon.h \
  framewin.h pixmap.h properties.h balloon.h xinerama.h wmspec.h \
  rootmenu.h colormap.h shutdown.h misc.h event.h winmenu.h switchmenu.h
 
 /usr/include/stdc-predef.h:
-
-/usr/include/x86_64-linux-gnu/bits/predefs.h:
 
 wconfig.h:
 
@@ -93,7 +87,7 @@ wconfig.h:
 
 /usr/include/x86_64-linux-gnu/sys/inotify.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdint.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include/stdint.h:
 
 /usr/include/stdint.h:
 
@@ -103,7 +97,7 @@ wconfig.h:
 
 /usr/include/stdio.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include/stddef.h:
 
 /usr/include/libio.h:
 
@@ -111,7 +105,7 @@ wconfig.h:
 
 /usr/include/wchar.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
@@ -128,6 +122,8 @@ wconfig.h:
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
@@ -146,10 +142,6 @@ wconfig.h:
 /usr/include/x86_64-linux-gnu/bits/string.h:
 
 /usr/include/x86_64-linux-gnu/bits/string2.h:
-
-/usr/include/endian.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/strings.h:
 
@@ -171,23 +163,13 @@ wconfig.h:
 
 /usr/include/X11/extensions/shapeconst.h:
 
-/usr/include/X11/extensions/Xrandr.h:
-
-/usr/include/X11/extensions/randr.h:
-
-/usr/include/X11/extensions/Xrender.h:
-
-/usr/include/X11/extensions/render.h:
-
-/usr/include/X11/Xdefs.h:
-
 Workspace.h:
 
 /usr/include/assert.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed/limits.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed/syslimits.h:
 
 /usr/include/limits.h:
 
@@ -213,7 +195,7 @@ Workspace.h:
 
 window.h:
 
-GNUstep.h:
+.workspace.h:
 
 /usr/include/X11/Xproto.h:
 
@@ -237,7 +219,7 @@ client.h:
 
 main.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdnoreturn.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include/stdnoreturn.h:
 
 cycling.h:
 

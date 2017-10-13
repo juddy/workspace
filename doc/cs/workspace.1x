@@ -43,18 +43,18 @@ vypí¹e krátký pomocný text
 .PP
 .SH SOUBORY
 .TP
-.B ~/GNUstep/Defaults/Workspace
+.B ~/.workspace/Defaults/Workspace
 v¹eobecné nastavení Workspacea.
 .TP
-.B ~/GNUstep/Defaults/WMState
+.B ~/.workspace/Defaults/WMState
 informace o Doku a Sponce. Neditujte za bìhu Workspacea. Bude
 pøepsaný.
 .TP
-.B ~/GNUstep/Defaults/WMRootMenu
+.B ~/.workspace/Defaults/WMRootMenu
 Obsahuje jméno souboru, z kterého se má naèíst hlavní menu nebo
 menu samotné ve formátu proplist.
 .TP
-.B ~/GNUstep/Defaults/WMWindowAttributes
+.B ~/.workspace/Defaults/WMWindowAttributes
 Atributy pro rùzné tøídy a instance aplikací. Pou¾ijte editor nastavení
 (stisknìte pravé tlaèítko my¹i na horní li¹tì aplikace, zvolte Atributy)
 namísto pøímého editování tohoto souboru. Je jen málo nastavení, která
@@ -66,10 +66,10 @@ najít, kromì WMState, který se odtud ZKOPÍRUJE. Nezále¾í na tom, odkud
 jsou naèítané. Pokud je potøeba zapsat zmìnu konfigurace zpìt do tìchto
 souborù, zapí¹ou se do u¾ivatelských souborù.
 .TP
-.B ~/GNUstep/Library/Workspace/autostart
+.B ~/.workspace/Library/Workspace/autostart
 Tento skript se automaticky vykoná pri startu Workspacea.
 .TP
-.B ~/GNUstep/Library/Workspace/exitscript
+.B ~/.workspace/Library/Workspace/exitscript
 Tento skript se automaticky vykoná bezprostøednì pøed ukonèením Workspacea.
 .B Poznámka:
 Kdy¾ potøebujete spustit z tohoto skriptu nìco, co vy¾aduje spu¹tìný X server,
@@ -78,24 +78,24 @@ tak nepou¾ívejte na ukonèení Workspacea pøíkaz
 z hlavního menu. Jinak se mù¾e stát, ¾e X server se ukonèí døív ne¾ se vykoná
 tento skript.
 .TP
-.B ~/GNUstep/Library/Workspace/
+.B ~/.workspace/Library/Workspace/
 Soubor menu, jeho¾ název je uveden v souboru WMRootMenu, se hledá zde...
 .TP
 .B /etc/X11/Workspace/
 a zde, v tomto poøadí, pokud název není absolutní cesta.
 .TP
-.B ~/GNUstep/Library/Workspace/Pixmaps/
+.B ~/.workspace/Library/Workspace/Pixmaps/
 Zde hledá Workspace obrázky
 .TP
-.B ~/GNUstep/Library/Workspace/Backgrounds/
+.B ~/.workspace/Library/Workspace/Backgrounds/
 Zde hledá Workspace pozadí
 .TP
-.B ~/GNUstep/Library/Workspace/Styles/
+.B ~/.workspace/Library/Workspace/Styles/
 Zde hledá Workspace soubory se styly (ne úplnì... vypadá to tak, ale
 i tak musíte zadat úplnou cestu. Je to jen vyhrazené místo, aby byly
 vìci pìknì uspoøádané)
 .TP
-.B ~/GNUstep/Library/Workspace/Themes/
+.B ~/.workspace/Library/Workspace/Themes/
 Zde hledá Workspace soubory s tématy (viz. vý¹e)
 .TP
 .B /usr/share/Workspace/Pixmaps/
@@ -113,15 +113,15 @@ A teï to zkuste sami... ;-)
 .IP GNUSTEP_USER_ROOT
 specifikuje cestu k adresáøi Defaults. "Defaults/" je pøidán k této
 promìnné, èím¾ se urèí umístìní databází. Pokud promìnná není nastavená,
-ta její implicitní hodnota je "~/GNUstep"
+ta její implicitní hodnota je "~/.workspace"
 .IP GNUSTEP_LOCAL_ROOT
-specifikuje umístìní systémového \fBlokálního\fP GNUstep adresáøe (to
+specifikuje umístìní systémového \fBlokálního\fP .workspace adresáøe (to
 je u¾iteèné v pøípadì, ¾e umístìní adresáøe spoleèného pro celý systém je
 ve skuteènosti spoleèné pro celou sí»). Kdy¾ je tato promìnná prázdna, pou¾ije
 se GNUSTEP_SYSTEM_ROOT.
 .IP GNUSTEP_SYSTEM_ROOT
-specifikuje umístìní systémového GNUstep adresáøe. Pokud je tato promìnná
-prázdna, tak její implicitní hodnota je /etc/GNUstep
+specifikuje umístìní systémového .workspace adresáøe. Pokud je tato promìnná
+prázdna, tak její implicitní hodnota je /etc/.workspace
 .SH PODÍVEJTE SE TAKÉ
 The Workspace User Guide
 (U¾ivatelská pøíruèka Workspacea)

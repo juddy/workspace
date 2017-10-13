@@ -266,10 +266,10 @@ msgstr "kunne ikke finne hjemmekatalogen"
 
 #: ../src/main.c:225
 msgid ""
-"could not find user GNUstep directory.\n"
+"could not find user .workspace directory.\n"
 "Make sure you have installed Workspace correctly and run workspace.inst"
 msgstr ""
-"kunne ikke finne brukerens GNUstep katalog.\n"
+"kunne ikke finne brukerens .workspace katalog.\n"
 "Kontroller at du har installert Workspace rett og kjør workspace.inst"
 
 #: ../src/main.c:245

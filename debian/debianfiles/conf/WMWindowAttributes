@@ -1,10 +1,10 @@
 {
-  Logo.WMDock = {Icon = GNUstep.tiff;};
-  Logo.WMPanel = {Icon = GNUstep.tiff;};
+  Logo.WMDock = {Icon = .workspace.tiff;};
+  Logo.WMPanel = {Icon = .workspace.tiff;};
   Tile.WMClip = {Icon = clip.tiff;};
-  WPrefs = {Icon = "/usr/share/lib/GNUstep/System/Applications/WPrefs.app/WPrefs.tiff";};
+  WPrefs = {Icon = "/usr/share/lib/.workspace/System/Applications/WPrefs.app/WPrefs.tiff";};
   WMDrawer = { Icon = Drawer.png; };
-  Dockit = {Icon = GNUstep.tiff;};
+  Dockit = {Icon = .workspace.tiff;};
   WMSoundServer = {Icon = Sound.tiff;};
   "*" = {Icon = defaultAppIcon.tiff;};
   Rxvt = {Icon = GNUterm.tiff;};

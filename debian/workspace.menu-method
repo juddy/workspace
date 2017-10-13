@@ -8,8 +8,8 @@ outputencoding="UTF-8"
 outputlanguage="C"
 
 genmenu="menu.hook"
-rootprefix="/etc/GNUstep/Defaults"
-userprefix=shell("echo -n /${GNUSTEP_USER_ROOT-GNUstep}") "/Library/Workspace/"
+rootprefix="/etc/.workspace/Defaults"
+userprefix=shell("echo -n /${GNUSTEP_USER_ROOT-.workspace}") "/Library/Workspace/"
 treewalk="(M)"
 rootsection="/Debian"
 

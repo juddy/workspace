@@ -163,9 +163,9 @@
 	"Arbeidsområder" END
 	"Utseende" MENU
 
-		"Temaer" OPEN_MENU -noext THEMES_DIR $HOME/GNUstep/Library/Workspace/Themes WITH setstyle
-		"Stiler" OPEN_MENU -noext STYLES_DIR $HOME/GNUstep/Library/Workspace/Styles WITH setstyle
-		"Ikon set" OPEN_MENU -noext ICON_SETS_DIR $HOME/GNUstep/Library/Workspace/IconSets WITH seticons
+		"Temaer" OPEN_MENU -noext THEMES_DIR $HOME/.workspace/Library/Workspace/Themes WITH setstyle
+		"Stiler" OPEN_MENU -noext STYLES_DIR $HOME/.workspace/Library/Workspace/Styles WITH setstyle
+		"Ikon set" OPEN_MENU -noext ICON_SETS_DIR $HOME/.workspace/Library/Workspace/IconSets WITH seticons
 		"Bakgrunn" MENU
 			"Ensfarget" MENU
                         	"Svart" WS_BACK '(solid, black)'
@@ -179,10 +179,10 @@
 				"Flagg"  WS_BACK '(mgradient, green, red, white, green)'
 				"Himmel" WS_BACK '(vgradient, blue4, white)'
 			"Overganger" END
-		"Bilder" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/BackGrounds WITH wmsetbg -u -t
+		"Bilder" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/BackGrounds WITH wmsetbg -u -t
 		"Bakgrunn" END
-		"Lagre Tema" SHEXEC getstyle -t $HOME/GNUstep/Library/Workspace/Themes/"%a(Theme name)"
-		"Lagre Ikonsett" SHEXEC geticonset $HOME/GNUstep/Library/Workspace/IconSets/"%a(IconSet name)"
+		"Lagre Tema" SHEXEC getstyle -t $HOME/.workspace/Library/Workspace/Themes/"%a(Theme name)"
+		"Lagre Ikonsett" SHEXEC geticonset $HOME/.workspace/Library/Workspace/IconSets/"%a(IconSet name)"
 	"Utseende" END
 
 	"Avslutt"	MENU

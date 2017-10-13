@@ -77,7 +77,7 @@ static void showData(_Panel * panel)
 		if (array)
 			wwarning(_("bad value in option IconPath. Using default path list"));
 		addPathToList(panel->icoL, -1, "~/pixmaps");
-		addPathToList(panel->icoL, -1, "~/GNUstep/Library/Icons");
+		addPathToList(panel->icoL, -1, "~/.workspace/Library/Icons");
 		addPathToList(panel->icoL, -1, "/usr/include/X11/pixmaps");
 		addPathToList(panel->icoL, -1, "/usr/local/share/Workspace/Icons");
 		addPathToList(panel->icoL, -1, "/usr/local/share/Workspace/Pixmaps");
@@ -94,7 +94,7 @@ static void showData(_Panel * panel)
 		if (array)
 			wwarning(_("bad value in option PixmapPath. Using default path list"));
 		addPathToList(panel->pixL, -1, "~/pixmaps");
-		addPathToList(panel->pixL, -1, "~/GNUstep/Library/Workspace/Pixmaps");
+		addPathToList(panel->pixL, -1, "~/.workspace/Library/Workspace/Pixmaps");
 		addPathToList(panel->pixL, -1, "/usr/local/share/Workspace/Pixmaps");
 	} else {
 		for (i = 0; i < WMGetPropListItemCount(array); i++) {

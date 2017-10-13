@@ -164,9 +164,9 @@
 	"Radni prostor" END
 
 	"Izgled" MENU
-		"Teme" OPEN_MENU -noext THEMES_DIR $HOME/GNUstep/Library/Workspace/Themes WITH setstyle
-		"Stilovi" OPEN_MENU -noext STYLES_DIR $HOME/GNUstep/Library/Workspace/Styles WITH setstyle
-		"Setovi Ikona" OPEN_MENU -noext ICON_SETS_DIR $HOME/GNUstep/Library/Workspace/IconSets WITH seticons
+		"Teme" OPEN_MENU -noext THEMES_DIR $HOME/.workspace/Library/Workspace/Themes WITH setstyle
+		"Stilovi" OPEN_MENU -noext STYLES_DIR $HOME/.workspace/Library/Workspace/Styles WITH setstyle
+		"Setovi Ikona" OPEN_MENU -noext ICON_SETS_DIR $HOME/.workspace/Library/Workspace/IconSets WITH seticons
 		"Pozadina" MENU
 			"Boja" MENU
                         	"Crna" WS_BACK '(solid, black)'
@@ -182,10 +182,10 @@
 				"Zastava" WS_BACK '(mdgradient, green, red, white, green)'
 				"Nebo" WS_BACK '(vgradient, blue4, white)'
 			"Preljev" END
-			"Slike" OPEN_MENU -noext  BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t
+			"Slike" OPEN_MENU -noext  BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t
 		"Pozadina" END
-		"Snimi temu" SHEXEC getstyle -t $HOME/GNUstep/Library/Workspace/Themes/"%a(Theme name)"
-		"Snimi set ikona" SHEXEC geticonset $HOME/GNUstep/Library/Workspace/IconSets/"%a(IconSet name)"
+		"Snimi temu" SHEXEC getstyle -t $HOME/.workspace/Library/Workspace/Themes/"%a(Theme name)"
+		"Snimi set ikona" SHEXEC geticonset $HOME/.workspace/Library/Workspace/IconSets/"%a(IconSet name)"
 	"Izgled" END
 
 	"Izlaz"	MENU

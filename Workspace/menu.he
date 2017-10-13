@@ -162,9 +162,9 @@
 	"הדובע בחרמ" END
 
 	"הארמ" MENU
-		"Themes" OPEN_MENU -noext  THEMES_DIR $HOME/GNUstep/Library/Workspace/Themes WITH setstyle
-		"תונונגס" OPEN_MENU -noext STYLES_DIR $HOME/GNUstep/Library/Workspace/Styles WITH setstyle
-		"םינוקייא טס" OPEN_MENU -noext ICON_SETS_DIR $HOME/GNUstep/Library/Workspace/IconSets WITH seticons
+		"Themes" OPEN_MENU -noext  THEMES_DIR $HOME/.workspace/Library/Workspace/Themes WITH setstyle
+		"תונונגס" OPEN_MENU -noext STYLES_DIR $HOME/.workspace/Library/Workspace/Styles WITH setstyle
+		"םינוקייא טס" OPEN_MENU -noext ICON_SETS_DIR $HOME/.workspace/Library/Workspace/IconSets WITH seticons
 		"עקר" MENU
 			"Solid" MENU
                         	"רוחש" WS_BACK '(solid, black)'
@@ -180,10 +180,10 @@
 				"Flag" WS_BACK '(vdgradient, blue, white, blue)'
 				"Sky" WS_BACK '(vgradient, blue4, white)'
 			"Gradient" END
-			"Images" OPEN_MENU -noext  BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t
+			"Images" OPEN_MENU -noext  BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t
 		"עקר" END
-		"Save Theme" SHEXEC getstyle -t $HOME/GNUstep/Library/Workspace/Themes/"%a(Theme name)"
-		"Save IconSet" SHEXEC geticonset $HOME/GNUstep/Library/Workspace/IconSets/"%a(IconSet name)"
+		"Save Theme" SHEXEC getstyle -t $HOME/.workspace/Library/Workspace/Themes/"%a(Theme name)"
+		"Save IconSet" SHEXEC geticonset $HOME/.workspace/Library/Workspace/IconSets/"%a(IconSet name)"
 	"הארמ" END
 
 	"האיצי"	MENU

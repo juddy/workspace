@@ -62,7 +62,7 @@ Summary of Contents:
      	 but when I do that from the configuration files it doesnt!
 
 4 - Configuration 
-     4.1 What are those files inside my ~/GNUstep directory? 
+     4.1 What are those files inside my ~/.workspace directory? 
      4.2 How do I enable the normal X sloppy focus mode? 
      4.3 How do I get my auto-arrange icons to work? 
      4.4 How do I get my Meta-Tab to cycle through windows correctly? 
@@ -553,7 +553,7 @@ asclock running when I log in again.
 
 You can also use the normal "Exit Session" command from the WM root
 menu and place additional commands required to shutdown CDE in
-~/GNUstep/Library/Workspace/exitscript 
+~/.workspace/Library/Workspace/exitscript 
 
 So, if you add "dtaction ExitSession" in that file, the command to shutdown
 CDE will be automatically executed when you exit Workspace. 
@@ -712,13 +712,13 @@ TODO: give complete explanation
 
 DOH! If you set the root background with wmsetbg by hand, it will obviously
 find the image, since you have explicitly specified it by hand. But if you
-simply put it in ~/GNUstep/Defaults/Workspace in some option like
+simply put it in ~/.workspace/Defaults/Workspace in some option like
 WorkspaceBack, it will not find the image because Workspace can't read
 your mind to figure where you put the image. So, to fix it, you have to
 either place the full path for the image in the texture specification or put
 the path for the directory you put your background images in the PixmapPath
 option. You can also put all your background images in places like
-~/GNUstep/Library/Workspace/Backgrounds or
+~/.workspace/Library/Workspace/Backgrounds or
 /usr/local/share/Workspace/Backgrounds
 These directories will be listed under the "Search Path" section of WPrefs.
 
@@ -728,15 +728,15 @@ These directories will be listed under the "Search Path" section of WPrefs.
 Configuration:
 -=-=-=-=-=-=-=-
 
-4.1 What are those files inside my ~/GNUstep directory? 
+4.1 What are those files inside my ~/.workspace directory? 
 ----------------------------------
-~/GNUstep/Workspace/Workspace 
+~/.workspace/Workspace/Workspace 
 
      The main config file. This file controls options such as keybindings,
      fonts, pixmaps, and focus modes. 
 
 
-~/GNUstep/Workspace/WMWindowAttributes 
+~/.workspace/Workspace/WMWindowAttributes 
 
      The Controls "attributes" for individual applications and appicons.
      Options such as what icon to use are set here. For the most part, this
@@ -744,25 +744,25 @@ Configuration:
      and selecting "Attributes" 
 
 
-~/GNUstep/Defaults/WMState 
+~/.workspace/Defaults/WMState 
 
      This is the file that is automatically generated and contains the current
      dock settings. It is not recommended to edit this file by hand. 
 
 
-~/GNUstep/Defaults/WMRootMenu 
+~/.workspace/Defaults/WMRootMenu 
 
      This file specifies what file to use as the root menu.  In Workspace
 	 0.19.0 and higher, you can replace this file with the one called plmenu
-	 in ~/GNUstep/Defaults/Workspace, and you can then use WPrefs to edit
+	 in ~/.workspace/Defaults/Workspace, and you can then use WPrefs to edit
 	 the menu.
 
 
-~/GNUstep/Library/Workspace/menu 
+~/.workspace/Library/Workspace/menu 
 
      This is the file to edit to change your root menu. 
 
-~/GNUstep/Library/Workspace/plmenu
+~/.workspace/Library/Workspace/plmenu
 
 	 This is the same menu file, in property list format - WPrefs needs a
 	 menu in this format if you wish to edit it using WPrefs.
@@ -772,20 +772,20 @@ Configuration:
 
 4.2 How do I enable the normal X sloppy focus mode? 
 ----------------------------------
-In the ~/GNUstep/Defaults/Workspace, change the following: 
+In the ~/.workspace/Defaults/Workspace, change the following: 
 
 FocusMode = sloppy; 
 
 
 4.3 How do I get my auto-arrange icons to work? 
 ----------------------------------
-In ~/GNUstep/Defaults/Workspace set AutoArrangeIcons=Yes; and the icons
+In ~/.workspace/Defaults/Workspace set AutoArrangeIcons=Yes; and the icons
 should now auto-arrange. 
 
 
 4.4 How do I get my Meta-Tab to cycle through windows correctly? 
 ----------------------------------
-Make sure that these settings are true in your ~/GNUstep/Defaults/Workspace
+Make sure that these settings are true in your ~/.workspace/Defaults/Workspace
 file: 
 
 CirculateRaise = Yes;
@@ -807,7 +807,7 @@ You can right click on the titlebar of the running app and choose the
 "Attributes..." option, then click on the "Ignore client supplied icon"
 checkbox. Click "Apply", "Save" and close the Attributes Editor. 
 
-Another method is to edit ~/GNUstep/Defaults/WMWindowAttributes by hand and
+Another method is to edit ~/.workspace/Defaults/WMWindowAttributes by hand and
 use the AlwaysUserIcon=YES; option for the app. For example: 
 
 xmcd = { Icon = "Radio.xpm";
@@ -818,7 +818,7 @@ AlwaysUserIcon=Yes;
 4.6 How do I get a Tile background for my AppIcons (those things in
     the dock)? 
 ----------------------------------
-You need to change 1 line to your ~/GNUstep/Defaults/Workspace file. 
+You need to change 1 line to your ~/.workspace/Defaults/Workspace file. 
 
 IconBack = (spixmap, tile.black.xpm, white);
 or
@@ -863,7 +863,7 @@ click the "Disable titlebar" and "Disable resizebar" options. Click
 By Default, to get back to the attributes menu once you've removed the
 titlebar, hit the key F10 while the window is focused. 
 
-Here is an example entry in ~/GNUstep/WMWindowAttributes for x11amp. 
+Here is an example entry in ~/.workspace/WMWindowAttributes for x11amp. 
 
 x11amp={
 Icon="x11amp.xpm";
@@ -908,7 +908,7 @@ wmsetbg which will detect if dithering is needed and use it.
 
 -u 
    will update the WorkspaceBack in the default database
-   domain file in ~/GNUstep/Defaults/Workspace, and let Window
+   domain file in ~/.workspace/Defaults/Workspace, and let Window
    Maker refresh the screen. Please note that this option only
    works under Workspace, and will have no effect under
    other window managers, since it rely on Workspace to
@@ -927,18 +927,18 @@ wmsetbg which will detect if dithering is needed and use it.
 
 
 The following line is straight from your Workspace-0.15.x
-~/GNUstep/Library/Workspace/menu file and should all be on one line. 
+~/.workspace/Library/Workspace/menu file and should all be on one line. 
 
 "Images" OPEN_MENU BACKGROUNDS_DIR
-~/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t 
+~/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t 
 
 This should give you an idea on how to add other entries for different image
 directories. See the help info at the top of the
-~/GNUstep/Library/Workspace/menu file for more information. 
+~/.workspace/Library/Workspace/menu file for more information. 
 
 If you for some reason would like to set your background image with XV, for
 instance to use an image format not yet supported by wmsetbg or to use one
-of XV's special modes, edit the file ~/GNUstep/Library/Workspace/autostart
+of XV's special modes, edit the file ~/.workspace/Library/Workspace/autostart
 and insert the line 
 
 xv -root -quit -maxpect ~/background.jpg
@@ -952,7 +952,7 @@ you can also try variations of this to get different tiling and other effects
 If you would like xv functionality in your menu, heres a nice little tip from
 Alfredo: 
 
-Add the following line to your ~/GNUstep/Library/Workspace/menu file. (all on
+Add the following line to your ~/.workspace/Library/Workspace/menu file. (all on
 one line) 
 
 "More Backgrounds" OPEN_MENU /home/whoever/backgrounds xv -root -maxpect -quit 
@@ -965,7 +965,7 @@ anywhere you would have either a gradient or a color. This means now that
 
 MenuTextBack=(tpixmap, foo.xpm, acolor); 
 
-in ~/GNUstep/Defaults/Workspace will put the correct pixmap tiled in your
+in ~/.workspace/Defaults/Workspace will put the correct pixmap tiled in your
 menu. 
 
 FTitleBack = (spixmap, foo.xpm, black); 
@@ -988,14 +988,14 @@ http://wm.current.nu/themes/images/screenshots/Midnight3.jpg
 
 4.12 How do I get superfluous bells and whistles working? 
 ----------------------------------
-Add Superfluous=YES; to your ~/GNUstep/Defaults/Windoworkspace file. 
+Add Superfluous=YES; to your ~/.workspace/Defaults/Windoworkspace file. 
 
 This option was added as a runtime option in Workspace >= 0.16.1. 
 
 
 4.13 How do I get the classic NeXT(tm)-like style back? 
 ----------------------------------
-Add NewStyle=NO; to your ~/GNUstep/Defaults/Windoworkspace file. 
+Add NewStyle=NO; to your ~/.workspace/Defaults/Windoworkspace file. 
 
 This option was added as a runtime option in Workspace >= 0.16.1 
 
@@ -1015,7 +1015,7 @@ and
             WindowListMouseButton = Right; 
           
 
-in ~/GNUstep/Defaults/Workspace ought to allow the left button to
+in ~/.workspace/Defaults/Workspace ought to allow the left button to
 activate the root menu, and the right button (as MB2) to activate the
 windows menu. 
 
@@ -1027,19 +1027,19 @@ You can now use WPrefs.app
 if you have the new PropList style menu, or you can manually edit the 
 oldstyle menu file 
 
-            ~/GNUstep/Library/Workspace/menu
+            ~/.workspace/Library/Workspace/menu
 
 (or you can also manually edit the newstyle menu file) 
 
-            ~/GNUstep/Defaults/WMRootMenu
+            ~/.workspace/Defaults/WMRootMenu
 
 and save your changes. Workspace should detect the change and
 automatically update. If you are having a problem getting it to reload the
 menu, try 
 
-            touch ~/GNUstep/Library/Workspace/menu
+            touch ~/.workspace/Library/Workspace/menu
 
-            (or 'touch ~/GNUstep/Defaults/WMRootMenu' for the newstyle menu)
+            (or 'touch ~/.workspace/Defaults/WMRootMenu' for the newstyle menu)
 
 to force the modification time into the future. 
 
@@ -1075,7 +1075,7 @@ keep-on-top options for the dock and clip.
 4.18 How do I restore the configuration app to the dock?
 ----------------------------------]
 You should start it from a terminal using its full path name, which is
-/usr/local/GNUstep/Applications/WPrefs.app/WPrefs
+/usr/local/.workspace/Applications/WPrefs.app/WPrefs
 by default.
 
 
@@ -1086,7 +1086,7 @@ Right-click the titlebar of the running application and start the Attributes
 Editor.  Check the "Ignore client supplied icon" box.  "Apply" and "Save",
 and close the Attributes Editor.
 
-Another method is to edit ~/GNUstep/Defaults/WMWindowAttributes by hand and
+Another method is to edit ~/.workspace/Defaults/WMWindowAttributes by hand and
 use the AlwaysUserIcon=YES; option for the app. For example: 
 
 xmcd = { Icon = "Radio.xpm"; AlwaysUserIcon=Yes; }; 
@@ -1106,7 +1106,7 @@ without using ~/ type path names), click "Update", "Apply", "Save" and then
 close the Attributes Editor. 
 
 You can also enter the following line in
-~/GNUstep/Library/Workspace/WMWindowAttributes: 
+~/.workspace/Library/Workspace/WMWindowAttributes: 
 
 gimp={Icon="gimp.xpm";}; 
 
@@ -1346,7 +1346,7 @@ be added for each 'toplevel .child' call.
 
 6.3 What is WINGs? 
 ----------------------------------
-WINGs Is Not GNUstep. ;) 
+WINGs Is Not .workspace. ;) 
 
 It is the Widget Library written for the widgets in Workspace. 
 
@@ -1465,7 +1465,7 @@ for an in-depth walk-through on making a Theme archive.
 This should be as simple as untarring the Theme.tar.gz into one of two
 places. You can untar it to the global /usr/local/share/Workspace/* directory,
 and have it be accessable to all users, or you can untar it to your own
-~/GNUstep/Library/Workspace/ directory for your own personal use. 
+~/.workspace/Library/Workspace/ directory for your own personal use. 
 
 Use your favorite variation of the following: 
 

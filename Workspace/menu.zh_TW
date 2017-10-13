@@ -10,7 +10,7 @@
  * 
  * SHORTCUT specifies a shortcut for that item. <Shortcut> has the
  * same syntax of the shortcuts key options in the 
- * ~/GNUstep/Defaults/Workspace file, such as RootMenuKey or MiniaturizeKey.
+ * ~/.workspace/Defaults/Workspace file, such as RootMenuKey or MiniaturizeKey.
  *
  * You can't specify a shortcut for a MENU or OPEN_MENU entry.
  * 
@@ -171,9 +171,9 @@
 	"工作區" END
 
 	"外觀" MENU
-		"主題" OPEN_MENU THEMES_DIR $HOME/GNUstep/Library/Workspace/Themes WITH setstyle
-		"風格" OPEN_MENU STYLES_DIR $HOME/GNUstep/Library/Workspace/Styles WITH setstyle
-		"圖示集" OPEN_MENU ICON_SETS_DIR $HOME/GNUstep/Library/Workspace/IconSets WITH seticons
+		"主題" OPEN_MENU THEMES_DIR $HOME/.workspace/Library/Workspace/Themes WITH setstyle
+		"風格" OPEN_MENU STYLES_DIR $HOME/.workspace/Library/Workspace/Styles WITH setstyle
+		"圖示集" OPEN_MENU ICON_SETS_DIR $HOME/.workspace/Library/Workspace/IconSets WITH seticons
 		"背景" MENU
 			"實體色" MENU
                         	"Black" WS_BACK '(solid, black)'
@@ -195,11 +195,11 @@
     				"Grey Shades" WS_BACK '(vgradient, "#636380", "#131318")'
     				"Wine Shades" WS_BACK '(vgradient, "#600040", "#180010")'
 			"漸層色" END
-			"圖片" OPEN_MENU BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t
+			"圖片" OPEN_MENU BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t
 		"背景" END
-		"儲存主題" SHEXEC getstyle -t $HOME/GNUstep/Library/Workspace/Themes/"%a(主題名稱)"
-		"儲存圖示集" SHEXEC geticonset $HOME/GNUstep/Library/Workspace/IconSets/"%a(圖示集名稱)"
-		"偏好設定公用程式" EXEC /usr/local/GNUstep/Applications/WPrefs.app/WPrefs
+		"儲存主題" SHEXEC getstyle -t $HOME/.workspace/Library/Workspace/Themes/"%a(主題名稱)"
+		"儲存圖示集" SHEXEC geticonset $HOME/.workspace/Library/Workspace/IconSets/"%a(圖示集名稱)"
+		"偏好設定公用程式" EXEC /usr/local/.workspace/Applications/WPrefs.app/WPrefs
 	"外觀" END
 
 	"離開"	MENU

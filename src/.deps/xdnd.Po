@@ -1,10 +1,7 @@
-xdnd.o: xdnd.c /usr/include/stdc-predef.h \
- /usr/include/x86_64-linux-gnu/bits/predefs.h wconfig.h ../config.h \
+xdnd.o: xdnd.c /usr/include/stdc-predef.h wconfig.h ../config.h \
  ../config-paths.h
 
 /usr/include/stdc-predef.h:
-
-/usr/include/x86_64-linux-gnu/bits/predefs.h:
 
 wconfig.h:
 

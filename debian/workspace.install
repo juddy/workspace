@@ -12,7 +12,7 @@ usr/bin/setstyle
 usr/bin/wxpaste
 usr/bin/workspace usr/lib/Workspace
 usr/bin/convertfonts usr/lib/Workspace
-usr/share/lib/GNUstep/System/Applications/WPrefs.app/WPrefs usr/lib/GNUstep/System/Applications/WPrefs.app
+usr/share/lib/.workspace/System/Applications/WPrefs.app/WPrefs usr/lib/.workspace/System/Applications/WPrefs.app
 # Manpages - Locale specific
 usr/share/man/ru/man1/wxpaste.1x
 usr/share/man/ru/man1/geticonset.1x

@@ -9,7 +9,7 @@
  *         한다면 반드시 따옴표 "로 묶어야 한다.
  *
  * SHORTCUT은 각 항목에 대한 단축 글쇠를 지정하는 명령이다. <Shortcut>의
- * 문법은 $HOME/GNUstep/Defaults/Workspace의 RootMenuKey나 MiniaturizeKey
+ * 문법은 $HOME/.workspace/Defaults/Workspace의 RootMenuKey나 MiniaturizeKey
  * 와 같은 단축 글쇠 설정 옵션과 같다.
  *
  * <Command> 사용가능한 명령어들
@@ -163,13 +163,13 @@
 		"세션 지움" CLEAR_SESSION
 	"창 관 리" END
 	"작업환경" MENU
-		"설    정" SHEXEC /usr/local/GNUstep/Applications/WPrefs.app/WPrefs || workspaceconf
-		"테    마" OPEN_MENU -noext THEMES_DIR ~/GNUstep/Library/Workspace/Themes WITH setstyle
-		"테마저장" EXEC getstyle -t $HOME/GNUstep/Library/Workspace/Themes/"%a(테마 이름,파일 이름을 입력하세요:)"
-		"아이콘셋" OPEN_MENU -noext ICON_SETS_DIR ~/GNUstep/Library/Workspace/IconSets WITH seticons
-		"아이콘셋저장" EXEC geticonset $HOME/GNUstep/Library/Workspace/IconSets/"%a(아이콘셋 이름,파일 이름을 입력하세요:)"
+		"설    정" SHEXEC /usr/local/.workspace/Applications/WPrefs.app/WPrefs || workspaceconf
+		"테    마" OPEN_MENU -noext THEMES_DIR ~/.workspace/Library/Workspace/Themes WITH setstyle
+		"테마저장" EXEC getstyle -t $HOME/.workspace/Library/Workspace/Themes/"%a(테마 이름,파일 이름을 입력하세요:)"
+		"아이콘셋" OPEN_MENU -noext ICON_SETS_DIR ~/.workspace/Library/Workspace/IconSets WITH seticons
+		"아이콘셋저장" EXEC geticonset $HOME/.workspace/Library/Workspace/IconSets/"%a(아이콘셋 이름,파일 이름을 입력하세요:)"
 #if (DEPTH>8)
-		"스 타 일" OPEN_MENU -noext STYLES_DIR ~/GNUstep/Library/Workspace/Styles WITH setstyle
+		"스 타 일" OPEN_MENU -noext STYLES_DIR ~/.workspace/Library/Workspace/Styles WITH setstyle
 #endif
 		"배경화면" MENU
 			"단    색" MENU
@@ -184,9 +184,9 @@
 				"색 지정" WS_BACK '(solid, "%a(배경색:)")'
 			"단    색" END
 			"그    림" MENU
-				"전체화면" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -s
-				"타일형식" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t
-				"가 운 데" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -e
+				"전체화면" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -s
+				"타일형식" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t
+				"가 운 데" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -e
 			"그    림" END
 #if (DEPTH>8)
 			"그래디언트" MENU

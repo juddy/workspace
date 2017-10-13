@@ -49,7 +49,7 @@
 #endif
 
 #include "Workspace.h"
-#include "GNUstep.h"
+#include ".workspace.h"
 #include "texture.h"
 #include "screen.h"
 #include "window.h"

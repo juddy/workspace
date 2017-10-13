@@ -7,7 +7,7 @@ Last-Update: 2012-01-09
  /*
   * SETSTYLE FILE - loads a style file 
   */
--#define SETSTYLE EXEC cd $HOME/GNUstep/Library/Workspace/Styles; setstyle 
+-#define SETSTYLE EXEC cd $HOME/.workspace/Library/Workspace/Styles; setstyle 
 +#define SETSTYLE EXEC cd $GNUSTEP_USER_ROOT/Library/Workspace/Styles; setstyle
  
  

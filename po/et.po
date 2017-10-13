@@ -866,15 +866,15 @@ msgstr " --help\t\t\tselle teate näitamine"
 
 #: ../src/main.c:521
 #, c-format
-msgid "could not find user GNUstep directory (%s)."
-msgstr "kasutaja GNUstep kataloogi (%s) pole võimalik leida."
+msgid "could not find user .workspace directory (%s)."
+msgstr "kasutaja .workspace kataloogi (%s) pole võimalik leida."
 
 #: ../src/main.c:524
 msgid ""
-"There was an error while creating GNUstep directory, please make sure you "
+"There was an error while creating .workspace directory, please make sure you "
 "have installed Workspace correctly and run workspace.inst"
 msgstr ""
-"Viga GNUstep kataloogi loomise käigus. Palun veendu, et Workspace on "
+"Viga .workspace kataloogi loomise käigus. Palun veendu, et Workspace on "
 "korrektselt paigaldatud ja käivita workspace.inst"
 
 #: ../src/main.c:527

@@ -39,7 +39,7 @@
 #include <WINGs/WINGs.h>
 
 #include "Workspace.h"
-#include "GNUstep.h"
+#include ".workspace.h"
 #include "wcore.h"
 #include "framewin.h"
 #include "texture.h"
@@ -92,7 +92,7 @@ extern Time LastTimestamp;
 static WWindowState *windowState = NULL;
 static FocusMode getFocusMode(WWindow *wwin);
 static int getSavedState(Window window, WSavedState **state);
-static void setupGNUstepHints(WWindow *wwin, GNUstepWMAttributes *gs_hints);
+static void setup.workspaceHints(WWindow *wwin, .workspaceWMAttributes *gs_hints);
 
 /* frame window (during window grabs) */
 static void frameMouseDown(WObjDescriptor *desc, XEvent *event);
@@ -249,7 +249,7 @@ void wWindowDestroy(WWindow *wwin)
 	wrelease(wwin);
 }
 
-static void setupGNUstepHints(WWindow *wwin, GNUstepWMAttributes *gs_hints)
+static void setup.workspaceHints(WWindow *wwin, .workspaceWMAttributes *gs_hints)
 {
 	if (gs_hints->flags & GSWindowStyleAttr) {
 		if (gs_hints->window_style == WMBorderlessWindowMask) {
@@ -313,7 +313,7 @@ void wWindowSetupInitialAttributes(WWindow *wwin, int *level, int *workspace)
 	 * Decoration setting is done in this precedence (lower to higher)
 	 * - use global default in the resource database
 	 * - guess some settings
-	 * - use GNUstep/external window attributes
+	 * - use .workspace/external window attributes
 	 * - set hints specified for the app in the resource DB
 	 *
 	 */
@@ -338,9 +338,9 @@ void wWindowSetupInitialAttributes(WWindow *wwin, int *level, int *workspace)
 		WSETUFLAG(wwin, no_resizebar, 1);
 	}
 
-	/* set GNUstep window attributes */
+	/* set .workspace window attributes */
 	if (wwin->wm_gnustep_attr) {
-		setupGNUstepHints(wwin, wwin->wm_gnustep_attr);
+		setup.workspaceHints(wwin, wwin->wm_gnustep_attr);
 
 		if (wwin->wm_gnustep_attr->flags & GSWindowLevelAttr) {
 
@@ -657,11 +657,11 @@ WWindow *wManageWindow(WScreen *scr, Window window)
 	XChangeWindowAttributes(dpy, window, CWEventMask | CWDontPropagate | CWSaveUnder, &attribs);
 	XSetWindowBorderWidth(dpy, window, 0);
 
-	/* get hints from GNUstep app */
-	if (wwin->wm_class != NULL && strcmp(wwin->wm_class, "GNUstep") == 0)
+	/* get hints from .workspace app */
+	if (wwin->wm_class != NULL && strcmp(wwin->wm_class, ".workspace") == 0)
 		wwin->flags.is_gnustep = 1;
 
-	if (!PropGetGNUstepWMAttr(window, &wwin->wm_gnustep_attr))
+	if (!PropGet.workspaceWMAttr(window, &wwin->wm_gnustep_attr))
 		wwin->wm_gnustep_attr = NULL;
 
 	if (wwin->wm_class != NULL && strcmp(wwin->wm_class, "DockApp") == 0) {
@@ -2537,7 +2537,7 @@ void wWindowResetMouseGrabs(WWindow * wwin)
 	XFlush(dpy);
 }
 
-void wWindowUpdateGNUstepAttr(WWindow * wwin, GNUstepWMAttributes * attr)
+void wWindowUpdate.workspaceAttr(WWindow * wwin, .workspaceWMAttributes * attr)
 {
 	if (attr->flags & GSExtraFlagsAttr) {
 		if (MGFLAGP(wwin, broken_close) != (attr->extra_flags & GSDocumentEditedFlag)) {

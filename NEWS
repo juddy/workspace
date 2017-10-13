@@ -136,7 +136,7 @@ ones which exist in your $PATH and adds them to the corresponding submenus
 localization (currently English and German). You can use it like:
 
 $ wmgenmenu > WMRootMenu-new
-$ cp WMRootMenu-new $HOME/GNUstep/Defaults/WMRootMenu
+$ cp WMRootMenu-new $HOME/.workspace/Defaults/WMRootMenu
 
 and WM will automatically detect the new menu file and use it without
 restarting workspace (made possible by the 'inotify' mechanism)
@@ -163,12 +163,12 @@ XWMHints set to WithdrawnState.
 
 --- 0.92.0
 
-GNUstep Installation Directory
+.workspace Installation Directory
 ------------------------------
 
 WPrefs is now installed in /usr/local/bin and /usr/local/share by default.
-If you use GNUstep and want it to install in /usr/GNUstep/Applications,
-you may specify --with-gnustepdir=/usr/GNUstep
+If you use .workspace and want it to install in /usr/.workspace/Applications,
+you may specify --with-gnustepdir=/usr/.workspace
 If the GNUSTEP_LOCAL_ROOT environment variable is defined when configure is
 executed, it will be used (and you don't need to use --with-gnustepdir)
 
@@ -176,11 +176,11 @@ Cached Pixmaps Directory
 ------------------------
 
 The directory where Workspace stores the cached application pixmaps for
-its later use has changed from ~/GNUstep/.AppInfo/Workspace to
-~/GNUstep/Library/Workspace/CachedPixmaps for better compatibility with
-the GNUstep path structure.
-Also WPrefs now stores internal data in ~/GNUstep/Library/Workspace/WPrefs
-(it was ~/GNUstep/.AppInfo/WPrefs before)
+its later use has changed from ~/.workspace/.AppInfo/Workspace to
+~/.workspace/Library/Workspace/CachedPixmaps for better compatibility with
+the .workspace path structure.
+Also WPrefs now stores internal data in ~/.workspace/Library/Workspace/WPrefs
+(it was ~/.workspace/.AppInfo/WPrefs before)
 
 X Input Methods support in WINGs
 --------------------------------
@@ -195,7 +195,7 @@ Disabling the switch panel
 --------------------------
 
 To disable the panel shown during Alt-tabbing, you may put the following in
-~/GNUstep/Defaults/Workspace
+~/.workspace/Defaults/Workspace
 
 SwitchPanelImages= None;
 
@@ -260,12 +260,12 @@ WPrefs.
 
 Antialiased text is enabled by default, but can be disabled by adding
 
-AntialiasedText = NO; in ~/GNUstep/Defaults/WMGLOBAL
+AntialiasedText = NO; in ~/.workspace/Defaults/WMGLOBAL
 
 This will disable antialiased text for any WINGs based application. If you
 only want to disable them for a specific application only, like Workspace
 for example, then add the same option in the applications configuration file,
-in this case ~/GNUstep/Defaults/Workspace
+in this case ~/.workspace/Defaults/Workspace
 For Workspace, this can also be achieved from the Expert panel in WPrefs.
 
 Note that bitmapped fonts look much better than TrueType when antialiasing is
@@ -374,7 +374,7 @@ feature).
 
 This feature is turned off by default for the following applications
 because it's incompatible with them:
-1. all GNUstep applications
+1. all .workspace applications
 2. applications with an application menu (wterm, Aileron, etc)
 3. all applications with withdrawn windows only (this means all dockapps)
 
@@ -383,7 +383,7 @@ doesn't use the appmenu (will do this by default). If you start it
 using the appmenu (wterm -wm) it will disable the shared appicon
 feature because apps with appmenus are incompatible with this feature.
 
-If an application is a GNUstep application or if it has an appmenu, it's
+If an application is a .workspace application or if it has an appmenu, it's
 detected automatically and the shared appicon is disabled automatically
 without any user intervention or need to configure anything.
 
@@ -511,7 +511,7 @@ Client supplied icons
 ---------------------
 
 Workspace saves the client supplied icons in 
-~/GNUstep/Library/Workspace/CachedPixmaps in XPM format for later use 
+~/.workspace/Library/Workspace/CachedPixmaps in XPM format for later use 
 when the app is no longer running (to have the image to display for docked 
 icons for example).
 
@@ -521,12 +521,12 @@ previously saved XPM's in that directory are no longer readable (they give
 wrong images on screen or fail to load).
 
 To avoid the need for the user to fix this by hand editing WMWindowAttributes 
-and removing all references to icons in ~/GNUstep/Library/Workspace/CachedPixmaps 
+and removing all references to icons in ~/.workspace/Library/Workspace/CachedPixmaps 
 which can be annoying, new code was added to Workspace to permit the 
-regeneration of images in ~/GNUstep/Library/Workspace/CachedPixmaps if they are missing.
+regeneration of images in ~/.workspace/Library/Workspace/CachedPixmaps if they are missing.
 
 With this addition, all you need to do to fix your old broken images, is to
-delete all *.xpm files from ~/GNUstep/Library/Workspace/CachedPixmaps. Next time the
+delete all *.xpm files from ~/.workspace/Library/Workspace/CachedPixmaps. Next time the
 application that is supplying an icon image will start the icon will be
 recreated if missing, but this time it will be saved with the new XPM save
 code which produces good XPM images.
@@ -631,7 +631,7 @@ NoBorder Window Attribute
 --------------------------
 
 The NoBorder window attribute (to be put in
-~/GNUstep/Defaults/WindowAttributes) was added and will remove the
+~/.workspace/Defaults/WindowAttributes) was added and will remove the
 1 pixel border around windows.
 
 
@@ -779,7 +779,7 @@ Application User Menu Path Changes
 
 Default configuration for user specific menus installed in
 /usr/local/share/Workspace/UserMenus or $(datadir)/Workspace/UserMenus
-and ~/GNUstep/Library/Workspace/UserMenus.
+and ~/.workspace/Library/Workspace/UserMenus.
 
 
 Omnipresent icons in Clip
@@ -900,7 +900,7 @@ window(s), thus the application must accept key combinations (CTRL+N for
 instance).
 
 To enable this feature, #define USER_MENU in src/wconfig.h and place menu
-files in ~/GNUstep/Defaults/UserMenus (/usr/local/etc/Workspace/UserMenus
+files in ~/.workspace/Defaults/UserMenus (/usr/local/etc/Workspace/UserMenus
 globally).
 
 The user menu is in PropList format and the filename is in:
@@ -1392,7 +1392,7 @@ Persistent Program Suplied Icons
 
 Application supplied icons are now stored, so that the dock will keep
 showing them after the app is exited. The icons are stored at
-~/GNUstep/Library/Workspace/CachedPixmaps
+~/.workspace/Library/Workspace/CachedPixmaps
 
 
 Sound support
@@ -1537,7 +1537,7 @@ Read WPrefs/README
 Boolean balues have changed!!! YES, Y and any non-zero integer will
 mean TRUE and anything else (including True) will mean FALSE. This
 is to conform to the OpenStep values used for booleans and
-not cause headaches later, when GNUstep apps also starts using
+not cause headaches later, when .workspace apps also starts using
 defaults and users will try using True wich won't get recognized.
 
 
@@ -1636,7 +1636,7 @@ PixmapPath was split to PixmapPath and IconPath. PixmapPath is the path
 for the pixmaps used as textures and IconPath is for the icons. 
 Don't forget to add IconPath to your current configuration file.
 
-There's also a new library in ~/GNUstep/Library/Icons. You should place
+There's also a new library in ~/.workspace/Library/Icons. You should place
 your icons there, since icons are not a Workspace specific resource.
 
 
@@ -1993,7 +1993,7 @@ Changed name from Fiend to Clip
 
 All occurrences of word Fiend with or without capital F were replaced with
 the corresponding Clip (same capital).
-This affects all configuration files under ~/GNUstep that contain this word.
+This affects all configuration files under ~/.workspace that contain this word.
 It can be refered as "Workspace Dock" too.
 
 
@@ -2091,11 +2091,11 @@ Multidiagonal gradients are also implemented now in wrlib, and a new algorithm
 is used to speed up the generation of diagonal gradients.
 
 
-New arrangement of the directory structure under ~/GNUstep/
+New arrangement of the directory structure under ~/.workspace/
 ---------------------------------------------------------------
 
 To better adapt to theme support the directory structure changed under
-~/GNUstep/Library/Workspace
+~/.workspace/Library/Workspace
 
 1. Style directory moved to Styles.
 2. Added the following directories: Backgrounds, IconSets, Pixmaps, Sounds and
@@ -2104,7 +2104,7 @@ To better adapt to theme support the directory structure changed under
    Instead they are read from the global /usr/local/share/Workspace/Styles
    directory.
 
-Under ~/GNUstep/Defaults the following changes occurred:
+Under ~/.workspace/Defaults the following changes occurred:
 
 1. A default WMState is installed by workspace.inst.
    It contains the dockit program assigned to the top icon of the dock, and
@@ -2163,7 +2163,7 @@ Theme support
 Theme support is now as easy as untar-ing a tarball in the right place.
 Because of the way OPEN_MENU works, they can be installed on a global
 shareable basis, or for personal user use.
-Themes installed under ~/GNUstep will be available only for a user, but
+Themes installed under ~/.workspace will be available only for a user, but
 if if they are installed under /usr/local/share/Workspace they will be seen
 by all users. This is also true for style files, background images, pixmaps,
 etc that get installed under /usr/local/share/Workspace.
@@ -2173,7 +2173,7 @@ Also support for different IconSets is available. You can save or load a new
 IconSet using the Appereance menu.
 
 Setting background images is now as simple as putting the images in the right
-place (~/GNUstep/Library/Workspace/Backgrounds or
+place (~/.workspace/Library/Workspace/Backgrounds or
 /usr/local/share/Workspace/Backgrounds, or any other place in your
 PixmapPath). Then use the Appereance menu. They will be instantly available
 since they are opened by a OPEN_MENU command. Also the image do not need to
@@ -2209,7 +2209,7 @@ Don't use dithering except when needed, because it is slower. Else rely on
 wmsetbg which will detect if dithering is needed and use it.
 
 -u will update the WorkspaceBack in the default database domain file in
-   ~/GNUstep/Defaults/Workspace, and let Workspace refresh the screen.
+   ~/.workspace/Defaults/Workspace, and let Workspace refresh the screen.
    Please note that this option only works under Workspace, and will have no
    effect under other window managers, since it rely on Workspace to update
    the image after it reads the updated defaults database.
@@ -2263,11 +2263,11 @@ User Workspace configuration files are now merged with global ones
 --------------------------------------------------------------------
 
 When starts Workspace will look for database domain files under
-$GNUSTEP_USER_ROOT/Defaults or ~/GNUstep/Deafults to be read. (In this order).
+$GNUSTEP_USER_ROOT/Defaults or ~/.workspace/Deafults to be read. (In this order).
 
 If they are not available then it will scan for them in
 $GNUSTEP_LOCAL_ROOT/Defaults, $GNUSTEP_SYSTEM_ROOT/Defaults or
-/usr/local/GNUstep/Defaults (in this order).
+/usr/local/.workspace/Defaults (in this order).
 
 Even if the file was found or not, it will always load the corresponding domain
 file under /usr/local/share/Workspace/Defaults.
@@ -2287,7 +2287,7 @@ from the default set for all users in the shared file.
 Also it is possible for the user to not have any personal domain databases, and
 the global shared ones will be used, but it still needs to have the directory
 structure, so WMState gets written on session exit.
-So all it needs to have is ~/GNUstep/Defaults directory available.
+So all it needs to have is ~/.workspace/Defaults directory available.
 
 
 New behavior of the Slide Icons
@@ -2535,7 +2535,7 @@ or in the fiend, the dock will be used first, and the icon will be docked
 there.
 
 Here are the new runtime options introduced by the fiend:
-Files are located in ~/GNUstep/Defaults/
+Files are located in ~/.workspace/Defaults/
 
 In WMWindowAttributes:
        "Logo.WMFiend" = {Icon = "Cone.xpm";};  - icon for the fiend

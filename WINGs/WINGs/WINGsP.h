@@ -222,7 +222,7 @@ typedef struct W_Screen {
 
     Cursor invisibleCursor;
 
-    Atom attribsAtom;              /* GNUstepWindowAttributes */
+    Atom attribsAtom;              /* .workspaceWindowAttributes */
 
     Atom deleteWindowAtom;         /* WM_DELETE_WINDOW */
 

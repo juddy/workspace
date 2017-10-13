@@ -1,5 +1,5 @@
 /* XPM */
-static char *GNUstep[] = {
+static char *.workspace[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 63 1 ",
 "  c gray26",

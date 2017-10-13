@@ -9,9 +9,9 @@
 	),
 	
 	("Konfiguracja",	
-		("Edycja menu",       EXEC, "xterm -T 'Edycja menu' -e vi $HOME/GNUstep/Library/Workspace/menu"),
-		("Ustawienie fontów", EXEC, "xterm -T 'Ustawienie fontów' -e vi $HOME/GNUstep/Defaults/WMGLOBAL"),
-		("Konfiguracja",      EXEC, "xterm -T 'Konfiguracja' -e vi $HOME/GNUstep/Defaults/Workspace")
+		("Edycja menu",       EXEC, "xterm -T 'Edycja menu' -e vi $HOME/.workspace/Library/Workspace/menu"),
+		("Ustawienie fontów", EXEC, "xterm -T 'Ustawienie fontów' -e vi $HOME/.workspace/Defaults/WMGLOBAL"),
+		("Konfiguracja",      EXEC, "xterm -T 'Konfiguracja' -e vi $HOME/.workspace/Defaults/Workspace")
 	),
 	
 	("Uruchom...", EXEC, "%a(Uruchom,Wpisz komende do uruchomienia:)"),
@@ -131,9 +131,9 @@
 	),
 
 	("Wygląd",
-		("Tematy",          OPEN_MENU, "-noext #wmdatadir#/Themes $HOME/GNUstep/Library/Workspace/Themes WITH setstyle"),
-		("Style",           OPEN_MENU, "-noext #wmdatadir#/Styles $HOME/GNUstep/Library/Workspace/Styles WITH setstyle"),
-		("Ustawienia ikon", OPEN_MENU, "-noext #wmdatadir#/IconSets $HOME/GNUstep/Library/Workspace/IconSets WITH seticons"),
+		("Tematy",          OPEN_MENU, "-noext #wmdatadir#/Themes $HOME/.workspace/Library/Workspace/Themes WITH setstyle"),
+		("Style",           OPEN_MENU, "-noext #wmdatadir#/Styles $HOME/.workspace/Library/Workspace/Styles WITH setstyle"),
+		("Ustawienia ikon", OPEN_MENU, "-noext #wmdatadir#/IconSets $HOME/.workspace/Library/Workspace/IconSets WITH seticons"),
 		("Tło",
 			("Jednolite",
                	("Czarny",            EXEC, "wdwrite Workspace WorkspaceBack '(solid, black)'"),
@@ -155,10 +155,10 @@
     			("Cieniowany Szary",      EXEC, "wdwrite Workspace WorkspaceBack '(vgradient, '#636380', '#131318')'"),
     			("Cieniowany Winnny",     EXEC, "wdwrite Workspace WorkspaceBack '(vgradient, '#600040', '#180010')'")
 			),
-			("Obrazki", OPEN_MENU, "-noext #wmdatadir#/Backgrounds $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t)")
+			("Obrazki", OPEN_MENU, "-noext #wmdatadir#/Backgrounds $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t)")
 		),
-		("Zaoamiętanie Tematu",        EXEC, "getstyle -t $HOME/GNUstep/Library/Workspace/Themes/'%a(Nazwa tematu,Wpisz nazwe pliku:)'"),
-		("Zapamiętanie Ustawień Ikon", EXEC, "geticonset $HOME/GNUstep/Library/Workspace/IconSets/'%a(Ustawienia ikon,Wpisz nazwe pliku:)'")
+		("Zaoamiętanie Tematu",        EXEC, "getstyle -t $HOME/.workspace/Library/Workspace/Themes/'%a(Nazwa tematu,Wpisz nazwe pliku:)'"),
+		("Zapamiętanie Ustawień Ikon", EXEC, "geticonset $HOME/.workspace/Library/Workspace/IconSets/'%a(Ustawienia ikon,Wpisz nazwe pliku:)'")
 	),
 
 	("Wyjście",

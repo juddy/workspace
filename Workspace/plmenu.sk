@@ -66,9 +66,9 @@
   ("Zmazať sedenie", CLEAR_SESSION)
   ),
  ("Vzhľad",
-  ("Témy", OPEN_MENU, "-noext #wmdatadir#/Themes $HOME/GNUstep/Library/Workspace/Themes WITH setstyle"),
-  ("Štýly", OPEN_MENU, "-noext #wmdatadir#/Styles $HOME/GNUstep/Library/Workspace/Styles WITH setstyle"),
-  ("Sada ikon", OPEN_MENU, "-noext #wmdatadir#/IconSets $HOME/GNUstep/Library/Workspace/IconSets WITH seticons"),
+  ("Témy", OPEN_MENU, "-noext #wmdatadir#/Themes $HOME/.workspace/Library/Workspace/Themes WITH setstyle"),
+  ("Štýly", OPEN_MENU, "-noext #wmdatadir#/Styles $HOME/.workspace/Library/Workspace/Styles WITH setstyle"),
+  ("Sada ikon", OPEN_MENU, "-noext #wmdatadir#/IconSets $HOME/.workspace/Library/Workspace/IconSets WITH seticons"),
   ("Pozadie",
    ("Jedna farba",
     ("Čierna", EXEC, "wdwrite Workspace WorkspaceBack '(solid, black)'"),
@@ -90,11 +90,11 @@
     ("Odtiene sivej",   EXEC, "wdwrite Workspace WorkspaceBack '(vgradient, \"#636380\", \"#131318\")'"),
     ("Odtiene vínovej",   EXEC, "wdwrite Workspace WorkspaceBack '(vgradient, \"#600040\", \"#180010\")'")
     ),
-   ("Obrázky", OPEN_MENU, "-noext #wmdatadir#/Backgrounds $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t")
+   ("Obrázky", OPEN_MENU, "-noext #wmdatadir#/Backgrounds $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t")
    ),   
-  ("Uložiť tému", SHEXEC, "getstyle -t $HOME/GNUstep/Library/Workspace/Themes/\"%a(Theme name)\""),
-  ("Uložiť sadu ikon", SHEXEC, "geticonset $HOME/GNUstep/Library/Workspace/IconSets/\"%a(IconSet name)\""),
-  ("Konfiguračný nástroj", EXEC, "/usr/local/GNUstep/Applications/WPrefs.app/WPrefs")
+  ("Uložiť tému", SHEXEC, "getstyle -t $HOME/.workspace/Library/Workspace/Themes/\"%a(Theme name)\""),
+  ("Uložiť sadu ikon", SHEXEC, "geticonset $HOME/.workspace/Library/Workspace/IconSets/\"%a(IconSet name)\""),
+  ("Konfiguračný nástroj", EXEC, "/usr/local/.workspace/Applications/WPrefs.app/WPrefs")
   ), 
  ("Koniec",
   ("Reštartovať", RESTART),

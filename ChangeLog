@@ -4,7 +4,7 @@ Changes since version 0.92.0:
 - added check for --with-gnustepdir option to configure to verify that its
   argument is an absolute path
 - updated german translations (Torsten Marek <shlomme@gmx.net>)
-- fixed WPrefs.app to find its icons when not installed under GNUstep paths
+- fixed WPrefs.app to find its icons when not installed under .workspace paths
 - fixed gcc-4 compilation issues (Vladimir Nadvornik <nadvornik@suse.cz>)
 - fixed amd64 compilation issues (Vladimir Nadvornik <nadvornik@suse.cz>)
 - eliminated gcc-4 compilation warnings
@@ -27,7 +27,7 @@ Changes since version 0.92.0:
 - better check for the XDND protocol version when interoperating with other
   applications. As it seems xdnd version 3 (which WINGs supports) and newer
   are not backward compatible with xdnd version 1 and 2. This is why WINGs
-  applications cannot interoperate with GNUstep applications (which uses
+  applications cannot interoperate with .workspace applications (which uses
   xdnd version 2). Xdnd version 4 and 5 are backwards compatible with
   version 3 though. (Sylvain Reynal <sreynal@nerim.net>)
 - Improved Info panel layout and fonts.
@@ -54,7 +54,7 @@ Changes since version 0.91.0:
 - reduced minimum required version number for the Xft library to 2.1.0
 - fixed some compilation issues with gcc-2.9x
 - removed --with-appsdir option and replaced it with --with-gnustepdir. Also,
-  default installation path (for non GNUstep users) is now $(prefix)/bin
+  default installation path (for non .workspace users) is now $(prefix)/bin
 - fixed bug with infinite loop in some circumstances in fitText() in WINGs
 - fixed to allow parallel builds on SMP systems using make -j
 - updated Italian translation (Marco Colombo <m.colombo@ed.ac.uk>)
@@ -71,7 +71,7 @@ Changes since version 0.91.0:
 - fixed bug with windows shrinking to very small sizes when Unmaximize was
   used on them, after they were closed in a maximized state.
 - fixed bug with restoring maximized state from NetWM atoms.
-- fixed issue with GNUstep applications losing focus when all their windows
+- fixed issue with .workspace applications losing focus when all their windows
   are closed and there remains only their menu (Matt Rice <ratmice@yahoo.com>)
 - try fixed font for the technical drawing font if helvetica-12 is not
   available to avoid crashing (Timo Juhani Lindfors <timo.lindfors@iki.fi>)
@@ -251,7 +251,7 @@ Changes since version 0.80.2:
   with operating systems that offer a /proc interface similar to what linux
   has. (This also is to fix problems with KDE 3.3.0 apps, but not only them).
 - Fixed bug with autostart and exit scripts not being executed if user
-  GNUstep path was different from ~/GNUstep (when setting GNUSTEP_USER_ROOT)
+  .workspace path was different from ~/.workspace (when setting GNUSTEP_USER_ROOT)
 - Removed legacy OFFIX_DND support code
 - Fixed the signal handler for crashes (ie, removed it) and made workspace
   restarting be made automatically by a monitoring process.
@@ -499,7 +499,7 @@ Changes since version 0.64.0:
   MouseRightButtonAction and MouseWheelAction. They replace the above 3
   removed options, but use a different semantic. More in NEWS.
 - client supplied icons that were saved by Workspace in the directory
-  ~/GNUstep/.AppInfo/Workspace/ will be recreated if missing when the
+  ~/.workspace/.AppInfo/Workspace/ will be recreated if missing when the
   application starts.
 - fixed a small memleak when the client supplied icon was extracted and saved.
 
@@ -509,8 +509,8 @@ Changes since version 0.63.1:
 - fixed messup in get-{wings,wutil,wraster}-flags
 - fixed #wmdatadir# substitution in workspace.inst 
 	(Seiichi SATO <sato@cvs-net.co.jp>)
-- Removed spurious focus disabling for GNUstep applications - but retain
-  code that lets GNUstep apps control their window titlebar.
+- Removed spurious focus disabling for .workspace applications - but retain
+  code that lets .workspace apps control their window titlebar.
 	(Richard Frith-Macdonald <rfm@gnu.org>)
 - Fixed broken panels.
 - Renamed se.po to sv.po
@@ -519,7 +519,7 @@ Changes since version 0.63.1:
 - integrated the 'no polling' patch from Jim Knoble <jmknoble@jmknoble.cx>.
 - new wsetfont script (Anton Zinoviev <zinoviev@debian.org>)
 - lots of i18n fixes (Jan Tomka/judas@hell <tomka@oalevice.sk>)
-- window levels changed to match GNUstep <rfm@gnu.org> ...  src/GNUstep.h
+- window levels changed to match .workspace <rfm@gnu.org> ...  src/.workspace.h
   src/Workspace.h src/window.c wmlib/WMaker.h WINGs/WINGs/WINGs.h
 
 
@@ -623,7 +623,7 @@ Changes since version 0.61.1:
 - changed geometry view for move/resize to a WINGs widget
 - removed DisplayFont option
 - added NoBorder attribute
-- changed semantics of GNUstep window attribute hints
+- changed semantics of .workspace window attribute hints
 - added get-wings-flags and get-wutil-flags with the same purpose as
   get-wraster-flags, but for compiling and linking with WINGs/WUtil
 - fixed bug handling non-string values given to string valued options in 
@@ -638,9 +638,9 @@ Changes since version 0.61.1:
 - made wmsetbg accept relative paths for images that are not in PixmapPath
 - fixed windoze cycling
 - replaced XSync with XFlush in wUnshadeWindow()
-- added GNUstep window recognition through WM_CLASS->class == GNUstep
-- made window focusing not change titlebar color of GNUstep windows
-- disabled passive mouse grabbing in client area of GNUstep window
+- added .workspace window recognition through WM_CLASS->class == .workspace
+- made window focusing not change titlebar color of .workspace windows
+- disabled passive mouse grabbing in client area of .workspace window
   when they are unfocused
 - added Jim Knoble <jmknoble@pobox.com>'s cursor thing patch
 - fixed lock of workspace when clicking on menu multiple times
@@ -757,7 +757,7 @@ Changes since version 0.53.0:
 - fixed crash with attributes panel
 - save state of all menus when exiting (Sebastien Bauer
 						seb_bauer@bigfoot.com)
-- added GNUstep info panel (still needs beautification..)
+- added .workspace info panel (still needs beautification..)
 - made the paths selector in WPrefs.app use the open file panel
 - fixed crash bug with hiding apps without dock/clip
 - fixed a mem leak in superfluous mode caused by the ghost icon.
@@ -859,7 +859,7 @@ Changes since version 0.51.1:
 - fixed problem with frame drawing in non-opaque 
 - fixed installation path prob [jmknoble@pobox.com]
 - fixed bug moving window when only one window is on screen
-- fixed bug with ignored GNUstep attributes
+- fixed bug with ignored .workspace attributes
 - fixed WPrefs crash in Mouse Preferences
 - fixed crash bug in WINGs/workspace startup
 - added workaround for kde pager crash bug
@@ -1316,7 +1316,7 @@ Changes since version 0.17.3:
 - fixed bug with rootmenu that caused twin menus to be left mapped
 - added DontConfirmKill option to remove confirmation panel for Kill
 - fixed bug with hide of app with workspace menu
-- changed all NSsomething internal flags for the GNUstep attributes to 
+- changed all NSsomething internal flags for the .workspace attributes to 
   WMsomething
 
 Changes since version 0.17.2:
@@ -1607,7 +1607,7 @@ Changes since version 0.14.1:
 - Install will automatically detect if you have TIFF, PNG or XPM support
   compiled in Workspace (in this order), and update WMWindowAttributes
   accordingly with icon file extensions.
-- Directory structure under .../GNUstep/Library/Workspace changed to easily
+- Directory structure under .../.workspace/Library/Workspace changed to easily
   support themes.
 - Syntax of WMState was slightly modified. See NEWS.
 - Fixed Workspace when using -nodock and/or -noclip command line options
@@ -1955,7 +1955,7 @@ Changes since version 0.6.3:
 ............................
 
 - moved to automake
-- changed preference directory from gnustep to GNUstep
+- changed preference directory from gnustep to .workspace
 - added tiff support
 - changed preferences to be dynamically modifiable
 - several memory leaks fixed
@@ -2159,7 +2159,7 @@ Changes since version 0.3.2:
 
 - application icons (not mini-windows) like I think how it is on NEXTSTEP(tm)
 - fixed "slippery" icon movement
-- added a Dock (not for GNUstep, as it will have it's own)
+- added a Dock (not for .workspace, as it will have it's own)
 
 Changes since version 0.3.1:
 ............................

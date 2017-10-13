@@ -10,9 +10,9 @@
   EdgeResistance = 30;
   IconificationStyle = Zoom;
   IconPath = (
-    "~/GNUstep/Library/Icons",
-    "~/GNUstep/Library/Workspace/Pixmaps",
-    "~/GNUstep/Library/Workspace/CachedPixmaps",
+    "~/.workspace/Library/Icons",
+    "~/.workspace/Library/Workspace/Pixmaps",
+    "~/.workspace/Library/Workspace/CachedPixmaps",
     "/usr/share/Workspace/Icons",
     "/usr/share/Workspace/Pixmaps",
     "/usr/share/icons",
@@ -21,9 +21,9 @@
     "/usr/local/share/icons"
   );
   PixmapPath = (
-    "~/GNUstep/Library/Workspace/Pixmaps",
-    "~/GNUstep/Library/Workspace/Backgrounds",
-    "~/GNUstep/Library/Workspace/CachedPixmaps",
+    "~/.workspace/Library/Workspace/Pixmaps",
+    "~/.workspace/Library/Workspace/Backgrounds",
+    "~/.workspace/Library/Workspace/CachedPixmaps",
     "/usr/share/Workspace/Backgrounds",
     "/usr/share/Workspace/Pixmaps",
     "/usr/share/pixmaps",

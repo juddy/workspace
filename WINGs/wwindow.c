@@ -56,7 +56,7 @@ typedef struct {
 	Pixmap miniaturize_mask;	/* miniaturize pixmap mask */
 	Pixmap close_mask;	/* close pixmap mask */
 	CARD32 extra_flags;
-} GNUstepWMAttributes;
+} .workspaceWMAttributes;
 
 #define GSWindowStyleAttr 	(1<<0)
 #define GSWindowLevelAttr 	(1<<1)
@@ -382,7 +382,7 @@ static void setSizeHints(WMWindow * win)
 	XFree(hints);
 }
 
-static void writeGNUstepWMAttr(WMScreen * scr, Window window, GNUstepWMAttributes * attr)
+static void write.workspaceWMAttr(WMScreen * scr, Window window, .workspaceWMAttributes * attr)
 {
 	unsigned long data[9];
 
@@ -403,10 +403,10 @@ static void writeGNUstepWMAttr(WMScreen * scr, Window window, GNUstepWMAttribute
 
 static void setWorkspaceHints(WMWindow * win)
 {
-	GNUstepWMAttributes attribs;
+	.workspaceWMAttributes attribs;
 	WMScreen *scr = WMWidgetScreen(win);
 
-	memset(&attribs, 0, sizeof(GNUstepWMAttributes));
+	memset(&attribs, 0, sizeof(.workspaceWMAttributes));
 	attribs.flags = GSWindowStyleAttr | GSWindowLevelAttr | GSExtraFlagsAttr;
 	attribs.window_style = win->flags.style;
 	attribs.window_level = win->level;
@@ -415,7 +415,7 @@ static void setWorkspaceHints(WMWindow * win)
 	else
 		attribs.extra_flags = 0;
 
-	writeGNUstepWMAttr(scr, win->view->window, &attribs);
+	write.workspaceWMAttr(scr, win->view->window, &attribs);
 }
 
 static void realizeWindow(WMWindow * win)

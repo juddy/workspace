@@ -622,11 +622,11 @@ void wClientCheckProperty(WWindow * wwin, XPropertyEvent * event)
 				wSetFocusTo(wwin->screen_ptr, wwin->screen_ptr->focused_window);
 			}
 		} else if (event->atom == _XA_GNUSTEP_WM_ATTR) {
-			GNUstepWMAttributes *attr;
+			.workspaceWMAttributes *attr;
 
-			PropGetGNUstepWMAttr(wwin->client_win, &attr);
+			PropGet.workspaceWMAttr(wwin->client_win, &attr);
 
-			wWindowUpdateGNUstepAttr(wwin, attr);
+			wWindowUpdate.workspaceAttr(wwin, attr);
 
 			XFree(attr);
 		} else {

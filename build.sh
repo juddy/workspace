@@ -12,7 +12,6 @@ echo " │ ┌─┐ ┌─┐ │ ┌─┐┌─┐┌─┐┌──┌──
 echo "││││ │ ├┬┘├┴┐└─┐├─┘├─┤│  ├─"
 echo "└┴┘└─┘ │└─│ │└─┘│  │ │└──└──"
 echo
-toilet -f future $(grep AC_INIT configure.ac | awk -F, '{print $2}')
 echo
 echo
 echo "----------------------------"
@@ -33,6 +32,5 @@ echo " │ ┌─┐ ┌─┐ │ ┌─┐┌─┐┌─┐┌──┌──
 echo "││││ │ ├┬┘├┴┐└─┐├─┘├─┤│  ├─"
 echo "└┴┘└─┘ │└─│ │└─┘│  │ │└──└──"
 echo
-toilet -f future $(grep AC_INIT configure.ac | awk -F, '{print $2}')
 
 echo "-----------------------------------------"

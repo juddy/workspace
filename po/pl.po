@@ -514,8 +514,8 @@ msgstr " -version\t\twyświetl informację o wersji i zakończ"
 
 #: ../src/main.c:278
 #, c-format
-msgid "could not find user GNUstep directory (%s).\nMake sure you have installed Workspace correctly and run workspace.inst"
-msgstr "nie można znaleźć katalogu GNUstep użytkownika (%s).\nUpewnij się że Workspace został zainstalowany poprawnie i uruchom skrypt workspace.inst"
+msgid "could not find user .workspace directory (%s).\nMake sure you have installed Workspace correctly and run workspace.inst"
+msgstr "nie można znaleźć katalogu .workspace użytkownika (%s).\nUpewnij się że Workspace został zainstalowany poprawnie i uruchom skrypt workspace.inst"
 
 #: ../src/main.c:297
 #, c-format

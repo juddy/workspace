@@ -88,17 +88,17 @@
     (
       Teme,
       OPEN_MENU,
-      "-noext /usr/local/share/Workspace/Themes $HOME/GNUstep/Library/Workspace/Themes WITH setstyle"
+      "-noext /usr/local/share/Workspace/Themes $HOME/.workspace/Library/Workspace/Themes WITH setstyle"
     ),
     (
       Stilovi,
       OPEN_MENU,
-      "-noext /usr/local/share/Workspace/Styles $HOME/GNUstep/Library/Workspace/Styles WITH setstyle"
+      "-noext /usr/local/share/Workspace/Styles $HOME/.workspace/Library/Workspace/Styles WITH setstyle"
     ),
     (
       "Setovi ikona",
       OPEN_MENU,
-      "-noext /usr/local/share/Workspace/IconSets $HOME/GNUstep/Library/Workspace/IconSets WITH seticons"
+      "-noext /usr/local/share/Workspace/IconSets $HOME/.workspace/Library/Workspace/IconSets WITH seticons"
     ),
     (
       Pozadina,
@@ -191,18 +191,18 @@
       (
         Slike,
         OPEN_MENU,
-        "-noext /usr/local/share/Workspace/Backgrounds $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t"
+        "-noext /usr/local/share/Workspace/Backgrounds $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t"
       )
     ),
     (
       "Snimi temu",
       SHEXEC,
-      "getstyle -t $HOME/GNUstep/Library/Workspace/Themes/\"%a(Theme name)\""
+      "getstyle -t $HOME/.workspace/Library/Workspace/Themes/\"%a(Theme name)\""
     ),
     (
       "Snimi set ikona",
       SHEXEC,
-      "geticonset $HOME/GNUstep/Library/Workspace/IconSets/\"%a(IconSet name)\""
+      "geticonset $HOME/.workspace/Library/Workspace/IconSets/\"%a(IconSet name)\""
     )
   ),
   (

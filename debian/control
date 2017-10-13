@@ -72,7 +72,7 @@ Depends: libc6-dev, libx11-dev, libxext-dev, libwraster3-dev, libxft-dev,
  libfontconfig1-dev, libwutil2 (= ${binary:Version}),
  libwings2 (= ${binary:Version}), ${misc:Depends}
 Description: Workspace's own widget set
- WINGs Is Not GNUstep (WINGs) is a small widget set with the NeXTSTEP
+ WINGs Is Not .workspace (WINGs) is a small widget set with the NeXTSTEP
  look and feel. Its API is inspired in OpenSTEP and its
  implementation borrows some ideas from Tk. It has a reasonable set of
  widgets, sufficient for building small applications like a CDPlayer
@@ -84,7 +84,7 @@ Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Workspace's own widget set - utility library
- WINGs Is Not GNUstep (WINGs) is a small widget set with the NeXTSTEP
+ WINGs Is Not .workspace (WINGs) is a small widget set with the NeXTSTEP
  look and feel. Its API is inspired in OpenSTEP and its
  implementation borrows some ideas from Tk. It has a reasonable set of
  widgets, sufficient for building small applications like a CDPlayer
@@ -98,7 +98,7 @@ Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Workspace's own widget set - runtime library
- WINGs Is Not GNUstep (WINGs) is a small widget set with the NeXTSTEP
+ WINGs Is Not .workspace (WINGs) is a small widget set with the NeXTSTEP
  look and feel. Its API is inspired in OpenSTEP and its
  implementation borrows some ideas from Tk. It has a reasonable set of
  widgets, sufficient for building small applications like a CDPlayer

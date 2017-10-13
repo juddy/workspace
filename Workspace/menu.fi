@@ -10,7 +10,7 @@
  * 
  * SHORTCUT specifies a shortcut for that item. <Shortcut> has the
  * same syntax of the shortcuts key options in the 
- * $HOME/GNUstep/Defaults/Workspace file, such as RootMenuKey or MiniaturizeKey.
+ * $HOME/.workspace/Defaults/Workspace file, such as RootMenuKey or MiniaturizeKey.
  *
  * You can't specify a shortcut for a MENU or OPEN_MENU entry.
  * 
@@ -174,9 +174,9 @@
 	"Työtila" END
 
 	"Ulkonäkö" MENU
-		"Teemat" OPEN_MENU -noext THEMES_DIR $HOME/GNUstep/Library/Workspace/Themes WITH setstyle
-		"Tyylit" OPEN_MENU -noext STYLES_DIR $HOME/GNUstep/Library/Workspace/Styles WITH setstyle
-		"Kuvakkeet" OPEN_MENU -noext ICON_SETS_DIR $HOME/GNUstep/Library/Workspace/IconSets WITH seticons
+		"Teemat" OPEN_MENU -noext THEMES_DIR $HOME/.workspace/Library/Workspace/Themes WITH setstyle
+		"Tyylit" OPEN_MENU -noext STYLES_DIR $HOME/.workspace/Library/Workspace/Styles WITH setstyle
+		"Kuvakkeet" OPEN_MENU -noext ICON_SETS_DIR $HOME/.workspace/Library/Workspace/IconSets WITH seticons
 		"Taustat" MENU
 			"Yksivärinen" MENU
                         	"Musta" WS_BACK '(solid, black)'
@@ -198,11 +198,11 @@
     				"Harmaan sävyjä" WS_BACK '(vgradient, "#636380", "#131318")'
     				"Viininpunaisen sävyjä" WS_BACK '(vgradient, "#600040", "#180010")'
 			"Liukuväri" END
-			"Kuvat" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t
+			"Kuvat" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t
 		"Taustat" END
-		"Tallenna teema" SHEXEC getstyle -t $HOME/GNUstep/Library/Workspace/Themes/"%a(Teeman nimi,Kirjoita teematiedoston nimi:)"
-		"Tallenna kuvakkeet" SHEXEC geticonset $HOME/GNUstep/Library/Workspace/IconSets/"%a(Kuvakesetin nimi,Kirjoita tiedostonnimi:)"
-		"Asetukset" EXEC /usr/local/GNUstep/Applications/WPrefs.app/WPrefs
+		"Tallenna teema" SHEXEC getstyle -t $HOME/.workspace/Library/Workspace/Themes/"%a(Teeman nimi,Kirjoita teematiedoston nimi:)"
+		"Tallenna kuvakkeet" SHEXEC geticonset $HOME/.workspace/Library/Workspace/IconSets/"%a(Kuvakesetin nimi,Kirjoita tiedostonnimi:)"
+		"Asetukset" EXEC /usr/local/.workspace/Applications/WPrefs.app/WPrefs
 	"Ulkonäkö" END
 
 	"Lopeta"	MENU

@@ -46,7 +46,7 @@ static void hide(void *foo, int item, Time time)
 
 Atom delete_win, miniaturize_win;
 Atom prots[6];
-GNUstepWMAttributes attr;
+.workspaceWMAttributes attr;
 XWMHints *hints;
 WMMenu *menu;
 WMMenu *submenu;

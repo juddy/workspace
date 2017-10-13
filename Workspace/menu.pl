@@ -11,7 +11,7 @@
  * 
  * SHORTCUT Definiowanie skrótu.
  * <Skrót> Nazwa rodzaju skrótu umieszczonego w pliku
- *         $HOME/GNUstep/Defaults/Workspace, tak jak RootMenuKey 
+ *         $HOME/.workspace/Defaults/Workspace, tak jak RootMenuKey 
  *         lub MiniaturizeKey.
  *
  * Skróty mogą występować w sekcji MENU lub OPEN_MENU .
@@ -79,7 +79,7 @@
  * "Test" END
  *
  * Jeżeli zamiast polskich fontów są jakieś krzaczki należy wyedetować pliki
- * $HOME/GNUstep/Defaults/WMGLOBAL i $HOME/GNUstep/Defaults/Workspace,  
+ * $HOME/.workspace/Defaults/WMGLOBAL i $HOME/.workspace/Defaults/Workspace,  
  * lub wejść w menu Konfiguracja.
  * Aby uzyskać polskie znaki należy uzupełnić definicje fontów.
  * np. zamienić
@@ -111,9 +111,9 @@
 	"Informacja" END
 	
 	"Konfiguracja" MENU	
-		"Edycja menu"       EXEC ULUB_TERM -T "Edycja menu" -e ULUB_EDYTOR $HOME/GNUstep/Library/Workspace/menu
-		"Ustawienie fontów" EXEC ULUB_TERM -T "Ustawienie fontów" -e ULUB_EDYTOR $HOME/GNUstep/Defaults/WMGLOBAL
-		"Konfiguracja"      EXEC ULUB_TERM -T "Konfiguracja" -e ULUB_EDYTOR $HOME/GNUstep/Defaults/Workspace
+		"Edycja menu"       EXEC ULUB_TERM -T "Edycja menu" -e ULUB_EDYTOR $HOME/.workspace/Library/Workspace/menu
+		"Ustawienie fontów" EXEC ULUB_TERM -T "Ustawienie fontów" -e ULUB_EDYTOR $HOME/.workspace/Defaults/WMGLOBAL
+		"Konfiguracja"      EXEC ULUB_TERM -T "Konfiguracja" -e ULUB_EDYTOR $HOME/.workspace/Defaults/Workspace
 	"Konfiguracja" END
 	
 	"Uruchom..." EXEC %a(Uruchom,Wpisz komende do uruchomienia:)
@@ -234,9 +234,9 @@
 	"Ekran" END
 
 	"Wygląd" MENU
-		"Tematy"          OPEN_MENU -noext THEMES_DIR $HOME/GNUstep/Library/Workspace/Themes WITH setstyle
-		"Style"           OPEN_MENU -noext STYLES_DIR $HOME/GNUstep/Library/Workspace/Styles WITH setstyle
-		"Ustawienia ikon" OPEN_MENU -noext ICON_SETS_DIR $HOME/GNUstep/Library/Workspace/IconSets WITH seticons
+		"Tematy"          OPEN_MENU -noext THEMES_DIR $HOME/.workspace/Library/Workspace/Themes WITH setstyle
+		"Style"           OPEN_MENU -noext STYLES_DIR $HOME/.workspace/Library/Workspace/Styles WITH setstyle
+		"Ustawienia ikon" OPEN_MENU -noext ICON_SETS_DIR $HOME/.workspace/Library/Workspace/IconSets WITH seticons
 		"Tło" MENU
 			"Jednolite" MENU
                	"Czarny"            WS_BACK '(solid, black)'
@@ -258,10 +258,10 @@
     			"Cieniowany Szary"      WS_BACK '(vgradient, "#636380", "#131318")'
     			"Cieniowany Winnny"     WS_BACK '(vgradient, "#600040", "#180010")'
 			"Cieniowane" END
-			"Obrazki" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t
+			"Obrazki" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t
 		"Tło" END
-		"Zaoamiętanie Tematu"        EXEC getstyle -t $HOME/GNUstep/Library/Workspace/Themes/"%a(Nazwa tematu,Wpisz nazwe pliku:)"
-		"Zapamiętanie Ustawień Ikon" EXEC geticonset $HOME/GNUstep/Library/Workspace/IconSets/"%a(Ustawienia ikon,wpisz nazwe pliku:)"
+		"Zaoamiętanie Tematu"        EXEC getstyle -t $HOME/.workspace/Library/Workspace/Themes/"%a(Nazwa tematu,Wpisz nazwe pliku:)"
+		"Zapamiętanie Ustawień Ikon" EXEC geticonset $HOME/.workspace/Library/Workspace/IconSets/"%a(Ustawienia ikon,wpisz nazwe pliku:)"
 	"Wygląd" END
 
 	"Wyjście" MENU

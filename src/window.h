@@ -24,7 +24,7 @@
 #include <wraster.h>
 
 #include "wconfig.h"
-#include "GNUstep.h"
+#include ".workspace.h"
 #include "texture.h"
 #include "menu.h"
 #include "application.h"
@@ -216,7 +216,7 @@ typedef struct WWindow {
 	XWMHints *wm_hints;			/* WM_HINTS (optional) */
 	char *wm_instance;			/* instance of WM_CLASS */
 	char *wm_class;				/* class of WM_CLASS */
-	GNUstepWMAttributes *wm_gnustep_attr;	/* GNUstep window attributes */
+	.workspaceWMAttributes *wm_gnustep_attr;	/* .workspace window attributes */
 
 	int state;				/* state as in ICCCM */
 
@@ -261,7 +261,7 @@ typedef struct WWindow {
 #endif
 
 		/* info flags */
-		unsigned int is_gnustep:1;	/* 1 if the window belongs to a GNUstep
+		unsigned int is_gnustep:1;	/* 1 if the window belongs to a .workspace
 						 * app */
 		unsigned int is_dockapp:1;	/* 1 if the window belongs to a DockApp */
 
@@ -375,7 +375,7 @@ WWindow *wManageInternalWindow(WScreen *scr, Window window, Window owner,
 
 void wWindowSetupInitialAttributes(WWindow *wwin, int *level, int *workspace);
 
-void wWindowUpdateGNUstepAttr(WWindow *wwin, GNUstepWMAttributes *attr);
+void wWindowUpdate.workspaceAttr(WWindow *wwin, .workspaceWMAttributes *attr);
 
 void wWindowMap(WWindow *wwin);
 

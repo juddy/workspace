@@ -7,7 +7,7 @@ Changes since workspace 0.92.0:
 - better check for the XDND protocol version when interoperating with other
   applications. As it seems xdnd version 3 (which WINGs supports) and newer
   are not backward compatible with xdnd version 1 and 2. This is why WINGs
-  applications cannot interoperate with GNUstep applications (which uses
+  applications cannot interoperate with .workspace applications (which uses
   xdnd version 2). Xdnd version 4 and 5 are backwards compatible with
   version 3 though. (Sylvain Reynal <sreynal@nerim.net>)
 - removed dependency on rgb.txt from X11 and issues with locating it on the

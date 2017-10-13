@@ -356,7 +356,7 @@ workspace (0.91.0-9) unstable; urgency=low
   * debian/patches/21_endian+64bit.diff: stolen from Gentoo (closes:
     bug#311563)
   * debian/patches/70_gnustep_focus.diff: taken out of CVS, fixes
-    problem with GNUstep applications.
+    problem with .workspace applications.
   * debian/rules: install wmmacros (closes: bug#315984)
   * Ack Steve's NMUs (closes: bug#279489)
 
@@ -436,7 +436,7 @@ workspace (0.91.0-3) unstable; urgency=low
   * debian/control: remove hermes from libwraster3-dev's dependencies.
   * debian/rules: get-wings-flags --libs doesn't include -lXft (closes:
     bug#283283)
-  * debian/patches/30_menu_stuff.diff: fix GNUstep problems (closes:
+  * debian/patches/30_menu_stuff.diff: fix .workspace problems (closes:
     bug#286343)
   * debian/patches/50_net_wm_name.diff: add _NET_WM_NAME to helper window.
   * debian/control: add libfontconfig1-dev to libwings-dev Dependencies (and
@@ -749,12 +749,12 @@ workspace (0.80.0-4) unstable; urgency=high
   * debian/patches/01_buffer_overflow.diff: buffer overflow patch from
     upstream (apply after next patch!)
   * debian/patches/00_0.80.0.diff: update, fixes several crashes
-  * WINGs/wapplication.c: use GNUstep/System and Applications, too. (closes:
+  * WINGs/wapplication.c: use .workspace/System and Applications, too. (closes:
     bug#141840)
   * doc/wcopy.1x: change description a little, apparently .SH doesn't
     work with multiple commands and descriptions. (closes: bug#135085)
-  * src/defaults.c: fix braino when updating a patch, it's GNUstep/Defaults,
-    not GNUstep/Defaults/Workspace.  Thanks Torbjørn Andersson (and sorry
+  * src/defaults.c: fix braino when updating a patch, it's .workspace/Defaults,
+    not .workspace/Defaults/Workspace.  Thanks Torbjørn Andersson (and sorry
     about the long delay) (closes: bug#129466, bug#127718)
   * debian/rules: rm -f src/wconfig.h when configuring workspace, I'm not sure
     I understand why this is suddenly a problem.
@@ -768,7 +768,7 @@ workspace (0.80.0-4) unstable; urgency=high
 
 workspace (0.80.0-3.1) unstable; urgency=low
 
-  * Change GNUstep directory to /usr/lib/GNUstep/System (closes: #129960).
+  * Change .workspace directory to /usr/lib/.workspace/System (closes: #129960).
 
  -- Matthias Klose <doko@debian.org>  Sun,  7 Apr 2002 12:00:10 +0200
 
@@ -961,7 +961,7 @@ workspace (0.63.1-3) unstable; urgency=low
 
 workspace (0.63.1-2) unstable; urgency=low
 
-  * Install /etc/GNUstep/Defaults/WMRootMenu (closes: bug#82195)
+  * Install /etc/.workspace/Defaults/WMRootMenu (closes: bug#82195)
 
  -- Marcelo E. Magallon <mmagallo@debian.org>  Sun, 14 Jan 2001 19:19:16 +0100
 
@@ -1119,7 +1119,7 @@ workspace (0.60.0-5) unstable; urgency=low
   * debian/control: modified workspace's description.  (s/afterstep//gi)
   * debian/workspace.menu: fixed sort keys for several entries
   * Workspace/wmmacros, debian/workspace: uses $GNUSTEP_USER_ROOT instead
-    of $HOME/GNUstep. (closes: bug#43578)
+    of $HOME/.workspace. (closes: bug#43578)
 
  -- Marcelo E. Magallon <mmagallo@debian.org>  Sat,  4 Sep 1999 09:36:32 -0600
 
@@ -1221,7 +1221,7 @@ workspace (0.52.0-1) unstable; urgency=low
   * debian/WMWindowAttributes: added gnome stuff. (thanks Crow!) (closes:
     bug#34557)
   * debian/README.Debian: Updated.
-  * debian/workspace: no longer creates ~/GNUstep/.AppInfo, workspace itself
+  * debian/workspace: no longer creates ~/.workspace/.AppInfo, workspace itself
     will create the directory if needed.
   * deban/workspacepl.menu-method: new file, experimental.  It works, but I'm
     not really sure what I should do with it.  Right now it builds
@@ -1236,7 +1236,7 @@ workspace (0.52.0-1) unstable; urgency=low
     `workspace-binary' (better name anyone?) and workspace would depend on
     that.  This would make workspace ~ 220 kB smaller.
   * debian/rules::install-workspace-debian-stamp: Speaking of smaller, nuked
-    /usr/lib/GNUstep/Apps/WPrefs.app/xpm.  WTH do I want that for if I
+    /usr/lib/.workspace/Apps/WPrefs.app/xpm.  WTH do I want that for if I
     have WPrefs.app/tiff _and_ tiff support is compiled in?
   * debian/rules::install-workspace-debian-stamp: nuked .xpm counterparts of
     .tiff icons.  There are _too_ many of them and it's pure bloat.
@@ -1284,7 +1284,7 @@ workspace (0.51.1-1) unstable; urgency=low
   * debian/rules: README.KDE installed in workspace-kde
   * debian/rules: wkdemenu.pl installed in workspace-kde
   * src/*.c, WINGs/*.c, WPrefs/*.c: global defaults are installed in
-    /etc/GNUstep/Defaults! `sysconfdir' is `/etc', `sysconfdir/GNUstep'
+    /etc/.workspace/Defaults! `sysconfdir' is `/etc', `sysconfdir/.workspace'
     and `sysconfdir/X11/Workspace' used where required.
   * Added libdockapp-dev package.
     + debian/control: added libdockapp-dev entry.
@@ -1562,7 +1562,7 @@ workspace (0.20.2-2) frozen unstable; urgency=low
     LOCAL_BACKGROUNDS_DIR, USER_THEMES_DIR, USER_STYLES_DIR,
     USER_ICON_SETS_DIR, USER_SOUND_SETS_DIR, USER_BACKGROUNDS_DIR
   * Workspace/appearance.menu, Workspace/background.menu: added
-    LOCAL_* paths and changed ~/GNUstep/... to USER_* (closes: bug#29473)
+    LOCAL_* paths and changed ~/.workspace/... to USER_* (closes: bug#29473)
   * wrlib/Makefile.am: oops. Actually change shared version to
     1:0:0... hmmm... no wonder this made so much trouble.
   * debian/rules: fixed call to dh_shlibdeps... wrong dependencies were
@@ -1597,7 +1597,7 @@ workspace (0.20.2-1) frozen unstable; urgency=low
   * WINGs/wapplication.c: modified to use --with-appspath from
     configure (sent upstream)
   * debian/rules: I give up! Forget about telling Workspace its Defaults
-    directory lives in /etc/GNUstep. Use the darned symlink. Removed all
+    directory lives in /etc/.workspace. Use the darned symlink. Removed all
     the patches that made this work... I'm sick of reapplying those.
   * debian/*: s/Workspace/Workspace/ in several places.
   * debian/rules: moves wm-oldmenu2new to /usr/doc/workspace; the script it's
@@ -1634,8 +1634,8 @@ workspace (0.20.1-1) unstable; urgency=low
   * debian/patch.workspace: fixed things a bit to get INCLUDES = -D_REENTRANT
     for libraries.
   * configure.in: removed test for X_LOCALE
-  * WINGs/wapplication.c: changed /usr/local/share/GNUstep to
-    /usr/local/lib/GNUstep to get it in sync with the rest of the paths.
+  * WINGs/wapplication.c: changed /usr/local/share/.workspace to
+    /usr/local/lib/.workspace to get it in sync with the rest of the paths.
   * po/Makefile.am: added $(DESTDIR)/ in front of @NLSDIR@ to get it to
     install properly. Added Workspace.pot to CLEAN_FILES.
   * WPrefs/po/Makefile.am: added $(DESTDIR)/ in front of @NLSDIR@ to get
@@ -1713,11 +1713,11 @@ workspace (0.19.2-1) unstable; urgency=low
 
   * Woha! First time that debian's diff.gz applies cleanly. Ever. (New
     upstream version)
-  * Moved /usr/share/GNUstep to /usr/lib/GNUstep
+  * Moved /usr/share/.workspace to /usr/lib/.workspace
   * Modified the Makefile to cope with a future different location of
-    GNUstep
+    .workspace
   * Moved WPrefs to /usr/X11R6/bin/WPrefs and put a relative symlink in
-    the lib/GNUstep/Apps directory.
+    the lib/.workspace/Apps directory.
   * Included xlib6g in shlibs.local to work arround the bug in
     xlib6g-dev. It requires xlib6g (>= 3.3.2.1) which is the oldest one I
     know works.
@@ -1751,7 +1751,7 @@ workspace (0.19.0-2) unstable; urgency=low
       another key name change) in G/D/WMWindowAttributes that makes
       Workspace crash upon start.
     - Put a symlink /usr/share/Workspace/Defaults ->
-      /etc/GNUstep/Defaults until I get to figure out where the h*ll are
+      /etc/.workspace/Defaults until I get to figure out where the h*ll are
       some functions getting /usr/share/Workspace/Defaults from.
     - Changed README.Debian, spells out some upgrade issues.
   * Changed shlibs.local entries
@@ -1777,8 +1777,8 @@ workspace (0.18.1b-1) unstable; urgency=low
 
   * New upstream version.
   * Patched src/dialog.c to get the Icon browser dialog NOT to ignore
-    some valid paths in GNUstep/Defaults/Workspace
-  * Removed second instance of ~/GNUstep/Library/Workspace/Pixmaps in
+    some valid paths in .workspace/Defaults/Workspace
+  * Removed second instance of ~/.workspace/Library/Workspace/Pixmaps in
     Workspace/Defaults/Workspace.in, which I don't know how got there
     in the first place.
 
@@ -1803,7 +1803,7 @@ workspace (0.17.5-3) unstable; urgency=low
 workspace (0.17.5-2) unstable; urgency=low
 
   * Changed src/defaults.c to look for DEFAUTLS_DIR in DEF_GNUSTEP_DIR, which
-    is defined as /etc/GNUstep in Debian. (closes: bug#25207)
+    is defined as /etc/.workspace in Debian. (closes: bug#25207)
   * Fixed README.Debian (closes: bug#25208) and added some extra notes.
   * Changed postinst to ask about upgrading the defaults only if it's
     requiered.
@@ -1812,7 +1812,7 @@ workspace (0.17.5-2) unstable; urgency=low
 
 workspace (0.17.5-1) unstable; urgency=low
 
-  * New upstream version. Adds GNUstep/Library/Icons and moves icons to
+  * New upstream version. Adds .workspace/Library/Icons and moves icons to
     that directory, but this version still looks in G/L/W/Pixmaps to
     preserve backwards compatibility.
   * Added XConsole to WMWindowAttributes (closes: bug#22405).
@@ -1894,7 +1894,7 @@ workspace (0.15.0-0) unstable; urgency=low
   * Patch from workspace list applied. It looks like it crashed under certain
     conditions involving autofocus and attract icons.
   * Patched to get workspace in line with FSSTND... again. Sent upstream...
-    again. Menus and GNUstep/Defaults are configuration files, damm it!
+    again. Menus and .workspace/Defaults are configuration files, damm it!
   * This package doesn't make a smooth transition from 0.14.1-6 (in hamm)
     to this version, hence the release number. This package is expected to
     be buggy. I need feedback!

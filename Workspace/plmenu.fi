@@ -238,17 +238,17 @@
 		(
 		"Teemat",
 		OPEN_MENU,
-		"-noext /usr/local/share/Workspace/Themes  $HOME/GNUstep/Library/Workspace/Themes WITH setstyle"
+		"-noext /usr/local/share/Workspace/Themes  $HOME/.workspace/Library/Workspace/Themes WITH setstyle"
 		),
 		(
 		"Tyylit",
 		OPEN_MENU,
-		"-noext /usr/local/share/Workspace/Styles  $HOME/GNUstep/Library/Workspace/Styles WITH setstyle"
+		"-noext /usr/local/share/Workspace/Styles  $HOME/.workspace/Library/Workspace/Styles WITH setstyle"
 		),
 		(
 		"Kuvakkeet",
 		OPEN_MENU,
-		"-noext /usr/local/share/Workspace/IconSets  $HOME/GNUstep/Library/Workspace/IconSets WITH seticons"
+		"-noext /usr/local/share/Workspace/IconSets  $HOME/.workspace/Library/Workspace/IconSets WITH seticons"
 		),
 		(
 		"Taustat",
@@ -341,23 +341,23 @@
 			(
 			"Kuvat",
 			OPEN_MENU,
-			"-noext /usr/local/share/Workspace/Backgrounds  $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t"
+			"-noext /usr/local/share/Workspace/Backgrounds  $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t"
 			)
 		),
 		(
 		"Tallenna teema",
 		EXEC,
-		"getstyle -t $HOME/GNUstep/Library/Workspace/Themes/\"%a(Teeman nimi,Kirjoita teematiedoston nimi:)\""
+		"getstyle -t $HOME/.workspace/Library/Workspace/Themes/\"%a(Teeman nimi,Kirjoita teematiedoston nimi:)\""
 		),
 		(
 		"Tallenna kuvakkeet",
 		EXEC,
-		"geticonset $HOME/GNUstep/Library/Workspace/IconSets/\"%a(Kuvakesetin nimi,Kirjoita tiedostonnimi:)\""
+		"geticonset $HOME/.workspace/Library/Workspace/IconSets/\"%a(Kuvakesetin nimi,Kirjoita tiedostonnimi:)\""
 		),
 		(
 		"Asetukset",
 		EXEC,
-		"/usr/local/GNUstep/Applications/WPrefs.app/WPrefs"
+		"/usr/local/.workspace/Applications/WPrefs.app/WPrefs"
 		)
 	),
 	(

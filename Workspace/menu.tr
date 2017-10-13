@@ -9,7 +9,7 @@
  * 	yazılmalı
  * 
  * SHORTCUT sözkonusu giriş için kısayol tuşu tanımlamak için kullanılır
- * <Kısayol>, $HOME/GNUstep/Defaults/Workspace olduğu gibi tanımlanabilir.
+ * <Kısayol>, $HOME/.workspace/Defaults/Workspace olduğu gibi tanımlanabilir.
  *
  * MENU veya OPEN_MENU için kısayol tanımlayamazsınız.
  * 
@@ -90,7 +90,7 @@
 "Ana Menü" MENU
 	"Bilgi" MENU
 		"Copyright..." EXEC xmessage -center -font variable -title \
-	'Workspace 'WM_VERSION -file $HOME/GNUstep/Library/Workspace/Copyright
+	'Workspace 'WM_VERSION -file $HOME/.workspace/Library/Workspace/Copyright
 		"Sistem Konsolu" EXEC xconsole
 		"Sistem Yükü" SHEXEC xosview || xload
 		"Süreç Dökümü" EXEC xterm -e top
@@ -157,9 +157,9 @@
 	"Çalışma Alanı" END
 
 	"Görünüm" MENU
-		"Temalar" OPEN_MENU -noext THEMES_DIR $HOME/GNUstep/Library/Workspace/Themes WITH setstyle
-		"Tarzlar" OPEN_MENU -noext STYLES_DIR $HOME/GNUstep/Library/Workspace/Styles WITH setstyle
-		"Simge Kümeleri" OPEN_MENU -noext ICON_SETS_DIR $HOME/GNUstep/Library/Workspace/IconSets WITH seticons
+		"Temalar" OPEN_MENU -noext THEMES_DIR $HOME/.workspace/Library/Workspace/Themes WITH setstyle
+		"Tarzlar" OPEN_MENU -noext STYLES_DIR $HOME/.workspace/Library/Workspace/Styles WITH setstyle
+		"Simge Kümeleri" OPEN_MENU -noext ICON_SETS_DIR $HOME/.workspace/Library/Workspace/IconSets WITH seticons
 		"Arkaplan" MENU
 			"Düz Renk" MENU
                         	"Black" WS_BACK '(solid, black)'
@@ -175,10 +175,10 @@
 				"Flag" WS_BACK '(mdgradient, green, red, white, green)'
 				"Sky" WS_BACK '(vgradient, blue4, white)'
 			"Renk Geçişi" END
-			"Görüntüler" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t
+			"Görüntüler" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t
 		"Arkaplan" END
-		"Tema Sakla" SHEXEC getstyle -t $HOME/GNUstep/Library/Workspace/Themes/"%a(Theme name)"
-		"Simge Kümesi Sakla" SHEXEC geticonset $HOME/GNUstep/Library/Workspace/IconSets/"%a(IconSet name)"
+		"Tema Sakla" SHEXEC getstyle -t $HOME/.workspace/Library/Workspace/Themes/"%a(Theme name)"
+		"Simge Kümesi Sakla" SHEXEC geticonset $HOME/.workspace/Library/Workspace/IconSets/"%a(IconSet name)"
 	"Görünüm" END
 
 	"Çıkış"	MENU

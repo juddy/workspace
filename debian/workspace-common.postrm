@@ -14,7 +14,7 @@ case "$1" in
   purge)
     if [ -x /usr/bin/update-menus ] ; then
       update-menus
-      rm -f /etc/GNUstep/Defaults/menu.hook /etc/GNUstep/Defaults/appearance.menu
+      rm -f /etc/.workspace/Defaults/menu.hook /etc/.workspace/Defaults/appearance.menu
     fi
   ;;
   upgrade|abort-install|disappear)

@@ -125,7 +125,7 @@
  */
 
 /* list of paths to look for the config files, searched in order of appearance */
-#define DEF_CONFIG_PATHS "~/GNUstep/Library/Workspace:"PKGDATADIR
+#define DEF_CONFIG_PATHS "~/.workspace/Library/Workspace:"PKGDATADIR
 #define DEF_MENU_FILE	 "menu"
 
 /* name of the script to execute at startup */
@@ -141,17 +141,17 @@
 
 /* pixmap path */
 #define DEF_PIXMAP_PATHS \
-    "(\"~/pixmaps\",\"~/GNUstep/Library/Workspace/Pixmaps\",\""PIXMAPDIR"\")"
+    "(\"~/pixmaps\",\"~/.workspace/Library/Workspace/Pixmaps\",\""PIXMAPDIR"\")"
 
 #ifdef USER_MENU
 #define GLOBAL_USER_MENU_PATH PKGDATADIR"/UserMenus"
 #define DEF_USER_MENU_PATHS \
-    "~/GNUstep/Library/Workspace/UserMenus:"GLOBAL_USER_MENU_PATH
+    "~/.workspace/Library/Workspace/UserMenus:"GLOBAL_USER_MENU_PATH
 #endif
 
 /* icon path */
 #define DEF_ICON_PATHS \
-    "(\"~/.workspace-icons\",\"~/GNUstep/Library/Workspace/Icons\")"
+    "(\"~/.workspace-icons\",\"~/.workspace/Library/Workspace/Icons\")"
 
 /* window title to use for untitled windows */
 #define DEF_WINDOW_TITLE " "

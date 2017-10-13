@@ -2,7 +2,7 @@
 /* config.h.in.  Generated from configure.ac by autoheader.  */
 
 /* Define to 1 if you have the <bsd/string.h> header file. */
-/* #undef HAVE_BSD_STRING_H */
+#define HAVE_BSD_STRING_H 1
 
 /* Define to 1 if you have the <ctype.h> header file. */
 #define HAVE_CTYPE_H 1
@@ -79,7 +79,7 @@
 #define HAVE_STRING_H 1
 
 /* Define if strlcpy is available */
-/* #undef HAVE_STRLCAT */
+#define HAVE_STRLCAT 1
 
 /* Define to 1 if you have the `strncasecmp' function. */
 #define HAVE_STRNCASECMP 1
@@ -115,7 +115,7 @@
 #define HAVE_XINTERNATOMS 1
 
 /* define if you want support for XRandR (set by configure) */
-#define HAVE_XRANDR 1
+/* #undef HAVE_XRANDR */
 
 /* Internationalization (I18N) support (set by configure) */
 /* #undef I18N */
@@ -168,7 +168,7 @@
 /* #undef USE_BOEHM_GC */
 
 /* define if GIF libraries are available (set by configure) */
-#define USE_GIF 1
+/* #undef USE_GIF */
 
 /* define if JPEG libraries are available (set by configure) */
 #define USE_JPEG 1
@@ -177,16 +177,16 @@
 #define USE_PNG 1
 
 /* define if TIFF libraries are available (set by configure) */
-#define USE_TIFF 1
+/* #undef USE_TIFF */
 
 /* define if XPM libraries are available (set by configure) */
-#define USE_XPM 1
+/* #undef USE_XPM */
 
 /* Version number of package */
 #define VERSION "0.0.8"
 
 /* define if you want support for the XINERAMA extension (set by configure) */
-#define XINERAMA 1
+/* #undef XINERAMA */
 
 /* whether XKB language MODELOCK should be enabled */
 /* #undef XKB_MODELOCK */

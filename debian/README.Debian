@@ -58,7 +58,7 @@ Other sources for documentation
 * The Workspace Configuration documents
   ftp://ftp.workspace.info/pub/workspace/docs/Workspace-*-Config.txt.gz
 
-  This documents the files found on ~/GNUstep/Defaults/. It's kept as
+  This documents the files found on ~/.workspace/Defaults/. It's kept as
   up to date as possible.
 
 As a sidenote, I can't package these files with workspace because they
@@ -68,7 +68,7 @@ don't have a copyright statement that permits redistribution.
 IF YOU ARE UPGRADING FROM 0.6.3 or earlier
 ------------------------------------------
 
-  * The directory name has changed form gnustep to GNUstep
+  * The directory name has changed form gnustep to .workspace
   * The format of the style files and Workspace file has
     changed.
 
@@ -81,7 +81,7 @@ IF YOU ARE UPGRADING FROM 0.14.1 or earlier (but newer than 0.6.3)
     keyword on Defaults/Workspace that says "Fiend" has to be
     replaced by "Clip".  The installation package tries to fix this
     globally, i.e, both in the system wide files and the user's files.
-  * The ~/GNUstep/Library/Workspace/Style directory is no longer
+  * The ~/.workspace/Library/Workspace/Style directory is no longer
     called that, but "Styles" instead.  Update accordingly.  The wrapper
     script tries to be smart about this...
 
@@ -97,7 +97,7 @@ IF YOU ARE UPGRADING FROM 0.15.0 or earlier
 IF YOU ARE UPGRADING FROM 0.17.3 or earlier
 -------------------------------------------
 
-  * Please note there's a new Icons directory under ~/GNUstep/Library,
+  * Please note there's a new Icons directory under ~/.workspace/Library,
     and a new key IconPath. Read the section on paths.
 
 IF YOU ARE UPGRADING FROM 0.17.5 or earlier
@@ -119,9 +119,9 @@ Debian specific notes
 ---------------------
 
 Debian prepackaged version of Workspace will search
-~/GNUstep/Library/Workspace and /usr/share/Workspace (in that order)
+~/.workspace/Library/Workspace and /usr/share/Workspace (in that order)
 for its configuration files. It will read defaults from files in
-~/GNUstep/Defaults and /etc/GNUstep/Defaults. The files in the
+~/.workspace/Defaults and /etc/.workspace/Defaults. The files in the
 Workspace directories have cpp-like format and are preprocessed by
 Workspace. It will read both Workspace directories searching for
 #included files.
@@ -132,8 +132,8 @@ would search Pixmaps and Icons in, namely, PixmapPath and
 IconPath. The compiled in defaults are:
 
   PixmapPath = (
-    "~/GNUstep/Library/Workspace/Pixmaps",
-    "~/GNUstep/Library/Workspace/Backgrounds",
+    "~/.workspace/Library/Workspace/Pixmaps",
+    "~/.workspace/Library/Workspace/Backgrounds",
     "/usr/local/share/Workspace/Pixmaps",
     "/usr/local/share/Workspace/Backgrounds",
     "/usr/share/Workspace/Backgrounds",
@@ -143,7 +143,7 @@ IconPath. The compiled in defaults are:
   );
 
   IconPath = (
-    "~/GNUstep/Library/Icons",
+    "~/.workspace/Library/Icons",
     "/usr/local/share/Workspace/Icons",
     "/usr/share/Workspace/Icons",
     "/usr/local/share/icons",
@@ -160,7 +160,7 @@ Other Workspace packages should put pixmaps in
 
 The structure Workspace tries to use is like this:
 
-GNUstep
+.workspace
   +.AppInfo
   +Defaults
   +Library
@@ -182,8 +182,8 @@ setstyle, which installs it, i.e., sets that theme as the current
 theme.
 
 If you don't like the arrangement of the Appearance menu, you can put
-a file "appearance.menu" in ~/GNUstep/Library/Workspace, and it will
-override the default one. Look at /etc/GNUstep/Defaults/appearance.menu
+a file "appearance.menu" in ~/.workspace/Library/Workspace, and it will
+override the default one. Look at /etc/.workspace/Defaults/appearance.menu
 for an example.
 
 Shortcuts
@@ -247,7 +247,7 @@ exercise to the reader, take into account the people that aren't using
 menu.hook as the root menu in the first place).
 
 Still want to use WPrefs to edit you menu? Cut and paste the example
-above into ~/GNUstep/Defaults/WMRootMenu, start WPrefs, click the Menu
+above into ~/.workspace/Defaults/WMRootMenu, start WPrefs, click the Menu
 Guru (the 9th icon, left to right).  Now go read the docs.  That's the
 reason they are there.
 

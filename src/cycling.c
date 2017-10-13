@@ -27,7 +27,7 @@
 #include <X11/keysym.h>
 
 #include "Workspace.h"
-#include "GNUstep.h"
+#include ".workspace.h"
 #include "screen.h"
 #include "window.h"
 #include "framewin.h"

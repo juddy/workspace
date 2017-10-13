@@ -11,7 +11,7 @@
  *
  * SHORTCUT определя клавишна комбинация ("бърз клавиш") за този
  * елемент на менюто. <комбинация> има същия синтаксис, както клавишните
- * комбинации във файла $HOME/GNUstep/Defaults/Workspace,
+ * комбинации във файла $HOME/.workspace/Defaults/Workspace,
  * напр. RootMenuKey или MiniaturizeKey.
  *
  * Не може да се посочва клавишна комбинация за MENU и OPEN_MENU.
@@ -181,9 +181,9 @@
 	"Работни места" END
 
 	"Изглед" MENU
-		"Теми" OPEN_MENU -noext THEMES_DIR $HOME/GNUstep/Library/Workspace/Themes WITH setstyle
-		"Стилове" OPEN_MENU -noext STYLES_DIR $HOME/GNUstep/Library/Workspace/Styles WITH setstyle
-		"Колекции иконки" OPEN_MENU -noext ICON_SETS_DIR $HOME/GNUstep/Library/Workspace/IconSets WITH seticons
+		"Теми" OPEN_MENU -noext THEMES_DIR $HOME/.workspace/Library/Workspace/Themes WITH setstyle
+		"Стилове" OPEN_MENU -noext STYLES_DIR $HOME/.workspace/Library/Workspace/Styles WITH setstyle
+		"Колекции иконки" OPEN_MENU -noext ICON_SETS_DIR $HOME/.workspace/Library/Workspace/IconSets WITH seticons
 		"Фон" MENU
 			"Плътен" MENU
 				"Черен" WS_BACK '(solid, black)'
@@ -205,11 +205,11 @@
 				"Сиви сенки" WS_BACK '(vgradient, "#636380", "#131318")'
 				"Винени сенки" WS_BACK '(vgradient, "#600040", "#180010")'
 			"Градиент" END
-			"Images" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t
+			"Images" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t
 		"Фон" END
-		"Запази темата" SHEXEC getstyle -t $HOME/GNUstep/Library/Workspace/Themes/"%a(Theme name,Enter file name:)"
-		"Запази колекцията иконки" SHEXEC geticonset $HOME/GNUstep/Library/Workspace/IconSets/"%a(IconSet name,Enter file name:)"
-		"Пособие за настройки" EXEC /usr/local/GNUstep/Applications/WPrefs.app/WPrefs
+		"Запази темата" SHEXEC getstyle -t $HOME/.workspace/Library/Workspace/Themes/"%a(Theme name,Enter file name:)"
+		"Запази колекцията иконки" SHEXEC geticonset $HOME/.workspace/Library/Workspace/IconSets/"%a(IconSet name,Enter file name:)"
+		"Пособие за настройки" EXEC /usr/local/.workspace/Applications/WPrefs.app/WPrefs
 	"Изглед" END
 
 	"Изход"	MENU

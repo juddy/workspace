@@ -518,19 +518,19 @@ static void createPanel(_Panel * p)
 		data = putNewItem(panel, pad, DirectoryInfo, _("Themes"));
 		data->param.directory.command = "setstyle";
 		data->param.directory.directory =
-		    "/usr/share/Workspace/Themes /usr/local/share/Workspace/Themes $HOME/GNUstep/Library/Workspace/Themes";
+		    "/usr/share/Workspace/Themes /usr/local/share/Workspace/Themes $HOME/.workspace/Library/Workspace/Themes";
 		data->param.directory.stripExt = 1;
 
 		data = putNewItem(panel, pad, DirectoryInfo, _("Bg Images (scale)"));
 		data->param.directory.command = "wmsetbg -u -s";
 		data->param.directory.directory =
-		    "/opt/kde2/share/wallpapers /usr/share/Workspace/Backgrounds $HOME/GNUstep/Library/Workspace/Backgrounds";
+		    "/opt/kde2/share/wallpapers /usr/share/Workspace/Backgrounds $HOME/.workspace/Library/Workspace/Backgrounds";
 		data->param.directory.stripExt = 1;
 
 		data = putNewItem(panel, pad, DirectoryInfo, _("Bg Images (tile)"));
 		data->param.directory.command = "wmsetbg -u -t";
 		data->param.directory.directory =
-		    "/opt/kde2/share/wallpapers /usr/share/Workspace/Backgrounds $HOME/GNUstep/Library/Workspace/Backgrounds";
+		    "/opt/kde2/share/wallpapers /usr/share/Workspace/Backgrounds $HOME/.workspace/Library/Workspace/Backgrounds";
 		data->param.directory.stripExt = 1;
 
 		smenu = putNewSubmenu(pad, _("Assorted XTerms"));
@@ -619,7 +619,7 @@ static void createPanel(_Panel * p)
 	WMSetLabelText(label, _("Enter the path for a file containing a menu\n"
 				"or a list of directories with the programs you\n"
 				"want to have listed in the menu. Ex:\n"
-				"~/GNUstep/Library/Workspace/menu\n" "or\n" "/usr/bin ~/xbin"));
+				"~/.workspace/Library/Workspace/menu\n" "or\n" "/usr/bin ~/xbin"));
 
 	WMMapSubwidgets(panel->pathF);
 

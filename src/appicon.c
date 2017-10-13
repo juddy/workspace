@@ -77,7 +77,7 @@ static void remove_from_appicon_list(WScreen *scr, WAppIcon *appicon);
 static void create_appicon_from_dock(WWindow *wwin, WApplication *wapp, Window main_window);
 
 /* This function is used if the application is a .app. It checks if it has an icon in it
- * like for example /usr/local/GNUstep/Applications/WPrefs.app/WPrefs.tiff
+ * like for example /usr/local/.workspace/Applications/WPrefs.app/WPrefs.tiff
  */
 void wApplicationExtractDirPackIcon(WScreen * scr, const char *path, const char *wm_instance, const char *wm_class)
 {

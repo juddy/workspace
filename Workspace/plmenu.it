@@ -66,9 +66,9 @@
   ("Cancella Sessione salvata", CLEAR_SESSION)
   ),
  ("Visualizzazione",
-  ("Temi", OPEN_MENU, "-noext /usr/share/Workspace/Themes ~/GNUstep/Library/Workspace/Themes WITH setstyle"),
-  ("Stili", OPEN_MENU, "-noext /usr/share/Workspace/Styles ~/GNUstep/Library/Workspace/Styles WITH setstyle"),
-  ("Set di Icone", OPEN_MENU, "-noext /usr/share/Workspace/IconSets ~/GNUstep/Library/Workspace/IconSets WITH seticons"),
+  ("Temi", OPEN_MENU, "-noext /usr/share/Workspace/Themes ~/.workspace/Library/Workspace/Themes WITH setstyle"),
+  ("Stili", OPEN_MENU, "-noext /usr/share/Workspace/Styles ~/.workspace/Library/Workspace/Styles WITH setstyle"),
+  ("Set di Icone", OPEN_MENU, "-noext /usr/share/Workspace/IconSets ~/.workspace/Library/Workspace/IconSets WITH seticons"),
   ("Sfondo",
    ("Tinta unita",
     ("Nero", EXEC, "wdwrite Workspace WorkspaceBack '(solid, black)'"),
@@ -90,10 +90,10 @@
     ("Sfumature Grigie",   EXEC, "wdwrite Workspace WorkspaceBack '(vgradient, \"#636380\", \"#131318\")'"),
     ("Sfumature Vinaccia",   EXEC, "wdwrite Workspace WorkspaceBack '(vgradient, \"#600040\", \"#180010\")'")
     ),
-   ("Immagini", OPEN_MENU, "-noext /usr/share/Workspace/Backgrounds ~/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t")
+   ("Immagini", OPEN_MENU, "-noext /usr/share/Workspace/Backgrounds ~/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t")
    ),   
-  ("Salva il tema", EXEC, "getstyle -t ~/GNUstep/Library/Workspace/Themes/\"%a(Nome Tema)\""),
-  ("Salva il set icone", EXEC, "geticonset ~/GNUstep/Library/Workspace/IconSets/\"%a(Nome IconSet)\"")
+  ("Salva il tema", EXEC, "getstyle -t ~/.workspace/Library/Workspace/Themes/\"%a(Nome Tema)\""),
+  ("Salva il set icone", EXEC, "geticonset ~/.workspace/Library/Workspace/IconSets/\"%a(Nome IconSet)\"")
   ), 
  ("Esci",
   ("Riavvia", RESTART),

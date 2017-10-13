@@ -113,7 +113,7 @@ For a more complicated example:
 .PP
 .RS
 .TQ
-wsclock \-12 \-led gold \-exe /usr/GNUstep/Apps/WPrefs.app/WPrefs
+wsclock \-12 \-led gold \-exe /usr/.workspace/Apps/WPrefs.app/WPrefs
 .RE
 .PP
 This displays 12-hour time in an amber-colored LED display, and starts

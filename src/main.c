@@ -510,10 +510,10 @@ static void check_defaults(void)
 	path = wdefaultspathfordomain("Workspace");
 
 	if (access(path, R_OK) != 0) {
-		wwarning(_("could not find user GNUstep directory (%s)."), path);
+		wwarning(_("could not find user .workspace directory (%s)."), path);
 
 		if (system("workspace.inst --batch") != 0) {
-			wwarning(_("There was an error while creating GNUstep directory, please "
+			wwarning(_("There was an error while creating .workspace directory, please "
 				   "make sure you have installed Workspace correctly and run workspace.inst"));
 		} else {
 			wwarning(_("%s directory created with default configuration."), path);

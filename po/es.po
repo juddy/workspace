@@ -877,15 +877,15 @@ msgstr " --help\t\t\tmostrar este mensaje"
 
 #: ../src/main.c:458
 #, c-format
-msgid "could not find user GNUstep directory (%s)."
-msgstr "no se pudo encontrar el directorio GNUstep de usuario (%s)"
+msgid "could not find user .workspace directory (%s)."
+msgstr "no se pudo encontrar el directorio .workspace de usuario (%s)"
 
 #: ../src/main.c:461
 msgid ""
-"There was an error while creating GNUstep directory, please make sure you "
+"There was an error while creating .workspace directory, please make sure you "
 "have installed Workspace correctly and run workspace.inst"
 msgstr ""
-"Se ha producido un error mientras se creaba el directorio GNUstep, por favor "
+"Se ha producido un error mientras se creaba el directorio .workspace, por favor "
 "asegúrese de que ha instalado correctamente Workspace y ejecutado workspace."
 "inst"
 

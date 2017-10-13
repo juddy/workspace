@@ -15,7 +15,7 @@
  * 
  * SHORTCUT meghataroz egy shortcut-ot adott programokra. <Shortcut>-nak
  * ugyanolyan megadasi szintakszisa van a
- * $HOME/GNUstep/Defaults/Workspace file-ban, mint a RootMenuKey
+ * $HOME/.workspace/Defaults/Workspace file-ban, mint a RootMenuKey
  * vagy a MiniaturizeKey.
  *
  * Nem lehet letrehozni shortcut-ot MENU vagy OPEN_MENU bejegyzesben.
@@ -178,9 +178,9 @@
 	"Munkafelület" END
 
 	"Megjelenés" MENU
-		"Témák" OPEN_MENU -noext THEMES_DIR $HOME/GNUstep/Library/Workspace/Themes WITH setstyle
-		"Stílusok" OPEN_MENU -noext STYLES_DIR $HOME/GNUstep/Library/Workspace/Styles WITH setstyle
-		"Ikonok" OPEN_MENU -noext ICON_SETS_DIR $HOME/GNUstep/Library/Workspace/IconSets WITH seticons
+		"Témák" OPEN_MENU -noext THEMES_DIR $HOME/.workspace/Library/Workspace/Themes WITH setstyle
+		"Stílusok" OPEN_MENU -noext STYLES_DIR $HOME/.workspace/Library/Workspace/Styles WITH setstyle
+		"Ikonok" OPEN_MENU -noext ICON_SETS_DIR $HOME/.workspace/Library/Workspace/IconSets WITH seticons
 		"Háttér" MENU
 			"Szolíd" MENU
                         	"Fekete" WS_BACK '(solid, black)'
@@ -200,10 +200,10 @@
     				"Lilás" WS_BACK '(vgradient, "#636380", "#131318")'
     				"Vöröses" WS_BACK '(vgradient, "#600040", "#180010")'
 			"Gradiens" END
-			"Képek" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t
+			"Képek" OPEN_MENU -noext BACKGROUNDS_DIR $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t
 		"Háttér" END
-		"Téma mentése" SHEXEC getstyle -t $HOME/GNUstep/Library/Workspace/Themes/"%a(Téma neve,Add meg a téma fájl nevét:)"
-		"Ikonbeállítások mentése" SHEXEC geticonset $HOME/GNUstep/Library/Workspace/IconSets/"%a(Ikonbeállítások mentése,Add meg a fájl nevét:)"
+		"Téma mentése" SHEXEC getstyle -t $HOME/.workspace/Library/Workspace/Themes/"%a(Téma neve,Add meg a téma fájl nevét:)"
+		"Ikonbeállítások mentése" SHEXEC geticonset $HOME/.workspace/Library/Workspace/IconSets/"%a(Ikonbeállítások mentése,Add meg a fájl nevét:)"
 		"Konfiguráló program" EXEC /usr/bin/WPrefs
 	"Megjelenés" END
 

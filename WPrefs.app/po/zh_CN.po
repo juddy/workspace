@@ -1778,10 +1778,10 @@ msgstr "输入菜单文件存放的路径:"
 msgid ""
 "The menu file must contain a menu in the plain text menu file format. This "
 "format is described in the menu files included with Workspace, probably at "
-"~/GNUstep/Library/Workspace/menu"
+"~/.workspace/Library/Workspace/menu"
 msgstr ""
 "菜单文件必须含有普通文本菜单文件格式的菜单.这种格式在 Workspace 包含的"
-"菜单文中有描述. 这个菜单可能在 ~/GNUstep/Library/Workspace/menu 里"
+"菜单文中有描述. 这个菜单可能在 ~/.workspace/Library/Workspace/menu 里"
 
 #: ../../WPrefs.app/MenuGuru.c:328
 msgid "Type the command that will generate the menu definition:"
@@ -1792,11 +1792,11 @@ msgid ""
 "The command supplied must generate and output a valid menu definition to "
 "stdout. This definition should be in the plain text menu file format, "
 "described in the menu files included with Workspace, usually at "
-"~/GNUstep/Library/Workspace/menu"
+"~/.workspace/Library/Workspace/menu"
 msgstr ""
 "提供的命令必须产生且输出有效的菜单定义至标准输出. 这定义应该是普通文本菜单"
 "文件格式.文件格式在Workspace包含的菜单文件中有描述,这个文件通常在 "
-"~/GNUstep/Library/Workspace/menu 里"
+"~/.workspace/Library/Workspace/menu 里"
 
 #: ../../WPrefs.app/MenuGuru.c:350 ../../WPrefs.app/MenuGuru.c:372
 #: ../../WPrefs.app/MenuGuru.c:394

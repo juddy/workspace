@@ -3,5 +3,5 @@ Description: Small widget set with the NeXTStep(TM) look and feel
 Version: 0.0.8
 Requires: wrlib
 Libs: -L/usr/local/lib  -lWINGs
-Libs.private: -lXft   -lXext -lX11  -lm 
+Libs.private: -lXft -lXext -lXext -lX11  -lm 
 Cflags: -I/usr/local/include 

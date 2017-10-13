@@ -664,10 +664,10 @@ msgstr " --help\t\t\t이 화면을 보여줌"
 #: ../src/main.c:446
 #, c-format
 msgid ""
-"could not find user GNUstep directory (%s).\n"
+"could not find user .workspace directory (%s).\n"
 "Make sure you have installed Workspace correctly and run workspace.inst"
 msgstr ""
-"사용자 GNUstep 디렉터리(%s)를 찾을수 없습니다.\n"
+"사용자 .workspace 디렉터리(%s)를 찾을수 없습니다.\n"
 "윈도우 메이커가 제대로 설치되었는지 다시 확인 후 workspace.inst를 실행하십시오"
 
 #: ../src/main.c:467 ../src/main.c:472

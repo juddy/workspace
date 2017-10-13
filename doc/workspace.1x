@@ -61,18 +61,18 @@ print a brief help message
 .PP
 .SH FILES
 .TP
-.B ~/GNUstep/Defaults/Workspace
+.B ~/.workspace/Defaults/Workspace
 general Workspace defaults.
 .TP
-.B ~/GNUstep/Defaults/WMState
+.B ~/.workspace/Defaults/WMState
 information about the Dock and Clip. DON'T edit this while running
 Workspace. It will be overwritten.
 .TP
-.B ~/GNUstep/Defaults/WMRootMenu
+.B ~/.workspace/Defaults/WMRootMenu
 Contains the name of the file to read the root menu from or the
 menu itself, in property list format.
 .TP
-.B ~/GNUstep/Defaults/WMWindowAttributes
+.B ~/.workspace/Defaults/WMWindowAttributes
 Attributes for different application classes and instances. Use the
 Attribute Editor (right drag the application's title bar, select
 Attributes) instead of modifying this file directly. There are just a
@@ -84,10 +84,10 @@ for WMState, which is COPIED from here. No matter where they are read
 from, if it's necessary to write configuration changes back into this
 files, user's files will be written to.
 .TP
-.B ~/GNUstep/Library/Workspace/autostart
+.B ~/.workspace/Library/Workspace/autostart
 This script is automatically executed when Workspace is started.
 .TP
-.B ~/GNUstep/Library/Workspace/exitscript
+.B ~/.workspace/Library/Workspace/exitscript
 This script is automatically executed immediately before Workspace is 
 exited.
 .B Note:
@@ -97,24 +97,24 @@ from this script, make sure you do not use the
 command from the root menu to exit Workspace. Otherwise, the X server
 might be shut down before the script is executed.
 .TP
-.B ~/GNUstep/Library/Workspace/
+.B ~/.workspace/Library/Workspace/
 The menu file indicated in WMRootMenu is looked for here...
 .TP
 .B /etc/X11/Workspace/
 and here, in that order. Unless, the indicated path is an absolute path.
 .TP
-.B ~/GNUstep/Library/Workspace/Pixmaps/
+.B ~/.workspace/Library/Workspace/Pixmaps/
 Workspace looks for \fBpixmaps\fP here
 .TP
-.B ~/GNUstep/Library/Workspace/Backgrounds/
+.B ~/.workspace/Library/Workspace/Backgrounds/
 Workspace looks for backgrounds here
 .TP
-.B ~/GNUstep/Library/Workspace/Styles/
+.B ~/.workspace/Library/Workspace/Styles/
 Workspace looks for style files here (not true... it looks like it
 does, but you have to specify the full path anyway, it's just a place
 to keep things nicely ordered)
 .TP
-.B ~/GNUstep/Library/Workspace/Themes/
+.B ~/.workspace/Library/Workspace/Themes/
 Workspace looks for theme files here (ibid)
 .TP
 .B /usr/share/Workspace/Pixmaps/
@@ -129,15 +129,15 @@ Guess... ;-)
 .IP GNUSTEP_USER_ROOT
 specifies the initial path for the Defaults directory. "Defaults/" is
 appended to this variable to determine the actual location of the
-databases. If the varialbe is not set, it defaults to "~/GNUstep"
+databases. If the varialbe is not set, it defaults to "~/.workspace"
 .IP GNUSTEP_LOCAL_ROOT
-specifies the location of the system-wide \fBlocal\fP GNUstep
+specifies the location of the system-wide \fBlocal\fP .workspace
 directory (this is useful, for example, in those cases where the
 system-wide location is really a network wide location). If this
 variable is empty, GNUSTEP_SYSTEM_ROOT is looked for.
 .IP GNUSTEP_SYSTEM_ROOT
-specifies the location of the system-wide GNUstep directory. If this
-variable is empty, it defaults to /etc/GNUstep
+specifies the location of the system-wide .workspace directory. If this
+variable is empty, it defaults to /etc/.workspace
 .SH SEE ALSO
 The Workspace User Guide
 .PP

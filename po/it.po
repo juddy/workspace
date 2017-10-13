@@ -555,15 +555,15 @@ msgstr "Avvia un altro gestore di finestre"
 
 #: ../src/dialog.c:1964
 msgid ""
-"Workspace is part of the GNUstep project.\n"
-"The GNUstep project aims to create a free\n"
+"Workspace is part of the .workspace project.\n"
+"The .workspace project aims to create a free\n"
 "implementation of the OpenStep(tm) specification\n"
 "which is a object-oriented framework for\n"
 "creating advanced graphical, multi-platform\n"
 "applications. Additionally, a development and\n"
 "user desktop environment will be created on top\n"
 "of the framework. For more information about\n"
-"GNUstep, please visit: www.gnustep.org"
+".workspace, please visit: www.gnustep.org"
 msgstr ""
 "Workspace è parte del progetto GNUStep.\n"
 "Il progetto GNUStep intende creare una\n"
@@ -576,7 +576,7 @@ msgstr ""
 "informazioni, visitate: www.gnustep.org"
 
 #: ../src/dialog.c:1987
-msgid "About GNUstep"
+msgid "About .workspace"
 msgstr "Informazioni su GNUStep"
 
 #: ../src/dock.c:193
@@ -934,21 +934,21 @@ msgstr " --help\t\t\tmostra questo messaggio"
 #: ../src/main.c:473
 #, c-format
 msgid ""
-"could not find user GNUstep directory (%s).\n"
+"could not find user .workspace directory (%s).\n"
 "Make sure you have installed Workspace correctly and run workspace.inst"
 msgstr ""
-"impossibile trovare la directory GNUstep dell'utente (%s).\n"
+"impossibile trovare la directory .workspace dell'utente (%s).\n"
 "Assicurarsi di aver installato correttamente Workspace e di aver eseguito\n"
 "workspace.inst"
 
 #: ../src/main.c:478
 #, c-format
-msgid "could not find user GNUstep directory (%s)."
-msgstr "impossibile trovare la directory GNUstep dell'utente (%s)"
+msgid "could not find user .workspace directory (%s)."
+msgstr "impossibile trovare la directory .workspace dell'utente (%s)"
 
 #: ../src/main.c:481
 msgid ""
-"There was an error while creating GNUstep directory, please make sure you "
+"There was an error while creating .workspace directory, please make sure you "
 "have installed Workspace correctly and run workspace.inst"
 msgstr ""
 "Si è verificato un errore durante la creazione della directory GNUsterp, \n"

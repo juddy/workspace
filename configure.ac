@@ -827,7 +827,7 @@ AC_SUBST(pixmapdir)
 dnl Support for GNUSTEP_LOCAL_ROOT, for WPrefs.app
 dnl ==============================================
 
-AC_ARG_WITH(gnustepdir, AS_HELP_STRING([--with-gnustepdir=PATH], [specify the directory for GNUstep applications]))
+AC_ARG_WITH(gnustepdir, AS_HELP_STRING([--with-gnustepdir=PATH], [specify the directory for .workspace applications]))
 
 if test "x`echo $with_gnustepdir | grep ^/`" != "x"; then
     appspath=$with_gnustepdir

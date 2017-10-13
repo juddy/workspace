@@ -1714,16 +1714,16 @@ msgid "Type the path for the menu file:"
 msgstr "Írd be a menü fájl elérési útvonalát:"
 
 #: ../../WPrefs.app/MenuGuru.c:318
-msgid "The menu file must contain a menu in the plain text menu file format. This format is described in the menu files included with Workspace, probably at ~/GNUstep/Library/Workspace/menu"
-msgstr "A menü fájlnak tartalmaznia kell a menü leírását egyszerű, szöveges formában. A pontos formátumot megtalálod a Workspacerel együtt terjesztett menü fájlokban, pl.: ~/GNUstep/Library/Workspace/menu"
+msgid "The menu file must contain a menu in the plain text menu file format. This format is described in the menu files included with Workspace, probably at ~/.workspace/Library/Workspace/menu"
+msgstr "A menü fájlnak tartalmaznia kell a menü leírását egyszerű, szöveges formában. A pontos formátumot megtalálod a Workspacerel együtt terjesztett menü fájlokban, pl.: ~/.workspace/Library/Workspace/menu"
 
 #: ../../WPrefs.app/MenuGuru.c:328
 msgid "Type the command that will generate the menu definition:"
 msgstr "Írd be a parancsot, amely elkészíti a menü leírását:"
 
 #: ../../WPrefs.app/MenuGuru.c:338
-msgid "The command supplied must generate and output a valid menu definition to stdout. This definition should be in the plain text menu file format, described in the menu files included with Workspace, usually at ~/GNUstep/Library/Workspace/menu"
-msgstr "A megadott parancsnak helyes szintaxisú menü-leírást kell küldenie a kimenetre. Ennek a leírásnak egyszerű, szöveges formátumúnak kell lennie, amiről a Workspacerel terjesztett menü fájlokban találsz bővebb leírást (pl.: ~/GNUstep/Library/Workspace/menu)"
+msgid "The command supplied must generate and output a valid menu definition to stdout. This definition should be in the plain text menu file format, described in the menu files included with Workspace, usually at ~/.workspace/Library/Workspace/menu"
+msgstr "A megadott parancsnak helyes szintaxisú menü-leírást kell küldenie a kimenetre. Ennek a leírásnak egyszerű, szöveges formátumúnak kell lennie, amiről a Workspacerel terjesztett menü fájlokban találsz bővebb leírást (pl.: ~/.workspace/Library/Workspace/menu)"
 
 #: ../../WPrefs.app/MenuGuru.c:350 ../../WPrefs.app/MenuGuru.c:372 ../../WPrefs.app/MenuGuru.c:394
 msgid "Type the path for the directory. You can type more than one path by separating them with spaces."

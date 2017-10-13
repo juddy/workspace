@@ -43,17 +43,17 @@ Workspace это оконный менеджер для X11 эмулирующи
 .PP
 .SH "ФАЙЛЫ"
 .TP
-.B ~/GNUstep/Defaults/Workspace
+.B ~/.workspace/Defaults/Workspace
 Основные настройки Workspace.
 .TP
-.B ~/GNUstep/Defaults/WMState
+.B ~/.workspace/Defaults/WMState
 Информация о доке (Dock) и индикаторе рабочих столов (Clip). НЕ редактируйте
 этот файл во время работы Workspace. Он будет перезаписан.
 .TP
-.B ~/GNUstep/Defaults/WMRootMenu
+.B ~/.workspace/Defaults/WMRootMenu
 Содержит имя файла корневого меню или само меню в формате списка свойств.
 .TP
-.B ~/GNUstep/Defaults/WMWindowAttributes
+.B ~/.workspace/Defaults/WMWindowAttributes
 Атрибуты различных классов и копий приложений. Используйте редактор свойств
 (клик правой клавишей мыши на заголовке, в выпавшем меню выбрать пункт
 "Свойства...") вместо прямой модификации этого файла. Всего пара опций
@@ -65,10 +65,10 @@ Workspace это оконный менеджер для X11 эмулирующи
 КОПИРУЕТСЯ. Не важно, откуда файлы считаны; если необходимо записать
 настройки в эти файлы, то они будут записаны также и в пользовательские.
 .TP
-.B ~/GNUstep/Library/Workspace/autostart
+.B ~/.workspace/Library/Workspace/autostart
 Этот скрипт автоматически выполняется при старте Workspace.
 .TP
-.B ~/GNUstep/Library/Workspace/exitscript
+.B ~/.workspace/Library/Workspace/exitscript
 Этот скрипт автоматически выполняется перед завершением работы Workspace.
 .B Заметка:
 Если Вы хотите запустить из этого скрипта что либо требующее работы сервера X,
@@ -77,23 +77,23 @@ Workspace это оконный менеджер для X11 эмулирующи
 из корневого меню для выхода из Workspace. В противном случае сервер X может
 быть остановлен до исполнения срипта.
 .TP
-.B ~/GNUstep/Library/Workspace/
+.B ~/.workspace/Library/Workspace/
 Здесь производится поиск файла меню, указанного в WMRootMenu…
 .TP
 .B /etc/X11/Workspace/
 и здесь. В указанном порядке. В том случае, если указан не абсолютный путь.
 .TP
-.B ~/GNUstep/Library/Workspace/Pixmaps/
+.B ~/.workspace/Library/Workspace/Pixmaps/
 Здесь Workspace производит поиск картинок.
 .TP
-.B ~/GNUstep/Library/Workspace/Backgrounds/
+.B ~/.workspace/Library/Workspace/Backgrounds/
 Здесь Workspace ищет обои.
 .TP
-.B ~/GNUstep/Library/Workspace/Styles/
+.B ~/.workspace/Library/Workspace/Styles/
 Здесь Workspace производит поиск стилей (неправда… выглядит так, но Вам всё
 равно придётся указать полный путь; это просто место для красивой организации).
 .TP
-.B ~/GNUstep/Library/Workspace/Themes/
+.B ~/.workspace/Library/Workspace/Themes/
 Здесь Workspace ищет файлы тем (там же).
 .TP
 .B /usr/share/Workspace/Pixmaps/
@@ -111,15 +111,15 @@ Workspace это оконный менеджер для X11 эмулирующи
 .IP GNUSTEP_USER_ROOT
 Указывает начальный путь к папке Defaults. "Defaults/" приписывается к этой
 переменной, чтобы определить настоящее расположение данных. Если переменная не
-установлена, то её значение: "~/GNUstep".
+установлена, то её значение: "~/.workspace".
 .IP GNUSTEP_LOCAL_ROOT
-Указыввает расположение общесистемной папки \fBlocal\fP GNUstep
+Указыввает расположение общесистемной папки \fBlocal\fP .workspace
 (это полезно, например, в тех случаях, где общесистемные настройки находятся
 на сетевом ресурсе). Если эта переменная пуста, то поиск происходит то ищется
 переменная GNUSTEP_SYSTEM_ROOT.
 .IP GNUSTEP_SYSTEM_ROOT
-указывает общесистемное расположение папки GNUstep. Если эта переменная пуста,
-то её значение: /etc/GNUstep
+указывает общесистемное расположение папки .workspace. Если эта переменная пуста,
+то её значение: /etc/.workspace
 .SH "СМОТРИ ТАКЖЕ"
 The Workspace User Guide
 .PP

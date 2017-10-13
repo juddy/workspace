@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 # export DH_VERBOSE=1
 export CFLAGS = `dpkg-buildflags --get CFLAGS`
-export DEB_CFLAGS_MAINT_APPEND += -Wall -DGLOBAL_DEFAULTS_SUBDIR="\\\"GNUstep/Defaults\\\""
+export DEB_CFLAGS_MAINT_APPEND += -Wall -DGLOBAL_DEFAULTS_SUBDIR="\\\".workspace/Defaults\\\""
 export LDFLAGS = `dpkg-buildflags --get LDFLAGS`
 export CPPFLAGS = `dpkg-buildflags --get CPPFLAGS`
 
@@ -22,7 +22,7 @@ INCLUDEDIR        := $(BASEDIR)/include
 SHAREDIR          := $(BASEDIR)/share
 MANDIR            := $(SHAREDIR)/man
 NLSDIR            := $(SHAREDIR)/locale
-GNUSTEPDIR        := $(SHAREDIR)/lib/GNUstep/System
+GNUSTEPDIR        := $(SHAREDIR)/lib/.workspace/System
 WMSHAREDIR        := $(SHAREDIR)/Workspace
 PIXMAPDIR         := $(INCLUDEDIR)/X11/pixmaps
 

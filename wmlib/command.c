@@ -65,11 +65,11 @@ void WMHideOthers(WMAppContext * app)
 		   SubstructureNotifyMask | SubstructureRedirectMask, &event);
 }
 
-void WMSetWindowAttributes(Display * dpy, Window window, GNUstepWMAttributes * attributes)
+void WMSetWindowAttributes(Display * dpy, Window window, .workspaceWMAttributes * attributes)
 {
 	Atom atom;
 
 	atom = XInternAtom(dpy, "_GNUSTEP_WM_ATTR", False);
 	XChangeProperty(dpy, window, atom, atom, 32, PropModeReplace,
-			(unsigned char *)attributes, sizeof(GNUstepWMAttributes) / sizeof(CARD32));
+			(unsigned char *)attributes, sizeof(.workspaceWMAttributes) / sizeof(CARD32));
 }

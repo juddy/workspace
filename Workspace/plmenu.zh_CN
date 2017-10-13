@@ -68,9 +68,9 @@
   ("清除保存的会话", CLEAR_SESSION)
   ),
  ("外观",
-  ("主题", OPEN_MENU, "-noext #wmdatadir#/Themes $HOME/GNUstep/Library/Workspace/Themes WITH setstyle"),
-  ("风格", OPEN_MENU, "-noext #wmdatadir#/Styles $HOME/GNUstep/Library/Workspace/Styles WITH setstyle"),
-  ("图标集", OPEN_MENU, "-noext #wmdatadir#/IconSets $HOME/GNUstep/Library/Workspace/IconSets WITH seticons"),
+  ("主题", OPEN_MENU, "-noext #wmdatadir#/Themes $HOME/.workspace/Library/Workspace/Themes WITH setstyle"),
+  ("风格", OPEN_MENU, "-noext #wmdatadir#/Styles $HOME/.workspace/Library/Workspace/Styles WITH setstyle"),
+  ("图标集", OPEN_MENU, "-noext #wmdatadir#/IconSets $HOME/.workspace/Library/Workspace/IconSets WITH seticons"),
   ("背景",
    ("单色",
     ("黑", EXEC, "wdwrite Workspace WorkspaceBack '(solid, black)'"),
@@ -92,10 +92,10 @@
     ("灰色阴影",   EXEC, "wdwrite Workspace WorkspaceBack '(vgradient, \"#636380\", \"#131318\")'"),
     ("酒红阴影",   EXEC, "wdwrite Workspace WorkspaceBack '(vgradient, \"#600040\", \"#180010\")'")
     ),
-   ("图像", OPEN_MENU, "-noext #wmdatadir#/Backgrounds $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t")
+   ("图像", OPEN_MENU, "-noext #wmdatadir#/Backgrounds $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t")
    ),   
-  ("保存主题", SHEXEC, "getstyle -t $HOME/GNUstep/Library/Workspace/Themes/\"%a(主题名)\""),
-  ("保存图标集", SHEXEC, "geticonset $HOME/GNUstep/Library/Workspace/IconSets/\"%a(图标集名)\"")
+  ("保存主题", SHEXEC, "getstyle -t $HOME/.workspace/Library/Workspace/Themes/\"%a(主题名)\""),
+  ("保存图标集", SHEXEC, "geticonset $HOME/.workspace/Library/Workspace/IconSets/\"%a(图标集名)\"")
   ), 
  ("退出",
   ("重新启动", RESTART),

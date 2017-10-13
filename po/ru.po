@@ -515,19 +515,19 @@ msgstr "Запуск альтернативного диспетчера око�
 
 #: ../src/dialog.c:2018
 msgid ""
-"Workspace is part of the GNUstep project.\n"
-"The GNUstep project aims to create a free\n"
+"Workspace is part of the .workspace project.\n"
+"The .workspace project aims to create a free\n"
 "implementation of the OpenStep(tm) specification\n"
 "which is a object-oriented framework for\n"
 "creating advanced graphical, multi-platform\n"
 "applications. Additionally, a development and\n"
 "user desktop enviroment will be created on top\n"
 "of the framework. For more information about\n"
-"GNUstep, please visit: www.gnustep.org"
+".workspace, please visit: www.gnustep.org"
 msgstr ""
 
 #: ../src/dialog.c:2041
-msgid "About GNUstep"
+msgid "About .workspace"
 msgstr ""
 
 #: ../src/dock.c:213
@@ -958,24 +958,24 @@ msgstr " --help\t\t\tвывести этот текст"
 #: ../src/main.c:474
 #, c-format
 msgid ""
-"could not find user GNUstep directory (%s).\n"
+"could not find user .workspace directory (%s).\n"
 "Make sure you have installed Workspace correctly and run workspace.inst"
 msgstr ""
-"не удалось найти пользовательский каталог GNUstep (%s).\n"
+"не удалось найти пользовательский каталог .workspace (%s).\n"
 "Убедитесь, что Workspace установлен верно, и запустите workspace.inst"
 
 #
 #: ../src/main.c:479
 #, c-format
-msgid "could not find user GNUstep directory (%s)."
-msgstr "не удалось найти пользовательский GNUstep каталог (%s)."
+msgid "could not find user .workspace directory (%s)."
+msgstr "не удалось найти пользовательский .workspace каталог (%s)."
 
 #: ../src/main.c:482
 msgid ""
-"There was an error while creating GNUstep directory, please make sure you "
+"There was an error while creating .workspace directory, please make sure you "
 "have installed Workspace correctly and run workspace.inst"
 msgstr ""
-"Во время создания пользовательского каталога GNUstep произошла ошибка,\n"
+"Во время создания пользовательского каталога .workspace произошла ошибка,\n"
 "пожалуйста, убедитесь, что Workspace был установлен правильно\n"
 "и запустите workspace.inst"
 

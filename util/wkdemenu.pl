@@ -36,7 +36,7 @@
 # 1) If /usr/bin/perl is not the location of the perl binary on your system,
 #    the first line should be changed to reflect upon it's location.
 # 2) Run the script.
-# 3) Configure Workspace's menu by editing ~/GNUstep/Defaults/WMRootMenu
+# 3) Configure Workspace's menu by editing ~/.workspace/Defaults/WMRootMenu
 #    This could be done with any text editor, or by using WPrefs. Insert
 #    the following line (if done with a text editor) into the WMRootMenu file.
 #      ("External Menu", OPEN_MENU, "$HOME/.kde2workspace.menu"),

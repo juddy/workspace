@@ -114,11 +114,11 @@ char *WMPathForResourceOfType(const char *resource, const char *ext)
 	 * - resourcePath/ext
 	 * - dirname(argv[0])/ext
 	 * - GNUSTEP_USER_ROOT/Applications/ApplicationName.app/ext
-	 * - ~/GNUstep/Applications/ApplicationName.app/ext
+	 * - ~/.workspace/Applications/ApplicationName.app/ext
 	 * - GNUSTEP_LOCAL_ROOT/Applications/ApplicationName.app/ext
-	 * - /usr/local/GNUstep/Applications/ApplicationName.app/ext
+	 * - /usr/local/.workspace/Applications/ApplicationName.app/ext
 	 * - GNUSTEP_SYSTEM_ROOT/Applications/ApplicationName.app/ext
-	 * - /usr/GNUstep/Applications/ApplicationName.app/ext
+	 * - /usr/.workspace/Applications/ApplicationName.app/ext
 	 */
 
 	if (WMApplication.resourcePath) {
@@ -158,7 +158,7 @@ char *WMPathForResourceOfType(const char *resource, const char *ext)
 	if (path)
 		goto out;
 
-	path = checkFile("/usr/local/GNUstep", appdir, ext, resource);
+	path = checkFile("/usr/local/.workspace", appdir, ext, resource);
 	if (path)
 		goto out;
 
@@ -166,7 +166,7 @@ char *WMPathForResourceOfType(const char *resource, const char *ext)
 	if (path)
 		goto out;
 
-	path = checkFile("/usr/GNUstep", appdir, ext, resource); /* falls through */
+	path = checkFile("/usr/.workspace", appdir, ext, resource); /* falls through */
 
 out:
 	if (tmp)

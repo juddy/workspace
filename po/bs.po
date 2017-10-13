@@ -466,10 +466,10 @@ msgstr " -version\t\tštampaj verziju i izađi"
 
 #: ../src/main.c:269
 msgid ""
-"could not find user GNUstep directory (%s).\n"
+"could not find user .workspace directory (%s).\n"
 "Make sure you have installed Workspace correctly and run workspace.inst"
 msgstr ""
-"Ne mogu naći korisnički GNUstep direktorij (%s).\n"
+"Ne mogu naći korisnički .workspace direktorij (%s).\n"
 "Provjerite da li ste pravilno instalirali Workspace i pokrenuli workspace.inst"
 
 #: ../src/main.c:291
@@ -1158,10 +1158,10 @@ msgstr "krivi podaci u odabiru"
 # msgstr "Kriva pozicija ikone \"%s\". Trebala bi biti: blv, blh, brv, brh, tlv, tlh, trv ili trh"
 #
 # msgid ""
-# "could not find user GNUstep directory.\n"
+# "could not find user .workspace directory.\n"
 # "Make sure you have installed Workspace correctly and run workspace.inst"
 # msgstr ""
-# "ne mogu naći korisnikov GNUstep direktorij.\n"
+# "ne mogu naći korisnikov .workspace direktorij.\n"
 # "Provjerite da li ste ispravno instalirali WinowMaker i pokrenite workspace.inst"
 #
 # msgid "Hide Others"

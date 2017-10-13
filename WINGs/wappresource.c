@@ -5,7 +5,7 @@
 
 #include <X11/Xutil.h>
 
-#include "GNUstep.h"
+#include ".workspace.h"
 
 
 void WMSetApplicationIconWindow(WMScreen * scr, Window window)

@@ -146,7 +146,7 @@ int main(int argc, char *argv[])
 	L2Menu = WMCreatePLArray(
 		WMCreatePLString(_("Themes")),
 		WMCreatePLString("OPEN_MENU"),
-		WMCreatePLString("-noext /usr/local/share/Workspace/Themes $HOME/GNUstep/Library/Workspace/Themes WITH setstyle"),
+		WMCreatePLString("-noext /usr/local/share/Workspace/Themes $HOME/.workspace/Library/Workspace/Themes WITH setstyle"),
 		NULL
 	);
 	WMAddToPLArray(L1Menu, L2Menu);
@@ -155,7 +155,7 @@ int main(int argc, char *argv[])
 	L2Menu = WMCreatePLArray(
 		WMCreatePLString(_("Styles")),
 		WMCreatePLString("OPEN_MENU"),
-		WMCreatePLString("-noext /usr/local/share/Workspace/Styles $HOME/GNUstep/Library/Workspace/Styles WITH setstyle"),
+		WMCreatePLString("-noext /usr/local/share/Workspace/Styles $HOME/.workspace/Library/Workspace/Styles WITH setstyle"),
 		NULL
 	);
 	WMAddToPLArray(L1Menu, L2Menu);
@@ -164,7 +164,7 @@ int main(int argc, char *argv[])
 	L2Menu = WMCreatePLArray(
 		WMCreatePLString(_("Icon Sets")),
 		WMCreatePLString("OPEN_MENU"),
-		WMCreatePLString("-noext /usr/local/share/Workspace/IconSets $HOME/GNUstep/Library/Workspace/IconSets WITH seticons"),
+		WMCreatePLString("-noext /usr/local/share/Workspace/IconSets $HOME/.workspace/Library/Workspace/IconSets WITH seticons"),
 		NULL
 	);
 	WMAddToPLArray(L1Menu, L2Menu);
@@ -232,7 +232,7 @@ int main(int argc, char *argv[])
 	L3Menu = WMCreatePLArray(
 		WMCreatePLString(_("Images")),
 		WMCreatePLString("OPEN_MENU"),
-		WMCreatePLString("-noext $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t"),
+		WMCreatePLString("-noext $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t"),
 		NULL
 	);
 	WMAddToPLArray(L2Menu, L3Menu);
@@ -252,7 +252,7 @@ int main(int argc, char *argv[])
 	L2Menu = WMCreatePLArray(
 		WMCreatePLString(_("Save IconSet")),
 		WMCreatePLString("SHEXEC"),
-		WMCreatePLString("geticonset $HOME/GNUstep/Library/Workspace/IconSets/"
+		WMCreatePLString("geticonset $HOME/.workspace/Library/Workspace/IconSets/"
 			"\"%a(IconSet name,Name to save icon set as)\""),
 		NULL
 	);
@@ -481,7 +481,7 @@ void print_help(int print_usage, int exitval)
 {
 	printf("Usage: %s [-h] [-v]\n", __progname);
 	if (print_usage) {
-		puts("Writes a menu structure usable as ~/GNUstep/Defaults/WMRootMenu to stdout");
+		puts("Writes a menu structure usable as ~/.workspace/Defaults/WMRootMenu to stdout");
 		puts("");
 		puts("  -h, --help           display this help and exit");
 		puts("  -v, --version        output version information and exit");

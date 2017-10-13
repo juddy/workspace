@@ -501,27 +501,27 @@ msgstr "Anderen Windowmanager starten"
 
 #: ../src/dialog.c:1783
 msgid ""
-"Workspace is part of the GNUstep project.\n"
-"The GNUstep project aims to create a free\n"
+"Workspace is part of the .workspace project.\n"
+"The .workspace project aims to create a free\n"
 "implementation of the OpenStep(tm) specification\n"
 "which is a object-oriented framework for\n"
 "creating advanced graphical, multi-platform\n"
 "applications. Additionally, a development and\n"
 "user desktop environment will be created on top\n"
 "of the framework. For more information about\n"
-"GNUstep, please visit: www.gnustep.org"
+".workspace, please visit: www.gnustep.org"
 msgstr ""
-"Workspace ist Teil des GNUstep-Projektes.\n"
-"Das GNUstep-Projekt hat sich zum Ziel gesetzt,\n"
+"Workspace ist Teil des .workspace-Projektes.\n"
+"Das .workspace-Projekt hat sich zum Ziel gesetzt,\n"
 "eine freie Implementierung von OpenStep(tm), einem\n"
 "objektorientierten Framework für grafische Multiplattform-\n"
 "anwendungen, zu erstellen. Dazu werden eine Ent-\n"
 "wicklungs- und Arbeitsumgebung mit dem Framework\n"
-"erstellt. Für weitere Informationen zu GNUstep besuchen\n"
+"erstellt. Für weitere Informationen zu .workspace besuchen\n"
 "sie bitte www.gnustep.org"
 
 #: ../src/dialog.c:1806
-msgid "About GNUstep"
+msgid "About .workspace"
 msgstr "Über GNUStep"
 
 #: ../src/dock.c:178
@@ -878,24 +878,24 @@ msgstr " --help\t\t\tdiese Nachricht anzeigen"
 #: ../src/main.c:455
 #, c-format
 msgid ""
-"could not find user GNUstep directory (%s).\n"
+"could not find user .workspace directory (%s).\n"
 "Make sure you have installed Workspace correctly and run workspace.inst"
 msgstr ""
-"GNUstep-Verzeichnis (%s) konnte nicht gefunden werden.\n"
+".workspace-Verzeichnis (%s) konnte nicht gefunden werden.\n"
 "Stellen Sie sicher, dass sie Workspace korrekt installiert und workspace."
 "inst aufgerufen haben"
 
 #: ../src/main.c:459
 #, c-format
-msgid "could not find user GNUstep directory (%s)."
-msgstr "GNUstep-Verzeichnis (%s) konnte nicht gefunden werden."
+msgid "could not find user .workspace directory (%s)."
+msgstr ".workspace-Verzeichnis (%s) konnte nicht gefunden werden."
 
 #: ../src/main.c:462
 msgid ""
-"There was an error while creating GNUstep directory, please make sure you "
+"There was an error while creating .workspace directory, please make sure you "
 "have installed Workspace correctly and run workspace.inst"
 msgstr ""
-"Während der Erstellung der GNUstep-Verzeichnisses ist ein Fehler "
+"Während der Erstellung der .workspace-Verzeichnisses ist ein Fehler "
 "aufgetreten, Stellen Sie sicher, dass sie Workspace korrekt installiert "
 "und workspace.inst aufgerufen haben"
 

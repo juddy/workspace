@@ -273,12 +273,12 @@ antialiased text with TrueType or any scalable fonts.
 
 Antialiased text is enabled by default, but can be disabled by adding
 
-AntialiasedText = NO; in ~/GNUstep/Defaults/WMGLOBAL
+AntialiasedText = NO; in ~/.workspace/Defaults/WMGLOBAL
 
 This will disable antialiased text for any WINGs based application. If you
 only want to disable them for a specific application only, like Workspace
 for example, then add the same option in the applications configuration file,
-in this case ~/GNUstep/Defaults/Workspace
+in this case ~/.workspace/Defaults/Workspace
 
 Note that bitmapped fonts look much better than TrueType when antialiasing is
 disabled.

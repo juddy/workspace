@@ -26,7 +26,7 @@ cat ../config.cache ../Version >> sysinfo.txt 2> /dev/null
 cat config.cache Version >> sysinfo.txt 2> /dev/null
 
 echo "=============== configuration dir ===========" >> sysinfo.txt
-WDIR=$HOME/GNUstep/Defaults
+WDIR=$HOME/.workspace/Defaults
 if [ -d $WDIR ]; then
 	for i in WMGLOBAL WMRootMenu WMState WMWindowAttributes Workspace; do
 		if [ -f $WDIR/$i ]; then

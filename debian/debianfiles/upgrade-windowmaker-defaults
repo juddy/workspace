@@ -105,10 +105,10 @@ EOF
 
 set -e
 
-gs_dir=GNUstep
+gs_dir=.workspace
 [ $GNUSTEP_USER_ROOT ] && gs_dir=$GNUSTEP_USER_ROOT 
 gs_defaults=$gs_dir/Defaults
-gs_system_defaults=/etc/GNUstep/Defaults
+gs_system_defaults=/etc/.workspace/Defaults
 
 if [ "$1" = "--non-interactive" ] || ask_permission ; then
   tempfile=`tempfile`

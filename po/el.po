@@ -669,10 +669,10 @@ msgstr ""
 #: ../src/main.c:286
 #, c-format
 msgid ""
-"could not find user GNUstep directory (%s).\n"
+"could not find user .workspace directory (%s).\n"
 "Make sure you have installed Workspace correctly and run workspace.inst"
 msgstr ""
-"αδύνατη η εύρεση του καταλόγου GNUstep του χρήστη (%s).\n"
+"αδύνατη η εύρεση του καταλόγου .workspace του χρήστη (%s).\n"
 "Βεβαιωθείται ότι η εγκατάσταση του Workspace ήταν επιτυχής και εκτελέστε workspace.inst"
 
 

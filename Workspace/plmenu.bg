@@ -66,9 +66,9 @@
   ("Изчисти запазената сесия", CLEAR_SESSION)
   ),
  ("Изглед",
-  ("Теми", OPEN_MENU, "-noext #wmdatadir#/Themes $HOME/GNUstep/Library/Workspace/Themes WITH setstyle"),
-  ("Стилове", OPEN_MENU, "-noext #wmdatadir#/Styles $HOME/GNUstep/Library/Workspace/Styles WITH setstyle"),
-  ("Колекции иконки", OPEN_MENU, "-noext #wmdatadir#/IconSets $HOME/GNUstep/Library/Workspace/IconSets WITH seticons"),
+  ("Теми", OPEN_MENU, "-noext #wmdatadir#/Themes $HOME/.workspace/Library/Workspace/Themes WITH setstyle"),
+  ("Стилове", OPEN_MENU, "-noext #wmdatadir#/Styles $HOME/.workspace/Library/Workspace/Styles WITH setstyle"),
+  ("Колекции иконки", OPEN_MENU, "-noext #wmdatadir#/IconSets $HOME/.workspace/Library/Workspace/IconSets WITH seticons"),
   ("Фон",
    ("Плътен",
     ("Черен", EXEC, "wdwrite Workspace WorkspaceBack '(solid, black)'"),
@@ -90,11 +90,11 @@
     ("Сиви сенки",   EXEC, "wdwrite Workspace WorkspaceBack '(vgradient, \"#636380\", \"#131318\")'"),
     ("Винени сенки",   EXEC, "wdwrite Workspace WorkspaceBack '(vgradient, \"#600040\", \"#180010\")'")
     ),
-   ("Изображения", OPEN_MENU, "-noext #wmdatadir#/Backgrounds $HOME/GNUstep/Library/Workspace/Backgrounds WITH wmsetbg -u -t")
+   ("Изображения", OPEN_MENU, "-noext #wmdatadir#/Backgrounds $HOME/.workspace/Library/Workspace/Backgrounds WITH wmsetbg -u -t")
    ),
-  ("Запази темата", SHEXEC, "getstyle -t $HOME/GNUstep/Library/Workspace/Themes/\"%a(Theme name)\""),
-  ("Запази колекцията иконки", SHEXEC, "geticonset $HOME/GNUstep/Library/Workspace/IconSets/\"%a(IconSet name)\""),
-  ("Пособие за настройки", EXEC, "/usr/local/GNUstep/Applications/WPrefs.app/WPrefs")
+  ("Запази темата", SHEXEC, "getstyle -t $HOME/.workspace/Library/Workspace/Themes/\"%a(Theme name)\""),
+  ("Запази колекцията иконки", SHEXEC, "geticonset $HOME/.workspace/Library/Workspace/IconSets/\"%a(IconSet name)\""),
+  ("Пособие за настройки", EXEC, "/usr/local/.workspace/Applications/WPrefs.app/WPrefs")
   ),
  ("Изход",
   ("Рестартиране", RESTART),

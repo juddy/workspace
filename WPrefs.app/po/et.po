@@ -504,17 +504,17 @@ msgstr "Käivitan alternatiivse aknahalduri"
 
 #: ../src/dialog.c:1903
 msgid ""
-"Workspace is part of the GNUstep project.\n"
-"The GNUstep project aims to create a free\n"
+"Workspace is part of the .workspace project.\n"
+"The .workspace project aims to create a free\n"
 "implementation of the OpenStep(tm) specification\n"
 "which is a object-oriented framework for\n"
 "creating advanced graphical, multi-platform\n"
 "applications. Additionally, a development and\n"
 "user desktop environment will be created on top\n"
 "of the framework. For more information about\n"
-"GNUstep, please visit: www.gnustep.org"
+".workspace, please visit: www.gnustep.org"
 msgstr ""
-"Workspace on osa GNUstep projektist. GNUstep\n"
+"Workspace on osa .workspace projektist. .workspace\n"
 "projekti eesmärgiks on OpenStep(tm) kirjelduse\n"
 "(objektorienteeritud framework graafiliste\n"
 "multiplatvorm rakenduste jaoks) vaba\n"
@@ -524,8 +524,8 @@ msgstr ""
 "saamiseks palun külasada saidi www.gnustep.org"
 
 #: ../src/dialog.c:1923
-msgid "About GNUstep"
-msgstr "GNUstep'ist lähemalt"
+msgid "About .workspace"
+msgstr ".workspace'ist lähemalt"
 
 #: ../src/dock.c:213
 #, c-format
@@ -884,23 +884,23 @@ msgstr " --help\t\t\tnäitab seda teadet"
 #: ../src/main.c:457
 #, c-format
 msgid ""
-"could not find user GNUstep directory (%s).\n"
+"could not find user .workspace directory (%s).\n"
 "Make sure you have installed Workspace correctly and run wmaker.inst"
 msgstr ""
-"ei őnnestu leida kasutaja GNUstep kataloogi (%s).\n"
+"ei őnnestu leida kasutaja .workspace kataloogi (%s).\n"
 "Veendu, et Workspace on korrektselt paigaldatud ja käivita wmaker.inst"
 
 #: ../src/main.c:462
 #, c-format
-msgid "could not find user GNUstep directory (%s)."
-msgstr "ei őnnestu leida kasutaja GNUstep kataloogi (%s)"
+msgid "could not find user .workspace directory (%s)."
+msgstr "ei őnnestu leida kasutaja .workspace kataloogi (%s)"
 
 #: ../src/main.c:465
 msgid ""
-"There was an error while creating GNUstep directory, please make sure you "
+"There was an error while creating .workspace directory, please make sure you "
 "have installed Workspace correctly and run wmaker.inst"
 msgstr ""
-"Viga GNUstep kataloogi loomise käigus. Palun veendu, et Workspace on "
+"Viga .workspace kataloogi loomise käigus. Palun veendu, et Workspace on "
 "korrektselt paigaldatud ja käivita wmaker.inst"
 
 #: ../src/main.c:468

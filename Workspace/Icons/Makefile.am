@@ -53,7 +53,7 @@ FontPrefs.png\
 Fonts.png\
 Ftp.png\
 Globe.png\
-GNUstep.png\
+.workspace.png\
 Image-Default.png\
 Keycap.png\
 LightBang.png\

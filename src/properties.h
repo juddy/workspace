@@ -22,7 +22,7 @@
 #ifndef WMPROPERTIES_H_
 #define WMPROPERTIES_H_
 
-#include "GNUstep.h"
+#include ".workspace.h"
 
 unsigned char* PropGetCheckProperty(Window window, Atom hint, Atom type,
                                     int format, int count, int *retCount);
@@ -32,7 +32,7 @@ int PropGetWindowState(Window window);
 int PropGetNormalHints(Window window, XSizeHints *size_hints, int *pre_iccm);
 void PropGetProtocols(Window window, WProtocols *prots);
 int PropGetWMClass(Window window, char **wm_class, char **wm_instance);
-int PropGetGNUstepWMAttr(Window window, GNUstepWMAttributes **attr);
+int PropGet.workspaceWMAttr(Window window, .workspaceWMAttributes **attr);
 
 void PropSetWMakerProtocols(Window root);
 void PropCleanUp(Window root);

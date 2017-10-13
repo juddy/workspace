@@ -143,7 +143,7 @@ geeqie.Geeqie = {
     Icon = Document-Text-Generic.png;
   };
   oclock.Clock = {
-    Icon = "~/GNUstep/.AppInfo/Workspace/oclock.Clock.xpm";
+    Icon = "~/.workspace/.AppInfo/Workspace/oclock.Clock.xpm";
   };
   WSoundServer = {
     Icon = Speaker.png;
@@ -173,7 +173,7 @@ geeqie.Geeqie = {
     Icon = Globe.png;
   };
   Logo.WMDock = {
-    Icon = GNUstep.tiff;
+    Icon = .workspace.tiff;
   };
   indexed_color_palette.Gimp = {
     Icon = "workspace-gimp-palette.tif";
@@ -185,7 +185,7 @@ geeqie.Geeqie = {
     Icon = NSMonitor_Shell.png;
   };
   gvim.Gvim = {
-    Icon = "~/GNUstep/.AppInfo/Workspace/gvim.Gvim.xpm";
+    Icon = "~/.workspace/.AppInfo/Workspace/gvim.Gvim.xpm";
   };
   ethereal.Ethereal = {
     Icon = NetLook.png;
@@ -229,7 +229,7 @@ geeqie.Geeqie = {
   };
 
   xeyes.XEyes = {
-    Icon = "~/GNUstep/.AppInfo/Workspace/xeyes.XEyes.xpm";
+    Icon = "~/.workspace/.AppInfo/Workspace/xeyes.XEyes.xpm";
   };
 
   "script-fu.Gimp" = {
@@ -241,11 +241,11 @@ geeqie.Geeqie = {
   };
 
   kcontrol.Kcontrol = {
-    Icon = "~/GNUstep/.AppInfo/Workspace/kcontrol.Kcontrol.xpm";
+    Icon = "~/.workspace/.AppInfo/Workspace/kcontrol.Kcontrol.xpm";
   };
 
   gtkam.Gtkam = {
-    Icon = "~/GNUstep/.AppInfo/Workspace/gtkam.Gtkam.xpm";
+    Icon = "~/.workspace/.AppInfo/Workspace/gtkam.Gtkam.xpm";
   };
 
   Logo.WMClip = {
@@ -253,11 +253,11 @@ geeqie.Geeqie = {
   };
 
   knode.Knode = {
-    Icon = "~/GNUstep/.AppInfo/Workspace/knode.Knode.xpm";
+    Icon = "~/.workspace/.AppInfo/Workspace/knode.Knode.xpm";
   };
 
   gnumeric.Gnumeric = {
-    Icon = "~/GNUstep/.AppInfo/Workspace/gnumeric.Gnumeric.xpm";
+    Icon = "~/.workspace/.AppInfo/Workspace/gnumeric.Gnumeric.xpm";
   };
 
   scite.Scite = {

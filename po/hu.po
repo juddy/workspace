@@ -560,10 +560,10 @@ msgstr "--help\t\t\tkiírja ezt a szöveget"
 
 #: ../src/main.c:286
 msgid ""
-"could not find user GNUstep directory (%s).\n"
+"could not find user .workspace directory (%s).\n"
 "Make sure you have installed Workspace correctly and run workspace.inst"
 msgstr ""
-"nem találom a felhasználó GNUstep könyvtárát (%s).\n"
+"nem találom a felhasználó .workspace könyvtárát (%s).\n"
 "Győzödj meg róla, hogy a Workspace rendesen telepítve van és futtasd le a workspace.inst scriptet!"
 
 #: ../src/main.c:307 ../src/main.c:312
