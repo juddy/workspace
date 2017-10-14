@@ -19,10 +19,27 @@ Workspace is an attempt to step away from the adherence to the NeXTisms of yeste
 - Mouselessness
 - Generic and configurable
 
+## Installation
+
+Run the 'setup.sh' script, or the steps included:
+
+- aclocal
+
+- automake
+
+- ./configure
+
+- make
+
+- sudo make install
+
+## Execution
+
+Workspace can be started from .xinitc or by setting your default windowmanager to use '$(which) workspace'.
 
 ## Workspace Keys
 
-Workspace uses the standard WindowMaker keybindings. Set in Workspace/Defaults/WindowMaker.in and rebuild, or manage a subset of them with WPrefs or xetosconf.
+Workspace uses the standard WindowMaker keybindings. Set in Workspace/Defaults/WindowMaker.in and rebuild, or manage a subset of them with WPrefs.
 
 ModifierKey = Mod1 (Alt)
 
@@ -89,19 +106,6 @@ DockRaiseLowerKey = None
 ClipRaiseLowerKey = None
 
 
-## Installation
-
-A standard './configure && make && sudo make install' should do, with the exception of Clock, which may require Makefile re-dos with 'xmkmf' (it's old code, for sure).
-
-You may choose to 'make install', and run 'setup.sh' to step through the Autotools cleanup/rebuild steps.
-
-Binaries are present, and you may be able to get by (on Debian "Jessie") by running 'make install'.
-
-## Execution
-
-Workspace can be started from .xinitc or by setting your default windowmanager to use '$(which) workspace':
-
-  cd /etc/defaults/ ; ln -s $(which workspace) /etc/default/windowmanager
 
 ## To Do
 
